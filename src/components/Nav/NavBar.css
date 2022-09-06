@@ -1,0 +1,45 @@
+.navbar {
+  background-color: var(--global-primary-bg-color);
+  padding: 0;
+}
+
+.navbar .container-lg .nav {
+  height: 130px;
+  margin-left: 30%;
+}
+
+.brand-card {
+  width: 20%;
+  height: 180px;
+  padding: 2rem 4rem;
+  margin-left: 8%;
+  border-radius: 1rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15), 0 2px 20px 0 rgba(0, 0, 0, 0.14);
+  top: -16px;
+  border-width: 0;
+}
+
+.brand {
+  margin-top: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.btn-contact {
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--global-primary-bg-color);
+  height: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  border: 0;
+}
+
+.btn-contact:hover,
+.btn-contact:focus,
+.btn-contact:active {
+  background-color: #fff;
+  color: var(--global-primary-bg-color);
+  border: 0;
+}

@@ -1,0 +1,54 @@
+.dropdown:hover .parent-menu {
+  margin-top: 0;
+  display: block;
+  padding: 0;
+  border: 0;
+}
+
+.dropdown-menu {
+  width: max-content;
+  min-width: 100%;
+  border-radius: 0;
+}
+
+.dropdown-toggle::after {
+  content: none;
+  border: 0;
+  margin: 0;
+}
+
+.btn-nav-dropdown {
+  --bs-btn-padding-x: 18px;
+  --bs-btn-padding-y: 12px;
+  --bs-btn-font-weight: 700;
+  --bs-btn-font-size: 20px;
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-width: 0;
+  --bs-btn-border-radius: 0;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ed3b52;
+  --bs-btn-active-color: var(--bs-btn-color);
+  --bs-btn-active-bg: #ed3b52;
+  --bs-btn-active-border-color: transparent;
+  height: 100%;
+}
+
+.list-btn {
+  padding: 12px 18px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-btn:hover,
+.list-btn:focus,
+.list-btn:active {
+  color: #fff;
+  background-color: #ed3b52;
+}
