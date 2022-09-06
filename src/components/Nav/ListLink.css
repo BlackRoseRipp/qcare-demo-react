@@ -25,18 +25,12 @@
 }
 
 .list-link {
-  padding: 0.5em 1em;
+  padding: 0.5em 2em;
   color: #090a0a;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 500;
   transition: background-color 200ms linear;
 }
 
 .list-link:hover,
-.list-link:focus,
-.btn-link-dropdown:hover,
-.btn-link-dropdown:focus {
-  background-color: var(--global-primary-bg-color);
-  color: #fff;
+.btn-link-dropdown:hover {
+  background-color: #e8f5fc;
 }

@@ -13,11 +13,11 @@ function NavButton(props) {
             <button 
                 className='btn btn-nav-dropdown dropdown-toggle'
                 type='button'
-                data-bs-toggle=''
+                data-bs-toggle='dropdown'
                 aria-expanded='false'
                 style={style ? overStyle : {}}
             >
-                {icon}&nbsp;{primary}<span className='ms-3'><MdKeyboardArrowDown style={{fontSize: '30px'}}/></span>
+                {icon}&nbsp;{primary}<span className='ms-3'><MdKeyboardArrowDown /></span>
             </button>
             <ul className='dropdown-menu parent-menu'>
                 {dropdownLinks.map(link => {

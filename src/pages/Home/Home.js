@@ -8,8 +8,9 @@ const Home = () => {
     return(
         <div>
             <div className="hero-container">
-                <div className="container-lg mt-auto">
+                <div className="container-lg">
                     <div className="hero-body">
+                        <h6 className="hero-text">Your Health. Our Mission.</h6>
                         <a className="btn btn-main" href="#" role="button">Book an Appointment</a>
                     </div>
                 </div>
