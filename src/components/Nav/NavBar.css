@@ -9,9 +9,12 @@
 }
 
 .brand-card {
+  position: absolute;
+  z-index: 1;
+  left: 3rem;
   width: 20%;
   height: 180px;
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   margin-left: 8%;
   border-radius: 1rem;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15), 0 2px 20px 0 rgba(0, 0, 0, 0.14);
@@ -21,8 +24,10 @@
 
 .brand {
   margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  width: 100%;
+  width: 70%;
 }
 
 .btn-contact {
@@ -42,4 +47,22 @@
   background-color: #fff;
   color: var(--global-primary-bg-color);
   border: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .brand {
+    width: 80%
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .brand {
+    width: 90%
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .brand {
+    width: 100%
+  }
 }

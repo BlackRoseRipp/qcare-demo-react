@@ -1,0 +1,159 @@
+.hero-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../../public/assets/img/young-male-psysician-with-patient-measuring-blood-pressure.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-body {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.btn-main {
+    background-color: var(--global-primary-bg-color);
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    height: auto;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    border: 0;
+    margin-top: auto;
+    text-transform: none;
+}
+
+.btn-main:hover,
+.btn-main:focus,
+.btn-main:active {
+    background-color: var(--global-primary-bg-color);
+    color: #fff;
+    border: 0;
+}
+
+.btn-lite {
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--global-primary-bg-color);
+    height: auto;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    border: 0;
+    margin-top: auto;
+    text-transform: none;
+}
+
+.btn-lite:hover,
+.btn-lite:focus,
+.btn-lite:active {
+    background-color: #fff;
+    color: var(--global-primary-bg-color);
+    border: 0;
+}
+
+.services-container {
+    padding: 5rem 0;
+}
+
+.section-header {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+    font-size: 5rem;
+    color: var(--global-primary-bg-color)
+}
+
+.service-header {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.learn-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}
+
+.about-container {
+    padding: 5rem 0;
+    background-color: #f5f5f5;
+}
+
+.about-container .row.container-lg {
+    width: 70%;
+}
+
+.home-img {
+    width: 100%;
+}
+
+.about-img {
+    width: 80%;
+    height: 356px;
+    object-fit: cover;
+    object-position: 80% 100%;
+}
+
+.locations-container {
+    background-color: var(--global-primary-bg-color);
+    padding: 2rem 0;
+}
+
+.insurance-container {
+    padding: 5rem 0;
+}
+
+.insurance-header {
+    font-weight: 700;
+    margin: auto 0;
+}
+
+.insurance-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.insurance-gallery {
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+}
+
+.vroom-container {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.van-img {
+    width: 70%;
+}
+
+.health-lib-container {
+    background-color: var(--global-primary-bg-color);
+    padding: 5rem 15%;
+}
+
+.health-lib-card {
+    color: black;
+    border: 0;
+    border-radius: 0;
+}
+
+.health-lib-container a {
+    text-decoration: none;
+}

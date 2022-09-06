@@ -25,7 +25,7 @@
 }
 
 .list-link {
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
   color: #090a0a;
   text-align: center;
   font-size: 1rem;
@@ -34,7 +34,9 @@
 }
 
 .list-link:hover,
-.btn-link-dropdown:hover {
+.list-link:focus,
+.btn-link-dropdown:hover,
+.btn-link-dropdown:focus {
   background-color: var(--global-primary-bg-color);
   color: #fff;
 }

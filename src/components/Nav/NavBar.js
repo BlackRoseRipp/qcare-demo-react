@@ -9,24 +9,11 @@ const NavBar = () => {
             <nav className='navbar'>
                 <div className='container-lg justify-content-center'>
                     <div className='nav'>
-                        <div className='card fixed-top brand-card'>
-                            <a className='brand container-sm' href='/'>
+                        <div className='card brand-card'>
+                            <a className='brand' href='/'>
                                 <img src='assets/img/QCare-LogoB.png' alt='QCare Logo' style={{width: '100%'}} />
                             </a>
                         </div>
-                        <NavButton 
-                            dropdownLinks={[
-                                {
-                                    to: '#',
-                                    primary: 'Team'
-                                },
-                                {
-                                    to: '#',
-                                    primary: 'Health Library'
-                                }
-                            ]}
-                            primary='About Us'
-                        />
                         <NavButton 
                             dropdownLinks={[
                                 {
@@ -35,15 +22,32 @@ const NavBar = () => {
                                 },
                                 {
                                     to: '#',
-                                    primary: 'Schedule'
+                                    primary: 'Testimonials'
+                                }
+                            ]}
+                            primary='About Us'
+                        />
+                        <NavButton 
+                            dropdownLinks={[
+                                {
+                                    to: '#',
+                                    primary: 'Urgent Care'
                                 },
                                 {
                                     to: '#',
-                                    primary: 'Virtual Visit'
+                                    primary: 'COVID-19 Testing'
                                 },
                                 {
                                     to: '#',
-                                    primary: 'Portal'
+                                    primary: 'Physical Exams'
+                                },
+                                {
+                                    to: '#',
+                                    primary: 'X-Rays'
+                                },
+                                {
+                                    to: '#',
+                                    primary: 'Pediatric'
                                 }
                             ]}
                             primary='Services'
