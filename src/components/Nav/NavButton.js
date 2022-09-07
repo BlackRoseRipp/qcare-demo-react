@@ -13,7 +13,7 @@ function NavButton(props) {
             <button 
                 className='btn btn-nav-dropdown dropdown-toggle'
                 type='button'
-                data-bs-toggle='dropdown'
+                data-bs-toggle=''
                 aria-expanded='false'
                 style={style ? overStyle : {}}
             >

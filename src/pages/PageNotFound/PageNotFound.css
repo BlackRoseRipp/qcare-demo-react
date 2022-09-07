@@ -1,0 +1,14 @@
+.undertale-img {
+    width: 40%
+}
+
+.title-404 {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+.message-404 {
+    padding: 1rem 0;
+    font-style: italic;
+}
