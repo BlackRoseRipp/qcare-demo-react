@@ -54,6 +54,7 @@
   font-weight: 500;
 }
 
-.list-btn:hover {
+.list-btn:hover,
+.list-btn:active {
   color: var(--global-primary-bg-color);
 }

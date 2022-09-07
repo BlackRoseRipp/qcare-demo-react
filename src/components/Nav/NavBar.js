@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
-import { AiOutlineClockCircle, AiOutlineMail } from 'react-icons/ai'
-import { BsTelephonePlusFill, BsTranslate } from 'react-icons/bs'
-import { FaArrowRight, FaPhoneSquareAlt } from 'react-icons/fa'
-import { IoIosArrowDown } from "react-icons/io"
+import { AiOutlineMail } from 'react-icons/ai'
+import { BsFillTelephoneFill } from 'react-icons/bs'
 import { MdLocationPin } from "react-icons/md"
-import { useLocation } from 'react-router-dom'
 import "./NavBar.css"
 import NavButton from './NavButton'
 import { routes } from "./routes"
@@ -12,39 +9,14 @@ import { routes } from "./routes"
 
 //TODO: fix pathing for ListItemLink's
 const NavBar = () => {
-    const location = useLocation()
-
-    /*
-    React.useEffect(() => {
-        if (location.pathname === "/"){
-            setNavColor('#FFFFFF')
-        } else {
-            setNavColor('#CDF3FD')
-        }
-    }, [location])
-
-    
-    */
 
 
     return (
         <React.Fragment>
             <nav className="navbar nav-top">
-                {/*<Grid container sx={{ paddingTop: '1.8em', paddingBottom: '1em', backgroundColor: navColor }}>
-                    <Grid item xs={6} justifyContent="center">
-                        <Typography variant="h6" align="center">
-                            <RouterLink to="/">
-                                <img src="assets/img/LabQ-Logo-1.svg" style={{ width: '50%' }} />
-                            </RouterLink>
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={6}>
-                        
-                    </Grid>
-                </Grid>*/ }
                 <div className='container-lg'>                    
                     <div className='nav nav-top-right'>
-                        <FaPhoneSquareAlt style={{ padding: '0em .25em', fontSize: '2em'}} />
+                        <BsFillTelephoneFill style={{ padding: '0em .25em', fontSize: '2em'}} />
                         <span>+1 888-522-7247</span>
                         <div className='vr'></div>
                         <AiOutlineMail style={{ fontSize: '1.25em', fontWeight: '600', marginRight: '.5rem'}}/>

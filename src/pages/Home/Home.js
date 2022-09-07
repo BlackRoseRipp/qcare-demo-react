@@ -50,20 +50,72 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='about-container d-flex justify-content-center'>
-                <div className='row container-lg'>
-                    <div className='col-lg-6 text-end'>
-                        <img className='about-img' src='assets/img/asian-young-caregiver-caring-her-elderly-patient-senior-daycare-handicap-patient-wheelchair-hospital-talking-friendly-nurse-looking-cheerful-nurse-wheeling-senior-patient.jpg' />
-                    </div>
-                    <div className='col-lg-6'>
-                        <h2 className='section-header text-start'>What We Do</h2>
-                        <p className='w-75'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Amet venenatis urna cursus eget nunc. Pellentesque sit amet porttitor 
-                            eget. In pellentesque massa placerat duis ultricies lacus sed. Arcu 
-                            dictum varius duis at consectetur lorem donec massa sapien.
-                        </p>
+            <div className='about-container d-flex flex-column justify-content-center'>
+                <div className='container-lg'>
+                    <h2 className='section-header text-start'>What We Do</h2>
+                    <div className='row g-5'>
+                        <div className='col-lg-7'>
+                            <p>
+                                Our friendly staff treats each patient like family and understands 
+                                the needs of the community. Besides handling all your urgent care 
+                                needs, from injuries to a sudden illness, the team at QCare conveniently 
+                                provides routine and specialty physicals for work, school or immigration 
+                                needs, as well as vaccinations and medical care for people traveling abroad.
+                                <br></br>
+                                <br></br>
+                                Qcare is a fully equipped medical clinic that offers the latest in medical 
+                                diagnostic technology including digital X-rays and an on-site lab for bloodwork 
+                                and urinalysis, so there’s no need to go to another clinic or facility for 
+                                additional testing.
+                            </p>
+                            <div className="row gy-4">
+                                <div className="col-lg-3 text-center">
+                                    <a href="#" className="about-button ">
+                                        <img className='about-icon-img' src='assets/img/covid-testing-img.png' />
+                                        <span className='about-icon-text'>COVID-19 Testing</span>
+                                    </a>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <a href="#" className="about-button ">
+                                        <img className='about-icon-img' src='assets/img/trauma-care-img.png' />
+                                        <span className='about-icon-text'>Trauma Care</span>
+                                    </a>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <a href="#" className="about-button ">
+                                        <img className='about-icon-img' src='assets/img/womens-health-img.png' />
+                                        <span className='about-icon-text'>Women's Health</span>
+                                    </a>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <a href="#" className="about-button ">
+                                        <img className='about-icon-img' src='assets/img/pediatric-care-img.png' />
+                                        <span className='about-icon-text'>Pediatric Care</span>
+                                    </a>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <a href="#" className="about-button ">
+                                        <img className='about-icon-img' src='assets/img/covid-testing-img.png' />
+                                        <span className='about-icon-text'>COVID-19 Testing</span>
+                                    </a>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <a href="#" className="about-button ">
+                                        <img className='about-icon-img' src='assets/img/covid-testing-img.png' />
+                                        <span className='about-icon-text'>COVID-19 Testing</span>
+                                    </a>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <a href="#" className="about-button ">
+                                        <img className='about-icon-img' src='assets/img/covid-testing-img.png' />
+                                        <span className='about-icon-text'>COVID-19 Testing</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-lg-5'>
+                            <img className='about-img' src='assets/img/lab-services-img.jpg' />
+                        </div>
                     </div>
                 </div>
             </div>
