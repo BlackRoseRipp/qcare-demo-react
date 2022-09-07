@@ -76,6 +76,10 @@ const NavBar = () => {
                                 {
                                     to: '/careers',
                                     primary: 'Careers'
+                                },
+                                {
+                                    to: "/contact",
+                                    primary: "Contact Us"
                                 }
                             ]}
                         />
