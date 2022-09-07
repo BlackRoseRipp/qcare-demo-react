@@ -5,7 +5,10 @@
 
 .dropdown-menu {
   width: max-content;
+  min-width: 100%;
   border-radius: 0;
+  text-align: center;
+  padding: 0;
 }
 
 .dropdown-toggle::after {
@@ -17,13 +20,14 @@
 .btn-nav-dropdown {
   --bs-btn-padding-x: 18px;
   --bs-btn-padding-y: 12px;
-  --bs-btn-font-weight: 400;
-  --bs-btn-color: #090a0a;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #045471;
   --bs-btn-border-color: transparent;
   --bs-btn-border-width: 0;
   --bs-btn-border-radius: 0;
   --bs-btn-hover-border-color: transparent;
-  --bs-btn-active-color: var(--bs-btn-color);
+  --bs-btn-hover-color: var(--global-primary-bg-color);
+  --bs-btn-active-color: var(--global-primary-bg-color);
   --bs-btn-active-border-color: transparent;
 }
 

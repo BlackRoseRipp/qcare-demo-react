@@ -18,19 +18,20 @@
 }
 
 .btn-link-dropdown {
-  padding: 0.5em 2em;
+  padding: 1rem .5rem;
   border: 0;
   border-radius: 0;
-  color: #090a0a;
+  color: #045471;
+  transition: color 200ms linear;
 }
 
 .list-link {
-  padding: 0.5em 2em;
-  color: #090a0a;
-  transition: background-color 200ms linear;
+  padding: 1rem .5rem;
+  color: #045471;
+  transition: color 200ms linear;
 }
 
 .list-link:hover,
 .btn-link-dropdown:hover {
-  background-color: #e8f5fc;
+  color: var(--global-primary-bg-color);
 }

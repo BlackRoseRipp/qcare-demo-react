@@ -1,190 +1,353 @@
 .hero-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../../../public/assets/img/young-male-psysician-with-patient-measuring-blood-pressure.jpg");
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 600px;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+}
+
+#slideOne {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../../public/assets/img/slide-one-hero.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 65vh;
+}
+
+#slideTwo {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../../public/assets/img/slide-two-hero.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 65vh;
+}
+
+#slideThree {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../../public/assets/img/slide-three-hero.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 65vh;
+}
+
+#slideFour {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../../public/assets/img/young-male-psysician-with-patient-measuring-blood-pressure.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 65vh;
 }
 
 .hero-body {
-  text-align: start;
-  margin-top: 17rem;
+    text-align: start;
+    margin-top: 12rem;
 }
 
 .hero-text {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: white;
-  padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 2rem;
 }
 
 p {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .btn-main {
-  background-color: transparent;
-  background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
-  font-size: 20px;
-  font-weight: 500;
-  color: #fff;
-  height: auto;
-  border-radius: 2rem;
-  padding: 0.5rem 2rem;
-  border: 0;
-  margin-top: auto;
-  text-transform: none;
+    background-color: transparent;
+    background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    height: auto;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    border: 0;
+    margin-top: auto;
+    text-transform: none;
 }
 
 .btn-main:hover,
 .btn-main:focus,
 .btn-main:active {
-  background-color: transparent;
-  background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
-  color: #fff;
-  border: 0;
+    background-color: transparent;
+    background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+    color: #fff;
+    border: 0;
 }
 
 .btn-lite {
-  background-color: #fff;
-  font-size: 20px;
-  font-weight: 500;
-  color: #2a86c3;
-  height: auto;
-  border-radius: 2rem;
-  padding: 0.5rem 2rem;
-  border: 0;
-  margin-top: auto;
-  text-transform: none;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2a86c3;
+    height: auto;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    border: 0;
+    margin-top: auto;
+    text-transform: none;
 }
 
 .btn-lite:hover,
 .btn-lite:focus,
 .btn-lite:active {
-  background-color: #fff;
-  color: #2a86c3;
-  border: 0;
+    background-color: #fff;
+    color: #2a86c3;
+    border: 0;
+}
+
+.info-card {
+    width: 70%;
+    border: 0;
+    border-radius: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 369px;
+    margin-top: -180px;
+}
+
+.info-card .card-body {
+    background-color: transparent;
+    background: linear-gradient(270deg, rgba(42, 134, 195, .85), rgba(63, 188, 230, .89)), url('../../../public/assets/img/cute-background-pattern.png');
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4.5rem 3.5rem;
+}
+
+.info-card .card-body .vr {
+    padding: 0;
+    padding-left: 5px;
+    color: #FFFFFF;
+    opacity: .25;
+}
+
+.info-card .card-body .col-lg-4 {
+    width: 36%
+}
+
+.info-header {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 500;
+}
+
+.info-text {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.time-text {
+    color: #FFFFFF;
+    font-weight: 500;
 }
 
 .services-container {
-  padding: 5rem 0;
+    padding: 5rem 0;
 }
 
-.section-header {
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #2a86c3;
+.section-header-main {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2a86c3;
+    text-transform: uppercase;
+}
+
+.section-header-second {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: -10px;
+    color: var(--global-primary-bg-color);
+}
+
+.section-header-white {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
 }
 
 .icon {
-  font-size: 5rem;
-  color: #2a86c3;
+    font-size: 5rem;
+    color: #2a86c3;
 }
 
 .service-header {
-  font-size: 2rem;
-  margin: 1.5rem 0;
+    font-size: 2rem;
+    margin: 1.5rem 0;
 }
 
 .learn-link {
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
 }
 
 .about-container {
-  padding: 5rem 0;
-  background-color: #f5f5f5;
+    padding: 5rem 0;
+    margin-top: 10rem;
 }
 
 .about-container .row.container-lg {
-  width: 70%;
+    width: 70%;
 }
 
 .home-img {
-  width: 100%;
-}
-
-.about-button,
-.about-button:hover,
-.about-button:focus {
-  color: var(--global-primary-bg-color);
-  font-weight: 500;
-  text-decoration: none;
+    width: 100%;
 }
 
 .about-icon-img {
-  width: 90%;
-  padding: 1rem 0;
+    width: 90%;
+    padding: 1rem 0;
 }
 
 .about-icon-text {
-  padding: 1rem 0;
+    color: var(--global-primary-bg-color);
+    font-weight: 500;
 }
 
 .about-img {
-  width: 100%;
-  border-radius: 1rem;
-  object-fit: cover;
-  object-position: 80% 100%;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: 80% 100%;
+}
+
+.btn-view-services {
+    color: #045471;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: .5rem 1.5rem;
+    border: 0;
+}
+
+.btn-view-services:hover,
+.btn-view-services:focus {
+    color: #FFFFFF;
+    background-color: var(--global-primary-bg-color);
 }
 
 .locations-container {
-  background-color: transparent;
-  background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
-  padding: 2rem 0;
+    background-color: transparent;
+    background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+    padding: 2rem 0;
 }
 
 .insurance-container {
-  padding: 5rem 0;
+    padding: 5rem 0;
 }
 
 .insurance-header {
-  font-weight: 700;
-  margin: auto 0;
+    font-weight: 700;
+    margin: auto 0;
 }
 
 .insurance-link {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
 }
 
 .insurance-gallery {
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
 }
 
 .vroom-container {
-  padding: 3rem 0;
-  text-align: center;
+    padding: 3rem 0;
+    text-align: center;
 }
 
 .van-img {
-  width: 70%;
+    width: 70%;
+}
+
+.faq-container {
+    background-color: transparent;
+    background: linear-gradient(90deg, rgba(9, 70, 105, .74), rgba(13, 134, 177, .87)), url('../../../public/assets/img/patient-telling-doctor-about-symptoms-disease.jpg');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 6rem 0;
+
+}
+
+.faq-img-bg {
+    background-image: url('../../../public/assets/img/patient-telling-doctor-about-symptoms-disease.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.faq-content {
+    text-align: center;
+    color: #fff;
+}
+
+.faq-text {
+    padding: 2rem 0;
+}
+
+.btn-faq,
+.btn-faq:hover,
+.btn-faq:focus {
+    color: #00516E;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 0;
+    padding: .75rem 1.5rem;
 }
 
 .health-lib-container {
-  background-color: transparent;
-  background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
-  padding: 5rem 15%;
+    padding: 5rem 15%;
+}
+
+.health-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 3rem;
 }
 
 .health-lib-card {
-  color: black;
-  border: 0;
-  border-radius: 0;
+    color: black;
+    border: 0;
+    box-shadow: 0px 8px 10px 0px #ccc;
+    transition: box-shadow 200ms ease-in-out;
+}
+
+.health-lib-card:hover {
+    box-shadow: 0px 8px 10px 5px #ccc;
 }
 
 .health-lib-container a {
-  text-decoration: none;
+    text-decoration: none;
 }

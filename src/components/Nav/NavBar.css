@@ -43,8 +43,11 @@
   color: white;
   font-weight: 500;
   border: 0;
+  transition: transform 220ms linear;
+  border-radius: 4px;
 }
 
 .btn-testing:hover {
   color: white;
+  transform: translate(0px, -3px);
 }

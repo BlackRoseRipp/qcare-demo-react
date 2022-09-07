@@ -38,23 +38,57 @@ const NavBar = () => {
                             to='/'
                         />
                         <NavButton
-                            to="#"
                             primary="Services"
+                            dropdownLinks={[
+                                {
+                                    to: '/sickness',
+                                    primary: 'Illness'
+                                },
+                                {
+                                    to: '/injury',
+                                    primary: 'Injuries'
+                                },
+                                {
+                                    to: '/prevention',
+                                    primary: 'Wellness & Prevention'
+                                },
+                                {
+                                    to: '/physicals',
+                                    primary: 'Work-Related Services'
+                                },
+                                {
+                                    to: '/labs',
+                                    primary: 'Tests & Labs'
+                                }
+                            ]}
                         />
                         <NavButton
                             primary='Our Locations'
-                            to='#'
+                            to='/locations'
+                        />
+                        <NavButton
+                            primary="About Us"
+                            dropdownLinks={[
+                                {
+                                    to: '/team',
+                                    primary: 'Meet the team'
+                                },
+                                {
+                                    to: '/careers',
+                                    primary: 'Careers'
+                                }
+                            ]}
+                        />
+                        <NavButton
+                            to="/contact"
+                            primary="Contact Us"
                         />
                         <NavButton
                             to="#"
                             primary="Patients Portal"
                         />
-                        <NavButton
-                            to="#"
-                            primary="Contact"
-                        />
                     </div>
-                    <a className='btn btn-testing' href='#'>
+                    <a className='btn btn-testing' href='/appointment'>
                         Book an Appointment
                     </a>
                 </div>
