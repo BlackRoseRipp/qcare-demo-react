@@ -10,15 +10,16 @@ function NavButton(props) {
 
     return (dropdownLinks ? (
         <div className='dropdown'>
-            <button 
+            <a 
                 className='btn btn-nav-dropdown dropdown-toggle'
                 type='button'
                 data-bs-toggle=''
                 aria-expanded='false'
+                href={to}
                 style={style ? overStyle : {}}
             >
                 {icon}&nbsp;{primary}<span className='ms-3'><MdKeyboardArrowDown /></span>
-            </button>
+            </a>
             <ul className='dropdown-menu parent-menu'>
                 {dropdownLinks.map(link => {
                     return (
