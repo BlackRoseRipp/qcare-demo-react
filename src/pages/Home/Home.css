@@ -1,9 +1,6 @@
 .hero-container {
     display: flex;
     flex-direction: column;
-}
-
-#slideOne {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url("../../../public/assets/img/slide-one-hero.jpg");
     width: 100%;
@@ -11,50 +8,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 65vh;
-}
-
-#slideTwo {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../../../public/assets/img/slide-two-hero.jpg");
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 65vh;
-}
-
-#slideThree {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../../../public/assets/img/slide-three-hero.jpg");
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 65vh;
-}
-
-#slideFour {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../../../public/assets/img/young-male-psysician-with-patient-measuring-blood-pressure.jpg");
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 65vh;
+    height: 75vh;
 }
 
 .hero-body {
     text-align: start;
-    margin-top: 12rem;
+    margin-top: 20%;
 }
 
 .hero-text {
     font-size: 2.5rem;
-    font-weight: 400;
+    font-weight: 600;
     color: white;
     padding-bottom: 2rem;
 }
@@ -75,6 +39,7 @@ p {
     border: 0;
     margin-top: auto;
     text-transform: none;
+    transition: transform 220ms linear;
 }
 
 .btn-main:hover,
@@ -84,6 +49,13 @@ p {
     background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
     color: #fff;
     border: 0;
+    transform: translate(0px, -3px);
+}
+
+@media screen and (min-width: 1101px) {
+    .btn-main {
+        display: none;
+    }
 }
 
 .btn-lite {
@@ -111,12 +83,12 @@ p {
     width: 70%;
     border: 0;
     border-radius: 0;
-    position: absolute;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    height: 369px;
+    height: auto;
     margin-top: -180px;
 }
 
@@ -137,8 +109,19 @@ p {
     opacity: .25;
 }
 
-.info-card .card-body .col-lg-4 {
-    width: 36%
+.info-card .card-body .hr {
+    display: none;
+    width: 100%;
+    border-top: 5px solid white;
+    opacity: .25;
+}
+
+.info-card-about {
+    width: 55%
+}
+
+.info-card-hours {
+    width: 40%
 }
 
 .info-header {
@@ -205,11 +188,29 @@ p {
 
 .about-container {
     padding: 5rem 0;
-    margin-top: 10rem;
 }
 
-.about-container .row.container-lg {
-    width: 70%;
+.about-container .row {
+    width: auto;
+}
+
+.check-list,
+.easy-peezy {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+}
+
+.check-list-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--global-primary-bg-color);
+}
+
+.easy-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2a86c3;
 }
 
 .home-img {
@@ -271,6 +272,7 @@ p {
 }
 
 .insurance-gallery {
+    width: 100%;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
 }
@@ -350,4 +352,41 @@ p {
 
 .health-lib-container a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+    .about-img {
+        display: none;
+    }
+
+    .info-card {
+        width: 90%;
+    }
+
+    .hstack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    .info-card-about {
+        width: 100%;
+    }
+
+    .info-card-hours {
+        width: 100%;
+    }
+
+    .info-card .card-body .vr {
+        display: none;
+    }
+
+    .info-card .card-body .hr {
+        display: block;
+    }
+
+    .faq-container {
+        background-attachment: local;
+    }
 }

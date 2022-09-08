@@ -2,13 +2,46 @@
     width: 40%
 }
 
-.title-404 {
-    font-size: 3rem;
+h1.title-404 {
+    font-size: 8rem;
     font-weight: 600;
     padding-top: 2rem;
+    background: -webkit-linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+h2 {
+    background: -webkit-linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    margin: 1rem auto;
+    height: auto;
 }
 
 .message-404 {
     padding: 1rem 0;
     font-style: italic;
+}
+
+.btn-return {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5rem 5rem;
+    border-radius: 7rem;
+    margin-top: 2rem;
+    border: 0;
+    background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+    background-color: transparent;
+    transition: padding 200ms ease-in-out;
+}
+
+.btn-return:hover,
+.btn-return:focus {
+    color: #fff;
+    padding: 1.5rem 10rem;
 }

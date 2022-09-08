@@ -1,49 +1,25 @@
 import React from 'react';
-import { FaHeartbeat, FaPhoneAlt, FaRegCalendar, FaRegCalendarAlt } from 'react-icons/fa';
+import { BsClipboardCheck } from 'react-icons/bs';
+import { FaHandHoldingHeart, FaHeartbeat, FaPhoneAlt, FaRegCalendar, FaRegCalendarAlt } from 'react-icons/fa';
 import { FiClock } from 'react-icons/fi';
-import { MdKeyboardArrowRight } from 'react-icons/md';
-import { TbStethoscope } from 'react-icons/tb';
+import { MdOutlineAddLocation, MdOutlineCheckBox, MdOutlineCheckBoxOutlineBlank } from 'react-icons/md';
 import './Home.css';
 
 const Home = () => {
     return(
         <div>
-            <div className="carousel slide" id='heroSlideshow' data-bs-ride='carousel'>
-                <div className="carousel-inner hero-container">
-                    <div className="carousel-item active" id='slideOne' data-bs-interval='9000'>
-                        <div className="container-lg">
-                            <div className="hero-body text-center">
-                                <h6 className="hero-text">Your Health. Our Mission.</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item" id='slideTwo' data-bs-interval='9000'>
-                        <div className="container-lg">
-                            <div className="hero-body text-center">
-                                <h6 className="hero-text">Your Health. Our Mission.</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item" id='slideThree' data-bs-interval='9000'>
-                        <div className="container-lg">
-                            <div className="hero-body text-center">
-                                <h6 className="hero-text">Your Health. Our Mission.</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item" id='slideFour' data-bs-interval='9000'>
-                        <div className="container-lg">
-                            <div className="hero-body text-center">
-                                <h6 className="hero-text">Your Health. Our Mission.</h6>
-                            </div>
-                        </div>
+            <div className="hero-container">
+                <div className="container-lg">
+                    <div className="hero-body text-center">
+                        <h6 className="hero-text">Healthcare when and where you need it.</h6>
+                        <a className="btn btn-main" href="#" role="button">Book an Appointment</a>
                     </div>
                 </div>
             </div>
             <div className='card info-card'>
                 <div className="card-body">
-                    <div className="row">
-                        <div className="col-lg-7">
+                    <div className="hstack gap-3">
+                        <div className='info-card-about'>
                             <h6 className="info-header"><FaHeartbeat style={{fontSize: '2.5rem'}}/>&nbsp; Who we are</h6>
                             <p className='info-text my-4'>
                                 QCare is a walk-in clinic that can handle any urgent medical matter for 
@@ -53,8 +29,9 @@ const Home = () => {
                             </p>
                             <a className="btn btn-faq" href='/team' role='button'>Learn More About Us</a>
                         </div>
-                        <div className='col-lg-1 vr'></div>
-                        <div className="col-lg-4">
+                        <div className='vr'></div>
+                        <hr className='hr'></hr>
+                        <div className='info-card-hours'>
                             <h6 className="info-header mb-3"><FiClock style={{fontSize: '2.5rem'}}/>&nbsp; Opening Hours</h6>
                             <div className='time-text'><FaRegCalendarAlt />&nbsp; Monday to Friday - 7AM to 10PM</div>
                             <hr style={{margin: '4px 0', color: 'white'}}></hr>
@@ -67,57 +44,44 @@ const Home = () => {
             </div>
             <div className='about-container d-flex flex-column justify-content-center'>
                 <div className='container-lg'>
-                    <h2 className='section-header-second text-start'>QCare is dedicated</h2>
-                    <h2 className='section-header-main text-start'>To Your Wellbeing</h2>
+                    <h2 className='section-header-second text-start'>say hello when you walk by</h2>
+                    <h2 className='section-header-main text-start'>Stop by when you need us</h2>
                     <div className='row g-5'>
                         <div className='col-lg-7'>
                             <p>
-                                Our friendly staff treats each patient like family and understands 
-                                the needs of the community. Besides handling all your urgent care 
-                                needs, from injuries to a sudden illness, the team at QCare conveniently 
-                                provides routine and specialty physicals for work, school or immigration 
-                                needs, as well as vaccinations and medical care for people traveling abroad.
-                                <br></br>
-                                <br></br>
-                                Qcare is a fully equipped medical clinic that offers the latest in medical 
-                                diagnostic technology including digital X-rays and an on-site lab for bloodwork 
-                                and urinalysis, so there’s no need to go to another clinic or facility for 
-                                additional testing.
+                                At QCare, we provide New York City residents with convenient, quality healthcare 
+                                that doesn’t interrupt your day.
                             </p>
-                            <div className="row gy-4">
-                                <div className="col-lg-3 text-center">
-                                    <img className='about-icon-img' src='assets/img/covid-testing-img.png' />
-                                    <div className='about-icon-text'>COVID-19 Testing</div>
-                                </div>
-                                <div className="col-lg-3 text-center">
-                                    <img className='about-icon-img' src='assets/img/trauma-care-img.png' />
-                                    <div className='about-icon-text'>Trauma Care</div>
-                                </div>
-                                <div className="col-lg-3 text-center">
-                                    <img className='about-icon-img' src='assets/img/womens-health-img.png' />
-                                    <div className='about-icon-text'>Women's Health</div>
-                                </div>
-                                <div className="col-lg-3 text-center">
-                                    <img className='about-icon-img' src='assets/img/pediatric-care-img.png' />
-                                    <div className='about-icon-text'>Pediatric Care</div>
-                                </div>
-                                <div className="col-lg-3 text-center">
-                                    <img className='about-icon-img' src='assets/img/xray-img.png' />
-                                    <div className='about-icon-text'>X-Ray</div>
-                                </div>
-                                <div className="col-lg-3 text-center">
-                                    <img className='about-icon-img' src='assets/img/allergies-img.png' />
-                                    <div className='about-icon-text'>Alleries & Asthma</div>
-                                </div>
-                                <div className="col-lg-3 text-center">
-                                    <img className='about-icon-img' src='assets/img/vaccination-img.png' />
-                                    <div className='about-icon-text'>Vaccinations</div>
-                                </div>
+                            <div className='check-list'>
+                                <p className='check-list-text'>
+                                    <MdOutlineCheckBox />&nbsp; <span className='text-decoration-line-through'>Order groceries</span>
+                                </p>
+                                <p className='check-list-text'>
+                                    <MdOutlineCheckBox />&nbsp; <span className='text-decoration-line-through'>Book a rideshare</span>
+                                </p>
+                                <p className='check-list-text'>
+                                    <MdOutlineCheckBoxOutlineBlank />&nbsp; <span>Schedule healthcare exam</span>
+                                </p>
+                            </div>
+                            <p>
+                                When you’re short on time, sudden illness or injury is a major disruption. That’s 
+                                why we’re making accessing medical care as easy as ordering dinner.
+                            </p>
+                            <div className="easy-peezy">
+                                <p className='easy-text'>
+                                    <BsClipboardCheck />&nbsp; <span className='fst-italic'>Register once with QCare</span>
+                                </p>
+                                <p className='easy-text'>
+                                    <MdOutlineAddLocation />&nbsp; <span className='fst-italic'>Select your convenient point of service</span>
+                                </p>
+                                <p className='easy-text'>
+                                    <FaHandHoldingHeart />&nbsp; <span className='fst-italic'>Access care</span>
+                                </p>
                             </div>
                         </div>
                         <div className='col-lg-5 text-center'>
                             <img className='about-img' src='assets/img/lab-services-img.jpg' />
-                            <a href='/services' className='btn btn-view-services'>
+                            <a href='/services' className='btn btn-view-services visually-hidden'>
                                 See all of our treatment options here
                             </a>
                         </div>
@@ -139,28 +103,28 @@ const Home = () => {
                     </div>
                     <div className='col-lg-8'>
                         <div className='row insurance-gallery'>
-                            <div className='col-lg-3'>
+                            <div className='col-3'>
                                 <img className='home-img' src='assets/img/aetna.png' alt='aetna' />
                             </div>
-                            <div className='col-lg-3'>
+                            <div className='col-3'>
                                 <img className='home-img' src='assets/img/affinity-health-plan.png' alt='affinity-health-plan' />
                             </div>
-                            <div className='col-lg-3'>
+                            <div className='col-3'>
                                 <img className='home-img' src='assets/img/bcbs.png' alt='bcbs' />
                             </div>
-                            <div className='col-lg-3'>
+                            <div className='col-3'>
                                 <img className='home-img' src='assets/img/cigna.png' alt='cigna' />
                             </div>
-                            <div className='col-lg-3'>
+                            <div className='col-3'>
                                 <img className='home-img' src='assets/img/elder-plan-homefirst.png' alt='elder-plan' />
                             </div>
-                            <div className='col-lg-3'>
+                            <div className='col-3'>
                                 <img className='home-img' src='assets/img/emblem.png' alt='emblem' />
                             </div>
-                            <div className='col-lg-3'>
+                            <div className='col-3'>
                                 <img className='home-img' src='assets/img/ghi.png' alt='ghi' />
                             </div>
-                            <div className='col-lg-3'>
+                            <div className='col-3'>
                                 <img className='home-img' src='assets/img/great-west-healthcare.png' alt='great-west-healthcare' />
                             </div>
                         </div>
@@ -190,8 +154,8 @@ const Home = () => {
                     Check out these wellness tips and the research that backs them up to better understand 
                     how to optimize your health and nutrition.
                 </p>
-                <div className='row gx-4 mx-auto'>
-                    <div className='col-lg-4'>
+                <div className='row g-4 mx-auto'>
+                    <div className='col-lg-4 col-md-6'>
                         <a href='/blog1'>
                             <div className='card health-lib-card'>
                                 <img className='card-img-top' src='assets/img/blog1.jpg' alt='blog1' />
@@ -207,7 +171,7 @@ const Home = () => {
                             </div>
                         </a>
                     </div>
-                    <div className='col-lg-4'>
+                    <div className='col-lg-4 col-md-6'>
                         <a href='/blog2'>
                             <div className='card health-lib-card'>
                                 <img className='card-img-top' src='assets/img/blog2.jpeg' alt='blog2' />
@@ -223,7 +187,7 @@ const Home = () => {
                             </div>
                         </a>
                     </div>
-                    <div className='col-lg-4'>
+                    <div className='col-lg-4 col-md-6'>
                         <a href='/blog3'>
                             <div className='card health-lib-card'>
                                 <img className='card-img-top' src='assets/img/blog3.jpg' alt='blog3' />

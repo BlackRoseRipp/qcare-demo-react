@@ -9,12 +9,25 @@
   justify-content: center;
 }
 
-.main-footer-container {
-  margin: 2em;
+.main-footer .row {
+  padding: 2rem 0;
+  width: 90%;
 }
 
-#newsletterEmailInput {
-  border-radius: 0;
+.logo-link {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.logo-link:hover,
+.logo-link:focus,
+.contact-link:hover {
+  color: #2A86C3;
+}
+
+.contact-link {
+  color: black;
+  text-decoration: none;
 }
 
 .btn-footer {
@@ -38,4 +51,23 @@
   background-image: linear-gradient(270deg, #2A86C3 50%, #3FBBE6 100%);
   color: #fff;
   border: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .main-footer .row {
+    width: 100%;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+
+  .footer-contact ul {
+    margin: 1rem auto;
+    padding: 0;
+  }
+
+  .footer-contact .ms-5 {
+    margin-left: 0 !important;
+  }
 }

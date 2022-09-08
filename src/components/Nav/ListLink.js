@@ -9,9 +9,9 @@ function ListLink(props) {
     return (dropdownLinks ? (
         <div className="dropend">
             <button 
-                className='btn btn-link-dropdown dropdown-toggle text-left'
+                className='btn btn-link-dropdown dropdown-toggle'
                 type='button'
-                data-bs-toggle='dropdown'
+                data-bs-toggle=''
                 aria-expanded='false'
                 style={style ? style : {}}
             >
