@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaClinicMedical, FaHeartbeat, FaHome, FaMobileAlt, FaPhoneAlt, FaRegCalendar, FaRegCalendarAlt, FaShuttleVan, FaUserNurse, FaWalking } from 'react-icons/fa';
+import { FaClinicMedical, FaHeartbeat, FaHome, FaMobileAlt, FaPhoneAlt, FaRegCalendar, FaRegCalendarTimes, FaShuttleVan, FaUserNurse, FaWalking } from 'react-icons/fa';
 import { FiClock } from 'react-icons/fi';
 import { IoDocumentsSharp, IoSpeedometer } from 'react-icons/io5';
-import { MdOutlineCheckBox, MdOutlineCheckBoxOutlineBlank } from 'react-icons/md';
+import { MdOutlineCheckBoxOutlineBlank, MdWorkOff } from 'react-icons/md';
 import { RiUserHeartFill } from 'react-icons/ri';
 import Data from '../../components/Locations/Data';
 import StoreLocator from '../../components/Locations/StoreLocator';
@@ -21,42 +21,29 @@ const Home = () => {
             </div>
             <div className='card info-card'>
                 <div className="card-body">
-                    <div className="hstack gap-3">
-                        <div className='info-card-about py-4'>
-                            <div className='row'>
-                                <div className='col-2'>
-                                    <FaHeartbeat style={{fontSize: '3.5rem' ,color: 'white'}}/>
-                                </div>
-                                <div className='col-10'>
-                                    <h6 className="info-header-second">Say hello when you walk by</h6>
-                                    <h6 className="info-header-main">Stop by when you need us</h6>
-                                </div>
-                            </div>
-                            <p className='info-text my-4'>
-                                At QCare, we provide New York City residents with convenient, 
-                                quality healthcare that doesn’t interrupt your day.
-                            </p>
-                        </div>
+                    <div className="hstack gap-3 d-flex justify-content-center">
+                        <a className='info-button text-center' href='#'>
+                            <div className='doctor-icon'><FaHome /></div>
+                            <h3 className='doctor-header'>House Calls</h3>
+                        </a>
                         <div className='vr'></div>
                         <hr className='hr'></hr>
-                        <div className='check-list py-4'>
-                            <p className='check-list-text'>
-                                <MdOutlineCheckBox />&nbsp; <span className='text-decoration-line-through'>Order groceries</span>
-                            </p>
-                            <p className='check-list-text'>
-                                <MdOutlineCheckBox />&nbsp; <span className='text-decoration-line-through'>Book a rideshare</span>
-                            </p>
-                            <p className='check-list-text'>
-                                <MdOutlineCheckBoxOutlineBlank />&nbsp; <span>Schedule healthcare exam</span>
-                            </p>
-                        </div>
+                        <a className='info-button text-center' href='#'>
+                            <div className='doctor-icon'><FaShuttleVan /></div>
+                            <h3 className='doctor-header'>Mobile Clinic</h3>
+                        </a>
+                        <div className='vr'></div>
+                        <hr className='hr'></hr>
+                        <a className='info-button text-center' href='#'>
+                            <div className='doctor-icon'><FaClinicMedical /></div>
+                            <h3 className='doctor-header'>Urgent Care Clinic</h3>
+                        </a>
                     </div>
                 </div>
             </div>
             <div className='about-container d-flex flex-column justify-content-center'>
                 <div className='container-lg text-center'>
-                    <h2 className='about-header-second'>When you’re short on time, sudden illness or injury is a major disruption.</h2>
-                    <h2 className='about-header-main'>That’s why we’re making accessing medical care as easy as ordering dinner.</h2>
+                    <h2 className='about-header-main'>We’re making accessing medical care easy and convenient</h2>
                     <img className='about-img' src='assets/img/convenience-graphic.png' />
                 </div>
             </div>
@@ -188,17 +175,23 @@ const Home = () => {
                 </div>
             </div>
             <div className='goodbye-container'>
-                <div className='row'>
-                    <div className='col-md-5 goodbye-heading container-lg'>
+                <div className='row w-100'>
+                    <div className='col-md-6 goodbye-heading'>
                         <h2 className='goodbye-heading-text'>Say goodbye to…</h2>
                     </div>
-                    <div className='col-md-7 goodbye-list container-lg'>
-                        <div className='quick-bar-blue quick gap'>
+                    <div className='col-md-6 goodbye-list'>
+                        <div className='quick-bar-blue'>
                             <IoDocumentsSharp className='quick-icon' />
-                            <span className='quick-text'>Filling out multiple forms at every visit</span>
+                            <span className='quick-text'>&nbsp; Filling out multiple forms at every visit</span>
                         </div>
-                        <div className='quick-bar-blue quick gap'></div>
-                        <div className='quick-bar-blue quick gap'></div>
+                        <div className='quick-bar-blue my-4'>
+                            <FaRegCalendarTimes className='quick-icon' />
+                            <span className='quick-text'>&nbsp; Days of waiting for strep test results</span>
+                        </div>
+                        <div className='quick-bar-blue'>
+                            <MdWorkOff className='quick-icon' />
+                            <span className='quick-text'>&nbsp; Missing work to visit the doctor</span>
+                        </div>
                     </div>
                 </div>
             </div>
