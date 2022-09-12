@@ -62,6 +62,7 @@ const NavBar = () => {
                         />
                         <NavButton
                             primary="Services & Care"
+                            to='/services'
                             dropdownLinks={[
                                 {
                                     to: '/prevention',
@@ -156,11 +157,10 @@ const NavBar = () => {
                                 }
                             ]}
                         />
-                        <NavButton
-                            to="#"
-                            primary="Patient Portal"
-                        />
                     </div>
+                    <a className="btn btn-patient" href="#">
+                        Patient Portal
+                    </a>
                     <a className='btn btn-testing full-screen' href='/appointment'>
                         Book an Appointment
                     </a>
@@ -183,6 +183,24 @@ const NavBar = () => {
                                     <ListLink 
                                         primary="Home"
                                         to='/'
+                                    />
+                                </li>
+                                <li className='nav-item'>
+                                    <ListLink 
+                                        primary="About Us"
+                                        to='/about'
+                                    />
+                                </li>
+                                <li className='nav-item'>
+                                    <ListLink 
+                                        primary="Services & Care"
+                                        to='/services'
+                                    />
+                                </li>
+                                <li className='nav-item'>
+                                    <ListLink 
+                                        primary="Plan Your Visit"
+                                        to='/plan-your-visit'
                                     />
                                 </li>
                             </ul>

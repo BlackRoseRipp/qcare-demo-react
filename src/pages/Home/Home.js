@@ -1,8 +1,11 @@
 import React from 'react';
-import { BsClipboardCheck } from 'react-icons/bs';
-import { FaHandHoldingHeart, FaHeartbeat, FaPhoneAlt, FaRegCalendar, FaRegCalendarAlt } from 'react-icons/fa';
+import { FaClinicMedical, FaHeartbeat, FaHome, FaMobileAlt, FaPhoneAlt, FaRegCalendar, FaRegCalendarAlt, FaShuttleVan, FaUserNurse, FaWalking } from 'react-icons/fa';
 import { FiClock } from 'react-icons/fi';
-import { MdOutlineAddLocation, MdOutlineCheckBox, MdOutlineCheckBoxOutlineBlank } from 'react-icons/md';
+import { IoDocumentsSharp, IoSpeedometer } from 'react-icons/io5';
+import { MdOutlineCheckBox, MdOutlineCheckBoxOutlineBlank } from 'react-icons/md';
+import { RiUserHeartFill } from 'react-icons/ri';
+import Data from '../../components/Locations/Data';
+import StoreLocator from '../../components/Locations/StoreLocator';
 import './Home.css';
 
 const Home = () => {
@@ -19,136 +22,188 @@ const Home = () => {
             <div className='card info-card'>
                 <div className="card-body">
                     <div className="hstack gap-3">
-                        <div className='info-card-about'>
-                            <h6 className="info-header"><FaHeartbeat style={{fontSize: '2.5rem'}}/>&nbsp; Who we are</h6>
+                        <div className='info-card-about py-4'>
+                            <div className='row'>
+                                <div className='col-2'>
+                                    <FaHeartbeat style={{fontSize: '3.5rem' ,color: 'white'}}/>
+                                </div>
+                                <div className='col-10'>
+                                    <h6 className="info-header-second">Say hello when you walk by</h6>
+                                    <h6 className="info-header-main">Stop by when you need us</h6>
+                                </div>
+                            </div>
                             <p className='info-text my-4'>
-                                QCare is a walk-in clinic that can handle any urgent medical matter for 
-                                patients of all ages, from pediatric to the elderly. The clinic physicians 
-                                are board-certified emergency room doctors with years of experience handling 
-                                medical emergencies throughout the Metro New York area.
+                                At QCare, we provide New York City residents with convenient, 
+                                quality healthcare that doesn’t interrupt your day.
                             </p>
-                            <a className="btn btn-faq" href='/team' role='button'>Learn More About Us</a>
                         </div>
                         <div className='vr'></div>
                         <hr className='hr'></hr>
-                        <div className='info-card-hours'>
-                            <h6 className="info-header mb-3"><FiClock style={{fontSize: '2.5rem'}}/>&nbsp; Opening Hours</h6>
-                            <div className='time-text'><FaRegCalendarAlt />&nbsp; Monday to Friday - 7AM to 10PM</div>
-                            <hr style={{margin: '4px 0', color: 'white'}}></hr>
-                            <div className='time-text'><FaRegCalendar />&nbsp; Saturday & Sunday - 7AM to 6PM</div>
-                            <div className='info-text py-4'>You can also call us to schedule an appointment.</div>
-                            <a className="btn btn-faq" href='tel:888-522-7247' role='button'><FaPhoneAlt />&nbsp; Call Us</a>
+                        <div className='check-list py-4'>
+                            <p className='check-list-text'>
+                                <MdOutlineCheckBox />&nbsp; <span className='text-decoration-line-through'>Order groceries</span>
+                            </p>
+                            <p className='check-list-text'>
+                                <MdOutlineCheckBox />&nbsp; <span className='text-decoration-line-through'>Book a rideshare</span>
+                            </p>
+                            <p className='check-list-text'>
+                                <MdOutlineCheckBoxOutlineBlank />&nbsp; <span>Schedule healthcare exam</span>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='about-container d-flex flex-column justify-content-center'>
-                <div className='container-lg'>
-                    <h2 className='section-header-second text-start'>say hello when you walk by</h2>
-                    <h2 className='section-header-main text-start'>Stop by when you need us</h2>
-                    <div className='row g-5'>
-                        <div className='col-lg-7'>
-                            <p>
-                                At QCare, we provide New York City residents with convenient, quality healthcare 
-                                that doesn’t interrupt your day.
-                            </p>
-                            <div className='check-list'>
-                                <p className='check-list-text'>
-                                    <MdOutlineCheckBox />&nbsp; <span className='text-decoration-line-through'>Order groceries</span>
-                                </p>
-                                <p className='check-list-text'>
-                                    <MdOutlineCheckBox />&nbsp; <span className='text-decoration-line-through'>Book a rideshare</span>
-                                </p>
-                                <p className='check-list-text'>
-                                    <MdOutlineCheckBoxOutlineBlank />&nbsp; <span>Schedule healthcare exam</span>
-                                </p>
-                            </div>
-                            <p>
-                                When you’re short on time, sudden illness or injury is a major disruption. That’s 
-                                why we’re making accessing medical care as easy as ordering dinner.
-                            </p>
-                            <div className="easy-peezy">
-                                <p className='easy-text'>
-                                    <BsClipboardCheck />&nbsp; <span className='fst-italic'>Register once with QCare</span>
-                                </p>
-                                <p className='easy-text'>
-                                    <MdOutlineAddLocation />&nbsp; <span className='fst-italic'>Select your convenient point of service</span>
-                                </p>
-                                <p className='easy-text'>
-                                    <FaHandHoldingHeart />&nbsp; <span className='fst-italic'>Access care</span>
-                                </p>
-                            </div>
+                <div className='container-lg text-center'>
+                    <h2 className='about-header-second'>When you’re short on time, sudden illness or injury is a major disruption.</h2>
+                    <h2 className='about-header-main'>That’s why we’re making accessing medical care as easy as ordering dinner.</h2>
+                    <img className='about-img' src='assets/img/convenience-graphic.png' />
+                </div>
+            </div>
+            <div className='doctor-container'>
+                <h2 className='section-header-white'>The Doctor is in!</h2>
+                <div className='row g-5 container-lg mx-auto my-4'>
+                    <div className='col-lg-4 col-md-6 text-center'>
+                        <div className='doctor-icon'><FaClinicMedical /></div>
+                        <h3 className='doctor-header'>Full Clinic</h3>
+                        <p className='doctor-text'>
+                            We manage most urgent care visits in our mobile vans. For 
+                            more complicated or vulnerable care visits, we may recommend
+                            patients visit one of our full service urgent care centers 
+                            around the NYC area.
+                        </p>
+                    </div>
+                    <div className='col-lg-4 col-md-6 text-center'>
+                        <div className='doctor-icon'><FaShuttleVan /></div>
+                        <h3 className='doctor-header'>Mobile Clinic</h3>
+                        <p className='doctor-text'>
+                            We’re building a fleet of fully-equipped mobile urgent care 
+                            vans that we’re strategically parking throughout the NYC area 
+                            and five boroughs. We offer care where you need it and when 
+                            you need it most, with convenient location-based hours. 
+                            Schedule an appointment or walk in.
+                        </p>
+                    </div>                    
+                    <div className='col-lg-4 col-md-6 text-center'>
+                        <div className='doctor-icon'><FaHome /></div>
+                        <h3 className='doctor-header'>Home Call</h3>
+                        <p className='doctor-text'>
+                            We provide home visits for eligible seniors and those who are 
+                            disabled.
+                        </p>
+                    </div>
+                </div>
+                <a className="btn btn-lite mt-5" href="/plan-your-visit" role="button">Plan Your Visit</a>
+            </div>
+            <div className='location-container container-lg'>
+                <h2 className='location-header mb-5 text-center'>Meeting New York patients anywhere you are!</h2>
+                <div className='map-container'>
+                    <StoreLocator locations={Data()} />
+                </div>
+                <div className='mx-auto text-center'>
+                    <a className="btn btn-locations mt-5" href="/location" role="button">See all of our locations</a>
+                </div>
+            </div>
+            <div className='services-container text-center'>
+                <h2 className='section-header-white'>Customizable healthcare when and where you need it most</h2>
+                <div className='container-lg py-5'>
+                    <div className='row g-4 mx-auto'>
+                        <div className="col-md-3 col-sm-6 text-center">
+                            <a href="#" className="service-button ">
+                                <img className='service-icon-img' src='assets/img/covid-testing-img.png' />
+                                <span className='service-icon-text'>COVID-19 Testing</span>
+                            </a>
                         </div>
-                        <div className='col-lg-5 text-center'>
-                            <img className='about-img' src='assets/img/lab-services-img.jpg' />
-                            <a href='/services' className='btn btn-view-services visually-hidden'>
-                                See all of our treatment options here
+                        <div className="col-md-3 col-sm-6 text-center">
+                            <a href="#" className="service-button ">
+                                <img className='service-icon-img' src='assets/img/trauma-care-img.png' />
+                                <span className='service-icon-text'>Trauma Care</span>
+                            </a>
+                        </div>
+                        <div className="col-md-3 col-sm-6 text-center">
+                            <a href="#" className="service-button ">
+                                <img className='service-icon-img' src='assets/img/womens-health-img.png' />
+                                <span className='service-icon-text'>Women's Health</span>
+                            </a>
+                        </div>
+                        <div className="col-md-3 col-sm-6 text-center">
+                            <a href="#" className="service-button ">
+                                <img className='service-icon-img' src='assets/img/pediatric-care-img.png' />
+                                <span className='service-icon-text'>Pediatric Care</span>
                             </a>
                         </div>
                     </div>
+                    <div className='row g-4 mx-auto'>
+                        <div className='col-md-2'></div>
+                        <div className="col-md-2 col-sm-6 text-center">
+                            <a href="#" className="service-button ">
+                                <img className='service-icon-img' src='assets/img/xray-img.png' />
+                                <span className='service-icon-text'>X-Ray</span>
+                            </a>
+                        </div>
+                        <div className="col-md-4 col-sm-6 text-center">
+                            <a href="#" className="service-button ">
+                                <img className='service-icon-img' src='assets/img/allergies-img.png' />
+                                <span className='service-icon-text'>Allergies & Asthma</span>
+                            </a>
+                        </div>
+                        <div className="col-md-2 col-sm-6 text-center">
+                            <a href="#" className="service-button ">
+                                <img className='service-icon-img' src='assets/img/vaccination-img.png' />
+                                <span className='service-icon-text'>Vaccinations</span>
+                            </a>
+                        </div>
+                        <div className='col-md-2'></div>
+                    </div>
+                </div>
+                <a className='btn btn-lite-red mt-3' href='/services'>See All of Our Services</a>
+            </div>
+            <div className='quick-container container-lg'>
+                <h2 className='section-header-second'>Quick registration, Quick testing, Quick results</h2>
+                <div className='vstack py-5'>
+                    <div className='quick-bar-blue quick-gap'>
+                        <FaWalking className='quick-icon' />
+                        <span className='quick-text'>&nbsp; Walk-in or schedule an appointment</span>
+                    </div>
+                    <div className='quick-bar-red quick-gap'>
+                        <span className='quick-text'>Quick, contactless sign in through our app or location kiosks &nbsp;</span>
+                        <FaMobileAlt className='quick-icon' />
+                    </div>
+                    <div className='quick-bar-blue quick-gap'>
+                        <FiClock className='quick-icon' />
+                        <span className='quick-text'>&nbsp; Location-based hours from the early morning to the late evening and weekends too</span>
+                    </div>
+                    <div className='quick-bar-red quick-gap'>
+                        <span className='quick-text'>Board-certified physicians, nurse practitioners, physician assistants and nurses &nbsp;</span>
+                        <FaUserNurse className='quick-icon' />
+                    </div>
+                    <div className='quick-bar-blue quick-gap'>
+                        <RiUserHeartFill className='quick-icon' />
+                        <span className='quick-text'>&nbsp; Personalized, comprehensive care from a friendly provider you know, thanks to our low staff turnover</span>
+                    </div>
+                    <div className='quick-bar-red quick-gap'>
+                        <span className='quick-text'>Fast and reliable lab test results, usually within 24 hours &nbsp;</span>
+                        <IoSpeedometer className='quick-icon' />
+                    </div>
                 </div>
             </div>
-            <div className='locations-container d-flex justify-content-center'>
-                <a className="btn btn-lite" href="/locations" role="button">Find a Location Near You!</a>
-            </div>
-            <div className='insurance-container container-lg'>
+            <div className='goodbye-container'>
                 <div className='row'>
-                    <div className='col-lg-4 d-flex flex-column justify-content-center'>
-                        <div className='insurance-title'>
-                            <h3 className='insurance-header'>
-                                We accept most insurance companies.<hr style={{width: '3rem', border: '1px solid black', opacity: '1'}}></hr>
-                            </h3>
-                            <a className="insurance-link" href='/insurance'>Click Here for a complete list of insurances.</a>
-                        </div>
+                    <div className='col-md-5 goodbye-heading container-lg'>
+                        <h2 className='goodbye-heading-text'>Say goodbye to…</h2>
                     </div>
-                    <div className='col-lg-8'>
-                        <div className='row insurance-gallery'>
-                            <div className='col-3'>
-                                <img className='home-img' src='assets/img/aetna.png' alt='aetna' />
-                            </div>
-                            <div className='col-3'>
-                                <img className='home-img' src='assets/img/affinity-health-plan.png' alt='affinity-health-plan' />
-                            </div>
-                            <div className='col-3'>
-                                <img className='home-img' src='assets/img/bcbs.png' alt='bcbs' />
-                            </div>
-                            <div className='col-3'>
-                                <img className='home-img' src='assets/img/cigna.png' alt='cigna' />
-                            </div>
-                            <div className='col-3'>
-                                <img className='home-img' src='assets/img/elder-plan-homefirst.png' alt='elder-plan' />
-                            </div>
-                            <div className='col-3'>
-                                <img className='home-img' src='assets/img/emblem.png' alt='emblem' />
-                            </div>
-                            <div className='col-3'>
-                                <img className='home-img' src='assets/img/ghi.png' alt='ghi' />
-                            </div>
-                            <div className='col-3'>
-                                <img className='home-img' src='assets/img/great-west-healthcare.png' alt='great-west-healthcare' />
-                            </div>
+                    <div className='col-md-7 goodbye-list container-lg'>
+                        <div className='quick-bar-blue quick gap'>
+                            <IoDocumentsSharp className='quick-icon' />
+                            <span className='quick-text'>Filling out multiple forms at every visit</span>
                         </div>
+                        <div className='quick-bar-blue quick gap'></div>
+                        <div className='quick-bar-blue quick gap'></div>
                     </div>
-                </div>
-            </div>
-            <div className='vroom-container container-lg'>
-                <h2 className='section-header-main fst-italic'>"On the Road to Healthy Living"</h2>
-                <img className='van-img' src='assets/img/QCare_vanDesign_preview9d.jpg' alt='vans' />
-            </div>
-            <div className='faq-container'>
-                <div className='faq-img-bg'></div>
-                <div className='faq-content container-lg'>
-                    <h2 className='section-header-white'>FAQ</h2>
-                    <p className='faq-text'>
-                        There’s no reason to spend hours wondering what or how a certain procedure works, 
-                        when a dedicated team of doctors and medical professionals QCare have created 
-                        extensive Q&A Resources.
-                    </p>
-                    <a className="btn btn-faq" href="/faq" role="button">Check It Out</a>
                 </div>
             </div>
             <div className='health-lib-container d-flex flex-column justify-content-center'>
-                <h2 className='section-header-second text-start'>we help you care for</h2>
+                <h2 className='section-header-second text-start'>We help you care for</h2>
                 <h2 className='section-header-main text-start'>Yourself and Your Family</h2>
                 <p className='health-text'>
                     Check out these wellness tips and the research that backs them up to better understand 
