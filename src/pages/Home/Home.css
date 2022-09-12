@@ -103,7 +103,7 @@ p {
   left: 0;
   right: 0;
   height: auto;
-  margin-top: -180px;
+  margin-top: -140px;
 }
 
 .info-card .card-body {
@@ -135,12 +135,14 @@ p {
   opacity: 0.25;
 }
 
-.info-card-about {
-  width: 55%;
+.info-button {
+  width: 30%;
+  text-decoration: none;
 }
 
-.info-card-hours {
-  width: 40%;
+.info-button:hover,
+.info-button:focus {
+  text-decoration: none;
 }
 
 .info-header {
@@ -281,8 +283,8 @@ p {
 .about-header-main {
   font-size: 2rem;
   font-weight: 800;
-  text-align: left;
-  margin-bottom: 1.5rem;
+  text-align: center;
+  margin: 1.5rem 0;
   color: #2a86c3;
   text-transform: uppercase;
 }
@@ -335,7 +337,7 @@ p {
 }
 
 .quick-container {
-  padding: 5rem 0;
+  padding-top: 5rem;
 }
 
 .quick-text {
@@ -428,6 +430,14 @@ p {
   font-size: 3rem;
   color: white;
   font-weight: 700;
+  margin-right: 10%;
+}
+
+.goodbye-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .health-lib-container {
