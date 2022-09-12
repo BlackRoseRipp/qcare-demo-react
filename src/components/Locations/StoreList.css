@@ -1,0 +1,19 @@
+.store-list {
+    overflow: auto;
+    margin-top: 2rem;
+    height: 630px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.store-item p {
+    margin-bottom: 0;
+}
+
+.location-contact {
+    margin: 12px 0;
+}
+
+.location-contact a {
+    text-decoration: none;
+}
