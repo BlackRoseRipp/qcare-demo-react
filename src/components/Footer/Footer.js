@@ -42,8 +42,8 @@ const Footer = () => {
                                 </h5>
                                 <ul style={{ listStyleType: "none", width: "80%"}}>
                                     <li style={{ padding: '.4em 0' }}>
-                                        <a className="contact-link" href="tel:888-522-7247">
-                                            +1 888-522-7247
+                                        <a className="contact-link" href="tel:877-722-7318">
+                                            +1 877-722-7318
                                         </a>
                                     </li>
                                     <li style={{ padding: '.4em 0' }}>
@@ -52,8 +52,8 @@ const Footer = () => {
                                         </a>
                                     </li>
                                     <li style={{ padding: '.4em 0' }}>
-                                        <a className="contact-link" href="https://www.google.com/maps/place/166+N+7th+St,+Brooklyn,+NY+11211/data=!4m2!3m1!1s0x89c2595dc4a1e02b:0x46a2a427dc7dd2f5?sa=X&ved=2ahUKEwjf3Mu7s4X6AhWHD1kFHaYOAMoQ8gF6BAgXEAE">
-                                            166 N 7th St<br></br>Brooklyn, NY 11211
+                                        <a className="contact-link" href="https://www.google.com/maps/place/143+W+72nd+St,+New+York,+NY+10023/@40.7782211,-73.9824139,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2588a351f00ed:0xa7f97add245c9e79!8m2!3d40.7782211!4d-73.9802252!16s%2Fg%2F11bw3_tfp3?hl=en">
+                                            143 W 72nd St<br></br>Manhattan, NY 10023
                                         </a>
                                     </li>
                                 </ul>
@@ -74,6 +74,13 @@ const Footer = () => {
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="bottom-footer">
+                <div className='container-lg'>
+                    <div className='hstack'>
+                        
                     </div>
                 </div>
             </div>
