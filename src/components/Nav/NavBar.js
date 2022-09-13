@@ -18,13 +18,13 @@ const NavBar = () => {
                 <div className='container-lg'>                    
                     <div className='nav nav-top-right'>
                         <BsFillTelephoneFill style={{ padding: '0em .25em', fontSize: '2em'}} />
-                        <span>+1 888-522-7247</span>
+                        <span>+1 877-722-7318</span>
                         <div className='vr'></div>
                         <AiOutlineMail style={{ fontSize: '1.25em', fontWeight: '600', marginRight: '.5rem'}}/>
                         <span>urgent@qcare.com</span>
                         <div className='vr'></div>
                         <MdLocationPin style={{ fontSize: '1.25em', marginRight: '.5rem'}}/>
-                        <span>166 N 7th St, Brooklyn, NY 11211, United States</span>
+                        <span>143 W 72nd St, Manhattan, NY 10023, United States</span>
                     </div>
                 </div>
             </nav>
@@ -123,7 +123,7 @@ const NavBar = () => {
                                 },
                                 {
                                     to: '/vaccines',
-                                    primary: 'Vaccines & Immunizations'
+                                    primary: 'Vaccinations'
                                 }
                             ]}
                         />

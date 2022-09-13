@@ -3,6 +3,7 @@ import './StoreList.css';
 
 function StoreList(props) {
     const [filteredLocations, setFilteredLocations] = useState(props.locations)
+    const locationLength = filteredLocations.length
     //console.log(props.locations)
     //console.log(filteredLocations)
     const filterLocations = (e) => {
@@ -20,7 +21,7 @@ function StoreList(props) {
     }
 
     useEffect(() => {
-      console.log(props.locations)
+      //console.log(props.locations)
       setFilteredLocations(props.locations)
     }, [props])
 
@@ -37,7 +38,7 @@ function StoreList(props) {
         onChange={filterLocations}
       />
       <div className="store-list">
-        {filteredLocations.map((location) => {
+        {filteredLocations.map((location, index) => {
           const doEmail = location.Email !== "" ? true : false
 
           return (
@@ -53,12 +54,12 @@ function StoreList(props) {
                 <p className="location-address-three">
                   {location.Country}
                 </p>
-                <div className="location-contact">
-                  <a className="phone" href={'tel:'+location.Phone}>Call us!</a>
-                  <a className="email" href={'mailto:'+location.Email} style={{display: doEmail ? 'block' : 'none'}}>{location.Email}</a>
+                <div className="location-contact text-center">
+                  <a className="btn btn-phone" href={'tel:'+location.Phone}>Call this location</a>
+                  <a className="btn btn-email" href={'mailto:'+location.Email} style={{display: doEmail ? 'block' : 'none'}}>{location.Email}</a>
                 </div>
               </div>
-              <hr class="dropdown-divider mt-4" style={{color: '#CCC'}}></hr>
+              <hr class="divider" style={{ display: index === locationLength - 1 ? 'none' : 'block' }}></hr>
             </div>
             
           );

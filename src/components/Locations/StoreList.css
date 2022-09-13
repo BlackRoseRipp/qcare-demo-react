@@ -1,9 +1,11 @@
 .store-list {
     overflow: auto;
+    background-color: white;
     margin-top: 2rem;
     height: 630px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 2.5rem;
+    padding: 0 1rem;
 }
 
 .store-item p {
@@ -16,4 +18,30 @@
 
 .location-contact a {
     text-decoration: none;
+}
+
+.location-search {
+    border-radius: 2rem;
+}
+
+.divider {
+    margin-top: 2rem;
+    color: #999;
+}
+
+.btn-phone {
+    background-color: transparent;
+    background-image: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+    padding: .5rem 1.5rem;
+    color: white;
+    font-weight: 500;
+    border: 0;
+    transition: padding 220ms ease-in-out;
+    border-radius: 4rem;
+}
+
+.btn-phone:hover,
+.btn-phone:focus {
+    color: white;
+    padding: .5rem 2.5rem;
 }

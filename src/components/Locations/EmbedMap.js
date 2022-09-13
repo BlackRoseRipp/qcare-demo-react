@@ -7,7 +7,7 @@ function EmbedMap() {
         style={{
           height: "700px",
           border: "2px solid #eee",
-          borderRadius: "15px",
+          borderRadius: "2rem",
           display: "inline-block",
           overflow: "hidden",
           width: "100%",

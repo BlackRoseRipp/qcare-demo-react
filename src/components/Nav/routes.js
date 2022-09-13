@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 
 const Home = React.lazy(() => import("../../pages/Home/Home"))
 const PageNotFound = React.lazy(() => import("../../pages/PageNotFound/PageNotFound"))
+const About = React.lazy(() => import("../../pages/About/About"))
 
 export const routes = () => {
     const pages = [
         { path: "/", component: <Home /> },
+        { path: "/about", component: <About />},
         { path: "*", component: <PageNotFound />}
     ]
   
