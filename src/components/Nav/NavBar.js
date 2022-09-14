@@ -21,7 +21,7 @@ const NavBar = () => {
                         <span>+1 877-722-7318</span>
                         <div className='vr'></div>
                         <AiOutlineMail style={{ fontSize: '1.25em', fontWeight: '600', marginRight: '.5rem'}}/>
-                        <span>urgent@qcare.com</span>
+                        <span>clientservices@qcare.com</span>
                         <div className='vr'></div>
                         <MdLocationPin style={{ fontSize: '1.25em', marginRight: '.5rem'}}/>
                         <span>143 W 72nd St, Manhattan, NY 10023, United States</span>
