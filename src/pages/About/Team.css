@@ -1,0 +1,44 @@
+.team-header {
+  color: #2a86c3;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.team-card {
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 10px 0 #bbb;
+  margin: 2rem 1rem;
+  background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+  transition: transform 220ms linear, box-shadow 220ms linear;
+}
+
+.team-card:hover {
+  box-shadow: 0 9px 20px 0 #bbb;
+  transform: translate(0px, -3px);
+}
+
+.headshot {
+  width: 40%;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+#meetTeamRow {
+  margin: 0;
+}
+
+.team-name {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  color: white;
+}
+
+.team-title {
+  text-transform: uppercase;
+  color: #ddd;
+}
