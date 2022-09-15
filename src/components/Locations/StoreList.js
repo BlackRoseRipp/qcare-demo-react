@@ -55,7 +55,7 @@ function StoreList(props) {
                   {location.Country}
                 </p>
                 <div className="location-contact text-center">
-                  <a className="btn btn-phone" href={'tel:'+location.Phone}>Call this location</a>
+                  <a className={"btn btn-phone"+(props.buttonStyle ? '-'+props.buttonStyle : '')} href={'tel:'+location.Phone}>Call this location</a>
                   <a className="btn btn-email" href={'mailto:'+location.Email} style={{display: doEmail ? 'block' : 'none'}}>{location.Email}</a>
                 </div>
               </div>

@@ -29,9 +29,9 @@
     color: #999;
 }
 
-.btn-phone {
-    background-color: transparent;
-    background-image: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+.btn-phone,
+.btn-phone-red,
+.btn-phone-blue {
     padding: .5rem 1.5rem;
     color: white;
     font-weight: 500;
@@ -40,8 +40,24 @@
     border-radius: 4rem;
 }
 
+.btn-phone {
+    background: #555
+}
+
+.btn-phone-red {
+    background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+}
+
+.btn-phone-blue {
+    background: linear-gradient(270deg, #2A86C3 50%, #3FBBE6 100%);
+}
+
 .btn-phone:hover,
-.btn-phone:focus {
+.btn-phone:focus,
+.btn-phone-blue:hover,
+.btn-phone-red:hover,
+.btn-phone-blue:focus,
+.btn-phone-red:focus {
     color: white;
     padding: .5rem 2.5rem;
 }

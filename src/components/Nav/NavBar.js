@@ -62,7 +62,7 @@ const NavBar = () => {
                         />
                         <NavButton
                             primary="Services & Care"
-                            to='/services'
+                            to='/nyc-urgent-care-services'
                             dropdownLinks={[
                                 {
                                     to: '/prevention',
@@ -132,16 +132,16 @@ const NavBar = () => {
                             to='/plan-your-visit'
                             dropdownLinks={[
                                 {
-                                    to: '/locations',
-                                    primary: 'Clinic Locations'
+                                    to: '/home-visits',
+                                    primary: 'Home Visits'
                                 },
                                 {
                                     to: '/mobile-stations',
                                     primary: 'Mobile Stations'
                                 },
                                 {
-                                    to: '/home-visits',
-                                    primary: 'Home Visits'
+                                    to: '/locations',
+                                    primary: 'Clinic Locations'
                                 },
                                 {
                                     to: '/insurance',

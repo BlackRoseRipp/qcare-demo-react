@@ -1,0 +1,27 @@
+.insurance-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.insurance-header {
+    color: #2a86c3;
+    font-weight: 700;
+    text-align: center;
+}
+
+.insurance-box {
+    border: 3px solid #ddd;
+    border-radius: 3rem;
+    padding: 0 2rem 1rem 2rem;
+    margin: 2rem 0;
+}
+
+.insurance-img {
+    width: 100%;
+}
+
+.insurance-text {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+}

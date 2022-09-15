@@ -1,0 +1,74 @@
+[
+    {
+        "name": "aetna",
+        "logo": "aetna.png"
+    },
+    {
+        "name": "affinity health plan",
+        "logo": "affinity-health-plan.png"
+    },
+    {
+        "name": "Blue Cross",
+        "logo": "bcbs.png"
+    },
+    {
+        "name": "Cigna",
+        "logo": "cigna.png"
+    },
+    {
+        "name": "Elder Plan",
+        "logo": "elder-plan-homefirst.png"
+    },
+    {
+        "name": "Emblem Health",
+        "logo": "emblem.png"
+    },
+    {
+        "name": "GHI",
+        "logo": "ghi.png"
+    },
+    {
+        "name": "Great West",
+        "logo": "great-west-healthcare.png"
+    },
+    {
+        "name": "Healthcare Partners",
+        "logo": "healthcare-partners.png"
+    },
+    {
+        "name": "HIP",
+        "logo": "hip.png"
+    },
+    {
+        "name": "humana",
+        "logo": "humana.png"
+    },
+    {
+        "name": "MagnaCare",
+        "logo": "magnacare.png"
+    },
+    {
+        "name": "medicare",
+        "logo": "medicare.png"
+    },
+    {
+        "name": "Metro Plus",
+        "logo": "metro-plus.png"
+    },
+    {
+        "name": "Oxford Health",
+        "logo": "oxford-health-plans.png"
+    },
+    {
+        "name": "Empire Plan",
+        "logo": "the-empire-plan.png"
+    },
+    {
+        "name": "Tricare",
+        "logo": "tricare.png"
+    },
+    {
+        "name": "wellcare",
+        "logo": "wellcare.png"
+    }
+]

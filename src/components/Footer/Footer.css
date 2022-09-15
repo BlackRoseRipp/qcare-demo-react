@@ -12,6 +12,7 @@
 .main-footer .row {
   padding: 2rem 0;
   width: 90%;
+  margin: 0 auto;
 }
 
 .logo-link {
@@ -21,11 +22,17 @@
 
 .logo-link:hover,
 .logo-link:focus,
-.contact-link:hover {
+.contact-link:hover,
+.footer-link:hover {
   color: #2A86C3;
 }
 
-.contact-link {
+.footer-link {
+  font-size: 1.1rem;
+}
+
+.contact-link,
+.footer-link {
   color: black;
   text-decoration: none;
 }
@@ -56,6 +63,24 @@
 .bottom-footer {
   background-color: transparent;
   background-image: linear-gradient(270deg, #2A86C3 50%, #3FBBE6 100%);
+  padding: .5rem 0;
+}
+
+.bottom-footer-text {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: .5rem 0;
+}
+
+.bottom-footer-text:hover,
+.bottom-footer-text:focus {
+  color: white;
+}
+
+.vr {
+  margin: 0.25rem 1.5rem;
+  color: white;
 }
 
 @media screen and (max-width: 991px) {

@@ -1,6 +1,8 @@
 import React from "react";
 
-function EmbedMap() {
+const EmbedMap = (props) => {
+  const mapSource = props.src
+
   return (
     <div>
       <div
@@ -15,7 +17,7 @@ function EmbedMap() {
       >
         <iframe
           style={{ position: "relative", top: "-70px", border: "none" }}
-          src="https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F"
+          src={mapSource}
           width="100%"
           height="770px"
         ></iframe>

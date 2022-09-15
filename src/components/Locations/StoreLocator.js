@@ -7,10 +7,10 @@ function StoreLocator(props) {
     <div className="container">
       <div className="row">
         <div className="col-md-4">
-          <StoreList locations={props.locations} />
+          <StoreList locations={props.locations} buttonStyle={props.buttonStyle}/>
         </div>
         <div className="col-md-8">
-          <EmbedMap />
+          <EmbedMap src={props.src}/>
         </div>
       </div>
     </div>
