@@ -17,7 +17,7 @@ const About = () => {
                             planned schedule. Our QCare mobile urgent care provides New Yorkers access to quick, convenient, 
                             expert medical care anywhere you are.
                         </p>
-                        <a className="btn btn-hero" href="/services" role="button">Learn More</a>
+                        <a className="btn btn-hero" href="/nyc-urgent-care-services" role="button">Learn More</a>
                     </div>
                 </div>
             </div>
