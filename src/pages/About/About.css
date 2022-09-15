@@ -37,6 +37,7 @@
   border: 0;
   margin: 2rem 0;
   text-transform: none;
+  transition: all 220ms ease-in-out;
 }
 
 .btn-hero:hover,
@@ -46,6 +47,7 @@
   background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
   color: #fff;
   border: 0;
+  transform: translate(0px, -3px);
 }
 
 .white-container-5 {
@@ -158,12 +160,12 @@
   border: 0;
   border-radius: 4rem;
   background-color: #fff;
-  transition: box-shadow 220ms linear, color 220ms linear;
+  transition: all 220ms linear;
   color: var(--global-primary-bg-color);
 }
 
 .btn-team:hover {
-  box-shadow: 0 4px 8px 4px #bbb;
+  box-shadow: 0 4px 12px 4px #bbb;
   color: white;
   background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
 }

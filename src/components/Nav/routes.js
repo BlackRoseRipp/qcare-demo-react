@@ -8,6 +8,7 @@ const Team = React.lazy(() => import("../../pages/About/Team"))
 const Insurance = React.lazy(() => import("../../pages/Insurance/Insurance"))
 const Locations = React.lazy(() => import("../../pages/Locations/Locations"))
 const Contact = React.lazy(() => import("../../pages/Contact/Contact"))
+const Services = React.lazy(() => import("../../pages/Services/Services"))
 
 export const routes = () => {
     const pages = [
@@ -16,7 +17,8 @@ export const routes = () => {
         { path: "/team", component: <Team />},
         { path: "/insurance", component: <Insurance />},
         { path: "/locations", component: <Locations />},
-        { path: "/contact-null", component: <Contact />},
+        { path: "/contact", component: <Contact />},
+        { path: "/nyc-urgent-care-services", component: <Services />},
         { path: "*", component: <PageNotFound />}
     ]
   
