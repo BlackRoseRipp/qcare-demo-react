@@ -45,44 +45,44 @@ const Home = () => {
                 <h2 className='about-header-main'>Customizable healthcare when and where you need it most</h2>
                 <div className='container-lg py-5'>
                     <div className='row g-4 mx-auto mb-4'>
-                        <div className="col-lg-3 col-md-4 text-center">
+                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/covid-testing-img.png' />
                                 <span className='service-icon-text'>COVID-19 Testing</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 text-center">
+                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/trauma-care-img.png' />
                                 <span className='service-icon-text'>Trauma Care</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 text-center">
+                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/womens-health-img.png' />
                                 <span className='service-icon-text'>Women's Health</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 text-center">
+                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/pediatric-care-img.png' />
                                 <span className='service-icon-text'>Pediatric Care</span>
                             </a>
                         </div>
                         <div className='col-lg-2 full-screen' style={{width: '12.5%'}}></div>
-                        <div className="col-lg-3 col-md-4 text-center">
+                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/xray-img.png' />
                                 <span className='service-icon-text'>X-Ray</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 text-center">
+                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/allergies-img.png' />
                                 <span className='service-icon-text'>Allergies & Asthma</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 text-center">
+                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/vaccination-img.png' />
                                 <span className='service-icon-text'>Vaccinations</span>
@@ -90,11 +90,8 @@ const Home = () => {
                         </div>
                         <div className='col-lg-2 full-screen' style={{width: '12.5%'}}></div>
                     </div>
-                    <div className='row g-4 mx-auto'>
-                        
-                    </div>
                 </div>
-                <a className='btn btn-main mt-3' href='/services'>See All of Our Services</a>
+                <a className='btn btn-main mt-3' href='/nyc-urgent-care-services'>See All of Our Services</a>
             </div>
             {/* <div className='doctor-container'>
                 <h2 className='section-header-white'>The Doctor is in!</h2>
@@ -134,10 +131,14 @@ const Home = () => {
             <div className='grey-container text-center'>
                 <h2 className='section-header-second mb-5 text-center'>Meeting you wherever you are!</h2>
                 <div className='map-container'>
-                    <StoreLocator locations={Data()} />
+                    <StoreLocator 
+                        locations={Data()} 
+                        src='https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F' 
+                        buttonStyle='red'
+                    />
                 </div>
                 <div className='mx-auto text-center'>
-                    <a className="btn btn-lite-red mt-5" href="/location" role="button">See all of our locations</a>
+                    <a className="btn btn-lite-red mt-5" href="/locations" role="button">See all of our locations</a>
                 </div>
             </div>
             <div className='white-container-5 container-lg'>
@@ -177,6 +178,14 @@ const Home = () => {
                     </div> */}
                     <div className='carousel slide' id='quickSlide'>
                         <div className='carousel-inner justify-content-center mx-auto'>
+                            <div className='carousel-indicators'>
+                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            </div>
                             <div className='carousel-item active'>
                                 <div className='quick-fact'>
                                     <FaWalking className='quick-icon' />

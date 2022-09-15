@@ -345,8 +345,10 @@ p {
 }
 
 .quick-fact {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
 }
 
 .quick-text {
@@ -405,6 +407,20 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.carousel-indicators {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-radius: 2rem;
 }
 
 .faq-content {
@@ -545,8 +561,27 @@ p {
         background-attachment: local;
     }
 
+    .goodbye-heading {
+        border-radius: 2rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .goodbye-heading-text {
+        margin: 0 auto;
+    }
+
     .goodbye-text {
         margin-right: auto;
+    }
+
+    .goodbye-list {
+        align-items: center;
+    }
+
+    .quick-bar-blue {
+        border-radius: 5rem;
+        text-align: center;
     }
 }
 

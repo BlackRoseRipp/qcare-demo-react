@@ -7,12 +7,29 @@ const Footer = () => {
         <footer className="footer-clean">
             <div className='main-footer'>
                 <div className='container-lg main-footer-container m-4'>
-                    <div className='row'>
+                    <div className='row' id='mainRow'>
                         <div className='col-lg-4 text-center'>
                             <a href="/" style={{ width: '10%'}}>
                                 <img src="assets/img/QCare-LogoB.png" style={{ width: '80%' }} />
                             </a>
-                            <div className='row w-75 mx-auto mt-3'>
+                            <div className='row w-100 mx-auto mt-3'>
+                                <div className='col-4 px-0'>
+                                    <a className='footer-link' href="/about">
+                                        About Us
+                                    </a>
+                                </div>
+                                <div className='col-4'>
+                                    <a className='footer-link' href="/nyc-urgent-care-services">
+                                        Services
+                                    </a>
+                                </div>
+                                <div className='col-4 px-0'>
+                                    <a className='footer-link' href="/plan-your-visit">
+                                        Plan Your Visit
+                                    </a>
+                                </div>
+                            </div>
+                            <div className='row w-75 mx-auto mt-3 visually-hidden'>
                                 <div className='col-3'>
                                     <a className='logo-link' href="#">
                                         <FaInstagram />
@@ -78,9 +95,19 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bottom-footer">
-                <div className='container-lg'>
-                    <div className='hstack'>
-                        
+                <div className='container-lg d-flex justify-content-center'>
+                    <div className='hstack mx-auto'>
+                        <a href='/privacy' className='bottom-footer-text'>
+                            Privacy Statement
+                        </a>
+                        <div className='vr'></div>
+                        <a href='/legal-policy' className='bottom-footer-text'>
+                            Legal Policy
+                        </a>
+                        <div className='vr'></div>
+                        <a href='/patients-rights' className='bottom-footer-text'>
+                            Patient's Rights
+                        </a>
                     </div>
                 </div>
             </div>
