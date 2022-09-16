@@ -176,36 +176,36 @@ const NavBar = () => {
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <nav className='navbar navbar-expand-lg nav-mobile'>
-                        <div className='collapse navbar-collapse w-100' id='navbarSupportedContent'>
-                            <ul className='navbar-nav'>
-                                <li className='nav-item'>
-                                    <ListLink 
-                                        primary="Home"
-                                        to='/'
-                                    />
-                                </li>
-                                <li className='nav-item'>
-                                    <ListLink 
-                                        primary="About Us"
-                                        to='/about'
-                                    />
-                                </li>
-                                <li className='nav-item'>
-                                    <ListLink 
-                                        primary="Services & Care"
-                                        to='/services'
-                                    />
-                                </li>
-                                <li className='nav-item'>
-                                    <ListLink 
-                                        primary="Plan Your Visit"
-                                        to='/plan-your-visit'
-                                    />
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                <nav className='navbar navbar-expand-lg nav-mobile w-100'>
+                    <div className='collapse navbar-collapse w-100' id='navbarSupportedContent'>
+                        <ul className='navbar-nav'>
+                            <li className='nav-item text-center'>
+                                <ListLink 
+                                    primary="Home"
+                                    to='/'
+                                />
+                            </li>
+                            <li className='nav-item text-center'>
+                                <ListLink 
+                                    primary="About Us"
+                                    to='/about'
+                                />
+                            </li>
+                            <li className='nav-item text-center'>
+                                <ListLink 
+                                    primary="Services & Care"
+                                    to='/services'
+                                />
+                            </li>
+                            <li className='nav-item text-center'>
+                                <ListLink 
+                                    primary="Plan Your Visit"
+                                    to='/plan-your-visit'
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </nav>
             <div>
                 {routes()}

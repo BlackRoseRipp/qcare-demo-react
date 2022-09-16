@@ -101,12 +101,12 @@ const Footer = () => {
                             Privacy Statement
                         </a>
                         <div className='vr'></div>
-                        <a href='/legal-policy' className='bottom-footer-text'>
-                            Legal Policy
+                        <a href='/terms-and-conditions' className='bottom-footer-text'>
+                            Terms & Conditions
                         </a>
                         <div className='vr'></div>
-                        <a href='/patients-rights' className='bottom-footer-text'>
-                            Patient's Rights
+                        <a href='/accessibility' className='bottom-footer-text'>
+                            Accessibility Statement
                         </a>
                     </div>
                 </div>

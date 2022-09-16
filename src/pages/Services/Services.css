@@ -1,108 +1,128 @@
 .services-hero-container {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url("../../../public/assets/img/young-male-psysician-with-patient-measuring-blood-pressure.jpg");
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../../public/assets/img/young-male-psysician-with-patient-measuring-blood-pressure.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 70vh;
 }
 
 .hero-header {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: white;
-    padding-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 2rem;
 }
 
 .hero-text {
-    color: white;
-    width: 75%;
-    margin: 0 auto;
-    font-size: 1.2rem;
+  color: white;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.2rem;
 }
 
 .btn-hero {
-    background-color: transparent;
-    background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    height: auto;
-    border-radius: 2rem;
-    padding: 0.5rem 2rem;
-    border: 0;
-    margin: 2rem 0;
-    text-transform: none;
-    transition: all 220ms ease-in-out;
+  background-color: transparent;
+  background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  height: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  border: 0;
+  margin: 2rem 0;
+  text-transform: none;
+  transition: all 220ms ease-in-out;
 }
 
 .white-container,
 .red-container,
-.blue-container {
-    padding: 5rem 0;
+.blue-container,
+.grey-container {
+  padding: 5rem 0;
 }
 
 .blue-container {
-    background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+  background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
 }
 
 .red-container {
-    background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+  background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+}
+
+.grey-container {
+  background: #eee;
+}
+
+.red-header,
+.white-header,
+.blue-header {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 3rem 0;
 }
 
 .red-header {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--global-primary-bg-color)
+  color: var(--global-primary-bg-color);
+}
+
+.white-header {
+  color: white;
+}
+
+.blue-header {
+  color: #2a86c3;
 }
 
 .btn-care {
-    border: 0;
-    border-radius: 5rem;
-    padding: 1rem 2rem;
-    color: var(--global-primary-bg-color);
-    font-size: 1.5rem;
-    font-weight: 700;
-    transition: all 220ms ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 100%;
-    margin: 1rem auto;
+  border: 0;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  color: var(--global-primary-bg-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: all 220ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin: 1rem auto;
 }
 
 .btn-care:hover {
-    background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
-    color: white;
-    box-shadow: 0 4px 12px 0 #ccc;
+  background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+  color: white;
+  box-shadow: 0 4px 12px 0 #ccc;
 }
 
 .red-icon {
-    font-size: 4rem;
-    margin-right: 1rem;
+  font-size: 4rem;
+  margin-right: 1rem;
 }
 
 .btn-red,
 .btn-blue {
-    padding: .5rem 1.5rem;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
-    border: 0;
-    transition: all 220ms ease-in-out;
-    border-radius: 4rem;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 0;
+  transition: all 220ms ease-in-out;
+  border-radius: 4rem;
+  width: fit-content;
 }
 
 .btn-red {
-    background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+  background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
 }
 
 .btn-blue {
-    background: linear-gradient(270deg, #2A86C3 50%, #3FBBE6 100%);
+  background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
 }
 
 .btn-hero:hover,
@@ -111,6 +131,52 @@
 .btn-red:hover,
 .btn-blue:focus,
 .btn-red:focus {
-    color: white;
-    transform: translate(0px, -3px);
+  color: white;
+  transform: translate(0px, -3px);
+}
+
+#servicesAccordionContainer,
+#testsContainer {
+  border-radius: 2rem;
+}
+
+#testsContainer {
+  padding: 4rem;
+}
+
+#servicesAccordion .accordion-body {
+  padding: 1.5rem;
+}
+
+#servicesAccordion .accordion-button {
+  color: #2a86c3;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#servicesAccordion .accordion-button:focus,
+#servicesAccordion .accordion-button:active {
+  background: white;
+  box-shadow: none;
+}
+
+.service-text {
+  font-weight: 400;
+  color: #2a86c3;
+}
+
+.test-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 991px) {
+  .blue-header,
+  .red-header,
+  .white-header {
+    text-align: center !important;
+    padding: 0 !important;
+  }
 }
