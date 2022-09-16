@@ -9,6 +9,9 @@ const Insurance = React.lazy(() => import("../../pages/Insurance/Insurance"))
 const Locations = React.lazy(() => import("../../pages/Locations/Locations"))
 const Contact = React.lazy(() => import("../../pages/Contact/Contact"))
 const Services = React.lazy(() => import("../../pages/Services/Services"))
+const Privacy = React.lazy(() => import("../../pages/LegalPages/Privacy"))
+const Accessibility = React.lazy(() => import("../../pages/LegalPages/Accessibility"))
+const Terms = React.lazy(() => import("../../pages/LegalPages/Terms"))
 
 export const routes = () => {
     const pages = [
@@ -19,6 +22,9 @@ export const routes = () => {
         { path: "/locations", component: <Locations />},
         { path: "/contact", component: <Contact />},
         { path: "/nyc-urgent-care-services", component: <Services />},
+        { path: "/privacy", component: <Privacy />},
+        { path: "/terms-and-conditions", component: <Terms />},
+        { path: "/accessibility", component: <Accessibility />},
         { path: "*", component: <PageNotFound />}
     ]
   

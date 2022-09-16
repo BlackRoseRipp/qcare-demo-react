@@ -22,9 +22,9 @@ const Home = () => {
             <div className='card info-card'>
                 <div className="card-body">
                     <div className="hstack gap-3 d-flex justify-content-center">
-                        <a className='info-button text-center' href='/home-visits'>
-                            <div className='doctor-icon'><FaHome /></div>
-                            <h3 className='doctor-header'>House Calls</h3>
+                        <a className='info-button text-center' href='/urgent-care'>
+                            <div className='doctor-icon'><FaClinicMedical /></div>
+                            <h3 className='doctor-header'>Urgent Care Clinic</h3>
                         </a>
                         <div className='vr'></div>
                         <hr className='hr'></hr>
@@ -34,9 +34,9 @@ const Home = () => {
                         </a>
                         <div className='vr'></div>
                         <hr className='hr'></hr>
-                        <a className='info-button text-center' href='/locations'>
-                            <div className='doctor-icon'><FaClinicMedical /></div>
-                            <h3 className='doctor-header'>Urgent Care Clinic</h3>
+                        <a className='info-button text-center' href='/home-visits'>
+                            <div className='doctor-icon'><FaHome /></div>
+                            <h3 className='doctor-header'>House Calls</h3>
                         </a>
                     </div>
                 </div>
@@ -45,44 +45,44 @@ const Home = () => {
                 <h2 className='about-header-main'>Customizable healthcare when and where you need it most</h2>
                 <div className='container-lg py-5'>
                     <div className='row g-4 mx-auto mb-4'>
-                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div className="col-lg-3 col-md-4 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/covid-testing-img.png' />
                                 <span className='service-icon-text'>COVID-19 Testing</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div className="col-lg-3 col-md-4 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/trauma-care-img.png' />
                                 <span className='service-icon-text'>Trauma Care</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div className="col-lg-3 col-md-4 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/womens-health-img.png' />
                                 <span className='service-icon-text'>Women's Health</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div className="col-lg-3 col-md-4 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/pediatric-care-img.png' />
                                 <span className='service-icon-text'>Pediatric Care</span>
                             </a>
                         </div>
                         <div className='col-lg-2 full-screen' style={{width: '12.5%'}}></div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div className="col-lg-3 col-md-4 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/xray-img.png' />
                                 <span className='service-icon-text'>X-Ray</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div className="col-lg-3 col-md-4 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/allergies-img.png' />
                                 <span className='service-icon-text'>Allergies & Asthma</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6 text-center">
+                        <div className="col-lg-3 col-md-4 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/vaccination-img.png' />
                                 <span className='service-icon-text'>Vaccinations</span>
@@ -133,12 +133,11 @@ const Home = () => {
                 <div className='map-container'>
                     <StoreLocator 
                         locations={Data()} 
-                        src='https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F' 
-                        buttonStyle='red'
-                    />
+                        src='https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F'
+                        buttonStyle='red'/>
                 </div>
                 <div className='mx-auto text-center'>
-                    <a className="btn btn-lite-red mt-5" href="/locations" role="button">See all of our locations</a>
+                    <a className="btn btn-lite-red mt-5" href="/location" role="button">See all of our locations</a>
                 </div>
             </div>
             <div className='white-container-5 container-lg'>
@@ -150,42 +149,16 @@ const Home = () => {
             <div className='doctor-container'>
                 <div className='container-lg'>
                     <h2 className='section-header-white pb-5'>Quick registration, Quick testing, Quick results</h2>
-                    {/* <div className='vstack'>
-                        <div className='quick-bar-left quick-gap'>
-                            <FaWalking className='quick-icon' />
-                            <span className='quick-text'>&nbsp; Walk-in or schedule an appointment</span>
-                        </div>
-                        <div className='quick-bar-right quick-gap'>
-                            <span className='quick-text'>Quick, contactless sign in through our app or location kiosks &nbsp;</span>
-                            <FaMobileAlt className='quick-icon' />
-                        </div>
-                        <div className='quick-bar-left quick-gap'>
-                            <FiClock className='quick-icon' />
-                            <span className='quick-text'>&nbsp; Location-based hours from the early morning to the late evening and weekends too</span>
-                        </div>
-                        <div className='quick-bar-right quick-gap'>
-                            <span className='quick-text'>Board-certified physicians, nurse practitioners, physician assistants and nurses &nbsp;</span>
-                            <FaUserNurse className='quick-icon' />
-                        </div>
-                        <div className='quick-bar-left quick-gap'>
-                            <RiUserHeartFill className='quick-icon' />
-                            <span className='quick-text'>&nbsp; Personalized, comprehensive care from a friendly provider you know, thanks to our low staff turnover</span>
-                        </div>
-                        <div className='quick-bar-right quick-gap'>
-                            <span className='quick-text'>Fast and reliable lab test results, usually within 24 hours &nbsp;</span>
-                            <IoSpeedometer className='quick-icon' />
-                        </div>
-                    </div> */}
                     <div className='carousel slide' id='quickSlide'>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
                         <div className='carousel-inner justify-content-center mx-auto'>
-                            <div className='carousel-indicators'>
-                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#quickSlide" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                            </div>
                             <div className='carousel-item active'>
                                 <div className='quick-fact'>
                                     <FaWalking className='quick-icon' />
@@ -267,12 +240,12 @@ const Home = () => {
                             <div className='card health-lib-card'>
                                 <img className='card-img-top' src='assets/img/blog1.jpg' alt='blog1' />
                                 <div className='card-body'>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                        aliqua. Malesuada proin libero nunc consequat interdum varius 
-                                        sit amet mattis. Tincidunt augue interdum velit euismod in 
-                                        pellentesque massa.
+                                    <h5 className='blog-header'>What's The Difference Between CBC And CMP Blood Tests?</h5>
+                                    <p className='blog-tldr'>
+                                        There’s a good deal that your blood can tell us about your health. 
+                                        To access that information, we can perform a complete blood count 
+                                        (CBC) and a comprehensive metabolic panel (CMP). Here’s a look at 
+                                        the difference between the two.
                                     </p>
                                 </div>
                             </div>
@@ -283,12 +256,12 @@ const Home = () => {
                             <div className='card health-lib-card'>
                                 <img className='card-img-top' src='assets/img/blog2.jpeg' alt='blog2' />
                                 <div className='card-body'>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                        aliqua. Malesuada proin libero nunc consequat interdum varius 
-                                        sit amet mattis. Tincidunt augue interdum velit euismod in 
-                                        pellentesque massa.
+                                    <h5 className='blog-header'>Why Choosing Telehealth Might Be the Best Option for You</h5>
+                                    <p className='blog-tldr'>
+                                        As our nation watches anxiously as new variants of COVID-19 emerge, 
+                                        the return to safety measures, such as masking up and social distancing, 
+                                        may come back. For this reason, and many others, telehealth may make 
+                                        perfect sense.
                                     </p>
                                 </div>
                             </div>
@@ -299,12 +272,11 @@ const Home = () => {
                             <div className='card health-lib-card'>
                                 <img className='card-img-top' src='assets/img/blog3.jpg' alt='blog3' />
                                 <div className='card-body'>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                        aliqua. Malesuada proin libero nunc consequat interdum varius 
-                                        sit amet mattis. Tincidunt augue interdum velit euismod in 
-                                        pellentesque massa.
+                                    <h5 className='blog-header'>Common Heat-Related Illnesses and Symptoms</h5>
+                                    <p className='blog-tldr'>
+                                        The month of August can be a hot and sticky one here in New York City, 
+                                        which makes us more vulnerable to heat-related illnesses. To beat the 
+                                        heat this summer, we take a closer look at the problem.
                                     </p>
                                 </div>
                             </div>
