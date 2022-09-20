@@ -211,4 +211,11 @@
   #teamRow {
     margin: 0;
   }
+
+  .hstack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+  }
 }

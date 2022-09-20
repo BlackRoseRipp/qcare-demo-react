@@ -71,7 +71,7 @@ const NavBar = () => {
                                 },
                                 {
                                     primary: 'Urgent Care',
-                                    dropdownLinks: [
+                                    /* dropdownLinks: [
                                         {
                                             to: '/cold-flu',
                                             primary: 'Cold & Flu'
@@ -108,7 +108,8 @@ const NavBar = () => {
                                             to: '/xrays',
                                             primary: 'X-Rays'
                                         }
-                                    ]
+                                    ] */
+                                    to: '/urgent-care'
                                 },
                                 {
                                     to: '/allergies-&-asthma',

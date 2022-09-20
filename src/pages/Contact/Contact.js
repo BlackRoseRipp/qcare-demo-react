@@ -6,12 +6,22 @@ const Contact = () => {
         <div className='contact-container'>
             <div className='contact-header'>
                 <div className='container'>
-                    <h1 className='contact-title'>Reach Out to Us!</h1>
+                    <h1 className='contact-title'>How Can We Help?</h1>
+                    <h5 className='form-description text-white'>
+                        If you need medical care, do not use the form below. Instead, please request a visit here: <a href='/appointment' className='btn btn-blue-lite'>Book an Appointment</a>
+                        <br></br>
+                        Or Call 1-877-Qcare18 or 1 877-722-7318.
+                    </h5>
                 </div>
             </div>
             <div className='form-container container'>
                 <h3 className='form-header'>Contact us for more information about our company and services.</h3>
-                <p className='form-description'>If you wish to book an appointment with us, please use this link instead: <a href='/appointment' className='contact-link'>Book an Appointment</a></p>
+                <p className='form-description'>
+                    This form should not be used to request an appointment or to relay 
+                    any medical information.
+                    <br></br>
+                    Please call 911 if you’re experiencing a medical emergency.
+                </p>
                 <div className='row w-100 g-4 mx-0'>
                     <div className='col-lg-4 col-md-6'>
                         <input 
