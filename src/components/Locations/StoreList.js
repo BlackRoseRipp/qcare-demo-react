@@ -40,6 +40,7 @@ function StoreList(props) {
       <div className="store-list">
         {filteredLocations.map((location, index) => {
           const doEmail = location.Email !== "" ? true : false
+          const doPhone = location.Phone !== "" ? true : false
 
           return (
             <div className="store-item mt-4">
@@ -55,8 +56,8 @@ function StoreList(props) {
                   {location.Country}
                 </p>
                 <div className="location-contact text-center">
-                  <a className={"btn btn-phone"+(props.buttonStyle ? '-'+props.buttonStyle : '')} href={'tel:'+location.Phone}>Call this location</a>
-                  <a className="btn btn-email" href={'mailto:'+location.Email} style={{display: doEmail ? 'block' : 'none'}}>{location.Email}</a>
+                  <a className={"btn btn-phone"+(props.buttonStyle ? '-'+props.buttonStyle : '')} href={'tel:'+location.Phone} style={{display: doPhone ? 'inline' : 'none'}}>Call this location</a>
+                  <a className="btn btn-email" href={'mailto:'+location.Email} style={{display: doEmail ? 'inline' : 'none'}}>{location.Email}</a>
                 </div>
               </div>
               <hr class="divider" style={{ display: index === locationLength - 1 ? 'none' : 'block' }}></hr>
