@@ -127,35 +127,57 @@ const About = () => {
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div> */}
-                <div className='hstack gap-3 d-flex align-items-start'>
-                    <div className='about-care-item'>
-                        <IoBandageSharp className='access-icon about-icon' />
-                        <div className='access-text ps-0'>Urgent care, from illness to injury</div>
+                <div className='carousel slide' id='aboutSlide'>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     </div>
-                    <div className='about-care-item'>
-                        <FaHeart className='access-icon about-icon' />
-                        <div className='access-text ps-0'>Routine and specialty wellness physicals for school, work or immigration</div>
+                    <div className='carousel-inner justify-content-center mx-auto'>
+                        <div className='carousel-item active'>
+                            <div className='hstack gap-3 d-flex align-items-start w-75 mx-auto'>
+                                <div className='about-care-item'>
+                                    <IoBandageSharp className='access-icon about-icon' />
+                                    <div className='access-text ps-0'>Urgent care, from illness to injury</div>
+                                </div>
+                                <div className='about-care-item'>
+                                    <FaHeart className='access-icon about-icon' />
+                                    <div className='access-text ps-0'>Routine and specialty wellness physicals for school, work or immigration</div>
+                                </div>
+                                <div className='about-care-item'>
+                                    <FaSyringe className='access-icon about-icon' />
+                                    <div className='access-text ps-0'>Vaccinations and medical care for traveling abroad</div>
+                                </div>
+                                <div className='about-care-item'>
+                                    <MdBiotech className='access-icon about-icon' />
+                                    <div className='access-text ps-0'>State-of-the-art medical diagnostic technology</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='carousel-item'>
+                            <div className='hstack gap-3 d-flex align-items-start w-75 mx-auto'>
+                                <div className='about-care-item'>
+                                    <FaXRay className='access-icon about-icon' />
+                                    <div className='access-text ps-0'>Digital X-rays</div>
+                                </div>
+                                <div className='about-care-item'>
+                                    <FaVials className='access-icon about-icon' />
+                                    <div className='access-text ps-0'>Bloodwork</div>
+                                </div>
+                                <div className='about-care-item'>
+                                    <IoIosBeaker className='access-icon about-icon' />
+                                    <div className='access-text ps-0'>Urinalysis</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='about-care-item'>
-                        <FaSyringe className='access-icon about-icon' />
-                        <div className='access-text ps-0'>Vaccinations and medical care for traveling abroad</div>
-                    </div>
-                    <div className='about-care-item'>
-                        <MdBiotech className='access-icon about-icon' />
-                        <div className='access-text ps-0'>State-of-the-art medical diagnostic technology</div>
-                    </div>
-                    <div className='about-care-item'>
-                        <FaXRay className='access-icon about-icon' />
-                        <div className='access-text ps-0'>Digital X-rays</div>
-                    </div>
-                    <div className='about-care-item'>
-                        <FaVials className='access-icon about-icon' />
-                        <div className='access-text ps-0'>Bloodwork</div>
-                    </div>
-                    <div className='about-care-item'>
-                        <IoIosBeaker className='access-icon about-icon' />
-                        <div className='access-text ps-0'>Urinalysis</div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutSlide" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#aboutSlide" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 <div class="about-description py-4">
                     We’re new to urgent care but well known in New York City. Our mobile COVID test 

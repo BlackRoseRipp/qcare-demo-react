@@ -146,6 +146,66 @@ const Home = () => {
                     <img className='about-img' src='assets/img/convenience-graphic.png' />
                 </div>
             </div>
+            <div className='red-container text-center'>
+                <h2 className='section-header-white'>The Doctor is in!</h2>
+                <div className='row g-5 container-lg mx-auto my-4'>
+                    <div className='col-lg-4 col-md-6 text-center'>
+                        <div className='doctor-icon'><FaClinicMedical /></div>
+                        <h3 className='doctor-header'>Full Clinic</h3>
+                        <p className='doctor-text'>
+                            We manage most urgent care visits in our mobile vans. For 
+                            more complicated or vulnerable care visits, we may recommend
+                            patients visit one of our full service urgent care centers 
+                            around the NYC area.
+                        </p>
+                    </div>
+                    <div className='col-lg-4 col-md-6 text-center'>
+                        <div className='doctor-icon'><FaShuttleVan /></div>
+                        <h3 className='doctor-header'>Mobile Clinic</h3>
+                        <p className='doctor-text'>
+                            We’re building a fleet of fully-equipped mobile urgent care 
+                            vans that we’re strategically parking throughout the NYC area 
+                            and five boroughs. We offer care where you need it and when 
+                            you need it most, with convenient location-based hours. 
+                            Schedule an appointment or walk in.
+                        </p>
+                    </div>                    
+                    <div className='col-lg-4 col-md-6 text-center'>
+                        <div className='doctor-icon'><FaHome /></div>
+                        <h3 className='doctor-header'>Home Call</h3>
+                        <p className='doctor-text'>
+                            We provide home visits for eligible seniors and those who are 
+                            disabled.
+                        </p>
+                    </div>
+                </div>
+                <a className="btn btn-lite-red mt-5" href="/plan-your-visit" role="button">Plan Your Visit</a>
+            </div>
+            <div className='white-container-5 container'>
+                <div className='row w-100 mx-0'>
+                    <div className='col-lg-6 order-5 order-lg-1'>
+                        <img src='assets/img/walk-by-nyc.jpg' className='walking-img' />
+                    </div>
+                    <div className='col-lg-6 order-1 order-lg-5 d-flex flex-column justify-content-center'>
+                        <h2 className='section-header-second text-end'>Say Hello when you walk by</h2>
+                        <h2 className='section-header-main text-end'>Stop by when you need us</h2>
+                        <div className='blue-card mt-5'>
+                            <p className='time-text'>
+                                At Qcare, we provide New York City residents with convenient, quality 
+                                healthcare that doesn’t interrupt your day. We’re posting our mobile 
+                                care clinics at strategic locations around the NYC area. Our plan over 
+                                the next several months is to become the convenient walk-in urgent care 
+                                and wellness clinic just outside your door.
+                                <br></br><br></br>
+                                Visit Qcare mobile stations for any urgent medical matter or routine care 
+                                for patients of all ages, from babies to seniors. Our clinic physicians 
+                                are board-certified emergency room doctors with years of experience 
+                                handling medical emergencies throughout the Metro New York area. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='doctor-container'>
                 <div className='container-lg'>
                     <h2 className='section-header-white pb-5'>Quick registration, Quick testing, Quick results</h2>

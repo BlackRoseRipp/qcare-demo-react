@@ -13,6 +13,7 @@ const Privacy = React.lazy(() => import("../../pages/LegalPages/Privacy"))
 const Accessibility = React.lazy(() => import("../../pages/LegalPages/Accessibility"))
 const Terms = React.lazy(() => import("../../pages/LegalPages/Terms"))
 const Wellness = React.lazy(() => import("../../pages/Services/Wellness"))
+const Pediatric = React.lazy(() => import("../../pages/Services/Pediatric"))
 
 export const routes = () => {
     const pages = [
@@ -27,6 +28,7 @@ export const routes = () => {
         { path: "/terms-and-conditions", component: <Terms />},
         { path: "/accessibility", component: <Accessibility />},
         { path: "/prevention", component: <Wellness />},
+        { path: "/pediatrics", component: <Pediatric />},
         { path: "*", component: <PageNotFound />}
     ]
   

@@ -1,0 +1,100 @@
+.pediatric-hero-container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../../public/assets/img/pediatric-hero.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+}
+
+.white-container,
+.blue-container,
+.red-container {
+    padding: 5rem 0;
+}
+
+.blue-container {
+    background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+}
+
+.red-container {
+    background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+}
+
+.rounded-corners {
+    border-radius: 2.5rem;
+}
+
+.white-header,
+.blue-header,
+.red-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.blue-header {
+    color: #2a86c3;
+}
+
+.red-header {
+    color: var(--global-primary-bg-color);
+}
+
+.white-header {
+    color: white;
+}
+
+.hero-body {
+    text-align: start;
+}
+
+.hero-header {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.hero-text {
+    color: white;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.blue-text {
+    color: #2a86c3;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.red-text {
+    color: var(--global-primary-bg-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.btn-blue {
+    background-color: transparent;
+    background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    height: auto;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    border: 0;
+    margin: 2rem 0;
+    text-transform: none;
+    transition: all 220ms ease-in-out;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    color: white;
+    transform: translate(0px, -3px);
+}

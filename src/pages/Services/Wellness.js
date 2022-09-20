@@ -44,7 +44,7 @@ const Wellness = () => {
                                 screen for common diseases. At Qcare, your provider may catch your risk for 
                                 developing illnesses like:
                             </p>
-                            <div className='d-flex flex-column justify-content-center'>
+                            <div className='d-flex flex-column justify-content-center w-25 mx-auto my-4'>
                                 <div className='icon-list-item'>
                                     <h4 className='icon-list-text blue-text'><FaFileMedical className='list-icon'/>&nbsp; Health history</h4>
                                 </div>
@@ -92,7 +92,7 @@ const Wellness = () => {
                                 to screen for common diseases. At Qcare, your provider may catch your 
                                 risk for developing illnesses like:
                             </p>
-                            <div className='d-flex flex-column justify-content-center'>
+                            <div className='d-flex flex-column justify-content-center w-25 mx-auto my-4'>
                                 <div className='icon-list-item'>
                                     <h4 className='icon-list-text red-text'><FaSyringe className='list-icon'/>&nbsp; Diabetes</h4>
                                 </div>
