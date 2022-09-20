@@ -1,68 +1,80 @@
 .contact-container {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .contact-header {
-    color: white;
-    padding: 10rem 0;
-    background: linear-gradient(270deg, #2a86c3 15%, #3fbbe6 50%);
+  color: white;
+  padding: 10rem 0;
+  background: linear-gradient(270deg, #2a86c3 15%, #3fbbe6 50%);
 }
 
 .contact-title {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .form-container {
-    margin-top: 5rem;
-    padding: 2rem;
+  margin-top: 5rem;
+  padding: 2rem;
 }
 
 .form-header {
-    margin-bottom: 3rem;
-    color: #045471;
+  color: #045471;
+}
+
+.form-description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.contact-link {
+  color: #045471;
+}
+
+.contact-link:hover {
+  color: #2a86c3;
 }
 
 .form-container .form-control {
-    border-radius: 0;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    border-bottom: 2px solid #ced4da;
-    padding: .75rem
+  border-radius: 0;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 2px solid #ced4da;
+  padding: 0.75rem;
 }
 
 .form-container .form-control:focus {
-    border-top-color: #ced4da;
-    border-left-color: #ced4da;
-    border-right-color: #ced4da;
-    box-shadow: none !important;
-    border-color: #ced4da;
-    outline: 0;
+  border-top-color: #ced4da;
+  border-left-color: #ced4da;
+  border-right-color: #ced4da;
+  box-shadow: none !important;
+  border-color: #ced4da;
+  outline: 0;
 }
 
 .btn-contact-submit {
-    border-radius: 3rem;
-    border: 0;
-    background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
-    color: white;
-    text-transform: uppercase;
-    padding: .75rem 5rem;
-    transition: all 220ms linear;
+  border-radius: 3rem;
+  border: 0;
+  background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+  color: white;
+  text-transform: uppercase;
+  padding: 0.75rem 5rem;
+  transition: all 220ms linear;
 }
 
 .btn-contact-submit:hover,
 .btn-contact-submit:focus {
-    color: white;
+  color: white;
 }
 
 .btn-contact-submit:hover {
-    transform: translate(0px, -4px);
+  transform: translate(0px, -4px);
 }
 
 @media screen and (max-width: 767px) {
-    .contact-header {
-        padding: 8rem 0;
-        text-align: center;
-    }
-
+  .contact-header {
+    padding: 8rem 0;
+    text-align: center;
+  }
 }

@@ -64,8 +64,8 @@ const Footer = () => {
                                         </a>
                                     </li>
                                     <li style={{ padding: '.4em 0' }}>
-                                        <a className="contact-link" href="mailto:clientservices@qcare.com">
-                                            clientservices@qcare.com
+                                        <a className="contact-link" href="mailto:helpdesk@qcare.com">
+                                        helpdesk@qcare.com
                                         </a>
                                     </li>
                                     <li style={{ padding: '.4em 0' }}>

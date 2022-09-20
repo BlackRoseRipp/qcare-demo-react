@@ -10,7 +10,8 @@ const Contact = () => {
                 </div>
             </div>
             <div className='form-container container'>
-                <h3 className='form-header'>Contact us for more information about your urgent care needs.</h3>
+                <h3 className='form-header'>Contact us for more information about our company and services.</h3>
+                <p className='form-description'>If you wish to book an appointment with us, please use this link instead: <a href='/appointment' className='contact-link'>Book an Appointment</a></p>
                 <div className='row w-100 g-4 mx-0'>
                     <div className='col-lg-4 col-md-6'>
                         <input 

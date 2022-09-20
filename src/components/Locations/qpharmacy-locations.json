@@ -20,5 +20,27 @@
         "Phone": "+13473185488",
         "Email": "",
         "Img": ""
+    },
+    {
+        "Name": "QCare HQ",
+        "Address": "143 W 72nd St",
+        "City": "Manhattan",
+        "State": "NY",
+        "Zip": "10023",
+        "Country": "United States",
+        "Phone": "",
+        "Email": "",
+        "Img": ""
+    },
+    {
+        "Name": "Bronx Park Urgent Medical Care",
+        "Address": "2016 Bronxdale Ave, Suite #101",
+        "City": "Bronx",
+        "State": "NY",
+        "Zip": "10462",
+        "Country": "United States",
+        "Phone": "+17189189676",
+        "Email": "",
+        "Img": ""
     }
 ]
