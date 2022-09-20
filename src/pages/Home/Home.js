@@ -129,7 +129,7 @@ const Home = () => {
                 <a className="btn btn-lite mt-5" href="/plan-your-visit" role="button">Plan Your Visit</a>
             </div> */}
             <div className='grey-container text-center'>
-                <h2 className='section-header-second mb-5 text-center'>Meeting you wherever you are!</h2>
+                <h2 className='section-header-second mb-5 text-center'>Meeting New York patients wherever you are!</h2>
                 <div className='map-container'>
                     <StoreLocator 
                         locations={Data()} 
@@ -137,7 +137,7 @@ const Home = () => {
                         buttonStyle='red'/>
                 </div>
                 <div className='mx-auto text-center'>
-                    <a className="btn btn-lite-red mt-5" href="/location" role="button">See all of our locations</a>
+                    <a className="btn btn-lite-red mt-5" href="/location" role="button">See all of our NYC locations</a>
                 </div>
             </div>
             <div className='white-container-5 container-lg'>

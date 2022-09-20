@@ -5,7 +5,27 @@
     height: 630px;
     border: 1px solid #ccc;
     border-radius: 2.5rem;
-    padding: 0 1rem;
+    padding: 1rem;
+}
+
+.store-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.store-list::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 3rem;
+    border: 2px solid white;
+}
+
+.store-list::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 2rem;
+}
+
+.store-list::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 2rem;
 }
 
 .store-item p {

@@ -72,6 +72,26 @@
   transform: translate(0px, -4px);
 }
 
+.btn-blue-lite {
+  border: 0;
+  color: #2a86c3;
+  background: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  transition: all 220ms ease-in-out;
+}
+
+.btn-blue-lite:hover,
+.btn-blue-lite:focus {
+  color: #2a86c3;
+  background: white;
+}
+
+.btn-blue-lite:hover {
+  transform: translate(0px, -4px);
+}
+
 @media screen and (max-width: 767px) {
   .contact-header {
     padding: 8rem 0;

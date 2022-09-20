@@ -105,17 +105,17 @@ const Services = () => {
                     </div>
                     <div className='col-lg-7'>
                         <div className="vstack">
-                            <a className='btn btn-care text-right' href='/home-visits'>
-                                <FaHome className='red-icon' />&nbsp; Schedule a house call
+                            <a className='btn btn-care text-right' href='/locations'>
+                                <FaClinicMedical className='red-icon' />&nbsp; Visit one of our full clinic locations
                             </a>
                             <a className='btn btn-care text-right' href='/mobile-stations'>
                                 <FaShuttleVan className='red-icon' />&nbsp; Stop by a QCare mobile care station near you for a walk-in visit
                             </a>
+                            <a className='btn btn-care text-right' href='/home-visits'>
+                                <FaHome className='red-icon' />&nbsp; Schedule a house call
+                            </a>
                             <a className='btn btn-care text-right' href='tel:877-722-7318'>
                                 <FaPhoneAlt className='red-icon' />&nbsp; Call to schedule a visit at your convenience
-                            </a>
-                            <a className='btn btn-care text-right' href='/locations'>
-                                <FaClinicMedical className='red-icon' />&nbsp; Visit one of our full clinic locations
                             </a>
                         </div>
                     </div>

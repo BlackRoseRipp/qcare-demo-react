@@ -11,7 +11,7 @@ const About = () => {
             <div className="about-hero-container">
                 <div className="container-lg my-auto">
                     <div className="hero-body text-center">
-                        <h6 className="hero-header">Get to know your friendly New York neighborhood healthcare provider</h6>
+                        <h6 className="hero-header">Urgent and preventative healthcare when and where you need it</h6>
                         <p className='hero-text'>
                             A sudden sickness or injury can leave you feeling lousy while also disrupting your carefully 
                             planned schedule. Our QCare mobile urgent care provides New Yorkers access to quick, convenient, 
@@ -64,7 +64,7 @@ const About = () => {
             </div>
             <div className="red-container">
                 <h3 className='section-header-white'>Rely on us for convenient access to…</h3>
-                <div className='carousel slide' id='aboutSlide'>
+                {/* <div className='carousel slide' id='aboutSlide'>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -126,6 +126,36 @@ const About = () => {
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                </div> */}
+                <div className='hstack gap-3 d-flex align-items-start'>
+                    <div className='about-care-item'>
+                        <IoBandageSharp className='access-icon about-icon' />
+                        <div className='access-text ps-0'>Urgent care, from illness to injury</div>
+                    </div>
+                    <div className='about-care-item'>
+                        <FaHeart className='access-icon about-icon' />
+                        <div className='access-text ps-0'>Routine and specialty wellness physicals for school, work or immigration</div>
+                    </div>
+                    <div className='about-care-item'>
+                        <FaSyringe className='access-icon about-icon' />
+                        <div className='access-text ps-0'>Vaccinations and medical care for traveling abroad</div>
+                    </div>
+                    <div className='about-care-item'>
+                        <MdBiotech className='access-icon about-icon' />
+                        <div className='access-text ps-0'>State-of-the-art medical diagnostic technology</div>
+                    </div>
+                    <div className='about-care-item'>
+                        <FaXRay className='access-icon about-icon' />
+                        <div className='access-text ps-0'>Digital X-rays</div>
+                    </div>
+                    <div className='about-care-item'>
+                        <FaVials className='access-icon about-icon' />
+                        <div className='access-text ps-0'>Bloodwork</div>
+                    </div>
+                    <div className='about-care-item'>
+                        <IoIosBeaker className='access-icon about-icon' />
+                        <div className='access-text ps-0'>Urinalysis</div>
+                    </div>
                 </div>
                 <div class="about-description py-4">
                     We’re new to urgent care but well known in New York City. Our mobile COVID test 
@@ -140,7 +170,7 @@ const About = () => {
             </div>
             <div className="white-container-5">
                 <div className="container-lg">
-                    <h3 className="section-header-red">Our team is big, but our care is personalized</h3>
+                    <h3 className="section-header-red">Get to know your neighborhood medical provider</h3>
                     <div className="row w-100" id='teamRow'>
                         <div className="col-lg-4 col-md-6 d-flex flex-column justify-content-center">
                             <div className="team-button">
