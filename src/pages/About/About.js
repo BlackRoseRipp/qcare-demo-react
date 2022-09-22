@@ -3,9 +3,23 @@ import { FaClinicMedical, FaHeart, FaHome, FaShuttleVan, FaSyringe, FaVials, FaW
 import { IoIosBeaker } from 'react-icons/io';
 import { IoBandageSharp } from 'react-icons/io5';
 import { MdBiotech } from 'react-icons/md';
+import InsuranceSlider from '../../components/InsuranceSlider/InsuranceSlider';
+import Data from '../../components/Locations/Data';
+import StoreLocator from '../../components/Locations/StoreLocator';
 import './About.css';
 
 const About = () => {
+    /* const insuranceList = INSURANCE_DATA
+    const insuranceSliderIndicators = [...Array(Math.ceil(insuranceList.length / 4)).keys()]
+
+    const range = (start, stop, step) => {
+        let a = [start], b = start;
+        while (b < stop) {
+            a.push(b += step || 1);
+        }
+        return (b > stop) ? a.slice(0,-1) : a;
+    } */
+
     return (
         <div>
             <div className="about-hero-container">
@@ -215,6 +229,22 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="grey-container text-center">
+                <h2 className='section-header-blue mb-5 text-center' style={{fontSize: '2.5rem'}}>Meeting New York patients wherever you are!</h2>
+                <div className='map-container'>
+                    <StoreLocator 
+                        locations={Data()} 
+                        src='https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F'
+                        buttonStyle='blue'/>
+                </div>
+                <div className='mx-auto text-center'>
+                    <a className="btn btn-lite-blue mt-5" href="/locations" role="button">See all of our NYC locations</a>
+                </div>
+            </div>
+            <div className='white-container-3'>
+                <h2 className="section-header-blue text-center">We Accept These Insurances</h2>
+                <InsuranceSlider />
             </div>
         </div>
     )

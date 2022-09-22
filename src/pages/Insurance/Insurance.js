@@ -1,6 +1,6 @@
 import React from 'react';
+import INSURANCE_DATA from '../../components/InsuranceSlider/insurance.json';
 import './Insurance.css';
-import INSURANCE_DATA from './insurance.json';
 
 const Insurance = () => {
     const insuranceList = INSURANCE_DATA

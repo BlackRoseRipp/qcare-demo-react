@@ -139,8 +139,8 @@ const NavBar = () => {
                                     primary: 'All Locations'
                                 },
                                 {
-                                    to: '/home-visits',
-                                    primary: 'Home Visits'
+                                    to: '/house-calls',
+                                    primary: 'House Calls'
                                 },
                                 {
                                     to: '/insurance',

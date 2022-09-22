@@ -34,7 +34,7 @@ const Home = () => {
                         </a>
                         <div className='vr'></div>
                         <hr className='hr'></hr>
-                        <a className='info-button text-center' href='/home-visits'>
+                        <a className='info-button text-center' href='/house-calls'>
                             <div className='doctor-icon'><FaHome /></div>
                             <h3 className='doctor-header'>House Calls</h3>
                         </a>

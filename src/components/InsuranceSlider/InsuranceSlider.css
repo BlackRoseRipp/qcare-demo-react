@@ -1,0 +1,31 @@
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #fff;
+}
+
+.carousel-indicators {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+
+#insuranceItem {
+    padding-bottom: 4rem;
+}
+
+.insurance-img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.insurance-text {
+    font-size: 1.7rem;
+    text-align: center;
+}

@@ -8,7 +8,7 @@ const Accessibility = () => {
             <h4>General</h4>
             <p>
                 <strong>QCare</strong> strives to ensure that its services are 
-                accessible to people with disabilities. LabQ Diagnostics has 
+                accessible to people with disabilities. QCare has 
                 invested a significant amount of resources to help ensure that 
                 its website is made easier to use and more accessible for people 
                 with disabilities, with the strong belief that every person has 
@@ -31,7 +31,7 @@ const Accessibility = () => {
             </p>
             <h4>Disclaimer</h4>
             <p>
-                LabQ Diagnostics continues its efforts to constantly improve the 
+                QCare continues its efforts to constantly improve the 
                 accessibility of its site and services in the belief that it is 
                 our collective moral obligation to allow seamless, accessible and 
                 unhindered use also for those of us with disabilities.
@@ -55,10 +55,10 @@ const Accessibility = () => {
             <h4>Contact Us</h4>
             <p>
                 If you wish to report an accessibility issue, have any questions 
-                or need assistance, please contact LabQ Diagnostics Customer 
+                or need assistance, please contact QCare Customer 
                 Support as follows:
             </p>
-            <a href='mailto:clientservices@qcare.com'>clientservices@qcare.com</a>
+            <a href='mailto:helpdesk@qcare.com'>helpdesk@qcare.com</a>
             <br></br>
             <a href='tel:877-722-7318'>877-722-7318</a>
         </div>
