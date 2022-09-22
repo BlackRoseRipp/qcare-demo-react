@@ -59,6 +59,10 @@
   background: #eee;
 }
 
+.rounded-corners {
+  border-radius: 2.5rem;
+}
+
 .red-header,
 .white-header,
 .blue-header {
@@ -133,6 +137,34 @@
 .btn-red:focus {
   color: white;
   transform: translate(0px, -3px);
+}
+
+.btn-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 0;
+  border-radius: 4rem;
+  background-color: transparent;
+  transition: all 220ms linear;
+  color: white;
+}
+
+.btn-service:hover {
+  color: var(--global-primary-bg-color);
+  background-color: white;
+}
+
+.service-icon-img {
+  width: 180px;
+  padding: 1rem 0;
+}
+
+.service-icon-text {
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 #servicesAccordionContainer,

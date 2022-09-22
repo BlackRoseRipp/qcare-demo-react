@@ -20,6 +20,11 @@ const NavBar = () => {
                         <BsFillTelephoneFill style={{ padding: '0em .25em', fontSize: '2em'}} />
                         <span>+1 877-722-7318</span>
                         <div className='vr'></div>
+                        <a href='/locations' className='nav-top-link'>
+                            <MdLocationPin style={{ fontSize: '1.25em', fontWeight: '600', marginRight: '.5rem'}}/>
+                            <span>Locations</span>
+                        </a>
+                        <div className='vr'></div>
                         <AiOutlineMail style={{ fontSize: '1.25em', fontWeight: '600', marginRight: '.5rem'}}/>
                         <span>helpdesk@qcare.com</span>
                     </div>
@@ -43,14 +48,14 @@ const NavBar = () => {
                                     to: '/team',
                                     primary: 'Meet the team'
                                 },
-                                {
+                                /* {
                                     to: '/careers',
                                     primary: 'Careers'
                                 },
                                 {
                                     to: '/blog',
                                     primary: 'Blog'
-                                },
+                                }, */
                                 {
                                     to: "/contact",
                                     primary: "Contact Us"
@@ -130,16 +135,12 @@ const NavBar = () => {
                             to='/plan-your-visit'
                             dropdownLinks={[
                                 {
+                                    to: '/locations',
+                                    primary: 'All Locations'
+                                },
+                                {
                                     to: '/home-visits',
                                     primary: 'Home Visits'
-                                },
-                                {
-                                    to: '/mobile-stations',
-                                    primary: 'Mobile Stations'
-                                },
-                                {
-                                    to: '/locations',
-                                    primary: 'Clinic Locations'
                                 },
                                 {
                                     to: '/insurance',

@@ -98,7 +98,48 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className="white-container container">
+            <div className='container'>
+                <h2 className="red-header text-center py-5 mt-0">Our Available Services</h2>
+                <div className='row w-75 mx-auto g-5 red-container rounded-corners py-4'>
+                    <div className="col-lg-4 col-md-6 text-center">
+                        <a href="#" className="btn btn-service">
+                            <img className='service-icon-img' src='assets/img/covid-testing-img.png' />
+                            <span className='service-icon-text'>COVID-19 Testing</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-md-6 text-center">
+                        <a href="#" className="btn btn-service">
+                            <img className='service-icon-img' src='assets/img/trauma-care-img.png' />
+                            <span className='service-icon-text'>Wellness Care</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-md-6 text-center">
+                        <a href="#" className="btn btn-service">
+                            <img className='service-icon-img' src='assets/img/pediatric-care-img.png' />
+                            <span className='service-icon-text'>Pediatric Care</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-md-6 text-center">
+                        <a href="#" className="btn btn-service">
+                            <img className='service-icon-img' src='assets/img/xray-img.png' />
+                            <span className='service-icon-text'>X-Ray</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-md-6 text-center">
+                        <a href="#" className="btn btn-service">
+                            <img className='service-icon-img' src='assets/img/allergies-img.png' />
+                            <span className='service-icon-text'>Allergies & Asthma</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-4 col-md-6 text-center">
+                        <a href="#" className="btn btn-service">
+                            <img className='service-icon-img' src='assets/img/vaccination-img.png' />
+                            <span className='service-icon-text'>Vaccinations</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="white-container container pt-4">
                 <div className='row w-100 mx-0 mt-4'>
                     <div className='col-lg-5 d-flex flex-column justify-content-center'>
                         <h3 className='red-header text-right'>Access care you need,<br></br> When you need it</h3>
