@@ -8,7 +8,7 @@ const Locations = () => {
 
     return (
         <div className='locations-container container'>
-            <h1 className='locations-header'>Our Clinic Locations</h1>
+            <h1 className='locations-header'>Our New York City Locations</h1>
             <div className='location-fronts-container visually-hidden'>
                 <div className='carousel slide' id='storeFrontsCarousel'>
                     <div className='carousel-indicators'>

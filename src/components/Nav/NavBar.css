@@ -65,6 +65,10 @@
   align-items: center;
 }
 
+.nav-top-link:hover {
+  color: white;
+}
+
 .nav-bottom .navbar-brand {
   width: 13%;
 }

@@ -24,13 +24,13 @@ const Home = () => {
                     <div className="hstack gap-3 d-flex justify-content-center">
                         <a className='info-button text-center' href='/urgent-care'>
                             <div className='doctor-icon'><FaClinicMedical /></div>
-                            <h3 className='doctor-header'>Urgent Care Clinic</h3>
+                            <h3 className='doctor-header'>Urgent Care Clinics</h3>
                         </a>
                         <div className='vr'></div>
                         <hr className='hr'></hr>
-                        <a className='info-button text-center' href='/mobile-stations'>
+                        <a className='info-button text-center' href='/locations'>
                             <div className='doctor-icon'><FaShuttleVan /></div>
-                            <h3 className='doctor-header'>Mobile Clinic</h3>
+                            <h3 className='doctor-header'>Mobile Clinics</h3>
                         </a>
                         <div className='vr'></div>
                         <hr className='hr'></hr>
@@ -45,45 +45,47 @@ const Home = () => {
                 <h2 className='about-header-main'>Customizable healthcare when and where you need it most</h2>
                 <div className='container-lg py-5'>
                     <div className='row g-4 mx-auto mb-4'>
+                        <div className='col-lg-2 full-screen' style={{width: '12.5%'}}></div>
                         <div className="col-lg-3 col-md-4 text-center">
-                            <a href="#" className="btn btn-service">
+                            <a href="/covid-19" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/covid-testing-img.png' />
                                 <span className='service-icon-text'>COVID-19 Testing</span>
                             </a>
                         </div>
                         <div className="col-lg-3 col-md-4 text-center">
-                            <a href="#" className="btn btn-service">
+                            <a href="/urgent-care" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/trauma-care-img.png' />
                                 <span className='service-icon-text'>Trauma Care</span>
                             </a>
                         </div>
-                        <div className="col-lg-3 col-md-4 text-center">
+                        {/* <div className="col-lg-3 col-md-4 text-center">
                             <a href="#" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/womens-health-img.png' />
                                 <span className='service-icon-text'>Women's Health</span>
                             </a>
-                        </div>
+                        </div> */}
                         <div className="col-lg-3 col-md-4 text-center">
-                            <a href="#" className="btn btn-service">
+                            <a href="/pediatrics" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/pediatric-care-img.png' />
                                 <span className='service-icon-text'>Pediatric Care</span>
                             </a>
                         </div>
                         <div className='col-lg-2 full-screen' style={{width: '12.5%'}}></div>
+                        <div className='col-lg-2 full-screen' style={{width: '12.5%'}}></div>
                         <div className="col-lg-3 col-md-4 text-center">
-                            <a href="#" className="btn btn-service">
-                                <img className='service-icon-img' src='assets/img/xray-img.png' />
-                                <span className='service-icon-text'>X-Ray</span>
+                            <a href="/prevention" className="btn btn-service">
+                                <img className='service-icon-img' src='assets/img/womens-health-img.png' />
+                                <span className='service-icon-text'>Wellness Care</span>
                             </a>
                         </div>
                         <div className="col-lg-3 col-md-4 text-center">
-                            <a href="#" className="btn btn-service">
+                            <a href="/allergies-&-asthma" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/allergies-img.png' />
                                 <span className='service-icon-text'>Allergies & Asthma</span>
                             </a>
                         </div>
                         <div className="col-lg-3 col-md-4 text-center">
-                            <a href="#" className="btn btn-service">
+                            <a href="/vaccines" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/vaccination-img.png' />
                                 <span className='service-icon-text'>Vaccinations</span>
                             </a>
@@ -137,7 +139,7 @@ const Home = () => {
                         buttonStyle='red'/>
                 </div>
                 <div className='mx-auto text-center'>
-                    <a className="btn btn-lite-red mt-5" href="/location" role="button">See all of our NYC locations</a>
+                    <a className="btn btn-lite-red mt-5" href="/locations" role="button">See all of our NYC locations</a>
                 </div>
             </div>
             <div className='white-container-5 container-lg'>
@@ -147,11 +149,16 @@ const Home = () => {
                 </div>
             </div>
             <div className='red-container text-center'>
-                <h2 className='section-header-white'>The Doctor is in!</h2>
+                <h2 className='section-header-white'>The doctor is in!</h2>
+                <p className='doctor-text mt-5'>
+                    We offer care where you need it and when 
+                    you need it most, with convenient location-based hours. 
+                    Schedule an appointment or walk in.
+                </p>
                 <div className='row g-5 container-lg mx-auto my-4'>
                     <div className='col-lg-4 col-md-6 text-center'>
                         <div className='doctor-icon'><FaClinicMedical /></div>
-                        <h3 className='doctor-header'>Full Clinic</h3>
+                        <h3 className='doctor-header'>Full Clinics</h3>
                         <p className='doctor-text'>
                             We manage most urgent care visits in our mobile vans. For 
                             more complicated or vulnerable care visits, we may recommend
@@ -161,18 +168,16 @@ const Home = () => {
                     </div>
                     <div className='col-lg-4 col-md-6 text-center'>
                         <div className='doctor-icon'><FaShuttleVan /></div>
-                        <h3 className='doctor-header'>Mobile Clinic</h3>
+                        <h3 className='doctor-header'>Mobile Clinics</h3>
                         <p className='doctor-text'>
                             We’re building a fleet of fully-equipped mobile urgent care 
                             vans that we’re strategically parking throughout the NYC area 
-                            and five boroughs. We offer care where you need it and when 
-                            you need it most, with convenient location-based hours. 
-                            Schedule an appointment or walk in.
+                            and five boroughs.
                         </p>
                     </div>                    
                     <div className='col-lg-4 col-md-6 text-center'>
                         <div className='doctor-icon'><FaHome /></div>
-                        <h3 className='doctor-header'>Home Call</h3>
+                        <h3 className='doctor-header'>House Calls</h3>
                         <p className='doctor-text'>
                             We provide home visits for eligible seniors and those who are 
                             disabled.
@@ -187,7 +192,7 @@ const Home = () => {
                         <img src='assets/img/walk-by-nyc.jpg' className='walking-img' />
                     </div>
                     <div className='col-lg-6 order-1 order-lg-5 d-flex flex-column justify-content-center'>
-                        <h2 className='section-header-second text-end'>Say Hello when you walk by</h2>
+                        <h2 className='section-header-second text-end'>Say hello when you walk by</h2>
                         <h2 className='section-header-main text-end'>Stop by when you need us</h2>
                         <div className='blue-card mt-5'>
                             <p className='time-text'>

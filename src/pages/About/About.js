@@ -23,7 +23,7 @@ const About = () => {
             </div>
             <div className="white-container-5">
                 <div className='container-lg'>
-                    <h3 className="section-header-blue">Access Our Care</h3>
+                    <h3 className="section-header-blue" style={{fontSize: '2rem'}}>Access Our Care Throughout New York City</h3>
                 </div>
                 <div className="row w-100 mx-0">
                     <div className="col-lg-6 d-flex flex-column justify-content-center">
@@ -192,7 +192,7 @@ const About = () => {
             </div>
             <div className="white-container-5">
                 <div className="container-lg">
-                    <h3 className="section-header-red">Get to know your neighborhood medical provider</h3>
+                    <h3 className="section-header-red" style={{fontSize: '2rem'}}>Get to know your NYC neighborhood medical provider</h3>
                     <div className="row w-100" id='teamRow'>
                         <div className="col-lg-4 col-md-6 d-flex flex-column justify-content-center">
                             <div className="team-button">
