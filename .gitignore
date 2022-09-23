@@ -10,6 +10,7 @@
 
 # production
 /build
+build.zip
 
 # misc
 .DS_Store
@@ -20,6 +21,10 @@
 
 npm-debug.log*
 yarn-debug.log*
+<<<<<<< HEAD
 yarn-error.log*
 
 build.zip
+=======
+yarn-error.log*
+>>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e

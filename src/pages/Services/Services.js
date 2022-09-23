@@ -2,6 +2,12 @@ import React from 'react';
 import { FaClinicMedical, FaFileMedical, FaHome, FaPhoneAlt, FaShuttleVan, FaThermometer } from 'react-icons/fa';
 import { MdHealing } from 'react-icons/md';
 import { RiMentalHealthFill, RiTestTubeFill } from 'react-icons/ri';
+<<<<<<< HEAD
+=======
+import InsuranceSlider from '../../components/InsuranceSlider/InsuranceSlider';
+import Data from '../../components/Locations/Data';
+import StoreLocator from '../../components/Locations/StoreLocator';
+>>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
 import './Services.css';
 
 const Services = () => {
@@ -152,7 +158,11 @@ const Services = () => {
                             <a className='btn btn-care text-right' href='/mobile-stations'>
                                 <FaShuttleVan className='red-icon' />&nbsp; Stop by a QCare mobile care station near you for a walk-in visit
                             </a>
+<<<<<<< HEAD
                             <a className='btn btn-care text-right' href='/home-visits'>
+=======
+                            <a className='btn btn-care text-right' href='/house-calls'>
+>>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
                                 <FaHome className='red-icon' />&nbsp; Schedule a house call
                             </a>
                             <a className='btn btn-care text-right' href='tel:877-722-7318'>
@@ -276,6 +286,25 @@ const Services = () => {
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
+=======
+            <div className="grey-container text-center">
+                <h2 className='blue-header mb-5 text-center' style={{fontSize: '2.5rem'}}>Meeting New York patients wherever you are!</h2>
+                <div className='map-container'>
+                    <StoreLocator 
+                        locations={Data()} 
+                        src='https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F'
+                        buttonStyle='blue'/>
+                </div>
+                <div className='mx-auto text-center'>
+                    <a className="btn btn-lite-blue mt-5" href="/locations" role="button">See all of our NYC locations</a>
+                </div>
+            </div>
+            <div className='white-container-3'>
+                <h2 className="blue-header text-center" style={{marginTop: '0', fontSize: '3rem'}}>We Accept These Insurances</h2>
+                <InsuranceSlider />
+            </div>
+>>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
         </div>
     )
 }

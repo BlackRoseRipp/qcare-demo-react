@@ -34,7 +34,11 @@ const Home = () => {
                         </a>
                         <div className='vr'></div>
                         <hr className='hr'></hr>
+<<<<<<< HEAD
                         <a className='info-button text-center' href='/home-visits'>
+=======
+                        <a className='info-button text-center' href='/house-calls'>
+>>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
                             <div className='doctor-icon'><FaHome /></div>
                             <h3 className='doctor-header'>House Calls</h3>
                         </a>
