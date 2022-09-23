@@ -2,12 +2,9 @@ import React from 'react';
 import { FaClinicMedical, FaFileMedical, FaHome, FaPhoneAlt, FaShuttleVan, FaThermometer } from 'react-icons/fa';
 import { MdHealing } from 'react-icons/md';
 import { RiMentalHealthFill, RiTestTubeFill } from 'react-icons/ri';
-<<<<<<< HEAD
-=======
 import InsuranceSlider from '../../components/InsuranceSlider/InsuranceSlider';
 import Data from '../../components/Locations/Data';
 import StoreLocator from '../../components/Locations/StoreLocator';
->>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
 import './Services.css';
 
 const Services = () => {
@@ -90,8 +87,8 @@ const Services = () => {
 
     return (
         <div>
-            <div className="services-hero-container">
-                <div className="container-lg my-auto">
+            <div className="allergies-hero-container">
+                <div className="container my-auto">
                     <div className="hero-body text-center">
                         <h6 className="hero-header">Urgent care and preventative healthcare for all ages in New York City</h6>
                         <p className="hero-text">
@@ -153,16 +150,12 @@ const Services = () => {
                     <div className='col-lg-7'>
                         <div className="vstack">
                             <a className='btn btn-care text-right' href='/locations'>
-                                <FaClinicMedical className='red-icon' />&nbsp; Visit one of our full clinic locations
+                                <FaClinicMedical className='red-icon' />&nbsp; Visit one of our urgent care clinic locations
                             </a>
                             <a className='btn btn-care text-right' href='/mobile-stations'>
-                                <FaShuttleVan className='red-icon' />&nbsp; Stop by a QCare mobile care station near you for a walk-in visit
+                                <FaShuttleVan className='red-icon' />&nbsp; Stop by a QCare mobile care unit near you for a walk-in visit
                             </a>
-<<<<<<< HEAD
-                            <a className='btn btn-care text-right' href='/home-visits'>
-=======
                             <a className='btn btn-care text-right' href='/house-calls'>
->>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
                                 <FaHome className='red-icon' />&nbsp; Schedule a house call
                             </a>
                             <a className='btn btn-care text-right' href='tel:877-722-7318'>
@@ -286,8 +279,6 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
-=======
             <div className="grey-container text-center">
                 <h2 className='blue-header mb-5 text-center' style={{fontSize: '2.5rem'}}>Meeting New York patients wherever you are!</h2>
                 <div className='map-container'>
@@ -304,7 +295,6 @@ const Services = () => {
                 <h2 className="blue-header text-center" style={{marginTop: '0', fontSize: '3rem'}}>We Accept These Insurances</h2>
                 <InsuranceSlider />
             </div>
->>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
         </div>
     )
 }

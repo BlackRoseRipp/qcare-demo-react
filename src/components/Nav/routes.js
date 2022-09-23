@@ -15,6 +15,7 @@ const Terms = React.lazy(() => import("../../pages/LegalPages/Terms"))
 const Wellness = React.lazy(() => import("../../pages/Services/Wellness"))
 const Pediatric = React.lazy(() => import("../../pages/Services/Pediatric"))
 const UrgentCare = React.lazy(() => import("../../pages/Services/UrgentCare"))
+const Allergies = React.lazy(() => import("../../pages/Services/Allergies"))
 
 export const routes = () => {
     const pages = [
@@ -31,6 +32,7 @@ export const routes = () => {
         { path: "/prevention", component: <Wellness />},
         { path: "/pediatrics", component: <Pediatric />},
         { path: "/urgent-care", component: <UrgentCare />},
+        { path: "/allergies-&-asthma", component: <Allergies />},
         { path: "*", component: <PageNotFound />}
     ]
   

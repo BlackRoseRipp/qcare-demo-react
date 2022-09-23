@@ -1,0 +1,225 @@
+.allergies-hero-container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../../public/assets/img/pexels-cottonbro-6865169.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 70vh;
+}
+
+.hero-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.hero-text {
+  color: white;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.btn-hero {
+  background-color: transparent;
+  background-image: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  height: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  border: 0;
+  margin: 2rem 0;
+  text-transform: none;
+  transition: all 220ms ease-in-out;
+}
+
+.white-container-3 {
+  padding: 3rem 0;
+}
+
+.white-container,
+.red-container,
+.blue-container,
+.grey-container {
+  padding: 5rem 0;
+}
+
+.blue-container {
+  background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+}
+
+.red-container {
+  background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+}
+
+.grey-container {
+  background: #eee;
+}
+
+.rounded-corners {
+  border-radius: 2.5rem;
+}
+
+.rounded-card-right {
+  border-radius: 2.5rem 0 0 2.5rem;
+}
+
+.rounded-card-left {
+  border-radius: 0 2.5rem 2.5rem 0;
+}
+
+.red-header,
+.white-header,
+.blue-header {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+
+.red-header {
+  color: var(--global-primary-bg-color);
+}
+
+.white-header {
+  color: white;
+}
+
+.blue-header {
+  color: #2a86c3;
+}
+
+.btn-care {
+  border: 0;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  color: var(--global-primary-bg-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: all 220ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.btn-care:hover {
+  background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+  color: white;
+  box-shadow: 0 4px 12px 0 #ccc;
+}
+
+.btn-red,
+.btn-blue {
+  padding: 0.5rem 1.5rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 0;
+  transition: all 220ms ease-in-out;
+  border-radius: 4rem;
+  width: fit-content;
+}
+
+.btn-red {
+  background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+}
+
+.btn-blue {
+  background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
+}
+
+.btn-hero:hover,
+.btn-hero:focus,
+.btn-blue:hover,
+.btn-red:hover,
+.btn-blue:focus,
+.btn-red:focus {
+  color: white;
+  transform: translate(0px, -3px);
+}
+
+.btn-lite-blue {
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2a86c3;
+  height: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  border: 0;
+  margin-top: auto;
+  text-transform: none;
+}
+
+.btn-lite-blue:hover,
+.btn-lite-blue:focus,
+.btn-lite-blue:active {
+  background-color: #fff;
+  color: #2a86c3;
+  border: 0;
+}
+
+.blue-text {
+  color: #2a86c3;
+}
+
+.red-text {
+  color: var(--global-primary-bg-color);
+}
+
+.p-text {
+  font-size: 1.2rem;
+}
+
+.left-blue-img {
+  width: 100%;
+  border-radius: 2.5rem;
+  border: 2px solid #2a86c3;
+  transform: translate(1.2rem, -1.2rem);
+}
+
+.right-red-img {
+  width: 100%;
+  border-radius: 2.5rem;
+  transform: translate(-2rem, -1.2rem);
+  border: 2px solid var(--global-primary-bg-color);
+}
+
+.nav-tabs .nav-link {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+  color: #2a86c3;
+}
+
+.tab-content {
+  background: white;
+  border-radius: 0 0 2.5rem 2.5rem;
+  padding: 2rem 1rem;
+}
+
+.icon-list-item {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.icon-list-text {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .fullscreen {
+    display: none !important;
+  }
+}

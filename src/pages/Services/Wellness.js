@@ -3,6 +3,9 @@ import { FaFileMedical, FaHeartbeat, FaPrescriptionBottleAlt, FaStethoscope, FaS
 import { GiBrain, GiSyringe } from 'react-icons/gi';
 import { IoScaleSharp } from 'react-icons/io5';
 import { RiVirusFill } from 'react-icons/ri';
+import InsuranceSlider from '../../components/InsuranceSlider/InsuranceSlider';
+import Data from '../../components/Locations/Data';
+import StoreLocator from '../../components/Locations/StoreLocator';
 import './Wellness.css';
 
 const Wellness = () => {
@@ -29,7 +32,7 @@ const Wellness = () => {
                         <p className='hero-text'>
                             You don’t have to be sick to go to the doctor. If you’re generally healthy 
                             but want to review your health with a professional, consider scheduling a 
-                            wellness visit with Qcare, located at mobile locations and with full clinics 
+                            wellness visit with Qcare, located at mobile care units and with urgent care clinics 
                             throughout New York City.
                             <br></br><br></br>
                             A yearly wellness visit is a chance to stay ahead of illnesses. You and your 
@@ -130,6 +133,22 @@ const Wellness = () => {
                     </p>
                 </div>
                 <a className='btn btn-blue' href='/appointment'>Schedule Your Next Visit</a>
+            </div>
+            <div className="grey-container text-center">
+                <h2 className='blue-header mb-5 text-center' style={{fontSize: '2.5rem'}}>Meeting New York patients wherever you are!</h2>
+                <div className='map-container'>
+                    <StoreLocator 
+                        locations={Data()} 
+                        src='https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F'
+                        buttonStyle='blue'/>
+                </div>
+                <div className='mx-auto text-center'>
+                    <a className="btn btn-lite-blue mt-5" href="/locations" role="button">See all of our NYC locations</a>
+                </div>
+            </div>
+            <div className='white-container-3'>
+                <h2 className="blue-header text-center" style={{marginTop: '0', fontSize: '3rem'}}>We Accept These Insurances</h2>
+                <InsuranceSlider />
             </div>
         </div>
     )

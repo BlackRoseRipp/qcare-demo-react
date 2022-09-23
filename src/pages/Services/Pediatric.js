@@ -3,6 +3,9 @@ import { FaBaby, FaDizzy, FaEye, FaHandHoldingMedical, FaHeadSideCough, FaHeadSi
 import { GiBrokenBone, GiMedicalThermometer, GiSewingNeedle } from 'react-icons/gi'
 import { IoBandageSharp, IoEarSharp, IoMedicalSharp } from 'react-icons/io5'
 import { RiMentalHealthFill, RiSurgicalMaskFill, RiVirusFill } from 'react-icons/ri'
+import InsuranceSlider from '../../components/InsuranceSlider/InsuranceSlider'
+import Data from '../../components/Locations/Data'
+import StoreLocator from '../../components/Locations/StoreLocator'
 import './Pediatric.css'
 
 const Pediatric = () => {
@@ -22,7 +25,7 @@ const Pediatric = () => {
             <div className='white-container container text-center'>
                 <h2 className='blue-header mb-5'>What is pediatric care?</h2>
                 <div className='blue-container rounded-corners'>
-                    <p className='hero-text'>
+                    <p className='hero-text mb-5'>
                         Children can become sick or injured during all hours of the day, any day of the week. 
                         This makes urgent care at locations like Qcare an essential provider for children’s 
                         pediatric care. When your child is feeling sick, and the pediatrician’s office is 
@@ -35,6 +38,7 @@ const Pediatric = () => {
                         of our walk-in clinic locations. Click below to find out the pediatric location that 
                         is right for your child. 
                     </p>
+                    <a className='btn btn-lite-blue' href='/locations'>Our Locations</a>
                 </div>
             </div>
             <div className='mb-5'>
@@ -56,18 +60,18 @@ const Pediatric = () => {
                             you may have. During a well-child exam, a doctor will look at your 
                             child’s:
                         </p>
-                        <div className='d-flex flex-column justify-content-center w-50 mx-auto my-4'>
+                        <div className='d-flex flex-column justify-content-center mx-auto my-4' style={{width: 'fit-content'}}>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><FaBaby className='list-icon'/>&nbsp; Growth & Development</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><FaBaby className='list-icon'/>&nbsp; Growth & Development</h4>
                             </div>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><FaEye className='list-icon'/>&nbsp; Vision & Hearing</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><FaEye className='list-icon'/>&nbsp; Vision & Hearing</h4>
                             </div>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><RiMentalHealthFill className='list-icon'/>&nbsp; Behavior</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><RiMentalHealthFill className='list-icon'/>&nbsp; Behavior</h4>
                             </div>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><FaHandHoldingMedical className='list-icon'/>&nbsp; Immunization Status</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><FaHandHoldingMedical className='list-icon'/>&nbsp; Immunization Status</h4>
                             </div>
                         </div>
                         <p className='hero-text'>
@@ -184,24 +188,24 @@ const Pediatric = () => {
                             <br></br><br></br>
                             At Qcare, we can help children with the following:
                         </p>
-                        <div className='d-flex flex-column justify-content-center w-50 mx-auto my-4'>
+                        <div className='d-flex flex-column justify-content-center mx-auto my-4' style={{width: 'fit-content'}}>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><FaXRay className='list-icon'/>&nbsp; X-Rays</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><FaXRay className='list-icon'/>&nbsp; X-Rays</h4>
                             </div>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><GiSewingNeedle className='list-icon'/>&nbsp; Stitches</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><GiSewingNeedle className='list-icon'/>&nbsp; Stitches</h4>
                             </div>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><FaHeadSideMask className='list-icon'/>&nbsp; Rapid Strep</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><FaHeadSideMask className='list-icon'/>&nbsp; Rapid Strep</h4>
                             </div>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><FaViruses className='list-icon'/>&nbsp; Flu Tests</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><FaViruses className='list-icon'/>&nbsp; Flu Tests</h4>
                             </div>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><RiVirusFill className='list-icon'/>&nbsp; COVID-19 Testing</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><RiVirusFill className='list-icon'/>&nbsp; COVID-19 Testing</h4>
                             </div>
                             <div className='icon-list-item'>
-                                <h4 className='icon-list-text hero-text'><FaHeadSideVirus className='list-icon'/>&nbsp; Mononucleosis testing</h4>
+                                <h4 className='icon-list-text hero-text w-auto'><FaHeadSideVirus className='list-icon'/>&nbsp; Mononucleosis testing</h4>
                             </div>
                         </div>
                         <p className='hero-text'>
@@ -217,6 +221,22 @@ const Pediatric = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="grey-container text-center">
+                <h2 className='blue-header mb-5 text-center' style={{fontSize: '2.5rem'}}>Meeting New York patients wherever you are!</h2>
+                <div className='map-container'>
+                    <StoreLocator 
+                        locations={Data()} 
+                        src='https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F'
+                        buttonStyle='blue'/>
+                </div>
+                <div className='mx-auto text-center'>
+                    <a className="btn btn-lite-blue mt-5" href="/locations" role="button">See all of our NYC locations</a>
+                </div>
+            </div>
+            <div className='white-container-3'>
+                <h2 className="blue-header text-center" style={{marginTop: '0', fontSize: '3rem'}}>We Accept These Insurances</h2>
+                <InsuranceSlider />
             </div>
         </div>
     )

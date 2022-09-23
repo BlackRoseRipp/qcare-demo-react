@@ -28,7 +28,7 @@ const About = () => {
                         <h6 className="hero-header">Urgent and preventative healthcare when and where you need it</h6>
                         <p className='hero-text'>
                             A sudden sickness or injury can leave you feeling lousy while also disrupting your carefully 
-                            planned schedule. Our QCare mobile urgent care provides New Yorkers access to quick, convenient, 
+                            planned schedule. Our QCare mobile care units provides New Yorkers access to quick, convenient, 
                             expert medical care anywhere you are.
                         </p>
                         <a className="btn btn-hero" href="/nyc-urgent-care-services" role="button">Learn More</a>
@@ -57,7 +57,7 @@ const About = () => {
                             </div>
                             <div className="access-item hstack">
                                 <FaShuttleVan className='access-icon' />
-                                <h6 className='access-text'>Mobile urgent care stations</h6>
+                                <h6 className='access-text'>Mobile care units</h6>
                             </div>
                             <div className="access-item hstack">
                                 <FaWalking className='access-icon' />
@@ -218,7 +218,7 @@ const About = () => {
                         </div>
                         <div className="col-lg-8 col-md-6 d-flex flex-column justify-content-center">
                             <div className="team-description">
-                                We staff each mobile station with the same nurses, nurse practitioners, 
+                                We staff each mobile care unit with the same nurses, nurse practitioners, 
                                 physicians assistants and medical doctors each day. Our goal is for you 
                                 to get to know your neighborhood medical provider for preventative care 
                                 so that you can depend on us every time, even for urgent care.

@@ -1,6 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-=======
 import { FaDizzy, FaHeadSideCough, FaLungs } from 'react-icons/fa'
 import { GiBrokenBone } from 'react-icons/gi'
 import { IoIosBeaker } from 'react-icons/io'
@@ -8,15 +6,14 @@ import { IoBandageSharp, IoMedicalSharp } from 'react-icons/io5'
 import { MdHealing, MdSick } from 'react-icons/md'
 import { RiSurgicalMaskFill } from 'react-icons/ri'
 import { TbActivityHeartbeat } from 'react-icons/tb'
->>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
+import InsuranceSlider from '../../components/InsuranceSlider/InsuranceSlider'
+import Data from '../../components/Locations/Data'
+import StoreLocator from '../../components/Locations/StoreLocator'
 import './UrgentCare.css'
 
 const UrgentCare = () => {
     return (
         <div>
-<<<<<<< HEAD
-            Urgent Care
-=======
             <div className="urgent-hero-container">
                 <div className="container-lg my-auto">
                     <div className="hero-body text-center">
@@ -223,7 +220,22 @@ const UrgentCare = () => {
                     </h3>
                 </div>
             </div>
->>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
+            <div className="grey-container text-center">
+                <h2 className='blue-header mb-5 text-center' style={{fontSize: '2.5rem'}}>Meeting New York patients wherever you are!</h2>
+                <div className='map-container'>
+                    <StoreLocator 
+                        locations={Data()} 
+                        src='https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F'
+                        buttonStyle='blue'/>
+                </div>
+                <div className='mx-auto text-center'>
+                    <a className="btn btn-lite-blue mt-5" href="/locations" role="button">See all of our NYC locations</a>
+                </div>
+            </div>
+            <div className='white-container-3'>
+                <h2 className="blue-header text-center" style={{marginTop: '0', fontSize: '3rem'}}>We Accept These Insurances</h2>
+                <InsuranceSlider />
+            </div>
         </div>
     )
 }

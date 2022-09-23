@@ -13,7 +13,8 @@
 
 .white-container,
 .blue-container,
-.red-container {
+.red-container,
+.grey-container {
   padding: 5rem 0;
 }
 
@@ -23,6 +24,14 @@
 
 .red-container {
   background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
+}
+
+.grey-container {
+  background: #eee;
+}
+
+.white-container-3 {
+  padding: 3rem 0;
 }
 
 .rounded-corners {
@@ -105,6 +114,26 @@
 .btn-blue:focus {
   color: white;
   transform: translate(0px, -3px);
+}
+
+.btn-lite-blue {
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2a86c3;
+  height: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  border: 0;
+  margin-top: auto;
+  text-transform: none;
+}
+
+.btn-lite-blue:hover,
+.btn-lite-blue:focus {
+  background-color: #fff;
+  color: #2a86c3;
+  border: 0;
 }
 
 .well-child-img {

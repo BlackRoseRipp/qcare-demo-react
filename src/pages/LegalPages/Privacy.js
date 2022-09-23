@@ -614,17 +614,10 @@ const Privacy = () => {
             <p>If you have any questions about this Privacy Policy, You can contact us:</p>
             <ul className='definitions'>
                 <li>
-<<<<<<< HEAD
-                    <p>By email: <a href='mailto:clientservices@qcare.com'>email</a></p>
-                </li>
-                <li>
-                    <p>By phone number: <a href='tel:877-722-7318'>email</a></p>
-=======
                     <p>By email: <a href='mailto:helpdesk@qcare.com'>helpdesk@qcare.com</a></p>
                 </li>
                 <li>
                     <p>By phone number: <a href='tel:877-722-7318'>877-722-7318</a></p>
->>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
                 </li>
                 <li>
                     <p>

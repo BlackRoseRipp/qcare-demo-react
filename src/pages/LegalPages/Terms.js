@@ -105,8 +105,6 @@ const Terms = () => {
                     </p>
                 </li>
             </ul>
-<<<<<<< HEAD
-=======
             <h3>Acknowledgment</h3>
             <p>
                 These are the Terms and Conditions governing the use of this Service and the agreement 
@@ -400,7 +398,6 @@ const Terms = () => {
                     </p>
                 </li>
             </ul>
->>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
         </div>
     )
 }

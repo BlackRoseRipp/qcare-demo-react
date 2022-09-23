@@ -30,15 +30,11 @@ const Home = () => {
                         <hr className='hr'></hr>
                         <a className='info-button text-center' href='/locations'>
                             <div className='doctor-icon'><FaShuttleVan /></div>
-                            <h3 className='doctor-header'>Mobile Clinics</h3>
+                            <h3 className='doctor-header'>Mobile Care Units</h3>
                         </a>
                         <div className='vr'></div>
                         <hr className='hr'></hr>
-<<<<<<< HEAD
-                        <a className='info-button text-center' href='/home-visits'>
-=======
                         <a className='info-button text-center' href='/house-calls'>
->>>>>>> 01c60720e3261ec74927c6921cdf16483b3d2a0e
                             <div className='doctor-icon'><FaHome /></div>
                             <h3 className='doctor-header'>House Calls</h3>
                         </a>
@@ -162,9 +158,9 @@ const Home = () => {
                 <div className='row g-5 container-lg mx-auto my-4'>
                     <div className='col-lg-4 col-md-6 text-center'>
                         <div className='doctor-icon'><FaClinicMedical /></div>
-                        <h3 className='doctor-header'>Full Clinics</h3>
+                        <h3 className='doctor-header'>Urgent Care Clinics</h3>
                         <p className='doctor-text'>
-                            We manage most urgent care visits in our mobile vans. For 
+                            We manage most urgent care visits in our mobile care units. For 
                             more complicated or vulnerable care visits, we may recommend
                             patients visit one of our full service urgent care centers 
                             around the NYC area.
@@ -172,7 +168,7 @@ const Home = () => {
                     </div>
                     <div className='col-lg-4 col-md-6 text-center'>
                         <div className='doctor-icon'><FaShuttleVan /></div>
-                        <h3 className='doctor-header'>Mobile Clinics</h3>
+                        <h3 className='doctor-header'>Mobile Care Units</h3>
                         <p className='doctor-text'>
                             We’re building a fleet of fully-equipped mobile urgent care 
                             vans that we’re strategically parking throughout the NYC area 
@@ -202,11 +198,11 @@ const Home = () => {
                             <p className='time-text'>
                                 At Qcare, we provide New York City residents with convenient, quality 
                                 healthcare that doesn’t interrupt your day. We’re posting our mobile 
-                                care clinics at strategic locations around the NYC area. Our plan over 
+                                care units at strategic locations around the NYC area. Our plan over 
                                 the next several months is to become the convenient walk-in urgent care 
                                 and wellness clinic just outside your door.
                                 <br></br><br></br>
-                                Visit Qcare mobile stations for any urgent medical matter or routine care 
+                                Visit Qcare mobile care units for any urgent medical matter or routine care 
                                 for patients of all ages, from babies to seniors. Our clinic physicians 
                                 are board-certified emergency room doctors with years of experience 
                                 handling medical emergencies throughout the Metro New York area. 
