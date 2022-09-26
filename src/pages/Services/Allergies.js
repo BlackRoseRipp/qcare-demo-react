@@ -119,7 +119,7 @@ const Allergies = () => {
             <div className='white-container'>
                 <h2 className='red-header text-center'>Why you need allergy and asthma care</h2>
                 <div className='row w-100 mx-0'>
-                    <div className='col-lg-6 red-container rounded-card-left d-flex align-items-cente'>
+                    <div className='col-lg-6 red-container rounded-card-left d-flex align-items-center'>
                         <p className='hero-text'>
                             You can develop asthma as a child or adult. As you age, your allergy and asthma 
                             needs may change. At Qcare, your provider can help you create a treatment regimen 

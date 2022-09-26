@@ -16,6 +16,8 @@ const Wellness = React.lazy(() => import("../../pages/Services/Wellness"))
 const Pediatric = React.lazy(() => import("../../pages/Services/Pediatric"))
 const UrgentCare = React.lazy(() => import("../../pages/Services/UrgentCare"))
 const Allergies = React.lazy(() => import("../../pages/Services/Allergies"))
+const Covid = React.lazy(() => import("../../pages/Services/Covid"))
+const Vaccines = React.lazy(() => import("../../pages/Services/Vaccines"))
 
 export const routes = () => {
     const pages = [
@@ -33,6 +35,8 @@ export const routes = () => {
         { path: "/pediatrics", component: <Pediatric />},
         { path: "/urgent-care", component: <UrgentCare />},
         { path: "/allergies-&-asthma", component: <Allergies />},
+        { path: "/covid-19", component: <Covid />},
+        { path: "/vaccines", component: <Vaccines />},
         { path: "*", component: <PageNotFound />}
     ]
   
