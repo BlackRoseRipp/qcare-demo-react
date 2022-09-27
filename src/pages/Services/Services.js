@@ -87,7 +87,7 @@ const Services = () => {
 
     return (
         <div>
-            <div className="allergies-hero-container">
+            <div className="services-hero-container">
                 <div className="container my-auto">
                     <div className="hero-body text-center">
                         <h6 className="hero-header">Urgent care and preventative healthcare for all ages in New York City</h6>

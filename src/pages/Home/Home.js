@@ -192,8 +192,8 @@ const Home = () => {
                         <img src='assets/img/walk-by-nyc.jpg' className='walking-img' />
                     </div>
                     <div className='col-lg-6 order-1 order-lg-5 d-flex flex-column justify-content-center'>
-                        <h2 className='section-header-second text-end'>Say hello when you walk by</h2>
-                        <h2 className='section-header-main text-end'>Stop by when you need us</h2>
+                        <h2 className='section-header-second text-lg-end text-center'>Say hello when you walk by</h2>
+                        <h2 className='section-header-main text-lg-end text-center'>Stop by when you need us</h2>
                         <div className='blue-card mt-5'>
                             <p className='time-text'>
                                 At Qcare, we provide New York City residents with convenient, quality 
@@ -274,7 +274,7 @@ const Home = () => {
             <div className='white-container-3 goodbye-container'>
                 <div className='row'>
                     <div className='col-lg-5 goodbye-heading'>
-                        <h2 className='goodbye-heading-text'>Say goodbye to…</h2>
+                        <h2 className='goodbye-heading-text text-center text-lg-start'>Say goodbye to…</h2>
                     </div>
                     <div className='col-lg-7 goodbye-list'>
                         <div className='quick-bar-blue'>
@@ -293,8 +293,8 @@ const Home = () => {
                 </div>
             </div>
             <div className='health-lib-container d-flex flex-column justify-content-center'>
-                <h2 className='section-header-second text-start'>We help you care for</h2>
-                <h2 className='section-header-main text-start'>Yourself and Your Family</h2>
+                <h2 className='section-header-second text-lg-start text-center'>We help you care for</h2>
+                <h2 className='section-header-main text-lg-start text-center'>Yourself and Your Family</h2>
                 <p className='health-text'>
                     Check out these wellness tips and the research that backs them up to better understand 
                     how to optimize your health and nutrition.

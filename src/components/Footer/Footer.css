@@ -83,6 +83,13 @@
   color: white;
 }
 
+.bottom-footer .hr {
+  display: none;
+  width: 100%;
+  border-top: 2px solid white;
+  opacity: 0.25;
+}
+
 @media screen and (max-width: 991px) {
   .main-footer .row {
     width: 100%;
@@ -99,5 +106,13 @@
 
   .footer-contact .ms-5 {
     margin-left: 0 !important;
+  }
+
+  .bottom-footer .vr {
+    display: none;
+  }
+
+  .bottom-footer .hr {
+    display: block;
   }
 }

@@ -12,18 +12,18 @@ const Footer = () => {
                             <a href="/" style={{ width: '10%'}}>
                                 <img src="assets/img/QCare-LogoB.png" style={{ width: '80%' }} />
                             </a>
-                            <div className='row w-100 mx-auto mt-3'>
-                                <div className='col-4 px-0'>
+                            <div className='row w-100 mx-auto mt-3 g-4'>
+                                <div className='col-md-4 px-0'>
                                     <a className='footer-link' href="/about">
                                         About Us
                                     </a>
                                 </div>
-                                <div className='col-4'>
+                                <div className='col-md-4'>
                                     <a className='footer-link' href="/nyc-urgent-care-services">
                                         Services
                                     </a>
                                 </div>
-                                <div className='col-4 px-0'>
+                                <div className='col-md-4 px-0'>
                                     <a className='footer-link' href="/plan-your-visit">
                                         Plan Your Visit
                                     </a>
@@ -95,16 +95,18 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bottom-footer">
-                <div className='container-lg d-flex justify-content-center'>
+                <div className='container d-flex justify-content-center'>
                     <div className='hstack mx-auto'>
                         <a href='/privacy' className='bottom-footer-text'>
                             Privacy Statement
                         </a>
                         <div className='vr'></div>
+                        <hr className='hr'></hr>
                         <a href='/terms-and-conditions' className='bottom-footer-text'>
                             Terms & Conditions
                         </a>
                         <div className='vr'></div>
+                        <hr className='hr'></hr>
                         <a href='/accessibility' className='bottom-footer-text'>
                             Accessibility Statement
                         </a>

@@ -403,7 +403,8 @@ p {
     border-radius: 5rem 0 0 5rem;
     width: 90%;
     background: linear-gradient(270deg, #2a86c3 50%, #3fbbe6 100%);
-    justify-content: center;
+    display: flex;
+    justify-content: start;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -556,9 +557,7 @@ p {
         margin-top: 15%;
     }
 
-    .goodbye-text {
-        padding-right: 100px;
-    }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -566,11 +565,16 @@ p {
         width: 90%;
     }
 
+    .red-container {
+        padding: 3rem .25rem;
+    }
+
     .hstack {
         display: flex;
         flex-direction: column;
         align-items: center;
         align-self: stretch;
+        width: 100%;
     }
 
     .info-button {
@@ -609,6 +613,7 @@ p {
 
     .goodbye-list {
         align-items: center;
+        padding-left: 0 !important;
     }
 
     .quick-bar-blue {
@@ -618,6 +623,10 @@ p {
 
     .walking-img {
         display: none;
+    }
+
+    .health-lib-container {
+        padding: 3rem 10%;
     }
 }
 
