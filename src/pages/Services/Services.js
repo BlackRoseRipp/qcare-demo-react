@@ -101,41 +101,41 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div className='container'>
+            <div className='white-container-3 container'>
                 <h2 className="red-header text-center py-5 mt-0">Our Available Services</h2>
                 <div className='row w-75 mx-auto g-5 red-container rounded-corners py-4'>
                     <div className="col-lg-4 col-md-6 text-center">
-                        <a href="#" className="btn btn-service">
+                        <a href="/covid-19" className="btn btn-service">
                             <img className='service-icon-img' src='assets/img/covid-testing-img.png' />
                             <span className='service-icon-text'>COVID-19 Testing</span>
                         </a>
                     </div>
                     <div className="col-lg-4 col-md-6 text-center">
-                        <a href="#" className="btn btn-service">
-                            <img className='service-icon-img' src='assets/img/trauma-care-img.png' />
+                        <a href="/prevention" className="btn btn-service">
+                            <img className='service-icon-img' src='assets/img/womens-health-img.png' />
                             <span className='service-icon-text'>Wellness Care</span>
                         </a>
                     </div>
                     <div className="col-lg-4 col-md-6 text-center">
-                        <a href="#" className="btn btn-service">
+                        <a href="/pediatrics" className="btn btn-service">
                             <img className='service-icon-img' src='assets/img/pediatric-care-img.png' />
                             <span className='service-icon-text'>Pediatric Care</span>
                         </a>
                     </div>
                     <div className="col-lg-4 col-md-6 text-center">
-                        <a href="#" className="btn btn-service">
-                            <img className='service-icon-img' src='assets/img/xray-img.png' />
-                            <span className='service-icon-text'>X-Ray</span>
+                        <a href="/urgent-care" className="btn btn-service">
+                            <img className='service-icon-img' src='assets/img/trauma-care-img.png' />
+                            <span className='service-icon-text'>Trauma Care</span>
                         </a>
                     </div>
                     <div className="col-lg-4 col-md-6 text-center">
-                        <a href="#" className="btn btn-service">
+                        <a href="/allergies-&-asthma" className="btn btn-service">
                             <img className='service-icon-img' src='assets/img/allergies-img.png' />
                             <span className='service-icon-text'>Allergies & Asthma</span>
                         </a>
                     </div>
                     <div className="col-lg-4 col-md-6 text-center">
-                        <a href="#" className="btn btn-service">
+                        <a href="/vaccines" className="btn btn-service">
                             <img className='service-icon-img' src='assets/img/vaccination-img.png' />
                             <span className='service-icon-text'>Vaccinations</span>
                         </a>
@@ -144,23 +144,35 @@ const Services = () => {
             </div>
             <div className="white-container container pt-4">
                 <div className='row w-100 mx-0 mt-4'>
-                    <div className='col-lg-5 d-flex flex-column justify-content-center'>
-                        <h3 className='red-header text-right'>Access care you need,<br></br> When you need it</h3>
+                    <div className='col-lg-6 d-flex flex-column justify-content-center'>
+                        <h3 className='red-header'>Access care you need,<br></br> When you need it</h3>
                     </div>
-                    <div className='col-lg-7'>
-                        <div className="vstack">
-                            <a className='btn btn-care text-right' href='/locations'>
-                                <FaClinicMedical className='red-icon' />&nbsp; Visit one of our urgent care clinic locations
-                            </a>
-                            <a className='btn btn-care text-right' href='/mobile-stations'>
-                                <FaShuttleVan className='red-icon' />&nbsp; Stop by a QCare mobile care unit near you for a walk-in visit
-                            </a>
-                            <a className='btn btn-care text-right' href='/house-calls'>
-                                <FaHome className='red-icon' />&nbsp; Schedule a house call
-                            </a>
-                            <a className='btn btn-care text-right' href='tel:877-722-7318'>
-                                <FaPhoneAlt className='red-icon' />&nbsp; Call to schedule a visit at your convenience
-                            </a>
+                    <div className='col-lg-6'>
+                        <div className="row w-100 mx-0 g-4">
+                            <div className='col-lg-6 text-center'>
+                                <a className='btn btn-care' href='/locations'>
+                                    <FaClinicMedical className='red-icon' />
+                                    <span>&nbsp; Visit one of our urgent care clinic locations</span>
+                                </a>
+                            </div>
+                            <div className='col-lg-6 text-center'>
+                                <a className='btn btn-care' href='/mobile-stations'>
+                                    <FaShuttleVan className='red-icon' />
+                                    <span>&nbsp; Stop by a QCare mobile care unit near you for a walk-in visit</span>
+                                </a>
+                            </div>
+                            <div className="col-lg-6 text-center">
+                                <a className='btn btn-care' href='/house-calls'>
+                                    <FaHome className='red-icon' />
+                                    <span>&nbsp; Schedule a house call</span>
+                                </a>
+                            </div>
+                            <div className='col-lg-6 text-center'>
+                                <a className='btn btn-care' href='tel:877-722-7318'>
+                                    <FaPhoneAlt className='red-icon' />
+                                    <span>&nbsp; Call to schedule a visit at your convenience</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

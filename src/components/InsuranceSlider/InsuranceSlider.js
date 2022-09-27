@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import INSURANCE_DATA from './insurance.json';
 import './InsuranceSlider.css';
 
 const InsuranceSlider = () => {
     const insuranceList = INSURANCE_DATA
-    const insuranceSliderIndicators = [...Array(Math.ceil(insuranceList.length / 4)).keys()]
+
+    const [windowDimenion, detectHW] = useState({
+        winWidth: window.innerWidth,
+        winHeight: window.innerHeight,
+    })
+    
+    const detectSize = () => {
+        detectHW({
+            winWidth: window.innerWidth,
+            winHeight: window.innerHeight,
+        })
+    }
+    
+    useEffect(() => {
+        window.addEventListener('resize', detectSize)
+
+        return () => {
+            window.removeEventListener('resize', detectSize)
+        }
+    }, [windowDimenion])
+
+    const divisor = windowDimenion.winWidth < 991 ? 2 : 4
+    const insuranceSliderIndicators = [...Array(Math.ceil(insuranceList.length / divisor)).keys()]
 
     const range = (start, stop, step) => {
         let a = [start], b = start;
@@ -28,9 +50,9 @@ const InsuranceSlider = () => {
                     return (
                         <div className={'carousel-item'+(i === 0 ? ' active' : '')}>
                             <div className='row g-4 w-75 mx-auto'>
-                                {range(i*4, ((i+1)*4)-1).map((j) => {
+                                {range(i*divisor, ((i+1)*divisor)-1).map((j) => {
                                     return (insuranceList[j] !== undefined ? (
-                                        <div className='col-3 d-flex flex-column justify-content-center' id='insuranceItem'>
+                                        <div className={'col-'+(12/divisor)+' d-flex flex-column justify-content-center'} id='insuranceItem'>
                                             <img src={'assets/img/insurance/'+insuranceList[j].logo} className='insurance-img' />
                                             <h5 className='insurance-text'>{insuranceList[j].name}</h5>
                                         </div>

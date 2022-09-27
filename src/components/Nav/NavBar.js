@@ -193,7 +193,7 @@ const NavBar = () => {
                             <li className='nav-item text-center'>
                                 <ListLink 
                                     primary="Services & Care"
-                                    to='/services'
+                                    to='/nyc-urgent-care-services'
                                 />
                             </li>
                             <li className='nav-item text-center'>

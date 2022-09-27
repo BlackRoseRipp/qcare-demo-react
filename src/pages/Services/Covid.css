@@ -249,8 +249,46 @@
   font-size: 1.5rem;
 }
 
+.width-50 {
+  width: 50%;
+}
+
 @media screen and (max-width: 991px) {
   .fullscreen {
     display: none !important;
+  }
+
+  .covid-services {
+    width: 100%;
+  }
+
+  .width-50 {
+    width: 90%
+  }
+
+  .rounded-card-right {
+    border-radius: 0;
+  }
+
+  .rounded-card-left {
+    border-radius: 0;
+  }
+
+  .icon-list-item {
+    text-align: center;
+  }
+
+  .right-red-img,
+  .right-blue-img,
+  .left-blue-img,
+  .left-red-img {
+    transform: translate(0, 0);
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map-container {
+    display: none;
   }
 }

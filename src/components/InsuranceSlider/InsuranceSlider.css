@@ -29,3 +29,9 @@
     font-size: 1.7rem;
     text-align: center;
 }
+
+@media screen and (max-width: 991px) {
+    .insurance-text {
+        font-size: 1.1rem;
+    }
+}

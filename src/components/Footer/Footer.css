@@ -115,4 +115,12 @@
   .bottom-footer .hr {
     display: block;
   }
+
+  .hstack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+  }
 }

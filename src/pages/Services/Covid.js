@@ -56,7 +56,7 @@ const Covid = () => {
                 <h2 className='white-header text-center'>
                     When to be seen for COVID-19
                 </h2>
-                <p className='p-text white-text text-center w-50 mx-auto my-5'>
+                <p className='p-text white-text text-center width-50 mx-auto my-5'>
                     If you’re experiencing any of the common symptoms of COVID-19 or have been 
                     in close contact with someone who tested positive, you should get tested.
                     <br></br><br></br>
@@ -110,7 +110,7 @@ const Covid = () => {
                         </p>
                     </div>
                     <div className='col-lg-6 d-flex align-items-center'>
-                        <div className='w-50 mx-auto rounded-corners blue-container py-0 fullscreen'>
+                        <div className='width-50 mx-auto rounded-corners blue-container py-0 my-5 my-lg-0'>
                             <img src='assets/img/pexels-shvets-production-8413181.jpg' className='right-blue-img' />
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const Covid = () => {
                 </div>
                 <div className='row w-100 mx-0 mt-5'>
                     <div className='col-lg-6 d-flex align-items-center justify-content-center'>
-                        <h4 className='w-50 mx-auto red-text text-center'>
+                        <h4 className='width-50 mx-auto red-text text-center'>
                             COVID-19 is an illness caused by a newly discovered coronavirus. The 
                             virus is highly contagious and is spread between people through close 
                             contact.
@@ -201,7 +201,7 @@ const Covid = () => {
                         </div>
                     </div>
                     <div className='col-lg-6 d-flex align-items-center'>
-                        <div className='w-50 mx-auto rounded-corners red-container py-0 fullscreen'>
+                        <div className='width-50 mx-auto rounded-corners red-container py-0 my-5 my-lg-0'>
                             <img src='assets/img/pexels-andrea-piacquadio-3768582.jpg' className='right-red-img' />
                         </div>
                     </div>

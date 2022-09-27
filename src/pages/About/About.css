@@ -214,6 +214,10 @@
   padding: 3rem 1rem;
 }
 
+#aboutSlideSmall {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .about-access-container {
     border-radius: 2rem;
@@ -243,5 +247,19 @@
     flex-direction: column;
     align-items: center;
     align-self: stretch;
+  }
+
+  #aboutSlide {
+    display: none;
+  }
+
+  #aboutSlideSmall {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map-container {
+    display: none;
   }
 }

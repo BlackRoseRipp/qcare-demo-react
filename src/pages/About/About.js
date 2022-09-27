@@ -9,16 +9,6 @@ import StoreLocator from '../../components/Locations/StoreLocator';
 import './About.css';
 
 const About = () => {
-    /* const insuranceList = INSURANCE_DATA
-    const insuranceSliderIndicators = [...Array(Math.ceil(insuranceList.length / 4)).keys()]
-
-    const range = (start, stop, step) => {
-        let a = [start], b = start;
-        while (b < stop) {
-            a.push(b += step || 1);
-        }
-        return (b > stop) ? a.slice(0,-1) : a;
-    } */
 
     return (
         <div>
@@ -78,15 +68,15 @@ const About = () => {
             </div>
             <div className="red-container">
                 <h3 className='section-header-white'>Rely on us for convenient access to…</h3>
-                {/* <div className='carousel slide' id='aboutSlide'>
+                <div className='carousel slide' id='aboutSlideSmall'>
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#aboutSlideSmall" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#aboutSlideSmall" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#aboutSlideSmall" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#aboutSlideSmall" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#aboutSlideSmall" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#aboutSlideSmall" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#aboutSlideSmall" data-bs-slide-to="6" aria-label="Slide 7"></button>
                     </div>
                     <div className='carousel-inner justify-content-center mx-auto'>
                         <div className='carousel-item active'>
@@ -132,15 +122,15 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutSlide" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#aboutSlideSmall" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#aboutSlide" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#aboutSlideSmall" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div> */}
+                </div>
                 <div className='carousel slide' id='aboutSlide'>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#aboutSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
