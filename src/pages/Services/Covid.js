@@ -176,7 +176,7 @@ const Covid = () => {
                         </div>
                     </div>
                 </div>
-                <div className='row w-100 mx-0 mt-5'>
+                <div className='row w-100 mx-0 mt-lg-5 mt-2'>
                     <div className='col-lg-6 rounded-card-left red-container d-flex flex-column justify-content-center'>
                         <p className='white-text p-text w-75 mx-auto text-center'>
                             If you’re experiencing <a href='https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html' className='white-link'>warning signs</a> of COVID-19, call 911 or go to the 

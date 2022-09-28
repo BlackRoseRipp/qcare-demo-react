@@ -29,8 +29,8 @@ const Vaccines = () => {
                     <h2 className='blue-header text-center'>What is a vaccine and immunization appointment?</h2>
                 </div>
                 <div className='row w-100 mx-auto my-5'>
-                    <div className='col-lg-6 rounded-card-left blue-container d-flex align-items-center'>
-                        <h4 className='white-text text-start w-75 mx-auto'>
+                    <div className='col-lg-6 rounded-card-left blue-container d-flex align-items-center order-5 order-lg-1'>
+                        <h4 className='white-text text-lg-start text-center w-75 mx-auto'>
                             Getting a vaccine is an important way to prevent getting sick from 
                             infectious diseases.
                             <br></br><br></br>
@@ -43,20 +43,20 @@ const Vaccines = () => {
                             your body will protect you when you’re exposed to the disease.
                         </h4>
                     </div>
-                    <div className='col-lg-6 d-flex align-items-center'>
-                        <div className='w-50 mx-auto rounded-corners blue-container py-0 fullscreen'>
+                    <div className='col-lg-6 d-flex align-items-center order-1 order-lg-5'>
+                        <div className='w-50 mx-auto rounded-corners blue-container py-0 mb-lg-0 mb-4'>
                             <img src='assets/img/pexels-pixabay-356040.jpg' className='right-blue-img' />
                         </div>
                     </div>
                 </div>
                 <div className='row w-100 mx-auto' style={{marginTop: '5rem'}}>
                     <div className='col-lg-6 d-flex align-items-center'>
-                        <div className='w-50 mx-auto rounded-corners blue-container py-0 fullscreen'>
+                        <div className='w-50 mx-auto rounded-corners blue-container py-0 mb-lg-0 mb-4'>
                             <img src='assets/img/pexels-cdc-3992931.jpg' className='left-blue-img' />
                         </div>
                     </div>
                     <div className='col-lg-6 rounded-card-right blue-container d-flex align-items-center'>
-                        <h4 className='white-text text-start w-75 mx-auto'>
+                        <h4 className='white-text text-lg-start text-center w-75 mx-auto'>
                             People need vaccines and immunizations for different phases of life.
                             <br></br><br></br>
                             Babies need vaccines to be protected from illnesses while their 
@@ -70,7 +70,7 @@ const Vaccines = () => {
                     </div>
                 </div>
             </div>
-            <div className='red-container'>
+            <div className='red-container' id='noBottomPadding'>
                 <div className='container'>
                     <h2 className='white-header text-center'>Why you need to be seen for a vaccine and immunization visit</h2>
                 </div>

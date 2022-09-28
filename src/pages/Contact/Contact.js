@@ -15,8 +15,8 @@ const Contact = () => {
                 </div>
             </div>
             <div className='form-container container'>
-                <h3 className='form-header'>Contact us for more information about our company and services.</h3>
-                <p className='form-description'>
+                <h3 className='form-header text-lg-start text-center'>Contact us for more information about our company and services.</h3>
+                <p className='form-description text-lg-start text-center'>
                     This form should not be used to request an appointment or to relay 
                     any medical information.
                     <br></br>

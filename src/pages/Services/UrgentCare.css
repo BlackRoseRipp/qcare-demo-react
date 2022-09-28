@@ -125,6 +125,27 @@
   background: linear-gradient(20deg, #e61c26 0%, #b81018 100%);
 }
 
+.btn-lite-blue {
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2a86c3;
+  height: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  border: 0;
+  margin-top: auto;
+  text-transform: none;
+}
+
+.btn-lite-blue:hover,
+.btn-lite-blue:focus,
+.btn-lite-blue:active {
+  background-color: #fff;
+  color: #2a86c3;
+  border: 0;
+}
+
 .left-blue-img {
   width: 100%;
   border-radius: 2.5rem;
@@ -198,6 +219,32 @@
 
 @media screen and (max-width: 991px) {
   .fullscreen {
+    display: none;
+  }
+
+  .rounded-card-right {
+    border-radius: 0;
+  }
+
+  .rounded-card-left {
+    border-radius: 0;
+  }
+
+  .icon-list-item {
+    text-align: center;
+  }
+
+  .right-red-img,
+  .right-blue-img,
+  .left-blue-img,
+  .left-red-img {
+    transform: translate(0, 0);
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map-container {
     display: none;
   }
 }

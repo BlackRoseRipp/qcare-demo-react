@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaDizzy, FaHeadSideCough, FaLungs } from 'react-icons/fa'
 import { GiBrokenBone } from 'react-icons/gi'
 import { IoIosBeaker } from 'react-icons/io'
@@ -12,6 +12,26 @@ import StoreLocator from '../../components/Locations/StoreLocator'
 import './UrgentCare.css'
 
 const UrgentCare = () => {
+    const [windowDimension, detectHW] = useState({
+        winWidth: window.innerWidth,
+        winHeight: window.innerHeight,
+    })
+    
+    const detectSize = () => {
+        detectHW({
+            winWidth: window.innerWidth,
+            winHeight: window.innerHeight,
+        })
+    }
+    
+    useEffect(() => {
+        window.addEventListener('resize', detectSize)
+
+        return () => {
+            window.removeEventListener('resize', detectSize)
+        }
+    }, [windowDimension])
+
     return (
         <div>
             <div className="urgent-hero-container">
@@ -27,13 +47,13 @@ const UrgentCare = () => {
                     <h2 className='blue-header text-lg-end text-center'>What is urgent care?</h2>
                 </div>
                 <div className='row w-100 mx-0'>
-                    <div className='col-lg-6 d-flex align-items-center fullscreen'>
-                        <div className='w-50 mx-auto blue-container rounded-corners py-0'>
+                    <div className='col-lg-6 d-flex align-items-center'>
+                        <div className='w-50 mx-auto blue-container rounded-corners py-0 mb-4 mb-lg-0'>
                             <img className='left-blue-img' src='assets/img/pexels-evg-kowalievska-1170979.jpg' />
                         </div>
                     </div>
                     <div className='col-lg-6 rounded-card-right blue-container d-flex align-items-center'>
-                        <p className='hero-text'>
+                        <p className='hero-text text-center text-lg-start'>
                             Urgent care is a non-emergency service that helps you get seen by a doctor quickly. You can 
                             walk into our clinic without an appointment for minor illnesses or injuries that need to be 
                             treated right away.  
@@ -52,52 +72,134 @@ const UrgentCare = () => {
                         treat minor illnesses and injuries like:
                     </p>
                     <div className='carousel slide' id='pediatricSlide'>
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        </div>
-                        <div className='carousel-inner justify-content-center mx-auto'>
-                            <div className='carousel-item active'>
-                                <div className='hstack gap-3 d-flex align-items-start w-75 mx-auto'>
-                                    <div className='slide-item'>
-                                        <IoBandageSharp className='slide-icon' />
-                                        <div className='slide-text ps-0'>Cuts, wounds or rashes</div>
+                        {windowDimension.winWidth > 991 ? (
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                        ) : (
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#pediatricSlide" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                            </div>
+                        )}
+                        {windowDimension.winWidth > 991 ? (
+                            <div className='carousel-inner justify-content-center mx-auto'>
+                                <div className='carousel-item active'>
+                                    <div className='hstack gap-3 d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <IoBandageSharp className='slide-icon' />
+                                            <div className='slide-text ps-0'>Cuts, wounds or rashes</div>
+                                        </div>
+                                        <div className='slide-item'>
+                                            <RiSurgicalMaskFill className='slide-icon' />
+                                            <div className='slide-text ps-0'>Flu and cold symptoms</div>
+                                        </div>
+                                        <div className='slide-item'>
+                                            <FaHeadSideCough className='slide-icon' />
+                                            <div className='slide-text ps-0'>Sinus infections</div>
+                                        </div>
+                                        <div className='slide-item'>
+                                            <FaLungs className='slide-icon' />
+                                            <div className='slide-text ps-0'>Allergies & Asthma</div>
+                                        </div>
                                     </div>
-                                    <div className='slide-item'>
-                                        <RiSurgicalMaskFill className='slide-icon' />
-                                        <div className='slide-text ps-0'>Flu and cold symptoms</div>
-                                    </div>
-                                    <div className='slide-item'>
-                                        <FaHeadSideCough className='slide-icon' />
-                                        <div className='slide-text ps-0'>Sinus infections</div>
-                                    </div>
-                                    <div className='slide-item'>
-                                        <FaLungs className='slide-icon' />
-                                        <div className='slide-text ps-0'>Allergies & Asthma</div>
+                                </div>
+                                <div className='carousel-item'>
+                                    <div className='hstack gap-3 d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <FaDizzy className='slide-icon' />
+                                            <div className='slide-text ps-0'>Headaches</div>
+                                        </div>
+                                        <div className='slide-item'>
+                                            <MdSick className='slide-icon' />
+                                            <div className='slide-text ps-0'>Nausea, vomiting, & diarrhea</div>
+                                        </div>
+                                        <div className='slide-item'>
+                                            <IoIosBeaker className='slide-icon' />
+                                            <div className='slide-text ps-0'>Urinary tract infections</div>
+                                        </div>
+                                        <div className='slide-item'>
+                                            <GiBrokenBone className='slide-icon' />
+                                            <div className='slide-text ps-0'>Broken bones or sprains</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className='carousel-item'>
-                                <div className='hstack gap-3 d-flex align-items-start w-75 mx-auto'>
-                                    <div className='slide-item'>
-                                        <FaDizzy className='slide-icon' />
-                                        <div className='slide-text ps-0'>Headaches</div>
+                        ) : (
+                            <div className='carousel-inner justify-content-center mx-auto'>
+                                <div className='carousel-item active'>
+                                    <div className='d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <IoBandageSharp className='slide-icon' />
+                                            <div className='slide-text ps-0'>Cuts, wounds or rashes</div>
+                                        </div>
                                     </div>
-                                    <div className='slide-item'>
-                                        <MdSick className='slide-icon' />
-                                        <div className='slide-text ps-0'>Nausea, vomiting, & diarrhea</div>
+                                </div>
+                                <div className='carousel-item'>
+                                    <div className='d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <RiSurgicalMaskFill className='slide-icon' />
+                                            <div className='slide-text ps-0'>Flu and cold symptoms</div>
+                                        </div>
                                     </div>
-                                    <div className='slide-item'>
-                                        <IoIosBeaker className='slide-icon' />
-                                        <div className='slide-text ps-0'>Urinary tract infections</div>
+                                </div>
+                                <div className='carousel-item'>
+                                    <div className='d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <FaHeadSideCough className='slide-icon' />
+                                            <div className='slide-text ps-0'>Sinus infections</div>
+                                        </div>
                                     </div>
-                                    <div className='slide-item'>
-                                        <GiBrokenBone className='slide-icon' />
-                                        <div className='slide-text ps-0'>Broken bones or sprains</div>
+                                </div>
+                                <div className='carousel-item'>
+                                    <div className='d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <FaLungs className='slide-icon' />
+                                            <div className='slide-text ps-0'>Allergies & Asthma</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='carousel-item'>
+                                    <div className='d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <FaDizzy className='slide-icon' />
+                                            <div className='slide-text ps-0'>Headaches</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='carousel-item'>
+                                    <div className='d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <MdSick className='slide-icon' />
+                                            <div className='slide-text ps-0'>Nausea, vomiting, & diarrhea</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='carousel-item'>
+                                    <div className='d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <IoIosBeaker className='slide-icon' />
+                                            <div className='slide-text ps-0'>Urinary tract infections</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='carousel-item'>
+                                    <div className='d-flex align-items-start w-75 mx-auto'>
+                                        <div className='slide-item'>
+                                            <GiBrokenBone className='slide-icon' />
+                                            <div className='slide-text ps-0'>Broken bones or sprains</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        )}
                         <button class="carousel-control-prev" type="button" data-bs-target="#pediatricSlide" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -152,8 +254,8 @@ const UrgentCare = () => {
                     </p>
                 </div>
                 <div className='row w-100 mx-0 mt-5'>
-                    <div className='col-lg-6 d-flex flex-column justify-content-center rounded-card-left red-container'>
-                        <p className='hero-text'>
+                    <div className='col-lg-6 d-flex flex-column justify-content-center rounded-card-left red-container order-5 order-lg-1'>
+                        <p className='hero-text text-center text-lg-start'>
                             After speaking to a provider, we may need to run a few tests. Having on-site testing allows you 
                             to get care faster. At Qcare, we can do:
                         </p>
@@ -178,20 +280,20 @@ const UrgentCare = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-lg-6 d-flex align-items-center fullscreen'>
-                        <div className='w-50 mx-auto red-container rounded-corners py-0'>
+                    <div className='col-lg-6 d-flex align-items-center order-1 order-lg-5'>
+                        <div className='w-50 mx-auto red-container rounded-corners py-0 mb-4 mb-lg-0'>
                             <img className='right-red-img' src='assets/img/pexels-edward-jenner-4031321.jpg' />
                         </div>
                     </div>
                 </div>
                 <div className='row w-100 mx-0 mt-5'>
-                    <div className='col-lg-6 d-flex align-items-center fullscreen'>
-                        <div className='w-50 mx-auto red-container rounded-corners py-0'>
+                    <div className='col-lg-6 d-flex align-items-center'>
+                        <div className='w-50 mx-auto red-container rounded-corners py-0 mb-4 mb-lg-0'>
                             <img className='left-red-img' src='assets/img/pexels-yan-krukov-5794058.jpg' />
                         </div>
                     </div>
                     <div className='col-lg-6 d-flex flex-column justify-content-center rounded-card-right red-container'>
-                        <p className='hero-text'>
+                        <p className='hero-text text-center text-lg-start'>
                             Your treatment plan depends on your illness or injury. Our providers will create a customized 
                             plan so you can go home feeling better. Our Qcare providers are qualified to:
                         </p>

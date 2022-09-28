@@ -13,7 +13,8 @@
 
 .white-container,
 .blue-container,
-.red-container {
+.red-container,
+.grey-container {
   padding: 5rem 0;
 }
 
@@ -127,4 +128,57 @@
 .btn-blue:focus {
   color: white;
   transform: translate(0px, -3px);
+}
+
+.btn-lite-blue {
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2a86c3;
+  height: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  border: 0;
+  margin-top: auto;
+  text-transform: none;
+}
+
+.btn-lite-blue:hover,
+.btn-lite-blue:focus,
+.btn-lite-blue:active {
+  background-color: #fff;
+  color: #2a86c3;
+  border: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .width-50 {
+    width: 90%;
+  }
+
+  .wellness-card-right {
+    border-radius: 0;
+  }
+
+  .wellness-card-left {
+    border-radius: 0;
+  }
+
+  .icon-list-item {
+    text-align: center;
+  }
+
+  .right-red-img,
+  .right-blue-img,
+  .left-blue-img,
+  .left-red-img {
+    transform: translate(0, 0);
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map-container {
+    display: none;
+  }
 }

@@ -21,29 +21,29 @@ const PlanVisit = () => {
             <div className='white-container'>
                 <div className='container text-center'>
                     <div className='row w-100 mx-0'>
-                        <div className='col-4 d-flex align-items-center justify-content-center'>
+                        <div className='col-lg-4 d-flex align-items-center justify-content-center'>
                             <div className='blue-container rounded-corners text-center py-0'>
                                 <FaHandHoldingMedical className='heading-icon' />
                             </div>
                         </div>
-                        <div className='col-8 text-center text-lg-start d-flex align-items-center'>
+                        <div className='col-lg-8 text-center text-lg-start d-flex align-items-center mt-lg-0 mt-4'>
                             <h2 className='blue-text'>
                                 At QCare, we provide a full array of services for New York City residents of 
                                 every age – from infants to seniors.
                             </h2>
                         </div>
                     </div>
-                    <div className='text-center mt-5'>
+                    <div className='text-center mt-lg-5'>
                         <a className="btn btn-blue mt-5" href="/locations" role="button">Find an NYC location near you</a>
                     </div>
                 </div>
             </div>
             <div className='red-container'>
                 <div className='container'>
-                    <h2 className='white-header mb-5 text-center'>What to Bring</h2>
+                    <h2 className='white-header mb-lg-5 text-center'>What to Bring</h2>
                     <div className='row w-100 mx-0 g-5 mt-5'>
                         <div className="col-lg-4 d-flex align-items-center">
-                            <div className="white-container py-0 rounded-corners fullscreen">
+                            <div className="white-container py-0 rounded-corners">
                                 <img src='assets/img/pexels-karolina-grabowska-5387256.jpg' className='left-white-img' />
                             </div>
                         </div>

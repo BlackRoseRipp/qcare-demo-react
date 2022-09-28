@@ -119,8 +119,8 @@ const Allergies = () => {
             <div className='white-container'>
                 <h2 className='red-header text-center'>Why you need allergy and asthma care</h2>
                 <div className='row w-100 mx-0'>
-                    <div className='col-lg-6 red-container rounded-card-left d-flex align-items-center'>
-                        <p className='hero-text'>
+                    <div className='col-lg-6 red-container rounded-card-left d-flex align-items-center order-5 order-lg-1'>
+                        <p className='hero-text text-lg-start text-center'>
                             You can develop asthma as a child or adult. As you age, your allergy and asthma 
                             needs may change. At Qcare, your provider can help you create a treatment regimen 
                             that works for your needs. 
@@ -131,8 +131,8 @@ const Allergies = () => {
                             If you’re experiencing shortness of breath or difficulty breathing, call 911.
                         </p>
                     </div>
-                    <div className='col-lg-6 d-flex align-items-center fullscreen'>
-                        <div className='w-50 mx-auto red-container rounded-corners py-0'>
+                    <div className='col-lg-6 d-flex align-items-center order-1 order-lg-5'>
+                        <div className='w-50 mx-auto red-container rounded-corners py-0 mb-4 mb-lg-0'>
                             <img className='right-red-img' src='assets/img/pexels-karolina-grabowska-7195083.jpg' />
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const Allergies = () => {
             </div>
             <div className='mb-5'>
                 <div className='container'>
-                    <h2 className='red-header'>What to expect at a visit for allergies or asthma</h2>
+                    <h2 className='red-header text-lg-start text-center'>What to expect at a visit for allergies or asthma</h2>
                 </div>
                 <div className='row w-100 mx-0'>
                     <div className='col-lg-6 d-flex align-items-center'>

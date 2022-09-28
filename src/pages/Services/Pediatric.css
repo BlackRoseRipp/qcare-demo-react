@@ -197,4 +197,30 @@
   #WellChildImg {
     display: none;
   }
+  .width-50 {
+    width: 90%;
+  }
+
+  .rounded-card-right {
+    border-radius: 0;
+  }
+
+  .rounded-card-left {
+    border-radius: 0;
+  }
+
+  .icon-list-item {
+    text-align: center;
+  }
+
+  .well-child-img,
+  .expect-pediatric-img {
+    transform: translate(0, 0);
+    border: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .map-container {
+    display: none;
+  }
 }

@@ -222,4 +222,30 @@
   .fullscreen {
     display: none !important;
   }
+
+  .rounded-card-right {
+    border-radius: 0;
+  }
+
+  .rounded-card-left {
+    border-radius: 0;
+  }
+
+  .icon-list-item {
+    text-align: center;
+  }
+
+  .right-red-img,
+  .right-blue-img,
+  .left-blue-img,
+  .left-red-img {
+    transform: translate(0, 0);
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map-container {
+    display: none;
+  }
 }

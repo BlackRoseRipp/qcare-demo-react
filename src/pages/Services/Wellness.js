@@ -25,11 +25,11 @@ const Wellness = () => {
             </div>
             <div className='white-container'>
                 <div className='container'>
-                    <h2 className='blue-header'>What is a wellness visit?</h2>
+                    <h2 className='blue-header text-lg-start text-center'>What is a wellness visit?</h2>
                 </div>
-                <div className='row w-100 mt-5 mx-0'>
+                <div className='row w-100 mt-5 mx-0 g-4'>
                     <div className='col-lg-5 wellness-card-left blue-container d-flex align-items-center'>
-                        <p className='hero-text'>
+                        <p className='hero-text text-lg-start text-center'>
                             You don’t have to be sick to go to the doctor. If you’re generally healthy 
                             but want to review your health with a professional, consider scheduling a 
                             wellness visit with Qcare, located at mobile care units and with urgent care clinics 
@@ -42,12 +42,12 @@ const Wellness = () => {
                     </div>
                     <div className='col-lg-7'>
                         <div id='colShortened'>
-                            <p className='blue-text'>
+                            <p className='blue-text text-lg-start text-center'>
                                 Our doctors, physician assistants and nurse practitioners are trained to 
                                 screen for common diseases. At Qcare, your provider may catch your risk for 
                                 developing illnesses like:
                             </p>
-                            <div className='d-flex flex-column justify-content-center w-25 mx-auto my-4'>
+                            <div className='d-flex flex-column justify-content-center mx-auto my-4' style={{width: 'fit-content'}}>
                                 <div className='icon-list-item'>
                                     <h4 className='icon-list-text blue-text'><FaFileMedical className='list-icon'/>&nbsp; Health history</h4>
                                 </div>
@@ -64,7 +64,7 @@ const Wellness = () => {
                                     <h4 className='icon-list-text blue-text'><IoScaleSharp className='list-icon'/>&nbsp; Weight</h4>
                                 </div>
                             </div>
-                            <p className='blue-text'>
+                            <p className='blue-text text-lg-start text-center'>
                                 An annual well visit is ideal for people of every age, from infants to seniors. 
                                 Your provider may recommend more frequent checkups, depending on your health 
                                 factors.
@@ -75,11 +75,11 @@ const Wellness = () => {
             </div>
             <div style={{paddingBottom: '5rem'}}>
                 <div className='container'>
-                    <h2 className='red-header text-end'>Why should you schedule a wellness visit?</h2>
+                    <h2 className='red-header text-lg-end text-center'>Why should you schedule a wellness visit?</h2>
                 </div>
                 <div className='row w-100 mt-5 mx-0'>
                     <div className='col-lg-5 order-1 order-lg-5 wellness-card-right red-container d-flex align-items-center'>
-                        <p className='hero-text'>
+                        <p className='hero-text text-lg-start text-center'>
                             By scheduling a wellness visit at Qcare, we help you practice preventative 
                             care. It’s an actionable way to stay on top of your health so you are less 
                             likely to get sick.
@@ -90,12 +90,12 @@ const Wellness = () => {
                     </div>
                     <div className='col-lg-7 order-5 order-lg-1 container'>
                         <div id='colShortened'>
-                            <p className='red-text'>
+                            <p className='red-text text-lg-start text-center'>
                                 Our doctors, physician assistants and nurse practitioners are trained 
                                 to screen for common diseases. At Qcare, your provider may catch your 
                                 risk for developing illnesses like:
                             </p>
-                            <div className='d-flex flex-column justify-content-center w-25 mx-auto my-4'>
+                            <div className='d-flex flex-column justify-content-center mx-auto my-4' style={{width: 'fit-content'}}>
                                 <div className='icon-list-item'>
                                     <h4 className='icon-list-text red-text'><FaSyringe className='list-icon'/>&nbsp; Diabetes</h4>
                                 </div>
@@ -109,7 +109,7 @@ const Wellness = () => {
                                     <h4 className='icon-list-text red-text'><RiVirusFill className='list-icon'/>&nbsp; Cancer</h4>
                                 </div>
                             </div>
-                            <p className='red-text'>
+                            <p className='red-text text-lg-start text-center'>
                                 An annual well visit is ideal for people of every age, from infants to seniors. 
                                 Your provider may recommend more frequent checkups, depending on your health 
                                 factors.

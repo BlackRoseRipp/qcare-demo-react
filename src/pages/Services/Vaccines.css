@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 70vh;
+  min-height: 70vh;
 }
 
 .white-container,
@@ -242,5 +242,35 @@
 @media screen and (max-width: 991px) {
   .fullscreen {
     display: none !important;
+  }
+
+  .rounded-card-right {
+    border-radius: 0;
+  }
+
+  .rounded-card-left {
+    border-radius: 0;
+  }
+
+  .icon-list-item {
+    text-align: center;
+  }
+
+  .right-red-img,
+  .right-blue-img,
+  .left-blue-img,
+  .left-red-img {
+    transform: translate(0, 0);
+    border: 0;
+  }
+
+  #noBottomPadding {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map-container {
+    display: none;
   }
 }
