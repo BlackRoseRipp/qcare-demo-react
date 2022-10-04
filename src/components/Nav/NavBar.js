@@ -117,7 +117,7 @@ const NavBar = () => {
                                     to: '/urgent-care'
                                 },
                                 {
-                                    to: '/allergies-&-asthma',
+                                    to: '/allergies-asthma',
                                     primary: 'Allergies & Asthma'
                                 },
                                 {
@@ -149,10 +149,6 @@ const NavBar = () => {
                                 {
                                     to: '/billing',
                                     primary: 'Billing Info'
-                                },
-                                {
-                                    to: '/what-to-bring',
-                                    primary: 'What To Bring'
                                 }
                             ]}
                         />

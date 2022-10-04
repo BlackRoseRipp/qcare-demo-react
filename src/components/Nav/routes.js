@@ -35,7 +35,7 @@ export const routes = () => {
         { path: "/prevention", component: <Wellness />},
         { path: "/pediatrics", component: <Pediatric />},
         { path: "/urgent-care", component: <UrgentCare />},
-        { path: "/allergies-&-asthma", component: <Allergies />},
+        { path: "/allergies-asthma", component: <Allergies />},
         { path: "/covid-19", component: <Covid />},
         { path: "/vaccines", component: <Vaccines />},
         { path: "/plan-your-visit", component: <PlanVisit />},

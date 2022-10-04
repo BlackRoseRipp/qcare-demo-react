@@ -129,7 +129,7 @@ const Services = () => {
                         </a>
                     </div>
                     <div className="col-lg-4 col-md-6 text-center">
-                        <a href="/allergies-&-asthma" className="btn btn-service">
+                        <a href="/allergies-asthma" className="btn btn-service">
                             <img className='service-icon-img' src='assets/img/allergies-img.png' />
                             <span className='service-icon-text'>Allergies & Asthma</span>
                         </a>
@@ -143,40 +143,34 @@ const Services = () => {
                 </div>
             </div>
             <div className="white-container container pt-4">
+                <h3 className='red-header text-center'>Access care you need,<br></br> When you need it</h3>
                 <div className='row w-100 mx-0 mt-4'>
-                    <div className='col-lg-6 d-flex flex-column justify-content-center'>
-                        <h3 className='red-header'>Access care you need,<br></br> When you need it</h3>
+                    <div className='col-lg-3 col-md-6 text-center'>
+                        <a className='btn btn-care' href='/locations'>
+                            <FaClinicMedical className='red-icon' />
+                            <span>&nbsp; Visit one of our urgent care clinic locations</span>
+                        </a>
                     </div>
-                    <div className='col-lg-6'>
-                        <div className="row w-100 mx-0 g-4">
-                            <div className='col-lg-6 text-center'>
-                                <a className='btn btn-care' href='/locations'>
-                                    <FaClinicMedical className='red-icon' />
-                                    <span>&nbsp; Visit one of our urgent care clinic locations</span>
-                                </a>
-                            </div>
-                            <div className='col-lg-6 text-center'>
-                                <a className='btn btn-care' href='/mobile-stations'>
-                                    <FaShuttleVan className='red-icon' />
-                                    <span>&nbsp; Stop by a QCare mobile care unit near you for a walk-in visit</span>
-                                </a>
-                            </div>
-                            <div className="col-lg-6 text-center">
-                                <a className='btn btn-care' href='/house-calls'>
-                                    <FaHome className='red-icon' />
-                                    <span>&nbsp; Schedule a house call</span>
-                                </a>
-                            </div>
-                            <div className='col-lg-6 text-center'>
-                                <a className='btn btn-care' href='tel:877-722-7318'>
-                                    <FaPhoneAlt className='red-icon' />
-                                    <span>&nbsp; Call to schedule a visit at your convenience</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div className='col-lg-3 col-md-6 text-center'>
+                        <a className='btn btn-care' href='/mobile-stations'>
+                            <FaShuttleVan className='red-icon' />
+                            <span>&nbsp; Stop by a QCare mobile care unit near you for a walk-in visit</span>
+                        </a>
+                    </div>
+                    <div className="col-lg-3 col-md-6 text-center">
+                        <a className='btn btn-care' href='/house-calls'>
+                            <FaHome className='red-icon' />
+                            <span>&nbsp; Schedule a house call</span>
+                        </a>
+                    </div>
+                    <div className='col-lg-3 col-md-6 text-center'>
+                        <a className='btn btn-care' href='tel:877-722-7318'>
+                            <FaPhoneAlt className='red-icon' />
+                            <span>&nbsp; Call to schedule a visit at your convenience</span>
+                        </a>
                     </div>
                 </div>
-                <div className='text-center mt-4'>
+                <div className='text-center mt-5'>
                     <a href='/plan-your-visit' className='btn btn-red'>Plan Your Visit</a>
                 </div>
             </div>

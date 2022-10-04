@@ -79,7 +79,7 @@ const Home = () => {
                             </a>
                         </div>
                         <div className="col-lg-3 col-md-4 text-center">
-                            <a href="/allergies-&-asthma" className="btn btn-service">
+                            <a href="/allergies-asthma" className="btn btn-service">
                                 <img className='service-icon-img' src='assets/img/allergies-img.png' />
                                 <span className='service-icon-text'>Allergies & Asthma</span>
                             </a>
@@ -151,8 +151,8 @@ const Home = () => {
             <div className='red-container text-center'>
                 <h2 className='section-header-white'>The doctor is in!</h2>
                 <p className='doctor-text mt-5'>
-                    We offer care where you need it and when 
-                    you need it most, with convenient location-based hours. 
+                    We offer care where you need it and when you need it most, 
+                    with convenient location-based hours, throughout New York City. 
                     Schedule an appointment or walk in.
                 </p>
                 <div className='row g-5 container-lg mx-auto my-4'>
@@ -207,6 +207,9 @@ const Home = () => {
                                 are board-certified emergency room doctors with years of experience 
                                 handling medical emergencies throughout the Metro New York area. 
                             </p>
+                        </div>
+                        <div className='text-center mt-4'>
+                            <a href='/locations' className='btn btn-red'>Find a Location Near You</a>
                         </div>
                     </div>
                 </div>

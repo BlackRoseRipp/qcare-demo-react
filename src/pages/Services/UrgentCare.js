@@ -63,6 +63,9 @@ const UrgentCare = () => {
                         </p>
                     </div>
                 </div>
+                <div className='text-center mt-4'>
+                    <a href='/appointment' className='btn btn-red'>Schedule an Appointment</a>
+                </div>
             </div>
             <div className='blue-container'>
                 <div className='container'>
@@ -316,10 +319,11 @@ const UrgentCare = () => {
                         </div>
                     </div>
                 </div>
-                <div className='container text-center mt-5 visually-hidden'>
-                    <h3 className='red-header'>
+                <div className='container text-center mt-5'>
+                    <h3 className='red-header visually-hidden'>
                         If you’re experiencing a non-life-threatening illness or injury, visit Qcare to get better faster.
                     </h3>
+                    <a href='/appointment' className='btn btn-blue'>Schedule your Appointment</a>
                 </div>
             </div>
             <div className="grey-container text-center">
