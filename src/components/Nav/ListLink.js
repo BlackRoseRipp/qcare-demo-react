@@ -1,15 +1,18 @@
 import React from 'react';
 import { MdKeyboardArrowRight } from 'react-icons/md';
+import { useLocation } from 'react-router-dom';
 import './ListLink.css';
 
 function ListLink(props) {
     const { dropdownLinks, primary, to, style } = props
 
+    const location = useLocation()
+    const path = location.pathname
 
     return (dropdownLinks ? (
         <div className="dropend">
             <button 
-                className='btn btn-link-dropdown dropdown-toggle'
+                className={'btn btn-link-dropdown dropdown-toggle'+ (path === to ? ' active' : '')}
                 type='button'
                 data-bs-toggle=''
                 aria-expanded='false'
@@ -26,7 +29,7 @@ function ListLink(props) {
             </ul>
         </div>
     ) : (
-        <a className='nav-link list-link' aria-current='page' href={to}>
+        <a className={'nav-link list-link'+ (path === to ? ' active' : '')} aria-current='page' href={to}>
             {primary}
         </a>
     ))

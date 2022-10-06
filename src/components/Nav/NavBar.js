@@ -36,10 +36,6 @@ const NavBar = () => {
                         <img src="assets/img/QCare-LogoB.png" style={{ width: '100%' }} />
                     </a>
                     <div className='d-flex align-items-center justify-content-center full-screen'>
-                        <NavButton 
-                            primary='Home'
-                            to='/'
-                        />
                         <NavButton
                             primary="About Us"
                             to='/about'

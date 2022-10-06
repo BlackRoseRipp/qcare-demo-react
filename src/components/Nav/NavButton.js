@@ -12,10 +12,12 @@ function NavButton(props) {
     
     const overStyle = style
 
+    const activeDropdownLink = dropdownLinks.some(link => link.to === path)
+
     return (dropdownLinks ? (
         <div className='dropdown'>
             <a 
-                className='btn btn-nav-dropdown dropdown-toggle'
+                className={'btn btn-nav-dropdown dropdown-toggle'+ (path === to || activeDropdownLink ? ' active' : '')}
                 type='button'
                 data-bs-toggle=''
                 aria-expanded='false'

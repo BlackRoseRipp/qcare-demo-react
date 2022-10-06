@@ -33,6 +33,8 @@
 }
 
 .list-link:hover,
-.btn-link-dropdown:hover {
+.btn-link-dropdown:hover,
+.list-link.active,
+.btn-link-dropdown.active {
   color: var(--global-primary-bg-color);
 }

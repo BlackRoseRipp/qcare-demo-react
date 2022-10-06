@@ -12,15 +12,9 @@ const Home = () => {
     return(
         <div>
             <div className="hero-container">
-                <div className="container">
-                    <div className="row w-100 mx-0 g-4">
-                        <div className="col-md-7 order-md-5 d-flex align-items-center">
-                            <h6 className="hero-text text-lg-start text-center">Healthcare when and where you need it.</h6>
-                        </div>
-                        <div className='col-md-5 order-md-1 d-flex align-items-center justify-content-lg-end justify-content-center'>
-                            <a className="btn btn-main" href="/appointment" role="button">Book an Appointment</a>
-                        </div>
-                    </div>
+                <div className="container text-center">
+                    <h1 className="hero-text text-center mb-4">Healthcare when and where you need it.</h1>
+                    <a className="btn btn-main" href="/appointment" role="button">Book an Appointment</a>
                 </div>
             </div>
             <div className='card info-card'>

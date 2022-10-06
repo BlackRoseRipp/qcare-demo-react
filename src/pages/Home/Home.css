@@ -1,15 +1,16 @@
 .hero-container {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("../../../public/assets/img/QCARE_Banner website_1600 x 500.jpg");
+    url("../../../public/assets/img/QCARE_Banner 2_1600 x 500.jpg");
   width: 100%;
-  background-position: center;
+  background-position: 20% center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 150px 0;
+  padding-top: 50px;
+  padding-bottom: 150px;
   height: 60vh;
 }
 
@@ -17,7 +18,7 @@
   font-size: 2.5rem;
   font-weight: 600;
   color: #045471;
-  width: min(100% - 15px, 492px);
+  width: min(100% - 15px, 750px);
   margin-inline: auto;
 }
 
