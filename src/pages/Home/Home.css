@@ -1,26 +1,24 @@
 .hero-container {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../../../public/assets/img/Hero_1.png");
+  justify-content: end;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../../../public/assets/img/QCARE_Banner website_1600 x 500.jpg");
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 70vh;
-}
-
-.hero-body {
-  text-align: start;
-  margin-top: 20%;
+  padding: 150px 0;
+  height: 60vh;
 }
 
 .hero-text {
   font-size: 2.5rem;
   font-weight: 600;
-  color: white;
-  padding-bottom: 2rem;
+  color: #045471;
+  width: min(100% - 15px, 492px);
+  margin-inline: auto;
 }
 
 p {
@@ -33,11 +31,9 @@ p {
   font-size: 20px;
   font-weight: 500;
   color: #fff;
-  height: auto;
   border-radius: 2rem;
   padding: 0.5rem 2rem;
   border: 0;
-  margin-top: auto;
   text-transform: none;
   transition: transform 220ms linear;
 }
@@ -150,11 +146,9 @@ p {
 
 .info-card .card-body {
   background-color: transparent;
-  background: linear-gradient(
-      270deg,
+  background: linear-gradient(270deg,
       rgba(42, 134, 195, 0.85),
-      rgba(63, 188, 230, 0.89)
-    ),
+      rgba(63, 188, 230, 0.89)),
     url("../../../public/assets/img/cute-background-pattern.png");
   width: 100%;
   background-position: center center;
@@ -442,11 +436,9 @@ p {
 
 .doctor-container {
   background-color: transparent;
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       rgba(9, 70, 105, 0.74),
-      rgba(13, 134, 177, 0.87)
-    ),
+      rgba(13, 134, 177, 0.87)),
     url("../../../public/assets/img/patient-telling-doctor-about-symptoms-disease.jpg");
   width: 100%;
   min-height: 45vh;
@@ -572,10 +564,6 @@ p {
   .info-card {
     width: 90%;
     margin-top: -90px;
-  }
-
-  .hero-body {
-    margin-top: 15%;
   }
 }
 

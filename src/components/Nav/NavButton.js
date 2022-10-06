@@ -1,11 +1,15 @@
 import React from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
+import { useLocation } from 'react-router-dom';
 import ListLink from './ListLink';
 import './NavButton.css';
 
 function NavButton(props) {
     const { icon, dropdownLinks, primary, to, style } = props
 
+    const location = useLocation()
+    const path = location.pathname
+    
     const overStyle = style
 
     return (dropdownLinks ? (
@@ -30,7 +34,7 @@ function NavButton(props) {
         </div>
     ) : (
         <div className="dropdown">
-            <a className='nav-link list-btn' aria-current='page' href={to}>
+            <a className={'nav-link list-btn'+ (path === to ? ' active' : '')} aria-current='page' href={to}>
                 {icon ? (
                     <span className='nav-icon' style={{ color: '#02063D', minWidth: 36 }}>
                         {icon}
