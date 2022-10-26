@@ -1,9 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -15,6 +32,10 @@ a {
   box-sizing: border-box;
 }
 
+.heading {
+  font-family: "Raleway", sans-serif;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -23,4 +44,61 @@ a {
     color: white;
     background: black;
   }
+}
+
+.banner {
+  padding-top: calc(7rem + 80px) !important;
+}
+
+.btn-primary {
+  @apply py-3 px-6 rounded-full transition-all;
+}
+
+.carousel-indicators {
+  @apply rounded-full w-fit mx-auto p-2 absolute right-0 bottom-0 left-0 flex justify-center items-center mb-2;
+}
+
+.carousel-indicators [data-bs-target] {
+  @apply border-2;
+}
+
+.img-standard {
+  @apply w-5/6 mx-auto rounded-2xl;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  @apply w-max flex items-center justify-center p-0 text-center border-0;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  @apply opacity-90;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+  @apply outline-none no-underline;
+}
+
+.scrollbar::-webkit-scrollbar {
+  @apply w-2;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 3rem;
+  border: 2px solid white;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 1.6rem;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 1.6rem;
 }
