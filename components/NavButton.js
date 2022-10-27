@@ -69,12 +69,12 @@ function NavButton(props) {
             path === to || activeDropdownLink
               ? classNames(
                   scrollPosition > 0
-                    ? "text-white border-white"
-                    : "text-blue-primary border-blue-primary"
+                    ? "text-yellow-logo border-yellow-logo"
+                    : "text-red-secondary border-red-secondary"
                 )
               : classNames(
                   scrollPosition > 0
-                    ? "text-blue-primary hover:border-blue-primary"
+                    ? "text-blue-primary hover:border-red-secondary"
                     : "text-white hover:border-blue-secondary",
                   "border-transparent"
                 ),
@@ -89,7 +89,7 @@ function NavButton(props) {
         </a>
         <div
           className={
-            "block peer-hover:max-h-[300px] hover:max-h-[200px] mt-px max-h-0 w-max min-w-full bg-white drop-shadow-lg absolute rounded-b-lg z-50 transition-all duration-300 ease-linear overflow-hidden"
+            "block peer-hover:max-h-[300px] hover:max-h-[300px] mt-px max-h-0 w-max min-w-full bg-white drop-shadow-lg absolute rounded-b-lg z-50 transition-all duration-300 ease-linear overflow-hidden"
           }
         >
           <div className="flex flex-col p-2">
@@ -119,12 +119,12 @@ function NavButton(props) {
         path === to
           ? classNames(
               scrollPosition > 0
-                ? "text-blue-light lg:border-blue-light border-transparent"
+                ? "text-red-logo lg:border-red-logo border-transparent"
                 : "text-blue-light lg:text-yellow-logo lg:border-yellow-logo border-transparent"
             )
           : classNames(
               scrollPosition > 0
-                ? "lg:text-sky-900 text-white border-transparent lg:hover:border-blue-primary"
+                ? "lg:text-blue-primary text-white border-transparent lg:hover:border-blue-primary"
                 : "text-white border-transparent lg:hover:border-blue-secondary"
             ),
         "py-2 lg:mx-2 transition-all duration-300 flex items-center font-medium text-lg border-b-2"

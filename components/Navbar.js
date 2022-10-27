@@ -19,7 +19,7 @@ const Navbar = () => {
         "fixed w-full top-0 flex justify-between items-center transition-all z-50"
       )}
     >
-      <div className="md:container flex flex-wrap justify-between items-center md:mx-auto w-full">
+      <div className="lg:container flex flex-wrap justify-between items-center md:mx-auto w-full">
         <div className="p-4 rounded-b-xl bg-transparent">
           <a href="/" className="flex items-center">
             <img
@@ -51,7 +51,7 @@ const Navbar = () => {
         <div
           className={classNames(
             expanded ? "max-h-[470px]" : "max-h-0",
-            "block lg:max-h-full w-full lg:w-auto transition-all duration-700 rounded-none md:rounded-2xl overflow-hidden lg:overflow-visible grow lg:mx-32"
+            "block lg:max-h-full w-full lg:w-auto transition-all duration-700 rounded-none md:rounded-2xl overflow-hidden lg:overflow-visible grow xl:mx-32"
           )}
           id="navbar"
         >
@@ -170,7 +170,7 @@ const Navbar = () => {
         <a
           className={classNames(
             scrollPosition > 0
-              ? "bg-transparent text-white border-white hover:text-primary-color hover:bg-white"
+              ? "bg-transparent text-blue-primary border-blue-primary hover:text-red-logo hover:border-red-logo"
               : "bg-transparent text-yellow-logo border-yellow-logo hover:bg-yellow-logo hover:text-blue-primary",
             "rounded-full text-lg font-semibold border-2 py-1 px-4 transition-all hidden lg:block"
           )}

@@ -26,6 +26,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 300ms ease;
 }
 
 * {
@@ -40,6 +41,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
@@ -51,7 +53,7 @@ a {
 }
 
 .btn-primary {
-  @apply py-3 px-6 rounded-full transition-all;
+  @apply py-3 px-6 rounded-full transition-all duration-300;
 }
 
 .carousel-indicators {
