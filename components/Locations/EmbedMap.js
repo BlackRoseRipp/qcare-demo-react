@@ -5,7 +5,7 @@ const EmbedMap = (props) => {
 
   return (
     <div>
-      <div className="h-[700px] border border-blue-light rounded-[2rem] overflow-hidden w-full mx-auto">
+      <div className="h-[700px] border border-blue-light rounded-xl overflow-hidden w-full mx-auto">
         <iframe
           style={{ position: "relative", top: "-70px", border: "none" }}
           src={mapSource}

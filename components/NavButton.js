@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -47,7 +48,7 @@ function NavButton(props) {
           <div className="accordion-body flex flex-col py-4 px-5">
             {dropdownLinks.map((link) => {
               return (
-                <a
+                <Link
                   className={classNames(
                     path === link.to ? "text-blue-dark" : "text-primary-color",
                     "p-2 transition-all text-lg font-medium"
@@ -56,7 +57,7 @@ function NavButton(props) {
                   href={link.to}
                 >
                   {link.primary}
-                </a>
+                </Link>
               );
             })}
           </div>
@@ -64,7 +65,7 @@ function NavButton(props) {
       </div>
     ) : (
       <div className="relative">
-        <a
+        <Link
           className={classNames(
             path === to || activeDropdownLink
               ? classNames(
@@ -86,7 +87,7 @@ function NavButton(props) {
           <span className="ml-2 text-3xl lg:h-[28px]">
             <MdKeyboardArrowDown />
           </span>
-        </a>
+        </Link>
         <div
           className={
             "block peer-hover:max-h-[300px] hover:max-h-[300px] mt-px max-h-0 w-max min-w-full bg-white drop-shadow-lg absolute rounded-b-lg z-50 transition-all duration-300 ease-linear overflow-hidden"
@@ -95,7 +96,7 @@ function NavButton(props) {
           <div className="flex flex-col p-2">
             {dropdownLinks.map((link) => {
               return (
-                <a
+                <Link
                   className={classNames(
                     path === link.to
                       ? "text-red-secondary"
@@ -106,7 +107,7 @@ function NavButton(props) {
                   href={link.to}
                 >
                   {link.primary}
-                </a>
+                </Link>
               );
             })}
           </div>
@@ -114,7 +115,7 @@ function NavButton(props) {
       </div>
     )
   ) : (
-    <a
+    <Link
       className={classNames(
         path === to
           ? classNames(
@@ -133,7 +134,7 @@ function NavButton(props) {
       href={to}
     >
       {primary}
-    </a>
+    </Link>
   );
 }
 

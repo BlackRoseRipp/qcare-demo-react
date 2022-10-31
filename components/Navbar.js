@@ -1,7 +1,11 @@
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import useScrollPosition from "../hooks/useScrollPosition";
 import useWindowSize from "../hooks/useWindowSize";
+import Logo from "../public/img/QCARE_Logo.svg";
+import LogoWhite from "../public/img/QCARE_Logo_White.svg";
 import NavButton from "./NavButton";
 
 const Navbar = () => {
@@ -21,17 +25,13 @@ const Navbar = () => {
     >
       <div className="lg:container flex flex-wrap justify-between items-center md:mx-auto w-full">
         <div className="p-4 rounded-b-xl bg-transparent">
-          <a href="/" className="flex items-center">
-            <img
-              src={
-                scrollPosition > 0
-                  ? "/img/QCARE_Logo.svg"
-                  : "/img/QCARE_Logo_White.svg"
-              }
+          <Link href="/" className="flex items-center">
+            <Image
+              src={scrollPosition > 0 ? Logo : LogoWhite}
               class="mr-3 w-52"
               alt="qcare-logo"
             />
-          </a>
+          </Link>
         </div>
         <button
           data-toggle="navbar"
@@ -167,7 +167,7 @@ const Navbar = () => {
             </ul>
           )}
         </div>
-        <a
+        <Link
           className={classNames(
             scrollPosition > 0
               ? "bg-transparent text-blue-primary border-blue-primary hover:text-red-logo hover:border-red-logo"
@@ -177,7 +177,7 @@ const Navbar = () => {
           href="#"
         >
           Patient Portal
-        </a>
+        </Link>
       </div>
     </nav>
   );
