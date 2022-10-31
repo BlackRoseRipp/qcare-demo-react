@@ -1,0 +1,46 @@
+[
+    {
+        "Name": "Forest Urgent Care LIC and Forest Hills",
+        "Address": "112-01 75th Ave",
+        "City": "Queens",
+        "State": "NY",
+        "Zip": "11375",
+        "Country": "United States",
+        "Phone": "+17182686808",
+        "Email": "",
+        "Img": ""
+    },
+    {
+        "Name": "Forest Urgent Care LIC and Forest Hills",
+        "Address": "10-11 49th Ave",
+        "City": "Queens",
+        "State": "NY",
+        "Zip": "11101",
+        "Country": "United States",
+        "Phone": "+13473185488",
+        "Email": "",
+        "Img": ""
+    },
+    {
+        "Name": "QCare HQ",
+        "Address": "143 W 72nd St",
+        "City": "Manhattan",
+        "State": "NY",
+        "Zip": "10023",
+        "Country": "United States",
+        "Phone": "+18777227318",
+        "Email": "",
+        "Img": ""
+    },
+    {
+        "Name": "Bronx Park Urgent Medical Care",
+        "Address": "2016 Bronxdale Ave, Suite #101",
+        "City": "Bronx",
+        "State": "NY",
+        "Zip": "10462",
+        "Country": "United States",
+        "Phone": "+17189189676",
+        "Email": "",
+        "Img": ""
+    }
+]
