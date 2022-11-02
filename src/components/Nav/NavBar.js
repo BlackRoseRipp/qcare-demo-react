@@ -1,50 +1,62 @@
-import React, { useState } from 'react'
-import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillTelephoneFill } from 'react-icons/bs'
-import { MdLocationPin } from "react-icons/md"
-import ListLink from './ListLink'
-import "./NavBar.css"
-import NavButton from './NavButton'
-import { routes } from "./routes"
-
+import React, { useState } from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdLocationPin } from "react-icons/md";
+import ListLink from "./ListLink";
+import "./NavBar.css";
+import NavButton from "./NavButton";
+import { routes } from "./routes";
 
 //TODO: fix pathing for ListItemLink's
 const NavBar = () => {
-
-
-    return (
-        <React.Fragment>
-            <nav className="navbar nav-top">
-                <div className='container-lg'>                    
-                    <div className='nav nav-top-right'>
-                        <BsFillTelephoneFill style={{ padding: '0em .25em', fontSize: '2em'}} />
-                        <span>+1 877-722-7318</span>
-                        <div className='vr'></div>
-                        <a href='/locations' className='nav-top-link'>
-                            <MdLocationPin style={{ fontSize: '1.25em', fontWeight: '600', marginRight: '.5rem'}}/>
-                            <span>Locations</span>
-                        </a>
-                        <div className='vr'></div>
-                        <AiOutlineMail style={{ fontSize: '1.25em', fontWeight: '600', marginRight: '.5rem'}}/>
-                        <span>helpdesk@qcare.com</span>
-                    </div>
-                </div>
-            </nav>
-            <nav className='navbar nav-bottom'>
-                <div className='navigation-container'>
-                    <a className='navbar-brand' href='/'>
-                        <img src="assets/img/QCare-LogoB.png" style={{ width: '100%' }} />
-                    </a>
-                    <div className='d-flex align-items-center justify-content-center full-screen'>
-                        <NavButton
-                            primary="About Us"
-                            to='/about'
-                            dropdownLinks={[
-                                {
-                                    to: '/team',
-                                    primary: 'Meet the team'
-                                },
-                                /* {
+  return (
+    <React.Fragment>
+      <div className="fixed-top bg-white">
+        <nav className="navbar nav-top">
+          <div className="container-lg">
+            <div className="nav nav-top-right">
+              <BsFillTelephoneFill
+                style={{ padding: "0em .25em", fontSize: "2em" }}
+              />
+              <span>+1 877-722-7318</span>
+              <div className="vr"></div>
+              <a href="/locations" className="nav-top-link">
+                <MdLocationPin
+                  style={{
+                    fontSize: "1.25em",
+                    fontWeight: "600",
+                    marginRight: ".5rem",
+                  }}
+                />
+                <span>Locations</span>
+              </a>
+              <div className="vr"></div>
+              <AiOutlineMail
+                style={{
+                  fontSize: "1.25em",
+                  fontWeight: "600",
+                  marginRight: ".5rem",
+                }}
+              />
+              <span>helpdesk@qcare.com</span>
+            </div>
+          </div>
+        </nav>
+        <nav className="navbar nav-bottom">
+          <div className="navigation-container">
+            <a className="navbar-brand" href="/">
+              <img src="assets/img/QCare-LogoB.png" style={{ width: "100%" }} />
+            </a>
+            <div className="d-flex align-items-center justify-content-center full-screen">
+              <NavButton
+                primary="About Us"
+                to="/about"
+                dropdownLinks={[
+                  {
+                    to: "/team",
+                    primary: "Meet the team",
+                  },
+                  /* {
                                     to: '/careers',
                                     primary: 'Careers'
                                 },
@@ -52,27 +64,27 @@ const NavBar = () => {
                                     to: '/blog',
                                     primary: 'Blog'
                                 }, */
-                                {
-                                    to: "/contact",
-                                    primary: "Contact Us"
-                                }
-                            ]}
-                        />
-                        <NavButton
-                            primary="Services & Care"
-                            to='/nyc-urgent-care-services'
-                            dropdownLinks={[
-                                {
-                                    to: '/prevention',
-                                    primary: 'Wellness Visits'
-                                },
-                                {
-                                    to: '/pediatrics',
-                                    primary: 'Pediatric Care'
-                                },
-                                {
-                                    primary: 'Urgent Care',
-                                    /* dropdownLinks: [
+                  {
+                    to: "/contact",
+                    primary: "Contact Us",
+                  },
+                ]}
+              />
+              <NavButton
+                primary="Services & Care"
+                to="/nyc-urgent-care-services"
+                dropdownLinks={[
+                  {
+                    to: "/prevention",
+                    primary: "Wellness Visits",
+                  },
+                  {
+                    to: "/pediatrics",
+                    primary: "Pediatric Care",
+                  },
+                  {
+                    primary: "Urgent Care",
+                    /* dropdownLinks: [
                                         {
                                             to: '/cold-flu',
                                             primary: 'Cold & Flu'
@@ -110,99 +122,92 @@ const NavBar = () => {
                                             primary: 'X-Rays'
                                         }
                                     ] */
-                                    to: '/urgent-care'
-                                },
-                                {
-                                    to: '/allergies-asthma',
-                                    primary: 'Allergies & Asthma'
-                                },
-                                {
-                                    to: '/covid-19',
-                                    primary: 'COVID-19'
-                                },
-                                {
-                                    to: '/vaccines',
-                                    primary: 'Vaccinations'
-                                }
-                            ]}
-                        />
-                        <NavButton
-                            primary='Plan Your Visit'
-                            to='/plan-your-visit'
-                            dropdownLinks={[
-                                {
-                                    to: '/locations',
-                                    primary: 'All Locations'
-                                },
-                                {
-                                    to: '/house-calls',
-                                    primary: 'House Calls'
-                                },
-                                {
-                                    to: '/insurance',
-                                    primary: 'Insurances'
-                                },
-                                {
-                                    to: '/billing',
-                                    primary: 'Billing Info'
-                                }
-                            ]}
-                        />
-                    </div>
-                    <a className="btn btn-patient" href="#">
-                        Patient Portal
-                    </a>
-                    <a className='btn btn-testing full-screen' href='/appointment'>
-                        Book an Appointment
-                    </a>
-                    <button 
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <nav className='navbar navbar-expand-lg nav-mobile w-100'>
-                    <div className='collapse navbar-collapse w-100' id='navbarSupportedContent'>
-                        <ul className='navbar-nav'>
-                            <li className='nav-item text-center'>
-                                <ListLink 
-                                    primary="Home"
-                                    to='/'
-                                />
-                            </li>
-                            <li className='nav-item text-center'>
-                                <ListLink 
-                                    primary="About Us"
-                                    to='/about'
-                                />
-                            </li>
-                            <li className='nav-item text-center'>
-                                <ListLink 
-                                    primary="Services & Care"
-                                    to='/nyc-urgent-care-services'
-                                />
-                            </li>
-                            <li className='nav-item text-center'>
-                                <ListLink 
-                                    primary="Plan Your Visit"
-                                    to='/plan-your-visit'
-                                />
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </nav>
-            <div>
-                {routes()}
+                    to: "/urgent-care",
+                  },
+                  {
+                    to: "/allergies-asthma",
+                    primary: "Allergies & Asthma",
+                  },
+                  {
+                    to: "/covid-19",
+                    primary: "COVID-19",
+                  },
+                  {
+                    to: "/vaccines",
+                    primary: "Vaccinations",
+                  },
+                ]}
+              />
+              <NavButton
+                primary="Plan Your Visit"
+                to="/plan-your-visit"
+                dropdownLinks={[
+                  {
+                    to: "/locations",
+                    primary: "All Locations",
+                  },
+                  {
+                    to: "/house-calls",
+                    primary: "House Calls",
+                  },
+                  {
+                    to: "/insurance",
+                    primary: "Insurances",
+                  },
+                  {
+                    to: "/billing",
+                    primary: "Billing Info",
+                  },
+                ]}
+              />
             </div>
-        </React.Fragment>
-    )
-}
+            <a className="btn btn-patient" href="#">
+              Patient Portal
+            </a>
+            <a className="btn btn-testing full-screen" href="/appointment">
+              Book an Appointment
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <nav className="navbar navbar-expand-lg nav-mobile w-100">
+            <div
+              className="collapse navbar-collapse w-100"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav">
+                <li className="nav-item text-center">
+                  <ListLink primary="Home" to="/" />
+                </li>
+                <li className="nav-item text-center">
+                  <ListLink primary="About Us" to="/about" />
+                </li>
+                <li className="nav-item text-center">
+                  <ListLink
+                    primary="Services & Care"
+                    to="/nyc-urgent-care-services"
+                  />
+                </li>
+                <li className="nav-item text-center">
+                  <ListLink primary="Plan Your Visit" to="/plan-your-visit" />
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </nav>
+      </div>
+      <div>{routes()}</div>
+    </React.Fragment>
+  );
+};
 
-export default NavBar
+export default NavBar;

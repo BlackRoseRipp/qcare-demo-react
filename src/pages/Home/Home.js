@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BsClockFill } from "react-icons/bs";
 import {
   FaClinicMedical,
@@ -20,6 +20,11 @@ import StoreLocator from "../../components/Locations/StoreLocator";
 import "./Home.css";
 
 const Home = () => {
+  const fadeInAnimationElements = useRef(null);
+  /* const observer = new IntersectionObserver((entry) => {
+
+  }) */
+
   return (
     <div>
       <div className="hero-container">
@@ -184,7 +189,10 @@ const Home = () => {
                 <a className="btn btn-lite mt-5" href="/plan-your-visit" role="button">Plan Your Visit</a>
             </div> */}
       <div className="grey-container text-center">
-        <h2 className="section-header-second mb-5 text-center">
+        <h2
+          className="section-header-second mb-5 text-center fade-in-hidden"
+          ref={fadeInAnimationElements}
+        >
           Meeting New York patients wherever you are!
         </h2>
         <div className="map-container">
