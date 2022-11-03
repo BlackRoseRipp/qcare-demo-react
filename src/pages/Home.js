@@ -16,8 +16,11 @@ import { IoIosMedical } from "react-icons/io";
 import "tw-elements";
 import Data from "../components/Locations/Data";
 import StoreLocator from "../components/Locations/StoreLocator";
+import useWindowSize from "../hooks/useWindowSize";
 
 export default function Home() {
+  const size = useWindowSize();
+
   return (
     <Fragment>
       <main>
@@ -35,6 +38,50 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <div className="w-fit flex items-center border-2 rounded-full border-yellow-logo px-8 py-4 mx-auto">
+            <a
+              href="#locationsButton"
+              className="text-white hover:text-yellow-logo flex flex-col items-center mx-4"
+            >
+              <BiClinic className="h-12 w-auto" />
+              <p
+                className={
+                  "text-center font-medium" +
+                  (size.width < 440 ? " hidden" : "")
+                }
+              >
+                Urgent Care Clinics
+              </p>
+            </a>
+            <a
+              href="#locationsButton"
+              className="text-white hover:text-yellow-logo flex flex-col items-center mx-4"
+            >
+              <BsTruck className="h-12 w-auto" />
+              <p
+                className={
+                  "text-center font-medium" +
+                  (size.width < 440 ? " hidden" : "")
+                }
+              >
+                Mobile Care Units
+              </p>
+            </a>
+            <a
+              href="#locationsButton"
+              className="text-white hover:text-yellow-logo flex flex-col items-center mx-4"
+            >
+              <BsHouseDoor className="h-12 w-auto" />
+              <p
+                className={
+                  "text-center font-medium" +
+                  (size.width < 440 ? " hidden" : "")
+                }
+              >
+                House Calls
+              </p>
+            </a>
+          </div>
         </div>
         <div className="container mx-auto py-48">
           <div className="grid lg:grid-cols-2 gap-8">
@@ -46,9 +93,6 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col justify-evenly items-start">
-              <h4 className="text-sm uppercase text-blue-logo-secondary lg:mx-0 mx-auto">
-                Qcare
-              </h4>
               <h2 className="text-5xl font-medium text-blue-primary heading lg:mx-0 mx-auto lg:text-start text-center">
                 Say hello when you walk by,
                 <br />
@@ -73,6 +117,7 @@ export default function Home() {
                 <a
                   href="#"
                   className="btn-primary text-blue-primary border-blue-primary border-2 uppercase hover:bg-blue-logo-secondary hover:border-blue-logo-secondary hover:text-white"
+                  id="locationsButton"
                 >
                   Find a location near you
                 </a>
@@ -141,7 +186,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <p className="mt-16 text-lg text-blue-logo-secondary text-center w-3/4 mx-auto">
+          <p className="mt-16 text-lg text-blue-logo-primary text-center w-3/4 mx-auto">
             We offer care where you need it and when you need it most, with
             convenient location-based hours, throughout New York City. Schedule
             an appointment or walk in.
@@ -185,12 +230,12 @@ export default function Home() {
               <div className="flex flex-col items-center justify-start mx-4 w-2/5">
                 <FaHandHoldingHeart className="text-blue-logo-primary text-7xl" />
                 <h5 className="text-blue-primary text-2xl text-center font-medium mt-6">
-                  Register Once with Qcare
+                  Access Care
                 </h5>
               </div>
             </div>
             <div className="rounded-xl bg-white border-2 border-blue-logo-primary px-8 py-6 mb-12 mt-32 w-fit mx-auto">
-              <h5 className="text-blue-logo-secondary heading uppercase text-sm text-center font-medium">
+              <h5 className="text-blue-logo-primary heading uppercase text-sm text-center font-medium">
                 Our Services
               </h5>
               <div className="grid md:grid-cols-2 md:gap-8 mt-4">
@@ -248,14 +293,14 @@ export default function Home() {
         </div>
         <div className="container lg:w-3/4 mx-auto py-32">
           <div className="grid lg:grid-cols-2 gap-x-12 gap-y-24">
-            <div className="flex items-center justify-center order-2 lg:w-full w-1/2 mx-auto">
+            <div className="flex items-center justify-center lg:order-1 order-2 lg:w-full w-1/2 mx-auto">
               <img
                 src="img/pexels-edward-jenner-4031321.jpg"
                 className="w-full rounded-xl"
                 alt="Lab Technicians"
               />
             </div>
-            <div className="flex flex-col justify-evenly order-1 items-center lg:items-start">
+            <div className="flex flex-col justify-evenly lg:order-2 order-1 items-center lg:items-start">
               <h2 className="text-4xl text-blue-primary font-medium md:text-start text-center">
                 Quick registration, Quick testing, Quick results
               </h2>
@@ -302,7 +347,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-evenly items-center lg:items-start lg:order-4 order-3">
+            <div className="flex flex-col justify-evenly items-center lg:items-start order-3">
               <h2 className="text-4xl text-red-primary font-medium">
                 Say goodbye to…
               </h2>
@@ -327,7 +372,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-center lg:order-3 order-4 lg:w-full w-1/2 mx-auto">
+            <div className="flex items-center justify-center order-4 lg:w-full w-1/2 mx-auto">
               <img
                 src="img/pexels-karolina-grabowska-5387256.jpg"
                 className="w-full rounded-xl"
@@ -353,7 +398,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="flex flex-col justify-center items-start">
               <h1 className="text-blue-primary heading text-5xl font-semibold md:text-start text-center">
-                <span className="text-4xl text-blue-logo-secondary">
+                <span className="text-4xl text-blue-logo-primary">
                   We help you care for
                 </span>
                 <br />

@@ -75,11 +75,7 @@ const Navbar = () => {
                         primary: "Our Mission",
                       },
                       {
-                        to: "/services",
-                        primary: "Testing Services",
-                      },
-                      {
-                        to: "/about/team",
+                        to: "/team",
                         primary: "Team",
                       },
                       {
@@ -117,6 +113,10 @@ const Navbar = () => {
                         to: "#",
                         primary: "Vaccinations",
                       },
+                      {
+                        to: "/services",
+                        primary: "Testing Services",
+                      },
                     ]}
                   />
                   <NavButton
@@ -125,19 +125,23 @@ const Navbar = () => {
                     id="Three"
                     dropdownLinks={[
                       {
-                        to: "#",
+                        to: "/locations",
                         primary: "Locations",
                       },
                       {
-                        to: "#",
+                        to: "/plan-your-visit",
+                        primary: "Locations",
+                      },
+                      {
+                        to: "/house-calls",
                         primary: "House Calls",
                       },
                       {
-                        to: "#",
+                        to: "/Insurance",
                         primary: "Insurance",
                       },
                       {
-                        to: "#",
+                        to: "/billing",
                         primary: "Billing Info",
                       },
                     ]}
@@ -152,15 +156,15 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavButton
-                    to="#"
+                    to="/about"
                     primary="About Us"
                     dropdownLinks={[
                       {
-                        to: "#",
+                        to: "/team",
                         primary: "Meet the Team",
                       },
                       {
-                        to: "#",
+                        to: "/contact",
                         primary: "Contact Us",
                       },
                     ]}

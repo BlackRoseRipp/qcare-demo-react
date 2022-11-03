@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Fragment>
       <footer className="mt-auto w-full">
-        <div className=" mx-auto flex justify-center items-center bg-white">
+        <div className=" mx-auto flex justify-center items-center bg-blue-secondary/10">
           <div className="mx-8 py-4 w-full">
             <div className="grid lg:grid-cols-3">
               <div className="flex sm:flex-row flex-col items-center lg:justify-start justify-center lg:order-1 order-2">
@@ -40,22 +40,22 @@ const Footer = () => {
               <div className="flex items-center lg:justify-end justify-center order-3">
                 <div className="flex flex-col lg:items-end items-center">
                   <a
-                    href="tel:+18886825221"
+                    href="tel:+18777227318"
                     className="text-blue-primary my-1 text hover:text-red-secondary font-medium text-end"
                   >
-                    (888) 682-5221
+                    (877) 722-7318
                   </a>
                   <a
-                    href="mailto:help@ovalab.com"
+                    href="mailto:helpdesk@qcare.com"
                     className="text-blue-primary my-1 text hover:text-red-secondary font-medium text-end"
                   >
-                    help@ovalab.com
+                    helpdesk@qcare.com
                   </a>
                   <a
-                    href="https://www.google.com/maps/dir//527+W+125th+St,+New+York,+NY+10027/@40.8146442,-73.9918835,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89c2f66a3419fa35:0x53fc7d1a368c718f!2m2!1d-73.9568642!2d40.8145845!3e0"
+                    href="https://www.google.com/maps/place/143+W+72nd+St,+New+York,+NY+10023/@40.7782211,-73.9824139,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2588a351f00ed:0xa7f97add245c9e79!8m2!3d40.7782211!4d-73.9802252!16s%2Fg%2F11bw3_tfp3?hl=en"
                     className="text-blue-primary my-1 text hover:text-red-secondary font-medium text-end"
                   >
-                    527 W 125th St, New York, NY, 10027
+                    143 W 72nd St Manhattan, NY 10023
                   </a>
                 </div>
               </div>
