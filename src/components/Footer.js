@@ -6,9 +6,9 @@ const Footer = () => {
     <Fragment>
       <footer className="mt-auto w-full">
         <div className=" mx-auto flex justify-center items-center bg-white">
-          <div className="mx-8 py-8 w-full">
-            <div className="grid grid-cols-3">
-              <div className="flex items-center justify-start">
+          <div className="mx-8 py-4 w-full">
+            <div className="grid lg:grid-cols-3">
+              <div className="flex sm:flex-row flex-col items-center lg:justify-start justify-center lg:order-1 order-2">
                 <a
                   href="#"
                   className="text-blue-primary hover:text-red-secondary my-2 mx-4 text-sm"
@@ -28,7 +28,7 @@ const Footer = () => {
                   Book an Appointment
                 </a>
               </div>
-              <div className="flex flex-col justify-center items-center mx-auto w-fit justify-self-center">
+              <div className="flex flex-col justify-center items-center mx-auto w-fit justify-self-center lg:order-2 order-1">
                 <a href="/">
                   <img
                     src="img/QCARE_Logo.svg"
@@ -37,8 +37,8 @@ const Footer = () => {
                   />
                 </a>
               </div>
-              <div className="flex items-center justify-end">
-                <div className="flex flex-col md:items-end items-center">
+              <div className="flex items-center lg:justify-end justify-center order-3">
+                <div className="flex flex-col lg:items-end items-center">
                   <a
                     href="tel:+18886825221"
                     className="text-blue-primary my-1 text hover:text-red-secondary font-medium text-end"
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-blue-primary py-3 flex items-center justify-center">
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-3 sm:gap-8 gap-2 text-center">
             <a href="#" className="text-white text-sm hover:text-yellow-logo">
               Privacy Policy
             </a>

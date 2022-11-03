@@ -6,7 +6,7 @@ function StoreLocator(props) {
   return (
     <div className="container mx-auto">
       <div className="grid lg:grid-cols-3 gap-8">
-        <div>
+        <div className="lg:w-full w-3/4 mx-auto">
           <StoreList locations={props.locations} />
         </div>
         <div className="lg:col-span-2">

@@ -28,9 +28,11 @@ const Navbar = () => {
             <a href="/" className="flex items-center">
               <img
                 src={
-                  scrollPosition > 0
-                    ? "img/QCARE_Logo.svg"
-                    : "img/QCARE_Logo_White.svg"
+                  size.width > 767
+                    ? scrollPosition > 0
+                      ? "/img/QCARE_Logo.svg"
+                      : "/img/QCARE_Logo_White.svg"
+                    : "/img/QCARE_Logo.svg"
                 }
                 class="mr-3 w-52"
                 alt="qcare-logo"
@@ -44,7 +46,7 @@ const Navbar = () => {
             className={classNames(
               scrollPosition > 0
                 ? "text-blue-primary"
-                : "text-white md:text-blue-primary",
+                : "md:text-white text-blue-primary",
               "lg:hidden text-3xl mr-8"
             )}
             aria-controls="navbar"
@@ -54,8 +56,8 @@ const Navbar = () => {
           </button>
           <div
             className={classNames(
-              expanded ? "max-h-[470px]" : "max-h-0",
-              "block lg:max-h-full w-full lg:w-auto transition-all duration-700 rounded-none md:rounded-2xl overflow-hidden lg:overflow-visible grow xl:mx-32"
+              expanded ? "max-h-[555px] border-b" : "max-h-0",
+              "block lg:max-h-full w-full lg:w-auto transition-all duration-700 overflow-hidden lg:overflow-visible grow xl:mx-32 lg:border-0"
             )}
             id="navbar"
           >
@@ -86,10 +88,62 @@ const Navbar = () => {
                       },
                     ]}
                   />
+                  <NavButton
+                    to="#"
+                    primary="Services & Care"
+                    id="Two"
+                    dropdownLinks={[
+                      {
+                        to: "#",
+                        primary: "Wellness Visits",
+                      },
+                      {
+                        to: "#",
+                        primary: "Pediatric Care",
+                      },
+                      {
+                        to: "#",
+                        primary: "Urgent Care",
+                      },
+                      {
+                        to: "#",
+                        primary: "Allergies & Asthma",
+                      },
+                      {
+                        to: "#",
+                        primary: "COVID-19",
+                      },
+                      {
+                        to: "#",
+                        primary: "Vaccinations",
+                      },
+                    ]}
+                  />
+                  <NavButton
+                    to="#"
+                    primary="Plan Your Visit"
+                    id="Three"
+                    dropdownLinks={[
+                      {
+                        to: "#",
+                        primary: "Locations",
+                      },
+                      {
+                        to: "#",
+                        primary: "House Calls",
+                      },
+                      {
+                        to: "#",
+                        primary: "Insurance",
+                      },
+                      {
+                        to: "#",
+                        primary: "Billing Info",
+                      },
+                    ]}
+                  />
+                  <NavButton to="#" primary="Patient Portal" />
                 </div>
-                <NavButton to="/locations" primary="Testing Locations" />
-                <NavButton to="/blog" primary="Blog" />
-                <NavButton to="/contact" primary="Contact" />
               </div>
             ) : (
               <ul className="flex flex-row justify-around rounded-lg">

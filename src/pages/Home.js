@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { BiClinic } from "react-icons/bi";
 import {
+  BsArrowDown,
   BsArrowLeft,
   BsArrowRight,
   BsCheck2Circle,
@@ -15,12 +16,6 @@ import { IoIosMedical } from "react-icons/io";
 import "tw-elements";
 import Data from "../components/Locations/Data";
 import StoreLocator from "../components/Locations/StoreLocator";
-//import Blog1 from "../public/img/blog1.jpg";
-//import Blog2 from "../public/img/blog2.jpeg";
-//import Blog3 from "../public/img/blog3.jpg";
-//import QuickTestingImg from "../public/img/pexels-edward-jenner-4031321.jpg";
-//import GoodbyeImg from "../public/img/pexels-karolina-grabowska-5387256.jpg";
-//import BrooklynWalkingImg from "../public/img/walk-by-nyc.jpg";
 
 export default function Home() {
   return (
@@ -28,12 +23,12 @@ export default function Home() {
       <main>
         <div className="banner bg-blue-primary pb-24">
           <div className="container mx-auto py-32 flex flex-col">
-            <h1 className="heading text-white text-6xl font-semibold w-2/3">
+            <h1 className="heading text-white text-6xl font-semibold md:w-2/3 w-full md:text-start text-center">
               Healthcare when and where you need it.
             </h1>
-            <div className="mt-8">
+            <div className="mt-8 md:text-start text-center">
               <a
-                className="btn-primary uppercase text-white border-2 border-white hover:border-yellow-logo hover:bg-yellow-logo font-medium"
+                className="btn-primary uppercase text-white border-2 border-white hover:border-yellow-logo hover:bg-yellow-logo font-medium md:mx-0"
                 href="#"
               >
                 Book an Appointment
@@ -42,7 +37,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container mx-auto py-48">
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8">
             <div className="flex items-center justify-center">
               <img
                 src="img/walk-by-nyc.jpg"
@@ -51,15 +46,15 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col justify-evenly items-start">
-              <h4 className="text-sm uppercase text-blue-logo-secondary">
+              <h4 className="text-sm uppercase text-blue-logo-secondary lg:mx-0 mx-auto">
                 Qcare
               </h4>
-              <h2 className="text-5xl font-medium text-blue-primary heading">
+              <h2 className="text-5xl font-medium text-blue-primary heading lg:mx-0 mx-auto lg:text-start text-center">
                 Say hello when you walk by,
                 <br />
                 Stop by when you need us
               </h2>
-              <p className="w-5/6 text-blue-secondary">
+              <p className="w-5/6 text-blue-secondary lg:mt-0 mt-4 text-center lg:text-start lg:mx-0 mx-auto">
                 At Qcare, we provide New York City residents with convenient,
                 quality healthcare that doesn’t interrupt your day. We’re
                 posting our mobile care units at strategic locations around the
@@ -74,7 +69,7 @@ export default function Home() {
                 with years of experience handling medical emergencies throughout
                 the Metro New York area.
               </p>
-              <div className="xl:mt-0 mt-8">
+              <div className="xl:mt-0 mt-8 lg:text-start text-center w-full">
                 <a
                   href="#"
                   className="btn-primary text-blue-primary border-blue-primary border-2 uppercase hover:bg-blue-logo-secondary hover:border-blue-logo-secondary hover:text-white"
@@ -87,7 +82,7 @@ export default function Home() {
           <h2 className="mt-56 text-5xl text-blue-logo-primary font-medium heading text-center">
             The doctor is in
           </h2>
-          <div className="grid grid-cols-3 gap-12 lg:w-3/4 mx-auto mt-16">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:w-3/4 mx-auto mt-16">
             <div className="flex flex-col items-center justify-start">
               <a
                 href="#"
@@ -166,7 +161,7 @@ export default function Home() {
               Customizable healthcare
               <br /> when and where you need it most
             </h2>
-            <div className="flex items-center justify-center mt-32 w-5/6 mx-auto">
+            <div className="flex sm:flex-row flex-col items-center justify-center mt-32 w-5/6 mx-auto">
               <div className="flex flex-col items-center justify-start mx-4 w-2/5">
                 <BsClipboardCheck className="text-blue-logo-primary text-7xl" />
                 <h5 className="text-blue-primary text-2xl text-center font-medium mt-6">
@@ -174,7 +169,8 @@ export default function Home() {
                 </h5>
               </div>
               <div className="flex items-center justify-center mx-4">
-                <BsArrowRight className="text-blue-primary text-7xl" />
+                <BsArrowRight className="text-blue-primary text-7xl hidden sm:block" />
+                <BsArrowDown className="text-blue-primary text-7xl sm:hidden block my-4" />
               </div>
               <div className="flex flex-col items-center justify-start mx-4 w-2/5">
                 <CiLocationOn className="text-blue-logo-primary text-7xl" />
@@ -183,7 +179,8 @@ export default function Home() {
                 </h5>
               </div>
               <div className="flex items-center justify-center mx-4">
-                <BsArrowRight className="text-blue-primary text-7xl" />
+                <BsArrowRight className="text-blue-primary text-7xl hidden sm:block" />
+                <BsArrowDown className="text-blue-primary text-7xl sm:hidden block my-4" />
               </div>
               <div className="flex flex-col items-center justify-start mx-4 w-2/5">
                 <FaHandHoldingHeart className="text-blue-logo-primary text-7xl" />
@@ -196,8 +193,8 @@ export default function Home() {
               <h5 className="text-blue-logo-secondary heading uppercase text-sm text-center font-medium">
                 Our Services
               </h5>
-              <div className="grid grid-cols-2 gap-8 mt-4">
-                <div className="flex flex-col items-start mr-4">
+              <div className="grid md:grid-cols-2 md:gap-8 mt-4">
+                <div className="flex flex-col items-start md:mr-4">
                   <a href="#" className="flex items-center group my-2">
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
@@ -217,7 +214,7 @@ export default function Home() {
                     </p>
                   </a>
                 </div>
-                <div className="flex flex-col items-start ml-4">
+                <div className="flex flex-col items-start md:ml-4">
                   <a href="#" className="flex items-center group my-2">
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
@@ -250,19 +247,19 @@ export default function Home() {
           </div>
         </div>
         <div className="container lg:w-3/4 mx-auto py-32">
-          <div className="grid grid-cols-2 gap-x-12 gap-y-24">
-            <div className="flex items-center justify-center">
+          <div className="grid lg:grid-cols-2 gap-x-12 gap-y-24">
+            <div className="flex items-center justify-center order-2 lg:w-full w-1/2 mx-auto">
               <img
                 src="img/pexels-edward-jenner-4031321.jpg"
                 className="w-full rounded-xl"
                 alt="Lab Technicians"
               />
             </div>
-            <div className="flex flex-col justify-evenly items-start">
-              <h2 className="text-4xl text-blue-primary font-medium">
+            <div className="flex flex-col justify-evenly order-1 items-center lg:items-start">
+              <h2 className="text-4xl text-blue-primary font-medium md:text-start text-center">
                 Quick registration, Quick testing, Quick results
               </h2>
-              <div className="flex flex-col justify-center items-start ml-8">
+              <div className="flex flex-col justify-center ml-8">
                 <div className="flex items-center my-1">
                   <BsCheck2Circle className="text-lg text-blue-logo-secondary" />
                   <p className="text-blue-primary ml-2 w-fit">
@@ -305,7 +302,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col justify-evenly items-start">
+            <div className="flex flex-col justify-evenly items-center lg:items-start lg:order-4 order-3">
               <h2 className="text-4xl text-red-primary font-medium">
                 Say goodbye to…
               </h2>
@@ -330,7 +327,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center lg:order-3 order-4 lg:w-full w-1/2 mx-auto">
               <img
                 src="img/pexels-karolina-grabowska-5387256.jpg"
                 className="w-full rounded-xl"
@@ -353,16 +350,16 @@ export default function Home() {
           </div>
         </div>
         <div className="container mx-auto py-32">
-          <div className="grid grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12">
             <div className="flex flex-col justify-center items-start">
-              <h1 className="text-blue-primary heading text-5xl font-semibold">
+              <h1 className="text-blue-primary heading text-5xl font-semibold md:text-start text-center">
                 <span className="text-4xl text-blue-logo-secondary">
                   We help you care for
                 </span>
                 <br />
                 Yourself and Your Family
               </h1>
-              <p className="text-blue-secondary font-medium mt-16">
+              <p className="text-blue-secondary font-medium mt-16 md:text-start text-center">
                 Check out these wellness tips and the research that backs them
                 up to better understand how to optimize your health and
                 nutrition.
@@ -428,11 +425,11 @@ export default function Home() {
                         alt="blog_1"
                       />
                       <div className="px-6 py-4">
-                        <h3 className="text-blue-primary text-lg font-medium mb-2">
+                        <h3 className="text-blue-primary text-lg font-medium mb-2 text-center md:text-start">
                           What&#39;s The Difference Between CBC And CMP Blood
                           Tests?
                         </h3>
-                        <p className="text-blue-secondary text-sm">
+                        <p className="text-blue-secondary text-sm text-justify md:text-start">
                           There&#39;s a good deal that your blood can tell us
                           about your health. To access that information, we can
                           perform a complete blood count (CBC) and a
@@ -453,11 +450,11 @@ export default function Home() {
                         alt="blog_2"
                       />
                       <div className="px-6 py-4">
-                        <h3 className="text-blue-primary text-lg font-medium mb-2">
+                        <h3 className="text-blue-primary text-lg font-medium mb-2 text-center md:text-start">
                           Why Choosing Telehealth Might Be the Best Option for
                           You
                         </h3>
-                        <p className="text-blue-secondary text-sm">
+                        <p className="text-blue-secondary text-sm text-justify md:text-start">
                           As our nation watches anxiously as new variants of
                           COVID-19 emerge, the return to safety measures, such
                           as masking up and social distancing, may come back.
@@ -478,10 +475,10 @@ export default function Home() {
                         alt="blog_3"
                       />
                       <div className="px-6 py-4">
-                        <h3 className="text-blue-primary text-lg font-medium mb-2">
+                        <h3 className="text-blue-primary text-lg font-medium mb-2 text-center md:text-start">
                           Common Heat-Related Illnesses and Symptoms
                         </h3>
-                        <p className="text-blue-secondary text-sm">
+                        <p className="text-blue-secondary text-sm text-justify md:text-start">
                           The month of August can be a hot and sticky one here
                           in New York City, which makes us more vulnerable to
                           heat-related illnesses. To beat the heat this summer,
