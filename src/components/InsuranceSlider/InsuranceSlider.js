@@ -71,11 +71,17 @@ const InsuranceSlider = () => {
                 (i === 0 ? " active" : "")
               }
             >
-              <div className={"grid grid-cols-" + divisor + " gap-4"}>
+              <div
+                className={
+                  "grid " +
+                  (divisor === 4 ? "grid-cols-4" : "grid-cols-2") +
+                  " gap-4"
+                }
+              >
                 {range(i * divisor, (i + 1) * divisor - 1).map((j) => {
                   return insuranceList[j] !== undefined ? (
                     <div
-                      className="d-flex flex-col justify-center"
+                      className="flex flex-col justify-center"
                       id="insuranceItem"
                     >
                       <img

@@ -14,7 +14,7 @@ const Team = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="flex flex-col p-8 rounded-xl shadow-lg hover:shadow-2xl w-4/5 mx-auto transition-all">
             <img
-              src="/img/team/waiho-lum.jpg"
+              src="img/team/waiho-lum.jpg"
               className="rounded-full w-2/3 mx-auto"
             />
             <h2 className="text-blue-primary text-center font-medium text-2xl my-4">
@@ -26,7 +26,7 @@ const Team = () => {
           </div>
           <div className="flex flex-col p-8 rounded-xl shadow-lg hover:shadow-2xl w-4/5 mx-auto transition-all">
             <img
-              src="/img/team/ping-wong.jpg"
+              src="img/team/ping-wong.jpg"
               className="rounded-full w-2/3 mx-auto"
             />
             <h2 className="text-blue-primary text-center font-medium text-2xl my-4">
