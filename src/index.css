@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  @apply scroll-smooth
+  @apply scroll-smooth;
 }
 
 body {
@@ -50,7 +50,13 @@ a {
 }
 
 .banner {
-  padding-top: calc(7rem + 80px) !important;
+  padding-top: calc(7rem + 80px);
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    padding-top: 7rem;
+  }
 }
 
 .btn-primary {
@@ -108,4 +114,17 @@ a {
 
 .collapse.show {
   visibility: visible !important;
+}
+
+.form-input {
+  @apply mb-4 px-4 py-2 border border-transparent border-b-2 border-b-slate-400 transition-all;
+}
+
+.form-input:hover,
+.form-input:focus-within {
+  @apply border-slate-400;
+}
+
+.form-input:focus-within {
+  @apply outline-none;
 }

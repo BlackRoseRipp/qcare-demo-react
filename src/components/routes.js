@@ -4,10 +4,11 @@ import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 const Home = React.lazy(() => import("../pages/Home"));
 const About = React.lazy(() => import("../pages/About"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
-/* const Team = React.lazy(() => import("../../pages/About/Team"));
+const Team = React.lazy(() => import("../pages/Team"));
+const Contact = React.lazy(() => import("../pages/Contact"));
+/*
 const Insurance = React.lazy(() => import("../../pages/Insurance/Insurance"));
 const Locations = React.lazy(() => import("../../pages/Locations/Locations"));
-const Contact = React.lazy(() => import("../../pages/Contact/Contact"));
 const Services = React.lazy(() => import("../../pages/Services/Services"));
 const Privacy = React.lazy(() => import("../../pages/LegalPages/Privacy"));
 const Accessibility = React.lazy(() =>
@@ -28,10 +29,11 @@ export const routes = () => {
   const pages = [
     { path: "/", component: <Home /> },
     { path: "/about", component: <About /> },
-    /* { path: "/team", component: <Team /> },
+    { path: "/contact", component: <Contact /> },
+    { path: "/team", component: <Team /> },
+    /*
     { path: "/insurance", component: <Insurance /> },
     { path: "/locations", component: <Locations /> },
-    { path: "/contact", component: <Contact /> },
     { path: "/nyc-urgent-care-services", component: <Services /> },
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },
@@ -42,7 +44,8 @@ export const routes = () => {
     { path: "/allergies-asthma", component: <Allergies /> },
     { path: "/covid-19", component: <Covid /> },
     { path: "/vaccines", component: <Vaccines /> },
-    { path: "/plan-your-visit", component: <PlanVisit /> }, */
+    { path: "/plan-your-visit", component: <PlanVisit /> },
+    */
     { path: "*", component: <PageNotFound /> },
   ];
 

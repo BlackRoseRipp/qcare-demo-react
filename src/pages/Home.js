@@ -13,7 +13,6 @@ import {
 import { CiLocationOn } from "react-icons/ci";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { IoIosMedical } from "react-icons/io";
-import "tw-elements";
 import Data from "../components/Locations/Data";
 import StoreLocator from "../components/Locations/StoreLocator";
 import useWindowSize from "../hooks/useWindowSize";
@@ -38,7 +37,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="w-fit flex items-center border-2 rounded-full border-yellow-logo px-8 py-4 mx-auto">
+          <div className="w-1/2 grid grid-cols-3 gap-8 border-2 rounded-full border-yellow-logo px-8 py-4 mx-auto">
             <a
               href="#locationsButton"
               className="text-white hover:text-yellow-logo flex flex-col items-center mx-4"

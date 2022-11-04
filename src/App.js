@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { BrowserRouter } from "react-router-dom";
+import "tw-elements";
 import "./App.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
