@@ -3,8 +3,8 @@ import { Fragment } from "react";
 const Team = () => {
   return (
     <Fragment>
-      <div className="banner bg-blue-primary pb-24">
-        <div className="py-32 container mx-auto">
+      <div className="banner bg-blue-primary pb-8">
+        <div className="pt-32 pb-48 container mx-auto  bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-no-repeat bg-contain">
           <h1 className="text-white heading text-6xl font-semibold text-center">
             Meet Our Team
           </h1>

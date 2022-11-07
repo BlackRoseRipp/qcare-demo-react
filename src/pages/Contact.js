@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <Fragment>
       <div className="banner bg-blue-primary pb-24">
-        <div className="container mx-auto py-32">
+        <div className="container mx-auto py-32 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-no-repeat bg-contain">
           <h1 className="text-white text-6xl heading font-semibold text-center">
             How Can We Help?
           </h1>

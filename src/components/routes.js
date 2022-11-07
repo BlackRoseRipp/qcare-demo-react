@@ -6,10 +6,10 @@ const About = React.lazy(() => import("../pages/About"));
 const PageNotFound = React.lazy(() => import("../pages/PageNotFound"));
 const Team = React.lazy(() => import("../pages/Team"));
 const Contact = React.lazy(() => import("../pages/Contact"));
+const Services = React.lazy(() => import("../pages/Services/Services"));
 /*
 const Insurance = React.lazy(() => import("../../pages/Insurance/Insurance"));
 const Locations = React.lazy(() => import("../../pages/Locations/Locations"));
-const Services = React.lazy(() => import("../../pages/Services/Services"));
 const Privacy = React.lazy(() => import("../../pages/LegalPages/Privacy"));
 const Accessibility = React.lazy(() =>
   import("../../pages/LegalPages/Accessibility")
@@ -31,10 +31,10 @@ export const routes = () => {
     { path: "/about", component: <About /> },
     { path: "/contact", component: <Contact /> },
     { path: "/team", component: <Team /> },
+    { path: "/nyc-urgent-care-services", component: <Services /> },
     /*
     { path: "/insurance", component: <Insurance /> },
     { path: "/locations", component: <Locations /> },
-    { path: "/nyc-urgent-care-services", component: <Services /> },
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },
     { path: "/accessibility", component: <Accessibility /> },

@@ -23,18 +23,20 @@ export default function Home() {
   return (
     <Fragment>
       <main>
-        <div className="banner bg-blue-primary pb-24">
-          <div className="container mx-auto py-32 flex flex-col">
-            <h1 className="heading text-white text-6xl font-semibold md:w-2/3 w-full md:text-start text-center">
-              Healthcare when and where you need it.
-            </h1>
-            <div className="mt-8 md:text-start text-center">
-              <a
-                className="btn-primary uppercase text-white border-2 border-white hover:border-yellow-logo hover:bg-yellow-logo font-medium md:mx-0"
-                href="#"
-              >
-                Book an Appointment
-              </a>
+        <div className="banner bg-blue-primary pb-16">
+          <div className="bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain pt-24 pb-8">
+            <div className="container mx-auto py-32 flex flex-col">
+              <h1 className="heading text-white text-6xl font-semibold md:w-2/3 w-full md:text-start text-center">
+                Healthcare when and where you need it.
+              </h1>
+              <div className="mt-8 md:text-start text-center">
+                <a
+                  className="btn-primary uppercase text-white border-2 border-white hover:border-yellow-logo hover:bg-yellow-logo font-medium md:mx-0"
+                  href="#"
+                >
+                  Book an Appointment
+                </a>
+              </div>
             </div>
           </div>
           <div className="w-1/2 grid grid-cols-3 gap-8 border-2 rounded-full border-yellow-logo px-8 py-4 mx-auto">
@@ -200,7 +202,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-blue-secondary/10 py-16">
-          <div className="relative py-24 overflow-hidden bg-[url(../public/img/patterns/polygon-scatter-haikei.svg)] bg-center bg-no-repeat bg-cover">
+          <div className="relative py-24 overflow-hidden bg-[url(../public/img/patterns/Q-logo-pattern.svg)] bg-center bg-no-repeat bg-contain">
             <h2 className="text-blue-primary heading text-5xl text-center font-semibold">
               Customizable healthcare
               <br /> when and where you need it most

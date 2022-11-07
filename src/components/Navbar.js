@@ -172,7 +172,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavButton
-                    to="#"
+                    to="/nyc-urgent-care-services"
                     primary="Services & Care"
                     dropdownLinks={[
                       {

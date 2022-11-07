@@ -50,13 +50,7 @@ a {
 }
 
 .banner {
-  padding-top: calc(7rem + 80px);
-}
-
-@media screen and (max-width: 767px) {
-  .banner {
-    padding-top: 7rem;
-  }
+  padding-top: 92px;
 }
 
 .btn-primary {

@@ -8,23 +8,25 @@ const About = () => {
   return (
     <Fragment>
       <div className="banner bg-blue-primary pb-24">
-        <div className="py-32 container mx-auto text-center">
-          <h1 className="heading text-white text-5xl font-semibold lg:w-2/3 w-full mx-auto">
-            Urgent and preventative healthcare when and where you need it
-          </h1>
-          <h6 className="text-xl text-white mt-8 lg:w-2/3 w-full mx-auto">
-            A sudden sickness or injury can leave you feeling lousy while also
-            disrupting your carefully planned schedule. Our QCare mobile care
-            units provides New Yorkers access to quick, convenient, expert
-            medical care anywhere you are.
-          </h6>
-          <div className="mt-8">
-            <a
-              href="/nyc-urgent-care-services"
-              className="btn-primary uppercase text-white border-2 border-white hover:border-yellow-logo hover:bg-yellow-logo font-medium md:mx-0"
-            >
-              Learn More
-            </a>
+        <div className="pb-16 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
+          <div className="pt-48 pb-16 container mx-auto text-center">
+            <h1 className="heading text-white text-5xl font-semibold lg:w-2/3 w-full mx-auto">
+              Urgent and preventative healthcare when and where you need it
+            </h1>
+            <h6 className="text-xl text-white mt-8 lg:w-2/3 w-full mx-auto">
+              A sudden sickness or injury can leave you feeling lousy while also
+              disrupting your carefully planned schedule. Our QCare mobile care
+              units provides New Yorkers access to quick, convenient, expert
+              medical care anywhere you are.
+            </h6>
+            <div className="mt-8">
+              <a
+                href="/nyc-urgent-care-services"
+                className="btn-primary uppercase text-white border-2 border-white hover:border-yellow-logo hover:bg-yellow-logo font-medium md:mx-0"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -37,7 +39,7 @@ const About = () => {
           fast-paced city. In a world where you order coffee or a rideshare in a
           minute, scheduling an exam or lab test should be just as easy.
         </h4>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-14 w-3/4 mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-32 w-3/4 mx-auto">
           <div className="flex flex-col items-center">
             <div className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 transition-all mb-4 cursor-pointer">
               <BiClinic className="text-6xl" />
