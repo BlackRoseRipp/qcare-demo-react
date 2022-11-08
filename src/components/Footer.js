@@ -10,13 +10,13 @@ const Footer = () => {
             <div className="grid lg:grid-cols-3">
               <div className="flex sm:flex-row flex-col items-center lg:justify-start justify-center lg:order-1 order-2">
                 <a
-                  href="#"
+                  href="/locations"
                   className="text-blue-primary hover:text-red-secondary my-2 mx-4 text-sm"
                 >
                   Locations
                 </a>
                 <a
-                  href="#"
+                  href="/contact"
                   className="text-blue-primary hover:text-red-secondary my-2 mx-4 text-sm"
                 >
                   Contact Us

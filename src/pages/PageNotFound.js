@@ -4,7 +4,7 @@ const PageNotFound = () => {
   return (
     <Fragment>
       <div className="banner bg-blue-primary pb-24">
-        <h1 className="text-white text-9xl heading font-semibold text-center">
+        <h1 className="text-white text-9xl heading font-semibold text-center mb-32 mt-48">
           404
         </h1>
       </div>

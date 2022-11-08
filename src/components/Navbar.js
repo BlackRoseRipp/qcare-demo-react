@@ -90,27 +90,27 @@ const Navbar = () => {
                     id="Two"
                     dropdownLinks={[
                       {
-                        to: "#",
+                        to: "/prevention",
                         primary: "Wellness Visits",
                       },
                       {
-                        to: "#",
+                        to: "/pediatrics",
                         primary: "Pediatric Care",
                       },
                       {
-                        to: "#",
+                        to: "/urgent-acre",
                         primary: "Urgent Care",
                       },
                       {
-                        to: "#",
+                        to: "/allergies-asthma",
                         primary: "Allergies & Asthma",
                       },
                       {
-                        to: "#",
+                        to: "/covid-19",
                         primary: "COVID-19",
                       },
                       {
-                        to: "#",
+                        to: "/vaccines",
                         primary: "Vaccinations",
                       },
                       {
@@ -176,27 +176,27 @@ const Navbar = () => {
                     primary="Services & Care"
                     dropdownLinks={[
                       {
-                        to: "#",
+                        to: "/prevention",
                         primary: "Wellness Visits",
                       },
                       {
-                        to: "#",
+                        to: "/pediatrics",
                         primary: "Pediatric Care",
                       },
                       {
-                        to: "#",
+                        to: "/urgent-acre",
                         primary: "Urgent Care",
                       },
                       {
-                        to: "#",
+                        to: "/allergies-asthma",
                         primary: "Allergies & Asthma",
                       },
                       {
-                        to: "#",
+                        to: "/covid-19",
                         primary: "COVID-19",
                       },
                       {
-                        to: "#",
+                        to: "/vaccines",
                         primary: "Vaccinations",
                       },
                     ]}
@@ -204,23 +204,23 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavButton
-                    to="#"
+                    to="/plan-your-visit"
                     primary="Plan Your Visit"
                     dropdownLinks={[
                       {
-                        to: "#",
+                        to: "/locations",
                         primary: "Locations",
                       },
                       {
-                        to: "#",
+                        to: "/house-calls",
                         primary: "House Calls",
                       },
                       {
-                        to: "#",
+                        to: "/Insurance",
                         primary: "Insurance",
                       },
                       {
-                        to: "#",
+                        to: "/billing",
                         primary: "Billing Info",
                       },
                     ]}

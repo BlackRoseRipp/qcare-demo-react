@@ -23,8 +23,8 @@ export default function Home() {
   return (
     <Fragment>
       <main>
-        <div className="banner bg-blue-primary pb-16">
-          <div className="bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain pt-24 pb-8">
+        <div className="banner bg-blue-primary pb-24">
+          <div className="bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain py-24">
             <div className="container mx-auto py-32 flex flex-col">
               <h1 className="heading text-white text-6xl font-semibold md:w-2/3 w-full md:text-start text-center">
                 Healthcare when and where you need it.
@@ -39,15 +39,24 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-1/2 grid grid-cols-3 gap-8 border-2 rounded-full border-yellow-logo px-8 py-4 mx-auto">
+          <div className="md:w-1/2 w-11/12 grid grid-cols-3 gap-8 border-2 rounded-full border-yellow-logo px-8 py-4 mx-auto">
             <a
               href="#locationsButton"
-              className="text-white hover:text-yellow-logo flex flex-col items-center mx-4"
+              className="text-white flex flex-col items-center mx-4 group"
             >
-              <BiClinic className="h-12 w-auto" />
+              <div
+                className={
+                  "w-auto transition-all" +
+                  (size.width < 440
+                    ? " border-2 rounded-full p-2 border-yellow-logo group-hover:bg-yellow-logo group-focus:bg-yellow-logo"
+                    : " group-hover:text-yellow-logo")
+                }
+              >
+                <BiClinic className="w-auto h-12" />
+              </div>
               <p
                 className={
-                  "text-center font-medium" +
+                  "text-center font-medium group-hover:text-yellow-logo transition-all" +
                   (size.width < 440 ? " hidden" : "")
                 }
               >
@@ -56,12 +65,21 @@ export default function Home() {
             </a>
             <a
               href="#locationsButton"
-              className="text-white hover:text-yellow-logo flex flex-col items-center mx-4"
+              className="text-white flex flex-col items-center mx-4 group"
             >
-              <BsTruck className="h-12 w-auto" />
+              <div
+                className={
+                  "w-auto transition-all" +
+                  (size.width < 440
+                    ? " border-2 rounded-full p-2 border-yellow-logo group-hover:bg-yellow-logo group-focus:bg-yellow-logo"
+                    : " group-hover:text-yellow-logo")
+                }
+              >
+                <BsTruck className="w-auto h-12" />
+              </div>
               <p
                 className={
-                  "text-center font-medium" +
+                  "text-center font-medium group-hover:text-yellow-logo transition-all" +
                   (size.width < 440 ? " hidden" : "")
                 }
               >
@@ -70,12 +88,21 @@ export default function Home() {
             </a>
             <a
               href="#locationsButton"
-              className="text-white hover:text-yellow-logo flex flex-col items-center mx-4"
+              className="text-white flex flex-col items-center mx-4 group"
             >
-              <BsHouseDoor className="h-12 w-auto" />
+              <div
+                className={
+                  "w-auto transition-all" +
+                  (size.width < 440
+                    ? " border-2 rounded-full p-2 border-yellow-logo group-hover:bg-yellow-logo group-focus:bg-yellow-logo"
+                    : " group-hover:text-yellow-logo")
+                }
+              >
+                <BsHouseDoor className="w-auto h-12" />
+              </div>
               <p
                 className={
-                  "text-center font-medium" +
+                  "text-center font-medium group-hover:text-yellow-logo transition-all" +
                   (size.width < 440 ? " hidden" : "")
                 }
               >
@@ -313,35 +340,35 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
                   <p className="text-blue-primary ml-2 w-fit">
                     Quick, contactless sign in through our app or location
                     kiosks
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
                   <p className="text-blue-primary ml-2 w-fit">
                     Location-based hours from the early morning to the late
                     evening and weekends too
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
                   <p className="text-blue-primary ml-2 w-fit">
                     Board-certified physicians, nurse practitioners, physician
                     assistants and nurses
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
                   <p className="text-blue-primary ml-2 w-fit">
                     Personalized, comprehensive care from a friendly provider
                     you know, thanks to our low staff turnover
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
                   <p className="text-blue-primary ml-2 w-fit">
                     Fast and reliable lab test results, usually within 24 hours
                   </p>

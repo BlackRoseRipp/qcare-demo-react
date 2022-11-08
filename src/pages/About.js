@@ -8,8 +8,8 @@ const About = () => {
   return (
     <Fragment>
       <div className="banner bg-blue-primary pb-24">
-        <div className="pb-16 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
-          <div className="pt-48 pb-16 container mx-auto text-center">
+        <div className="pb-24 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
+          <div className="pt-56 pb-32 container mx-auto text-center">
             <h1 className="heading text-white text-5xl font-semibold lg:w-2/3 w-full mx-auto">
               Urgent and preventative healthcare when and where you need it
             </h1>

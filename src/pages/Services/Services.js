@@ -76,7 +76,7 @@ const Services = () => {
   return (
     <Fragment>
       <div className="banner pb-16 bg-blue-primary">
-        <div className="py-48 container mx-auto bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
+        <div className="py-56 container mx-auto bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
           <h1 className="text-white heading text-6xl font-semibold text-center">
             Urgent care and preventative healthcare for all ages in New York
             City
@@ -89,10 +89,10 @@ const Services = () => {
           </h3>
           <div className="text-center mt-12">
             <a
-              href="/plan-your-visit"
+              href="#"
               className="btn-primary uppercase text-white font-medium border-2 border-yellow-logo hover:bg-yellow-logo"
             >
-              Plan Your Next Visit
+              Book an Appointment
             </a>
           </div>
         </div>
@@ -101,67 +101,69 @@ const Services = () => {
         <h2 className="text-blue-primary heading text-5xl font-semibold text-center">
           Our Available Services
         </h2>
-        <div className="grid md:grid-cols-2 gap-x-8 mt-16 w-1/2 mx-auto border-2 border-blue-primary rounded-xl p-6 bg-blue-secondary/10">
-          <div className="flex justify-center">
-            <div className="flex flex-col items-start">
-              <a
-                href="#"
-                className="flex items-center justify-start w-full group my-2"
-              >
-                <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
-                <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
-                  &nbsp;Trauma Care
-                </p>
-              </a>
-              <a
-                href="#"
-                className="flex items-center justify-start w-full group my-2"
-              >
-                <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
-                <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
-                  &nbsp;COVID-19 Testing
-                </p>
-              </a>
-              <a
-                href="#"
-                className="flex items-center justify-start w-full group my-2"
-              >
-                <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
-                <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
-                  &nbsp;Allergies & Asthma
-                </p>
-              </a>
+        <div className="mt-16 md:w-1/2 w-5/6 mx-auto border-2 border-blue-primary rounded-xl p-6 bg-blue-secondary/10">
+          <div className="grid md:grid-cols-2 gap-x-8 bg-[url(../public/img/patterns/Q-logo-pattern.svg)] bg-center bg-no-repeat bg-contain">
+            <div className="flex justify-center">
+              <div className="flex flex-col items-start">
+                <a
+                  href="/urgent-care"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Trauma Care
+                  </p>
+                </a>
+                <a
+                  href="/covid-19"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;COVID-19 Testing
+                  </p>
+                </a>
+                <a
+                  href="/allergies-asthma"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Allergies & Asthma
+                  </p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="flex justify-center">
-            <div className="flex flex-col items-start">
-              <a
-                href="#"
-                className="flex items-center justify-start w-full group my-2"
-              >
-                <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
-                <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
-                  &nbsp;Wellness Care
-                </p>
-              </a>
-              <a
-                href="#"
-                className="flex items-center justify-start w-full group my-2"
-              >
-                <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
-                <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
-                  &nbsp;Pediatric Care
-                </p>
-              </a>
-              <a
-                href="#"
-                className="flex items-center justify-start w-full group my-2"
-              >
-                <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
-                <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
-                  &nbsp;Vaccinations
-                </p>
-              </a>
+            <div className="flex justify-center">
+              <div className="flex flex-col items-start">
+                <a
+                  href="/prevention"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Wellness Care
+                  </p>
+                </a>
+                <a
+                  href="/pediatrics"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Pediatric Care
+                  </p>
+                </a>
+                <a
+                  href="/vaccines"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Vaccinations
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -179,7 +181,7 @@ const Services = () => {
               className="w-3/4 mx-auto rounded-xl"
             />
           </div>
-          <div className="flex flex-col items-start justify-evenly">
+          <div className="flex flex-col items-center lg:items-start justify-evenly">
             <div className="flex flex-col items-start justify-center">
               <div className="flex items-center my-4 w-full">
                 <GiHealthNormal className="text-4xl text-blue-logo-primary" />
@@ -206,7 +208,7 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full">
+            <div className="w-full lg:text-star text-center lg:mt-0 mt-4">
               <a
                 href="/plan-your-visit"
                 className="btn-primary border-2 border-blue-logo-primary text-blue-logo-primary uppercase font-medium hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary"
@@ -231,11 +233,11 @@ const Services = () => {
                 Find a location near you
               </a>
             </div>
-            <div className="my-12 border-2 border-blue-primary rounded-xl p-4 bg-white grid grid-cols-3 gap-4 w-3/4 mx-auto">
+            <div className="my-12 border-2 border-blue-primary rounded-xl p-4 bg-white grid lg:grid-cols-3 md:grid-cols-2 gap-4 w-3/4 mx-auto">
               {services.map((service) => (
                 <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                  <BsCheck2Circle className="text-4xl text-blue-logo-secondary" />
-                  <h5 className="text-xl text-blue-secondary">{service}</h5>
+                  <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                  <h5 className="text text-blue-secondary">{service}</h5>
                 </div>
               ))}
             </div>
@@ -248,7 +250,7 @@ const Services = () => {
           clinic
         </h3>
         <div
-          className="accordion accordion-flush w-3/4 mx-auto mt-16"
+          className="accordion accordion-flush md:w-3/4 w-5/6 mx-auto mt-16"
           id="testAccordion"
         >
           <div className="accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
@@ -278,15 +280,15 @@ const Services = () => {
             </h2>
             <div
               id="test-collapseOne"
-              class="accordion-collapse border-0 collapse show"
+              class="accordion-collapse border-0 collapse"
               aria-labelledby="test-headingOne"
               data-bs-parent="#testAccordion"
             >
               <div class="accordion-body py-4 px-5">
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {tests.map((test) => (
-                    <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                      <BsCheck2Circle className="text-2xl text-blue-logo-secondary" />
+                    <div className="flex items-center justify-start hover:-translate-y-1 transition-all cursor-pointer">
+                      <BsCheck2Circle className="text-2xl text-blue-logo-secondary min-w-fit mr-2" />
                       <h5 className="text-blue-secondary">{test}</h5>
                     </div>
                   ))}

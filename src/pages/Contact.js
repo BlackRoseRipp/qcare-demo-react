@@ -4,16 +4,17 @@ const Contact = () => {
   return (
     <Fragment>
       <div className="banner bg-blue-primary pb-24">
-        <div className="container mx-auto py-32 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-no-repeat bg-contain">
+        <div className="container mx-auto py-48 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-no-repeat bg-contain">
           <h1 className="text-white text-6xl heading font-semibold text-center">
             How Can We Help?
           </h1>
           <h3 className="text-white text-xl font-medium text-center lg:w-2/3 mx-auto mt-6">
-            If you need medical care, do not use the form below. Instead, please
-            request a visit here:{" "}
+            If you need medical care, do not use the form below.
+            <br />
+            Instead, please request a visit here:{" "}
             <a
               href="#"
-              className="text-blue-secondary hover:underline transition-all"
+              className="text-blue-secondary underline-animation after:bg-blue-secondary inline w-fit"
             >
               Book an Appointment
             </a>
