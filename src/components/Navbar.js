@@ -98,7 +98,7 @@ const Navbar = () => {
                         primary: "Pediatric Care",
                       },
                       {
-                        to: "/urgent-acre",
+                        to: "/urgent-care",
                         primary: "Urgent Care",
                       },
                       {
@@ -137,7 +137,7 @@ const Navbar = () => {
                         primary: "House Calls",
                       },
                       {
-                        to: "/Insurance",
+                        to: "/insurance",
                         primary: "Insurance",
                       },
                       {
@@ -184,7 +184,7 @@ const Navbar = () => {
                         primary: "Pediatric Care",
                       },
                       {
-                        to: "/urgent-acre",
+                        to: "/urgent-care",
                         primary: "Urgent Care",
                       },
                       {
@@ -216,7 +216,7 @@ const Navbar = () => {
                         primary: "House Calls",
                       },
                       {
-                        to: "/Insurance",
+                        to: "/insurance",
                         primary: "Insurance",
                       },
                       {

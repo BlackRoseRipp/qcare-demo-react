@@ -67,7 +67,10 @@ const Footer = () => {
             <a href="#" className="text-white text-sm hover:text-yellow-logo">
               Privacy Policy
             </a>
-            <a href="#" className="text-white text-sm hover:text-yellow-logo">
+            <a
+              href="/terms-and-conditions"
+              className="text-white text-sm hover:text-yellow-logo"
+            >
               Terms & Conditions
             </a>
             <a href="#" className="text-white text-sm hover:text-yellow-logo">

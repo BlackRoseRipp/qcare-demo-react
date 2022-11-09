@@ -9,19 +9,17 @@ const Contact = React.lazy(() => import("../pages/Contact"));
 const Services = React.lazy(() => import("../pages/Services/Services"));
 const Wellness = React.lazy(() => import("../pages/Services/Wellness"));
 const Pediatric = React.lazy(() => import("../pages/Services/Pediatric"));
+const UrgentCare = React.lazy(() => import("../pages/Services/UrgentCare"));
+const Allergies = React.lazy(() => import("..//pages/Services/Allergies"));
 const PlanYourVisit = React.lazy(() => import("../pages/PlanYourVisit"));
 const Locations = React.lazy(() => import("../pages/Locations"));
+const Insurance = React.lazy(() => import("../pages/Insurance"));
+const Privacy = React.lazy(() => import("../pages/Legal/Privacy"));
+const Accessibility = React.lazy(() => import("../pages/Legal/Accessibility"));
+const Terms = React.lazy(() => import("../pages/Legal/Terms"));
 /*
-const Insurance = React.lazy(() => import("../../pages/Insurance/Insurance"));
-const Privacy = React.lazy(() => import("../../pages/LegalPages/Privacy"));
-const Accessibility = React.lazy(() =>
-  import("../../pages/LegalPages/Accessibility")
-);
-const Terms = React.lazy(() => import("../../pages/LegalPages/Terms"));
-const UrgentCare = React.lazy(() => import("../../pages/Services/UrgentCare"));
-const Allergies = React.lazy(() => import("../../pages/Services/Allergies"));
-const Covid = React.lazy(() => import("../../pages/Services/Covid"));
-const Vaccines = React.lazy(() => import("../../pages/Services/Vaccines")); */
+const Covid = React.lazy(() => import("../pages/Services/Covid"));
+const Vaccines = React.lazy(() => import("../pages/Services/Vaccines")); */
 
 export const routes = () => {
   const pages = [
@@ -34,13 +32,13 @@ export const routes = () => {
     { path: "/pediatrics", component: <Pediatric /> },
     { path: "/plan-your-visit", component: <PlanYourVisit /> },
     { path: "/locations", component: <Locations /> },
-    /*
+    { path: "/urgent-care", component: <UrgentCare /> },
+    { path: "/allergies-asthma", component: <Allergies /> },
     { path: "/insurance", component: <Insurance /> },
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },
     { path: "/accessibility", component: <Accessibility /> },
-    { path: "/urgent-care", component: <UrgentCare /> },
-    { path: "/allergies-asthma", component: <Allergies /> },
+    /*
     { path: "/covid-19", component: <Covid /> },
     { path: "/vaccines", component: <Vaccines /> },
     */
