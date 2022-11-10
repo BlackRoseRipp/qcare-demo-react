@@ -223,29 +223,31 @@ const UrgentCare = () => {
             <div className="flex flex-col items-start justify-center w-fit mx-auto mt-8">
               <div className="flex items-center my-2">
                 <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
-                <h5 className="text-blue-secondary text-lg">Chest pain</h5>
+                <h5 className="text-blue-logo-primary font-medium text-lg">
+                  Chest pain
+                </h5>
               </div>
               <div className="flex items-center my-2">
                 <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
-                <h5 className="text-blue-secondary text-lg">
+                <h5 className="text-blue-logo-primary font-medium text-lg">
                   Difficulty breathing
                 </h5>
               </div>
               <div className="flex items-center my-2">
                 <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
-                <h5 className="text-blue-secondary text-lg">
+                <h5 className="text-blue-logo-primary font-medium text-lg">
                   Uncontrolled bleeding
                 </h5>
               </div>
               <div className="flex items-center my-2">
                 <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
-                <h5 className="text-blue-secondary text-lg">
+                <h5 className="text-blue-logo-primary font-medium text-lg">
                   Medication overdose
                 </h5>
               </div>
               <div className="flex items-center my-2">
                 <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
-                <h5 className="text-blue-secondary text-lg">
+                <h5 className="text-blue-logo-primary font-medium text-lg">
                   A serious head injury
                 </h5>
               </div>

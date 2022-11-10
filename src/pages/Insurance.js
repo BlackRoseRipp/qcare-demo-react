@@ -5,7 +5,7 @@ const Insurance = () => {
   return (
     <Fragment>
       <div className="banner bg-blue-primary pb-8">
-        <div className="container mx-auto py-64 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
+        <div className="container mx-auto py-64 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-no-repeat bg-contain">
           <h1 className="text-white heading text-6xl font-semibold text-center">
             We Accept These Insurances
           </h1>
