@@ -4,7 +4,7 @@ const Terms = () => {
   return (
     <Fragment>
       <div className="banner bg-blue-primary pb-8">
-        <div className="container mx-auto py-56 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
+        <div className="container mx-auto py-56 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-no-repeat bg-contain">
           <h1 className="text-white heading font-semibold text-6xl text-center">
             Website Terms and Conditions
           </h1>

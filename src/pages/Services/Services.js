@@ -167,6 +167,15 @@ const Services = () => {
             </div>
           </div>
         </div>
+
+        <div className="mt-12 text-center">
+          <a
+            href="#"
+            className="btn-primary border-2 border-blue-primary text-blue-primary uppercase font-medium hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary"
+          >
+            Schedule Now
+          </a>
+        </div>
       </div>
       <div className="container mx-auto py-24">
         <h2 className="text-blue-primary text-5xl font-semibold heading text-center">
@@ -208,7 +217,7 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className="w-full lg:text-star text-center lg:mt-0 mt-4">
+            <div className="w-full lg:text-start text-center lg:mt-0 mt-4">
               <a
                 href="/plan-your-visit"
                 className="btn-primary border-2 border-blue-logo-primary text-blue-logo-primary uppercase font-medium hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary"

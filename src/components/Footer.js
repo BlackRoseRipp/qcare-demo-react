@@ -64,7 +64,10 @@ const Footer = () => {
         </div>
         <div className="bg-blue-primary py-3 flex items-center justify-center">
           <div className="grid sm:grid-cols-3 sm:gap-8 gap-2 text-center">
-            <a href="#" className="text-white text-sm hover:text-yellow-logo">
+            <a
+              href="/privacy"
+              className="text-white text-sm hover:text-yellow-logo"
+            >
               Privacy Policy
             </a>
             <a
@@ -73,7 +76,10 @@ const Footer = () => {
             >
               Terms & Conditions
             </a>
-            <a href="#" className="text-white text-sm hover:text-yellow-logo">
+            <a
+              href="/accessibility"
+              className="text-white text-sm hover:text-yellow-logo"
+            >
               Accessibility Statement
             </a>
           </div>

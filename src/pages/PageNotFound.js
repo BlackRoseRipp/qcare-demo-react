@@ -3,30 +3,24 @@ import React, { Fragment } from "react";
 const PageNotFound = () => {
   return (
     <Fragment>
-      <div className="banner bg-blue-primary pb-24">
-        <h1 className="text-white text-9xl heading font-semibold text-center mb-32 mt-48">
-          404
-        </h1>
-      </div>
-      <div className="container mx-auto py-16">
-        <img
-          src="img/404/hanginthere-landscape.jpg"
-          className="mx-auto w-1/2"
-        />
-        <h2 className="text-blue-logo-primary text-3xl font-semibold text-center">
-          Uh oh! You found a page that doesn't exist!
-        </h2>
-        <h4 className="text-blue-secondary text-xl text-center">
-          Don't panic. Return to the Home Page to resume your journey towards a
-          healthy life.
-        </h4>
-        <div className="text-center my-12">
-          <a
-            href="/"
-            className="btn-primary border-2 border-blue-logo-primary text-blue-logo-primary uppercase font-medium text-xl hover:bg-blue-logo-primary hover:text-white"
-          >
-            Return to Home
-          </a>
+      <div className="bg-blue-primary">
+        <div className="flex flex-col items-center justify-center bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-no-repeat bg-contain min-h-screen">
+          <div className="container mx-auto">
+            <h1 className="text-white lg:text-[250px] text-9xl heading font-bold text-center mb-16 subpixel-antialiased my-auto">
+              404
+            </h1>
+            <h2 className="text-white text-3xl text-center">
+              Uh oh! We couldn't find the page you were looking for.
+            </h2>
+            <div className="text-center my-12">
+              <a
+                href="/"
+                className="btn-primary uppercase text-white font-medium border-2 border-yellow-logo hover:bg-yellow-logo text-2xl"
+              >
+                Return Home
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </Fragment>
