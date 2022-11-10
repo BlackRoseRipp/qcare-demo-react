@@ -15,6 +15,7 @@ const Covid = React.lazy(() => import("../pages/Services/Covid"));
 const Vaccines = React.lazy(() => import("../pages/Services/Vaccines"));
 const PlanYourVisit = React.lazy(() => import("../pages/PlanYourVisit"));
 const Locations = React.lazy(() => import("../pages/Locations"));
+const HouseCalls = React.lazy(() => import("../pages/HouseCalls"));
 const Insurance = React.lazy(() => import("../pages/Insurance"));
 const Privacy = React.lazy(() => import("../pages/Legal/Privacy"));
 const Accessibility = React.lazy(() => import("../pages/Legal/Accessibility"));
@@ -32,6 +33,7 @@ export const routes = () => {
     { path: "/plan-your-visit", component: <PlanYourVisit /> },
     { path: "/locations", component: <Locations /> },
     { path: "/urgent-care", component: <UrgentCare /> },
+    { path: "/house-calls", component: <HouseCalls /> },
     { path: "/allergies-asthma", component: <Allergies /> },
     { path: "/covid-19", component: <Covid /> },
     { path: "/vaccines", component: <Vaccines /> },
