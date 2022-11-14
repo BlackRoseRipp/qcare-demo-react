@@ -27,7 +27,7 @@ export default function Home() {
           <div className="bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain py-24">
             <div className="container mx-auto py-32 flex flex-col">
               <h1 className="heading text-white text-6xl font-semibold md:w-2/3 w-full md:text-start text-center">
-                Healthcare when and where you need it.
+                Quick care everywhere you need it.
               </h1>
               <div className="mt-8 md:text-start text-center">
                 <a

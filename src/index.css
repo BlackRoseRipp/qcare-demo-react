@@ -126,6 +126,10 @@ a {
   visibility: visible !important;
 }
 
+#houseCallAccordion .accordion-button:not(.collapsed) {
+  @apply text-blue-logo-secondary;
+}
+
 .form-input {
   @apply mb-4 px-4 py-2 border border-transparent border-b-2 border-b-slate-400 transition-all;
 }
