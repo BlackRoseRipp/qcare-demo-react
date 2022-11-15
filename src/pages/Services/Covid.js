@@ -20,7 +20,7 @@ const Covid = () => {
           </h3>
           <div className="mt-16 text-center w-full">
             <a
-              href="#"
+              href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
               className="btn-primary text-white border-yellow-logo hover:bg-yellow-logo font-medium border-2 uppercase"
             >
               Schedule an appointment
@@ -85,36 +85,24 @@ const Covid = () => {
         </p>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:w-3/4 mx-auto mt-16">
           <div className="flex flex-col items-center justify-start">
-            <a
-              href="#"
-              className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4"
-            >
+            <div className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4 transition-all duration-300 cursor-pointer">
               <SiSpeedtest className="text-6xl" />
-            </a>
-            <a
-              href="#"
-              className="text-blue-primary hover:text-red-secondary text-lg text-center font-medium"
-            >
+            </div>
+            <div className="text-blue-primary hover:text-red-secondary text-lg text-center font-medium transition-all duration-300 cursor-pointer">
               Rapid testing
-            </a>
+            </div>
             <p className="text-sm text-blue-secondary text-center mt-8 w-3/4 mx-auto">
               This is a nasopharyngeal swab test for COVID-19. The test results
               are available in as little as 24 hours.
             </p>
           </div>
           <div className="flex flex-col items-center justify-start">
-            <a
-              href="#"
-              className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4"
-            >
+            <div className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4 transition-all duration-300 cursor-pointer">
               <GiVial className="text-6xl" />
-            </a>
-            <a
-              href="#"
-              className="text-blue-primary hover:text-red-secondary text-lg text-center font-medium"
-            >
+            </div>
+            <div className="text-blue-primary hover:text-red-secondary text-lg text-center font-medium transition-all duration-300 cursor-pointer">
               PCR testing
-            </a>
+            </div>
             <p className="text-sm text-blue-secondary text-center mt-8 w-3/4 mx-auto">
               The nasopharyngeal swab is sent to a local lab to check for
               COVID-19. The PCR test takes a closer look at the organisms on the
@@ -123,18 +111,12 @@ const Covid = () => {
             </p>
           </div>
           <div className="flex flex-col items-center justify-start">
-            <a
-              href="#"
-              className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4"
-            >
+            <div className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4 transition-all duration-300 cursor-pointer">
               <MdCoronavirus className="text-6xl" />
-            </a>
-            <a
-              href="#"
-              className="text-blue-primary hover:text-red-secondary text-lg text-center font-medium"
-            >
+            </div>
+            <div className="text-blue-primary hover:text-red-secondary text-lg text-center font-medium transition-all duration-300 cursor-pointer">
               Antibody test
-            </a>
+            </div>
             <p className="text-sm text-blue-secondary text-center mt-8 w-3/4 mx-auto">
               We will draw a sample of your blood to check for COVID-19
               antibodies. Having antibodies means your body has been exposed to
@@ -199,13 +181,13 @@ const Covid = () => {
             </p>
             <div className="mt-12 text-center">
               <a
-                href="#"
+                href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
                 className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase sm:inline hidden"
               >
                 Schedule your covid-19 shot here
               </a>
               <a
-                href="#"
+                href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
                 className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase sm:hidden inline"
               >
                 Schedule an appointment
@@ -232,7 +214,7 @@ const Covid = () => {
           If you have diabetes, heart problems, or lung disease, you may be at
           higher risk of getting sick from COVID-19.
         </p>
-        <div className="grid lg:grid-cols-2 gap-8 mt-24">
+        <div className="grid lg:grid-cols-2 gap-x-8 gap-y-12 mt-24">
           <div className="flex items-center justify-center order-1">
             <img
               src="/img/pexels-andrea-piacquadio-portrait.jpg"
@@ -250,7 +232,7 @@ const Covid = () => {
               </a>{" "}
               of COVID-19 include:
             </p>
-            <div className="flex flex-col items-start justify-center w-fit mx-auto">
+            <div className="flex flex-col items-start justify-center w-fit md:mx-0 mx-auto">
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
                 <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
                 <p className="text-blue-logo-primary font-medium">
@@ -325,7 +307,7 @@ const Covid = () => {
               of COVID-19, call 911 or go to the Emergency Room. You need
               immediate medical help in you’re experiencing:
             </p>
-            <div className="flex flex-col items-start justify-center w-fit mx-auto">
+            <div className="flex flex-col items-start justify-center w-fit md:mx-0 mx-auto">
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
                 <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
                 <p className="text-blue-logo-primary font-medium">
@@ -367,7 +349,7 @@ const Covid = () => {
         </div>
         <div className="text-center mt-12">
           <a
-            href="#"
+            href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
             className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase"
           >
             Schedule an appointment

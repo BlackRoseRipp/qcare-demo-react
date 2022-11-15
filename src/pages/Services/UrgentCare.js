@@ -41,7 +41,7 @@ const UrgentCare = () => {
           </div>
           <div className="text-center mt-12">
             <a
-              href="#"
+              href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
               className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase"
             >
               Schedule an appointment
@@ -152,7 +152,7 @@ const UrgentCare = () => {
         </div>
         <div className="text-center mt-12">
           <a
-            href="#"
+            href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
             className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase"
           >
             Schedule an appointment

@@ -17,7 +17,7 @@ const Allergies = () => {
           </h3>
           <div className="mt-12 text-center w-full">
             <a
-              href="#"
+              href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
               className="btn-primary border-2 border-yellow-logo text-white font-medium uppercase hover:bg-yellow-logo"
             >
               Schedule an Appointment

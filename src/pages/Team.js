@@ -14,26 +14,26 @@ const Team = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="flex flex-col p-8 rounded-xl shadow-lg hover:shadow-2xl w-4/5 mx-auto transition-all">
             <img
-              src="img/team/waiho-lum.jpg"
-              className="rounded-full w-2/3 mx-auto"
+              src="img/Team/waiho-lum.jpg"
+              className="rounded-full w-2/3 mx-auto hidden"
             />
             <h2 className="text-blue-primary text-center font-medium text-2xl my-4">
-              Dr. Waiho Lum
+              Dominique Darguin
             </h2>
             <p className="text-blue-secondary text-center uppercase">
-              Board Certified Emergency Medicine
+              Nurse Practitioner
             </p>
           </div>
           <div className="flex flex-col p-8 rounded-xl shadow-lg hover:shadow-2xl w-4/5 mx-auto transition-all">
             <img
-              src="img/team/ping-wong.jpg"
-              className="rounded-full w-2/3 mx-auto"
+              src="img/Team/ping-wong.jpg"
+              className="rounded-full w-2/3 mx-auto hidden"
             />
             <h2 className="text-blue-primary text-center font-medium text-2xl my-4">
-              Dr. Ping Wong
+              Xhorxhina Tafani
             </h2>
             <p className="text-blue-secondary text-center uppercase">
-              Board Certified Emergency Medicine
+              Medical Assistant
             </p>
           </div>
         </div>

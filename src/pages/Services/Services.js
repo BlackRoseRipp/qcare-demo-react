@@ -89,7 +89,7 @@ const Services = () => {
           </h3>
           <div className="text-center mt-12">
             <a
-              href="#"
+              href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
               className="btn-primary uppercase text-white font-medium border-2 border-yellow-logo hover:bg-yellow-logo"
             >
               Book an Appointment
@@ -170,7 +170,7 @@ const Services = () => {
 
         <div className="mt-12 text-center">
           <a
-            href="#"
+            href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
             className="btn-primary border-2 border-blue-primary text-blue-primary uppercase font-medium hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary"
           >
             Schedule Now

@@ -75,7 +75,7 @@ const PlanYourVisit = () => {
             </div>
             <div className="text-center mt-4">
               <a
-                href="#"
+                href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
                 className="btn-primary text-blue-logo-primary border-2 border-blue-logo-primary uppercase font-medium hover:bg-blue-logo-secondary hover:border-blue-logo-secondary hover:text-white"
               >
                 Book an appointment

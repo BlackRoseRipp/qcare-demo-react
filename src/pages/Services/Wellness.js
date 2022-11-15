@@ -16,7 +16,7 @@ const Wellness = () => {
           </h3>
           <div className="mt-12 text-center w-full">
             <a
-              href="#"
+              href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
               className="btn-primary border-2 border-yellow-logo text-white font-medium uppercase hover:bg-yellow-logo"
             >
               Schedule an Appointment
@@ -164,7 +164,7 @@ const Wellness = () => {
             </div>
             <div className="w-full text-center mt-12">
               <a
-                href="#"
+                href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
                 className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:border-blue-logo-secondary hover:bg-blue-logo-secondary font-medium uppercase border-2"
               >
                 Schedule your next visit
