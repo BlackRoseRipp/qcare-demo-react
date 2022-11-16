@@ -5,15 +5,19 @@ import InsuranceSlider from "../components/InsuranceSlider/InsuranceSlider";
 const PlanYourVisit = () => {
   return (
     <Fragment>
-      <div className="banner bg-blue-primary pb-16">
-        <div className="py-56 container mx-auto bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
-          <h1 className="heading text-white text-6xl font-semibold text-center">
-            Plan Your Visit
-          </h1>
-          <h3 className="text-white mt-12 text-2xl font-medium text-center w-3/4 mx-auto">
-            No appointment needed! Access urgent care and preventative
-            healthcare for all ages in New York City
-          </h3>
+      <div className="bg-[url(../public/img/pexels-shvets-production-7176317.jpg)] bg-top bg-no-repeat bg-cover">
+        <div className="bg-blue-primary/80 banner pb-24">
+          <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
+            <div className="py-56 container mx-auto">
+              <h1 className="heading text-white text-6xl font-semibold text-center">
+                Plan Your Visit
+              </h1>
+              <h3 className="text-white mt-12 text-2xl font-medium text-center w-3/4 mx-auto">
+                No appointment needed! Access urgent care and preventative
+                healthcare for all ages in New York City
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
       <div className="container mx-auto py-24">

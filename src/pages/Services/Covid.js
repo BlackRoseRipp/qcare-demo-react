@@ -9,22 +9,26 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const Covid = () => {
   return (
     <Fragment>
-      <div className="banner bg-blue-primary pb-8">
-        <div className="container mx-auto py-56 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
-          <h1 className="text-white heading font-semibold text-6xl text-center">
-            COVID-19 Testing & Care at QCare
-          </h1>
-          <h3 className="text-white font-medium text-2xl text-center mt-12">
-            Visit Qcare mobile care stations throughout New York City for all
-            your COVID-19 testing and care needs
-          </h3>
-          <div className="mt-16 text-center w-full">
-            <a
-              href="#"
-              className="btn-primary text-white border-yellow-logo hover:bg-yellow-logo font-medium border-2 uppercase"
-            >
-              Schedule an appointment
-            </a>
+      <div className="bg-[url(../public/img/pexels-cdc-3993212.jpg)] bg-center bg-no-repeat bg-cover">
+        <div className="bg-blue-primary/80 banner pb-24">
+          <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
+            <div className="container mx-auto py-56">
+              <h1 className="text-white heading font-semibold text-6xl text-center">
+                COVID-19 Testing & Care at QCare
+              </h1>
+              <h3 className="text-white font-medium text-2xl text-center mt-12">
+                Visit Qcare mobile care stations throughout New York City for
+                all your COVID-19 testing and care needs
+              </h3>
+              <div className="mt-16 text-center w-full">
+                <a
+                  href="#"
+                  className="btn-primary text-white border-yellow-logo hover:bg-yellow-logo font-medium border-2 uppercase"
+                >
+                  Schedule an appointment
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

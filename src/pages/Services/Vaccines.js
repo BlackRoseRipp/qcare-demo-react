@@ -6,27 +6,31 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const Vaccines = () => {
   return (
     <Fragment>
-      <div className="banner bg-blue-primary pb-8">
-        <div className="container mx-auto py-56 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
-          <h1 className="text-white heading text-6xl font-semibold text-center">
-            Vaccines and immunization at QCare
-          </h1>
-          <h3 className="text-white text-2xl font-medium text-center mt-8">
-            Visit QCare mobile care stations throughout New York City to stay up
-            to date on all your vaccines and immunization
-            <br />
-            <br />
-            Schedule an appointment with QCare if you need a vaccine or
-            immunization in the New York City area. We treat patients of all
-            ages, from infants to seniors
-          </h3>
-          <div className="mt-12 text-center w-full">
-            <a
-              href="#"
-              className="btn-primary border-2 border-yellow-logo text-white font-medium uppercase hover:bg-yellow-logo"
-            >
-              Schedule an Appointment
-            </a>
+      <div className="bg-[url(../public/img/pexels-frank-merino-8488619.jpg)] bg-center bg-no-repeat bg-cover">
+        <div className="bg-blue-primary/80 banner pb-24">
+          <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
+            <div className="container mx-auto py-56">
+              <h1 className="text-white heading text-6xl font-semibold text-center">
+                Vaccines and immunization at QCare
+              </h1>
+              <h3 className="text-white text-2xl font-medium text-center mt-8">
+                Visit QCare mobile care stations throughout New York City to
+                stay up to date on all your vaccines and immunization
+                <br />
+                <br />
+                Schedule an appointment with QCare if you need a vaccine or
+                immunization in the New York City area. We treat patients of all
+                ages, from infants to seniors
+              </h3>
+              <div className="mt-12 text-center w-full">
+                <a
+                  href="#"
+                  className="btn-primary border-2 border-yellow-logo text-white font-medium uppercase hover:bg-yellow-logo"
+                >
+                  Schedule an Appointment
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

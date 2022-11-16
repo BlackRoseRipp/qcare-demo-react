@@ -5,22 +5,26 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const Wellness = () => {
   return (
     <Fragment>
-      <div className="banner bg-blue-primary pb-8">
-        <div className="container mx-auto py-56 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
-          <h1 className="text-white heading text-6xl font-semibold text-center">
-            Wellness Visits
-          </h1>
-          <h3 className="text-white text-2xl font-medium text-center mt-8">
-            Visit Qcare for comfortable, fast and easy preventative care medical
-            visits
-          </h3>
-          <div className="mt-12 text-center w-full">
-            <a
-              href="#"
-              className="btn-primary border-2 border-yellow-logo text-white font-medium uppercase hover:bg-yellow-logo"
-            >
-              Schedule an Appointment
-            </a>
+      <div className="bg-[url(../public/img/wellness-hero.jpg)] bg-center bg-cover bg-no-repeat">
+        <div className="bg-blue-primary/80 banner pb-24">
+          <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
+            <div className="container mx-auto py-56">
+              <h1 className="text-white heading text-6xl font-semibold text-center">
+                Wellness Visits
+              </h1>
+              <h3 className="text-white text-2xl font-medium text-center mt-8">
+                Visit Qcare for comfortable, fast and easy preventative care
+                medical visits
+              </h3>
+              <div className="mt-12 text-center w-full">
+                <a
+                  href="#"
+                  className="btn-primary border-2 border-yellow-logo text-white font-medium uppercase hover:bg-yellow-logo"
+                >
+                  Schedule an Appointment
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

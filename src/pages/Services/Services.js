@@ -75,25 +75,29 @@ const Services = () => {
   ];
   return (
     <Fragment>
-      <div className="banner pb-16 bg-blue-primary">
-        <div className="py-56 container mx-auto bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
-          <h1 className="text-white heading text-6xl font-semibold text-center">
-            Urgent care and preventative healthcare for all ages in New York
-            City
-          </h1>
-          <h3 className="text-white text-xl font-medium text-center mt-4">
-            When you or your loved one have an urgent illness or an accident,
-            you need access to medical care that’s immediate and convenient. At
-            QCare, we provide a full array of services for New York City
-            residents of every age – from infants to seniors.
-          </h3>
-          <div className="text-center mt-12">
-            <a
-              href="#"
-              className="btn-primary uppercase text-white font-medium border-2 border-yellow-logo hover:bg-yellow-logo"
-            >
-              Book an Appointment
-            </a>
+      <div className="bg-[url(../public/img/young-male-psysician-with-patient-measuring-blood-pressure.jpg)] bg-center bg-cover bg-no-repeat">
+        <div className="bg-blue-primary/80 banner pb-24">
+          <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
+            <div className="py-56 container mx-auto">
+              <h1 className="text-white heading text-6xl font-semibold text-center">
+                Urgent care and preventative healthcare for all ages in New York
+                City
+              </h1>
+              <h3 className="text-white text-xl font-medium text-center mt-4">
+                When you or your loved one have an urgent illness or an
+                accident, you need access to medical care that’s immediate and
+                convenient. At QCare, we provide a full array of services for
+                New York City residents of every age – from infants to seniors.
+              </h3>
+              <div className="text-center mt-12">
+                <a
+                  href="#"
+                  className="btn-primary uppercase text-white font-medium border-2 border-yellow-logo hover:bg-yellow-logo"
+                >
+                  Book an Appointment
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

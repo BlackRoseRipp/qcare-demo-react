@@ -6,18 +6,22 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const UrgentCare = () => {
   return (
     <Fragment>
-      <div className="banner bg-blue-primary pb-8">
-        <div className="container mx-auto py-56 bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
-          <h1 className="text-white heading font-semibold text-6xl text-center">
-            Urgent Care
-          </h1>
-          <div className="mt-16 text-center w-full">
-            <a
-              href="/locations"
-              className="btn-primary text-white border-yellow-logo hover:bg-yellow-logo font-medium border-2 uppercase"
-            >
-              Find a location near you
-            </a>
+      <div className="bg-[url(../public/img/pexels-mikhail-nilov-7468920.jpg)] bg-center bg-cover bg-no-repeat">
+        <div className="bg-blue-primary/80 banner pb-24">
+          <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
+            <div className="container mx-auto py-56">
+              <h1 className="text-white heading font-semibold text-6xl text-center">
+                Urgent Care
+              </h1>
+              <div className="mt-16 text-center w-full">
+                <a
+                  href="/locations"
+                  className="btn-primary text-white border-yellow-logo hover:bg-yellow-logo font-medium border-2 uppercase"
+                >
+                  Find a location near you
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
