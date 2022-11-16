@@ -27,12 +27,12 @@ export default function Home() {
           <div className="bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain py-24">
             <div className="container mx-auto py-32 flex flex-col">
               <h1 className="heading text-white text-6xl font-semibold md:w-2/3 w-full md:text-start text-center">
-                Quick care everywhere you need it.
+                Quick care everywhere.
               </h1>
               <div className="mt-8 md:text-start text-center">
                 <a
                   className="btn-primary uppercase text-white border-2 border-white hover:border-yellow-logo hover:bg-yellow-logo font-medium md:mx-0"
-                  href="#"
+                  href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
                 >
                   Book an Appointment
                 </a>
@@ -143,7 +143,7 @@ export default function Home() {
               </p>
               <div className="xl:mt-0 mt-8 lg:text-start text-center w-full">
                 <a
-                  href="#"
+                  href="/locations"
                   className="btn-primary text-blue-primary border-blue-primary border-2 uppercase hover:bg-blue-logo-secondary hover:border-blue-logo-secondary hover:text-white"
                   id="locationsButton"
                 >
@@ -158,13 +158,13 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:w-3/4 mx-auto mt-16">
             <div className="flex flex-col items-center justify-start">
               <a
-                href="#"
+                href="/nyc-urgent-care-services"
                 className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4"
               >
                 <BiClinic className="text-6xl" />
               </a>
               <a
-                href="#"
+                href="/nyc-urgent-care-services"
                 className="text-blue-primary hover:text-red-secondary text-lg text-center font-medium"
               >
                 Urgent Care Clinics
@@ -178,13 +178,13 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-start">
               <a
-                href="#"
+                href="/nyc-urgent-care-services"
                 className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4"
               >
                 <BsTruck className="text-6xl" />
               </a>
               <a
-                href="#"
+                href="/nyc-urgent-care-services"
                 className="text-blue-primary hover:text-red-secondary text-lg text-center font-medium"
               >
                 Mobile Care Units
@@ -197,13 +197,13 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center justify-start">
               <a
-                href="#"
+                href="/house-calls"
                 className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4"
               >
                 <BsHouseDoor className="text-6xl" />
               </a>
               <a
-                href="#"
+                href="/house-calls"
                 className="text-blue-primary hover:text-red-secondary text-lg text-center font-medium"
               >
                 House Calls
@@ -221,7 +221,7 @@ export default function Home() {
           </p>
           <div className="text-center mt-24">
             <a
-              href="#"
+              href="/plan-your-visit"
               className="btn-primary uppercase text-red-primary border-2 border-red-primary hover:text-white hover:bg-red-logo hover:border-red-logo"
             >
               Plan your next visit
@@ -268,19 +268,25 @@ export default function Home() {
               </h5>
               <div className="grid md:grid-cols-2 md:gap-8 mt-4">
                 <div className="flex flex-col items-start md:mr-4">
-                  <a href="#" className="flex items-center group my-2">
+                  <a
+                    href="/urgent-care"
+                    className="flex items-center group my-2"
+                  >
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                       &nbsp;Trauma Care
                     </p>
                   </a>
-                  <a href="#" className="flex items-center group my-2">
+                  <a href="/covid-19" className="flex items-center group my-2">
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                       &nbsp;COVID-19 Testing
                     </p>
                   </a>
-                  <a href="#" className="flex items-center group my-2">
+                  <a
+                    href="/allergies-asthma"
+                    className="flex items-center group my-2"
+                  >
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                       &nbsp;Allergies & Asthma
@@ -288,19 +294,25 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex flex-col items-start md:ml-4">
-                  <a href="#" className="flex items-center group my-2">
+                  <a
+                    href="/prevention"
+                    className="flex items-center group my-2"
+                  >
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                       &nbsp;Wellness Care
                     </p>
                   </a>
-                  <a href="#" className="flex items-center group my-2">
+                  <a
+                    href="/pediatrics"
+                    className="flex items-center group my-2"
+                  >
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                       &nbsp;Pediatric Care
                     </p>
                   </a>
-                  <a href="#" className="flex items-center group my-2">
+                  <a href="/vaccines" className="flex items-center group my-2">
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                       &nbsp;Vaccinations
@@ -311,7 +323,7 @@ export default function Home() {
             </div>
             <div className="text-center">
               <a
-                href="#"
+                href="/nyc-urgent-care-services"
                 className="btn-primary text-blue-primary border-blue-primary border-2 uppercase hover:bg-blue-logo-secondary hover:border-blue-logo-secondary hover:text-white"
               >
                 See all services
@@ -426,11 +438,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="flex flex-col justify-center items-start">
               <h1 className="text-blue-primary heading text-5xl font-semibold md:text-start text-center">
-                <span className="text-4xl text-blue-logo-primary">
-                  We help you care for
-                </span>
-                <br />
-                Yourself and Your Family
+                Stay on top of your health and wellness
               </h1>
               <p className="text-blue-secondary font-medium mt-16 md:text-start text-center">
                 Check out these wellness tips and the research that backs them

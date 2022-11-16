@@ -22,7 +22,7 @@ const Footer = () => {
                   Contact Us
                 </a>
                 <a
-                  href="#"
+                  href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
                   className="text-blue-primary hover:text-red-secondary my-2 mx-4 text-sm"
                 >
                   Book an Appointment

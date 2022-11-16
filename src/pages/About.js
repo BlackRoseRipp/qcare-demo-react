@@ -77,7 +77,7 @@ const About = () => {
         </div>
         <div className="text-center mt-12">
           <a
-            href="#"
+            href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
             className="btn-primary text-blue-primary border-blue-primary border-2 uppercase hover:bg-blue-logo-primary hover:border-blue-logo-primary hover:text-white"
           >
             Book an Appointment
@@ -91,13 +91,13 @@ const About = () => {
           <div className="flex items-center justify-center lg:border-r border-blue-logo-secondary">
             <div className="w-4/5 mx-auto flex flex-col items-center justify-center">
               <a
-                href="#"
+                href="/team"
                 className="border-2 border-blue-logo-primary text-blue-logo-primary rounded-full overflow-hidden hover:scale-110 hover:border-red-secondary mb-4 w-1/2 lg:w-3/4"
               >
                 <img src="/img/lab-services-img.jpg" alt="meet_the_team" />
               </a>
               <a
-                href="#"
+                href="/team"
                 className="text-blue-logo-primary hover:text-red-secondary text-xl text-center font-medium"
               >
                 Meet Our Team

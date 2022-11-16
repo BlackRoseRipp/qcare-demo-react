@@ -140,13 +140,12 @@ const Navbar = () => {
                         to: "/insurance",
                         primary: "Insurance",
                       },
-                      {
-                        to: "/billing",
-                        primary: "Billing Info",
-                      },
                     ]}
                   />
-                  <NavButton to="#" primary="Patient Portal" />
+                  <NavButton
+                    to="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                    primary="Patient Portal"
+                  />
                 </div>
               </div>
             ) : (
@@ -219,10 +218,6 @@ const Navbar = () => {
                         to: "/insurance",
                         primary: "Insurance",
                       },
-                      {
-                        to: "/billing",
-                        primary: "Billing Info",
-                      },
                     ]}
                   />
                 </li>
@@ -236,7 +231,7 @@ const Navbar = () => {
                 : "bg-transparent text-yellow-logo border-yellow-logo hover:bg-yellow-logo hover:text-blue-primary",
               "rounded-full text-lg font-semibold border-2 py-1 px-4 transition-all hidden lg:block"
             )}
-            href="#"
+            href="http://yourhealthfile.com/"
           >
             Patient Portal
           </a>

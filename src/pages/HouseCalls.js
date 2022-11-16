@@ -19,7 +19,7 @@ const HouseCalls = () => {
           </h3>
           <div className="text-center mt-12">
             <a
-              href="#"
+              href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
               className="btn-primary uppercase text-white font-medium border-2 border-yellow-logo hover:bg-yellow-logo"
             >
               Book a house call now
@@ -68,35 +68,26 @@ const HouseCalls = () => {
         </h2>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:w-3/4 mx-auto mt-16">
           <div className="flex flex-col items-center justify-start">
-            <a
-              href="#"
-              className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4"
-            >
+            <div className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4 transition-all duration-300">
               <FaUserNurse className="text-6xl" />
-            </a>
+            </div>
             <p className="text-lg text-blue-logo-primary text-center mt-8 w-3/4 mx-auto">
               When you have an urgent care need, skip the ER wait. Our doctors
               come to you.
             </p>
           </div>
           <div className="flex flex-col items-center justify-start">
-            <a
-              href="#"
-              className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4"
-            >
+            <div className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4 transition-all duration-300">
               <CiMedicalCase className="text-6xl" />
-            </a>
+            </div>
             <p className="text-lg text-blue-logo-primary text-center mt-8 w-3/4 mx-auto">
               Traveling? No problem, we can visit your hotel.
             </p>
           </div>
           <div className="flex flex-col items-center justify-start">
-            <a
-              href="#"
-              className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4"
-            >
+            <div className="p-10 border-2 border-blue-logo-primary text-blue-logo-primary rounded-full hover:scale-110 mb-4 transition-all duration-300">
               <CiMedicalMask className="text-6xl" />
-            </a>
+            </div>
             <p className="text-lg text-blue-logo-primary text-center mt-8 w-3/4 mx-auto">
               Not feeling well enough to leave home? We’ll come to you.
             </p>
@@ -138,7 +129,7 @@ const HouseCalls = () => {
         </div>
         <div className="mt-12 text-center">
           <a
-            href="#"
+            href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
             className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase"
           >
             Request a house call
@@ -263,7 +254,7 @@ const HouseCalls = () => {
             </p>
             <div class="mt-12 text-center">
               <a
-                href="#"
+                href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
                 className="btn-primary text-red-primary border-red-primary hover:text-white hover:bg-red-secondary hover:border-red-secondary border-2 font-medium uppercase"
               >
                 Request a house call
