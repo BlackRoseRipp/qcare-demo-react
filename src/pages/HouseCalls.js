@@ -8,22 +8,26 @@ import InsuranceSlider from "../components/InsuranceSlider/InsuranceSlider";
 const HouseCalls = () => {
   return (
     <Fragment>
-      <div className="banner bg-blue-primary pb-8">
-        <div className="py-56 container mx-auto bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain">
-          <h1 className="text-white heading text-6xl font-semibold text-center">
-            Why leave home when you can have a house call?
-          </h1>
-          <h3 className="text-white text-xl font-medium text-center mt-4">
-            When you’re not well enough to leave the house, Qcare comes to you
-            in as little as one hour
-          </h3>
-          <div className="text-center mt-12">
-            <a
-              href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
-              className="btn-primary uppercase text-white font-medium border-2 border-yellow-logo hover:bg-yellow-logo"
-            >
-              Book a house call now
-            </a>
+      <div className="bg-[url(../public/img/asian-female-doctor-talking-senior-caucasian-patient-during-house-call.jpg)] bg-center bg-no-repeat bg-cover">
+        <div className="bg-blue-primary/80 banner pb-24">
+          <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
+            <div className="py-56 container mx-auto">
+              <h1 className="text-white heading text-6xl font-semibold text-center">
+                Why leave home when you can have a house call?
+              </h1>
+              <h3 className="text-white text-xl font-medium text-center mt-4">
+                When you’re not well enough to leave the house, Qcare comes to
+                you in as little as one hour
+              </h3>
+              <div className="text-center mt-12">
+                <a
+                  href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                  className="btn-primary uppercase text-white font-medium border-2 border-yellow-logo hover:bg-yellow-logo"
+                >
+                  Book a house call now
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -23,10 +23,10 @@ export default function Home() {
   return (
     <Fragment>
       <main>
-        <div className="banner bg-blue-primary pb-24">
-          <div className="bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-center bg-repeat-space bg-contain py-24">
-            <div className="container mx-auto py-32 flex flex-col">
-              <h1 className="heading text-white text-6xl font-semibold md:w-2/3 w-full md:text-start text-center">
+        <div className="banner bg-blue-primary pb-12">
+          <div className="container mx-auto bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-left bg-no-repeat bg-contain py-24 grid lg:grid-cols-2 gap-8">
+            <div className="py-16 flex flex-col justify-center">
+              <h1 className="heading text-white text-6xl font-semibold md:text-start text-center">
                 Quick care everywhere.
               </h1>
               <div className="mt-8 md:text-start text-center">
@@ -38,10 +38,16 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            <div className="flex items-center justify-center">
+              <img
+                src="/img/two-african-paramedic-ambulance-emergency-crew-doctors.jpg"
+                className="w-2/3 mx-auto rounded-2xl border-4 border-blue-secondary"
+              />
+            </div>
           </div>
           <div className="md:w-1/2 w-11/12 grid grid-cols-3 gap-8 border-2 rounded-full border-yellow-logo px-8 py-4 mx-auto">
             <a
-              href="#locationsButton"
+              href="/nyc-urgent-care-services"
               className="text-white flex flex-col items-center mx-4 group"
             >
               <div
@@ -64,7 +70,7 @@ export default function Home() {
               </p>
             </a>
             <a
-              href="#locationsButton"
+              href="/nyc-urgent-care-services"
               className="text-white flex flex-col items-center mx-4 group"
             >
               <div
@@ -87,7 +93,7 @@ export default function Home() {
               </p>
             </a>
             <a
-              href="#locationsButton"
+              href="/house-calls"
               className="text-white flex flex-col items-center mx-4 group"
             >
               <div
