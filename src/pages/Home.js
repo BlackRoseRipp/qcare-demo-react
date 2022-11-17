@@ -13,6 +13,7 @@ import {
 import { CiLocationOn } from "react-icons/ci";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { IoIosMedical } from "react-icons/io";
+import BlogSlider from "../components/BlogSlider/BlogSlider";
 import Data from "../components/Locations/Data";
 import StoreLocator from "../components/Locations/StoreLocator";
 import useWindowSize from "../hooks/useWindowSize";
@@ -23,98 +24,94 @@ export default function Home() {
   return (
     <Fragment>
       <main>
-        <div className="banner bg-blue-primary pb-12">
-          <div className="container mx-auto bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] bg-left bg-no-repeat bg-contain py-24 grid lg:grid-cols-2 gap-8">
-            <div className="py-16 flex flex-col justify-center">
-              <h1 className="heading text-white text-6xl font-semibold md:text-start text-center">
-                Quick care everywhere.
-              </h1>
-              <div className="mt-8 md:text-start text-center">
-                <a
-                  className="btn-primary uppercase text-white border-2 border-white hover:border-yellow-logo hover:bg-yellow-logo font-medium md:mx-0"
-                  href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+        <div className="banner bg-blue-primary">
+          <div className="bg-[url(../public/img/doctor-with-stethoscope-hands-hospital-background-3.png)] bg-right bg-no-repeat bg-cover lg:bg-contain pb-16">
+            <div className="container mx-auto lg:bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] lg:bg-left bg-center bg-no-repeat bg-contain py-36">
+              <div className="py-32 flex flex-col justify-center lg:w-1/2">
+                <h1 className="heading lg:text-white text-blue-primary text-6xl font-semibold lg:text-start text-center">
+                  Quick care everywhere.
+                </h1>
+                <div className="mt-8 lg:text-start text-center">
+                  <a
+                    className="btn-primary uppercase lg:text-white text-blue-primary lg:border-2 border-white lg:bg-transparent bg-yellow-logo hover:border-yellow-logo lg:hover:bg-yellow-logo font-medium md:mx-0"
+                    href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                  >
+                    Book an Appointment
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-1/2 w-11/12 grid grid-cols-3 gap-8 lg:border-2 rounded-full border-yellow-logo bg-blue-primary px-8 py-4 mx-auto">
+              <a
+                href="/nyc-urgent-care-services"
+                className="text-white flex flex-col items-center mx-4 group"
+              >
+                <div
+                  className={
+                    "w-auto transition-all" +
+                    (size.width < 440
+                      ? " border-2 rounded-full p-2 border-yellow-logo group-hover:bg-yellow-logo group-focus:bg-yellow-logo"
+                      : " group-hover:text-yellow-logo")
+                  }
                 >
-                  Book an Appointment
-                </a>
-              </div>
+                  <BiClinic className="w-auto h-12" />
+                </div>
+                <p
+                  className={
+                    "text-center font-medium group-hover:text-yellow-logo transition-all" +
+                    (size.width < 440 ? " hidden" : "")
+                  }
+                >
+                  Urgent Care Clinics
+                </p>
+              </a>
+              <a
+                href="/nyc-urgent-care-services"
+                className="text-white flex flex-col items-center mx-4 group"
+              >
+                <div
+                  className={
+                    "w-auto transition-all" +
+                    (size.width < 440
+                      ? " border-2 rounded-full p-2 border-yellow-logo group-hover:bg-yellow-logo group-focus:bg-yellow-logo"
+                      : " group-hover:text-yellow-logo")
+                  }
+                >
+                  <BsTruck className="w-auto h-12" />
+                </div>
+                <p
+                  className={
+                    "text-center font-medium group-hover:text-yellow-logo transition-all" +
+                    (size.width < 440 ? " hidden" : "")
+                  }
+                >
+                  Mobile Care Units
+                </p>
+              </a>
+              <a
+                href="/house-calls"
+                className="text-white flex flex-col items-center mx-4 group"
+              >
+                <div
+                  className={
+                    "w-auto transition-all" +
+                    (size.width < 440
+                      ? " border-2 rounded-full p-2 border-yellow-logo group-hover:bg-yellow-logo group-focus:bg-yellow-logo"
+                      : " group-hover:text-yellow-logo")
+                  }
+                >
+                  <BsHouseDoor className="w-auto h-12" />
+                </div>
+                <p
+                  className={
+                    "text-center font-medium group-hover:text-yellow-logo transition-all" +
+                    (size.width < 440 ? " hidden" : "")
+                  }
+                >
+                  House Calls
+                </p>
+              </a>
             </div>
-            <div className="flex items-center justify-center">
-              <img
-                src="/img/two-african-paramedic-ambulance-emergency-crew-doctors.jpg"
-                className="w-2/3 mx-auto rounded-2xl border-4 border-blue-secondary"
-              />
-            </div>
-          </div>
-          <div className="md:w-1/2 w-11/12 grid grid-cols-3 gap-8 border-2 rounded-full border-yellow-logo px-8 py-4 mx-auto">
-            <a
-              href="/nyc-urgent-care-services"
-              className="text-white flex flex-col items-center mx-4 group"
-            >
-              <div
-                className={
-                  "w-auto transition-all" +
-                  (size.width < 440
-                    ? " border-2 rounded-full p-2 border-yellow-logo group-hover:bg-yellow-logo group-focus:bg-yellow-logo"
-                    : " group-hover:text-yellow-logo")
-                }
-              >
-                <BiClinic className="w-auto h-12" />
-              </div>
-              <p
-                className={
-                  "text-center font-medium group-hover:text-yellow-logo transition-all" +
-                  (size.width < 440 ? " hidden" : "")
-                }
-              >
-                Urgent Care Clinics
-              </p>
-            </a>
-            <a
-              href="/nyc-urgent-care-services"
-              className="text-white flex flex-col items-center mx-4 group"
-            >
-              <div
-                className={
-                  "w-auto transition-all" +
-                  (size.width < 440
-                    ? " border-2 rounded-full p-2 border-yellow-logo group-hover:bg-yellow-logo group-focus:bg-yellow-logo"
-                    : " group-hover:text-yellow-logo")
-                }
-              >
-                <BsTruck className="w-auto h-12" />
-              </div>
-              <p
-                className={
-                  "text-center font-medium group-hover:text-yellow-logo transition-all" +
-                  (size.width < 440 ? " hidden" : "")
-                }
-              >
-                Mobile Care Units
-              </p>
-            </a>
-            <a
-              href="/house-calls"
-              className="text-white flex flex-col items-center mx-4 group"
-            >
-              <div
-                className={
-                  "w-auto transition-all" +
-                  (size.width < 440
-                    ? " border-2 rounded-full p-2 border-yellow-logo group-hover:bg-yellow-logo group-focus:bg-yellow-logo"
-                    : " group-hover:text-yellow-logo")
-                }
-              >
-                <BsHouseDoor className="w-auto h-12" />
-              </div>
-              <p
-                className={
-                  "text-center font-medium group-hover:text-yellow-logo transition-all" +
-                  (size.width < 440 ? " hidden" : "")
-                }
-              >
-                House Calls
-              </p>
-            </a>
           </div>
         </div>
         <div className="container mx-auto py-48">
@@ -453,129 +450,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <div
-                id="testimonialSlider"
-                class="carousel slide relative"
-                data-bs-ride="true"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    class="carousel-control-next !bg-transparent !mr-4"
-                    type="button"
-                    data-bs-target="#testimonialSlider"
-                    data-bs-slide="prev"
-                  >
-                    <BsArrowLeft className="text-4xl !text-blue-logo-secondary" />
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    type="button"
-                    data-bs-target="#testimonialSlider"
-                    data-bs-slide-to="0"
-                    class="active !w-3 !h-3 rounded-full !bg-blue-logo-secondary"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#testimonialSlider"
-                    data-bs-slide-to="1"
-                    className="!w-3 !h-3 rounded-full !bg-blue-logo-secondary"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#testimonialSlider"
-                    data-bs-slide-to="2"
-                    className="!w-3 !h-3 rounded-full !bg-blue-logo-secondary"
-                    aria-label="Slide 3"
-                  ></button>
-                  <button
-                    class="carousel-control-next !bg-transparent !ml-4"
-                    type="button"
-                    data-bs-target="#testimonialSlider"
-                    data-bs-slide="next"
-                  >
-                    <BsArrowRight className="text-4xl !text-blue-logo-secondary" />
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-                <div class="carousel-inner relative w-full overflow-hidden">
-                  <div class="carousel-item active float-left w-full py-16">
-                    <a
-                      href="#"
-                      className="w-5/6 mx-auto h-[550px] flex flex-col rounded-xl shadow-md hover:shadow-xl overflow-hidden"
-                    >
-                      <img
-                        src="img/blog1.jpg"
-                        className="w-full"
-                        alt="blog_1"
-                      />
-                      <div className="px-6 py-4">
-                        <h3 className="text-blue-primary text-lg font-medium mb-2 text-center md:text-start">
-                          What&#39;s The Difference Between CBC And CMP Blood
-                          Tests?
-                        </h3>
-                        <p className="text-blue-secondary text-sm text-justify md:text-start">
-                          There&#39;s a good deal that your blood can tell us
-                          about your health. To access that information, we can
-                          perform a complete blood count (CBC) and a
-                          comprehensive metabolic panel (CMP). Here&#39;s a look
-                          at the difference between the two.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="carousel-item float-left w-full py-16">
-                    <a
-                      href="#"
-                      className="w-5/6 mx-auto flex flex-col rounded-xl shadow-md hover:shadow-xl overflow-hidden h-[550px]"
-                    >
-                      <img
-                        src="img/blog2.jpeg"
-                        className="w-full"
-                        alt="blog_2"
-                      />
-                      <div className="px-6 py-4">
-                        <h3 className="text-blue-primary text-lg font-medium mb-2 text-center md:text-start">
-                          Why Choosing Telehealth Might Be the Best Option for
-                          You
-                        </h3>
-                        <p className="text-blue-secondary text-sm text-justify md:text-start">
-                          As our nation watches anxiously as new variants of
-                          COVID-19 emerge, the return to safety measures, such
-                          as masking up and social distancing, may come back.
-                          For this reason, and many others, telehealth may make
-                          perfect sense.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="carousel-item float-left w-full py-16">
-                    <a
-                      href="#"
-                      className="w-5/6 mx-auto flex flex-col rounded-xl shadow-md hover:shadow-xl overflow-hidden h-[550px]"
-                    >
-                      <img
-                        src="img/blog3.jpg"
-                        className="w-full"
-                        alt="blog_3"
-                      />
-                      <div className="px-6 py-4">
-                        <h3 className="text-blue-primary text-lg font-medium mb-2 text-center md:text-start">
-                          Common Heat-Related Illnesses and Symptoms
-                        </h3>
-                        <p className="text-blue-secondary text-sm text-justify md:text-start">
-                          The month of August can be a hot and sticky one here
-                          in New York City, which makes us more vulnerable to
-                          heat-related illnesses. To beat the heat this summer,
-                          we take a closer look at the problem.
-                        </p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <BlogSlider />
             </div>
           </div>
         </div>

@@ -30,12 +30,14 @@ a {
   transition: all 300ms ease;
 }
 
-.underline-animation {
+.underline-animation,
+.blog-content a {
   position: relative;
   text-decoration: none;
 }
 
-.underline-animation::after {
+.underline-animation::after,
+.blog-content a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -47,7 +49,8 @@ a {
   transform: scaleX(0);
 }
 
-.underline-animation:hover::after {
+.underline-animation:hover::after,
+.blog-content a:hover::after {
   transform: scaleX(1);
 }
 
@@ -126,6 +129,38 @@ a {
   visibility: visible !important;
 }
 
+.blog-content p {
+  @apply text-blue-primary mb-4
+}
+
+.blog-content h2 {
+  @apply text-4xl font-semibold text-blue-logo-primary mb-4 mt-8
+}
+
+.blog-content h3 {
+  @apply text-2xl font-medium text-blue-secondary my-4
+}
+
+.blog-content ul {
+  @apply list-disc ml-8
+}
+
+.blog-content a {
+  @apply text-blue-logo-primary
+}
+
+.blog-content a:hover {
+  @apply text-blue-logo-secondary
+}
+
+.blog-content a::after {
+  @apply bg-blue-logo-secondary
+}
+
+.blog-content img {
+  @apply w-3/4 mx-auto
+}
+
 #houseCallAccordion .accordion-button:not(.collapsed) {
   @apply text-blue-logo-secondary;
 }
@@ -144,6 +179,11 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background-color: white;
+    color: black
+  }
+
   input {
     background: white;
   }

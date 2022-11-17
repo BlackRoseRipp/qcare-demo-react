@@ -17,7 +17,7 @@ const About = () => {
               <h6 className="text-xl text-white mt-8 lg:w-2/3 w-full mx-auto">
                 A sudden sickness or injury can leave you feeling lousy while
                 also disrupting your carefully planned schedule. Our QCare
-                mobile care units provides New Yorkers access to quick,
+                mobile care units provide New Yorkers access to quick,
                 convenient, expert medical care anywhere you are.
               </h6>
               <div className="mt-8">

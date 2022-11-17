@@ -56,7 +56,7 @@ const Navbar = () => {
           </button>
           <div
             className={classNames(
-              expanded ? "max-h-[555px] border-b" : "max-h-0",
+              expanded ? "max-h-[605px] border-b" : "max-h-0",
               "block lg:max-h-full w-full lg:w-auto transition-all duration-700 overflow-hidden lg:overflow-visible grow xl:mx-32 lg:border-0"
             )}
             id="navbar"
@@ -79,8 +79,8 @@ const Navbar = () => {
                         primary: "Team",
                       },
                       {
-                        to: "/career",
-                        primary: "Careers",
+                        to: "/contact",
+                        primary: "Contact Us",
                       },
                     ]}
                   />
@@ -114,8 +114,8 @@ const Navbar = () => {
                         primary: "Vaccinations",
                       },
                       {
-                        to: "/services",
-                        primary: "Testing Services",
+                        to: "/nyc-urgent-care-services",
+                        primary: "All Testing Services",
                       },
                     ]}
                   />
@@ -125,11 +125,11 @@ const Navbar = () => {
                     id="Three"
                     dropdownLinks={[
                       {
-                        to: "/locations",
-                        primary: "Locations",
+                        to: "/plan-your-visit",
+                        primary: "Plan Your Visit",
                       },
                       {
-                        to: "/plan-your-visit",
+                        to: "/locations",
                         primary: "Locations",
                       },
                       {
