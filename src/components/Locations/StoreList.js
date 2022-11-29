@@ -34,7 +34,7 @@ function StoreList(props) {
     <div>
       <input
         type="search"
-        className="w-full rounded-xl border border-blue-light px-3 py-1.5 outline-blue-light outline-offset-2 focus-visible:!outline-4 transition-all"
+        className="w-full rounded-xl border border-blue-light px-3 py-1.5 outline-blue-secondary outline-offset-2 focus-visible:!outline-4 transition-all"
         placeholder="Find a location"
         onChange={filterLocations}
       />
@@ -57,18 +57,34 @@ function StoreList(props) {
                 <div className="my-4 text-center">
                   <a
                     className="btn-primary text-blue-primary font-medium border-2 border-blue-primary hover:text-red-secondary hover:bg-blue-light hover:border-red-secondary"
-                    href={"tel:" + location.Phone}
-                    style={{ display: doPhone ? "inline" : "none" }}
+                    href={location.Link}
+                    style={{ display: doPhone ? "block" : "none" }}
                   >
-                    Call this location
+                    Available Times
                   </a>
-                  <a
-                    className="btn-primary text-blue-primary font-medium border-2 border-blue-primary hover:text-red-secondary hover:bg-blue-light hover:border-red-secondary"
-                    href={"mailto:" + location.Email}
-                    style={{ display: doEmail ? "inline" : "none" }}
+                  <div
+                    className={
+                      "mt-2" +
+                      (doPhone && doEmail
+                        ? " grid sm:grid-cols-2 gap-2"
+                        : " text-center")
+                    }
                   >
-                    {location.Email}
-                  </a>
+                    <a
+                      className="btn-primary text-blue-primary font-medium border-2 border-blue-primary hover:text-red-secondary hover:bg-blue-light hover:border-red-secondary"
+                      href={"tel:" + location.Phone}
+                      style={{ display: doPhone ? "block" : "none" }}
+                    >
+                      Call this location
+                    </a>
+                    <a
+                      className="btn-primary text-blue-primary font-medium border-2 border-blue-primary hover:text-red-secondary hover:bg-blue-light hover:border-red-secondary"
+                      href={"mailto:" + location.Email}
+                      style={{ display: doEmail ? "block" : "none" }}
+                    >
+                      Email Us
+                    </a>
+                  </div>
                 </div>
               </div>
               <hr
