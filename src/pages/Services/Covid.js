@@ -22,7 +22,7 @@ const Covid = () => {
               </h3>
               <div className="mt-16 text-center w-full">
                 <a
-                  href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                  href="/locations"
                   className="btn-primary text-white border-yellow-logo hover:bg-yellow-logo font-medium border-2 uppercase"
                 >
                   Schedule an appointment
@@ -185,13 +185,13 @@ const Covid = () => {
             </p>
             <div className="mt-12 text-center">
               <a
-                href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                href="/locations"
                 className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase sm:inline hidden"
               >
                 Schedule your covid-19 shot here
               </a>
               <a
-                href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                href="/locations"
                 className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase sm:hidden inline"
               >
                 Schedule an appointment
@@ -353,7 +353,7 @@ const Covid = () => {
         </div>
         <div className="text-center mt-12">
           <a
-            href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+            href="/locations"
             className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase"
           >
             Schedule an appointment

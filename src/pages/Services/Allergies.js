@@ -14,12 +14,12 @@ const Allergies = () => {
                 Allergies and Asthma Preventative & Urgent Care
               </h1>
               <h3 className="text-white text-2xl font-medium text-center mt-8">
-                Visit QCare mobile care units thorughout New York City for all
+                Visit QCare mobile care units throughout New York City for all
                 your asthma and allergy care needs.
               </h3>
               <div className="mt-12 text-center w-full">
                 <a
-                  href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                  href="/locations"
                   className="btn-primary border-2 border-yellow-logo text-white font-medium uppercase hover:bg-yellow-logo"
                 >
                   Schedule an Appointment

@@ -24,7 +24,7 @@ const Pediatric = () => {
                   Schedule an Appointment for Your Child
                 </a>
                 <a
-                  href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                  href="/locations"
                   className="btn-primary border-2 border-yellow-logo text-white font-medium uppercase hover:bg-yellow-logo inline md:hidden"
                 >
                   Schedule an Appointment

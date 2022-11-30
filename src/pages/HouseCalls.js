@@ -21,7 +21,7 @@ const HouseCalls = () => {
               </h3>
               <div className="text-center mt-12">
                 <a
-                  href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                  href="/locations"
                   className="btn-primary uppercase text-white font-medium border-2 border-yellow-logo hover:bg-yellow-logo"
                 >
                   Book a house call now
@@ -133,7 +133,7 @@ const HouseCalls = () => {
         </div>
         <div className="mt-12 text-center">
           <a
-            href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+            href="/locations"
             className="btn-primary text-blue-primary border-blue-primary hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary border-2 font-medium uppercase"
           >
             Request a house call
@@ -258,7 +258,7 @@ const HouseCalls = () => {
             </p>
             <div class="mt-12 text-center">
               <a
-                href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                href="/locations"
                 className="btn-primary text-red-primary border-red-primary hover:text-white hover:bg-red-secondary hover:border-red-secondary border-2 font-medium uppercase"
               >
                 Request a house call

@@ -59,6 +59,8 @@ function StoreList(props) {
                     className="btn-primary text-blue-primary font-medium border-2 border-blue-primary hover:text-red-secondary hover:bg-blue-light hover:border-red-secondary"
                     href={location.Link}
                     style={{ display: doPhone ? "block" : "none" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
                   >
                     Available Times
                   </a>

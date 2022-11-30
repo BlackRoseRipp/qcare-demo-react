@@ -77,7 +77,7 @@ const About = () => {
         </div>
         <div className="text-center mt-12">
           <a
-            href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+            href="/locations"
             className="btn-primary text-blue-primary border-blue-primary border-2 uppercase hover:bg-blue-logo-primary hover:border-blue-logo-primary hover:text-white"
           >
             Book an Appointment

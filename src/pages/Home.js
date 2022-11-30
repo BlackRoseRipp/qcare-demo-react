@@ -34,7 +34,7 @@ export default function Home() {
                 <div className="mt-8 lg:text-start text-center">
                   <a
                     className="btn-primary uppercase lg:text-white text-blue-primary lg:border-2 border-white lg:bg-transparent bg-yellow-logo hover:border-yellow-logo lg:hover:bg-yellow-logo font-medium md:mx-0"
-                    href="https://www.yourhealthfile.com/providers/1534226/book-an-appointment-.html"
+                    href="/locations"
                   >
                     Book an Appointment
                   </a>

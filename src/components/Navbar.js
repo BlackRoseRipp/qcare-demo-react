@@ -232,6 +232,8 @@ const Navbar = () => {
               "rounded-full text-lg font-semibold border-2 py-1 px-4 transition-all hidden lg:block"
             )}
             href="http://yourhealthfile.com/"
+            target="_blank"
+            rel="noreferrer noopener"
           >
             Patient Portal
           </a>
