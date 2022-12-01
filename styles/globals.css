@@ -124,6 +124,7 @@ a {
   background: transparent;
   margin-top: 0.4rem;
 }
+<<<<<<< HEAD
 
 .collapse.show {
   visibility: visible !important;
@@ -192,3 +193,5 @@ a {
     background: white;
   }
 }
+=======
+>>>>>>> f427f8121e808ded344d9222017fd3d064acf278
