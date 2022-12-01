@@ -11,6 +11,7 @@ body {
   margin: 0;
   font-family: "Work Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply scroll-smooth;
 }
 
 body {
@@ -29,6 +30,30 @@ a {
   transition: all 300ms ease;
 }
 
+.underline-animation,
+.blog-content a {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-animation::after,
+.blog-content a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+}
+
+.underline-animation:hover::after,
+.blog-content a:hover::after {
+  transform: scaleX(1);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -41,15 +66,10 @@ a {
   html {
     color-scheme: dark;
   }
-
-  body {
-    color: white;
-    background: black;
-  }
 }
 
 .banner {
-  padding-top: calc(7rem + 80px) !important;
+  padding-top: 92px;
 }
 
 .btn-primary {
@@ -97,10 +117,78 @@ a {
 
 .scrollbar::-webkit-scrollbar-track-piece:end {
   background: transparent;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .scrollbar::-webkit-scrollbar-track-piece:start {
   background: transparent;
-  margin-top: 1.6rem;
+  margin-top: 0.4rem;
+}
+
+.collapse.show {
+  visibility: visible !important;
+}
+
+.blog-content p {
+  @apply text-blue-primary mb-4
+}
+
+.blog-content h2 {
+  @apply text-4xl font-semibold text-blue-logo-primary mb-4 mt-8
+}
+
+.blog-content h3 {
+  @apply text-2xl font-medium text-blue-secondary my-4
+}
+
+.blog-content ul {
+  @apply list-disc ml-8
+}
+
+.blog-content a {
+  @apply text-blue-logo-primary
+}
+
+.blog-content a:hover {
+  @apply text-blue-logo-secondary
+}
+
+.blog-content a::after {
+  @apply bg-blue-logo-secondary
+}
+
+.blog-content img {
+  @apply w-3/4 mx-auto
+}
+
+#houseCallAccordion .accordion-button:not(.collapsed) {
+  @apply text-blue-logo-secondary;
+}
+
+.form-input {
+  @apply mb-4 px-4 py-2 border border-transparent border-b-2 border-b-slate-400 transition-all;
+}
+
+.form-input:hover,
+.form-input:focus-within {
+  @apply border-slate-400;
+}
+
+.form-input:focus-within {
+  @apply outline-none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white;
+    color: black
+  }
+
+  input {
+    background: white;
+  }
+
+  textarea {
+    background: white;
+  }
 }

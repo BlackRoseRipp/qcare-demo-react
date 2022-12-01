@@ -25,7 +25,7 @@ function NavButton(props) {
       <div className="accordion-item">
         <h2 className="accordion-header mb-0" id={"mobileHeader" + id}>
           <button
-            className="accordion-button collapsed font-semibold text-lg !text-primary-color px-4 py-2 focus:outline-none !shadow-none flex items-center after:hidden"
+            className="accordion-button collapsed font-medium text-lg !text-blue-primary px-4 py-2 focus:outline-none !shadow-none flex items-center after:hidden"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={"#mobileSubMenu" + id}
@@ -49,7 +49,9 @@ function NavButton(props) {
               return (
                 <a
                   className={classNames(
-                    path === link.to ? "text-blue-dark" : "text-primary-color",
+                    path === link.to
+                      ? "text-red-secondary"
+                      : "text-blue-primary",
                     "p-2 transition-all text-lg font-medium"
                   )}
                   aria-current="page"
@@ -69,8 +71,8 @@ function NavButton(props) {
             path === to || activeDropdownLink
               ? classNames(
                   scrollPosition > 0
-                    ? "text-yellow-logo border-yellow-logo"
-                    : "text-red-secondary border-red-secondary"
+                    ? "text-red-secondary border-red-secondary"
+                    : "text-yellow-logo border-yellow-logo"
                 )
               : classNames(
                   scrollPosition > 0
@@ -78,13 +80,13 @@ function NavButton(props) {
                     : "text-white hover:border-blue-secondary",
                   "border-transparent"
                 ),
-            "peer bg-transparent py-2 transition-all flex items-center font-medium text-lg border-b-2"
+            "peer group bg-transparent py-2 transition-all flex items-center font-medium text-lg border-b-2"
           )}
           href={to}
         >
           {primary}
           <span className="ml-2 text-3xl lg:h-[28px]">
-            <MdKeyboardArrowDown />
+            <MdKeyboardArrowDown className="group-hover:rotate-180 transition-all" />
           </span>
         </a>
         <div
@@ -119,15 +121,15 @@ function NavButton(props) {
         path === to
           ? classNames(
               scrollPosition > 0
-                ? "text-red-logo lg:border-red-logo border-transparent"
-                : "text-blue-light lg:text-yellow-logo lg:border-yellow-logo border-transparent"
+                ? "text-red-secondary lg:border-red-secondary border-transparent"
+                : "text-red-secondary lg:text-yellow-logo lg:border-yellow-logo border-transparent"
             )
           : classNames(
               scrollPosition > 0
-                ? "lg:text-blue-primary text-white border-transparent lg:hover:border-blue-primary"
-                : "text-white border-transparent lg:hover:border-blue-secondary"
+                ? "text-blue-primary border-transparent lg:hover:border-blue-primary"
+                : "lg:text-white text-blue-primary border-transparent lg:hover:border-blue-secondary"
             ),
-        "py-2 lg:mx-2 transition-all duration-300 flex items-center font-medium text-lg border-b-2"
+        "py-2 lg:mx-2 mx-4 transition-all duration-300 flex items-center font-medium text-lg border-b-2"
       )}
       aria-current="page"
       href={to}

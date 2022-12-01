@@ -1,36 +1,14 @@
 [
     {
-        "Name": "Forest Urgent Care LIC and Forest Hills",
-        "Address": "112-01 75th Ave",
-        "City": "Queens",
-        "State": "NY",
-        "Zip": "11375",
-        "Country": "United States",
-        "Phone": "+17182686808",
-        "Email": "",
-        "Img": ""
-    },
-    {
-        "Name": "Forest Urgent Care LIC and Forest Hills",
-        "Address": "10-11 49th Ave",
-        "City": "Queens",
-        "State": "NY",
-        "Zip": "11101",
-        "Country": "United States",
-        "Phone": "+13473185488",
-        "Email": "",
-        "Img": ""
-    },
-    {
-        "Name": "QCare HQ",
-        "Address": "143 W 72nd St",
+        "Name": "QCARE MOBILE 01",
+        "Address": "170 W 97th St",
         "City": "Manhattan",
         "State": "NY",
-        "Zip": "10023",
+        "Zip": "10025",
         "Country": "United States",
         "Phone": "+18777227318",
-        "Email": "",
-        "Img": ""
+        "Email": "helpdesk@qcare.com",
+        "Link": "https://www.solvhealth.com/book-online/gw85Kd"
     },
     {
         "Name": "Bronx Park Urgent Medical Care",
@@ -40,7 +18,7 @@
         "Zip": "10462",
         "Country": "United States",
         "Phone": "+17189189676",
-        "Email": "",
-        "Img": ""
+        "Email": "info@bronxparkumc.com",
+        "Link": "https://www.solvhealth.com/book-online/A9dka0"
     }
 ]

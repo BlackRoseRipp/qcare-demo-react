@@ -34,11 +34,11 @@ function StoreList(props) {
     <div>
       <input
         type="search"
-        className="w-full rounded-full border border-blue-light px-3 py-1.5 outline-blue-light outline-offset-2 focus-visible:!outline-4 transition-all"
+        className="w-full rounded-xl border border-blue-light px-3 py-1.5 outline-blue-secondary outline-offset-2 focus-visible:!outline-4 transition-all"
         placeholder="Find a location"
         onChange={filterLocations}
       />
-      <div className="scrollbar overflow-y-auto bg-white h-[630px] p-4 rounded-[2rem] border border-blue-light mt-8">
+      <div className="scrollbar overflow-y-auto bg-white h-[630px] p-4 rounded-xl border border-blue-light mt-8">
         {filteredLocations.map((location, index) => {
           const doEmail = location.Email !== "" ? true : false;
           const doPhone = location.Phone !== "" ? true : false;
@@ -46,31 +46,47 @@ function StoreList(props) {
           return (
             <div className="mt-4">
               <div className="ps-2 text-center lg:text-start">
-                <h5 className="font-semibold text-blue-900 text-lg">
+                <h5 className="heading font-medium text-blue-logo-primary text-lg">
                   {location.Name}{" "}
                 </h5>
-                <p className="text-blue-dark font-medium">
-                  {location.Address},
-                </p>
-                <p className="text-blue-dark font-medium">
+                <p className="text-blue-primary">{location.Address},</p>
+                <p className="text-blue-primary">
                   {location.City} {location.State} {location.Zip}
                 </p>
-                <p className="text-blue-dark font-medium">{location.Country}</p>
+                <p className="text-blue-primary">{location.Country}</p>
                 <div className="my-4 text-center">
                   <a
-                    className="btn-primary text-blue-dark font-semibold border-2 border-blue-dark hover:text-white hover:bg-blue-light hover:border-blue-light"
-                    href={"tel:" + location.Phone}
-                    style={{ display: doPhone ? "inline" : "none" }}
+                    className="btn-primary text-blue-primary font-medium border-2 border-blue-primary hover:text-red-secondary hover:bg-blue-light hover:border-red-secondary"
+                    href={location.Link}
+                    style={{ display: doPhone ? "block" : "none" }}
+                    target="_blank"
+                    rel="noreferrer noopener"
                   >
-                    Call this location
+                    Available Times
                   </a>
-                  <a
-                    className="btn-primary text-blue-dark font-semibold border-2 border-blue-dark hover:text-white hover:bg-blue-light hover:border-blue-light"
-                    href={"mailto:" + location.Email}
-                    style={{ display: doEmail ? "inline" : "none" }}
+                  <div
+                    className={
+                      "mt-2" +
+                      (doPhone && doEmail
+                        ? " grid sm:grid-cols-2 gap-2"
+                        : " text-center")
+                    }
                   >
-                    {location.Email}
-                  </a>
+                    <a
+                      className="btn-primary text-blue-primary font-medium border-2 border-blue-primary hover:text-red-secondary hover:bg-blue-light hover:border-red-secondary"
+                      href={"tel:" + location.Phone}
+                      style={{ display: doPhone ? "block" : "none" }}
+                    >
+                      Call this location
+                    </a>
+                    <a
+                      className="btn-primary text-blue-primary font-medium border-2 border-blue-primary hover:text-red-secondary hover:bg-blue-light hover:border-red-secondary"
+                      href={"mailto:" + location.Email}
+                      style={{ display: doEmail ? "block" : "none" }}
+                    >
+                      Email Us
+                    </a>
+                  </div>
                 </div>
               </div>
               <hr
