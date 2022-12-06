@@ -53,25 +53,25 @@ const PlanYourVisit = () => {
                 Here’s what you need to bring:
               </p>
               <div className="flex items-center my-3">
-                <BsCheck2Circle className="text-blue-logo-secondary text-2xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-2xl mr-2" />
                 <p className="text-blue-primary font-medium">
                   Driver’s license or photo ID
                 </p>
               </div>
               <div className="flex items-center my-3">
-                <BsCheck2Circle className="text-blue-logo-secondary text-2xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-2xl mr-2" />
                 <p className="text-blue-primary font-medium">
                   Insurance information
                 </p>
               </div>
               <div className="flex items-center my-3">
-                <BsCheck2Circle className="text-blue-logo-secondary text-2xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-2xl mr-2" />
                 <p className="text-blue-primary font-medium">
                   Payment for co-pay or self pay
                 </p>
               </div>
               <div className="flex items-center my-3">
-                <BsCheck2Circle className="text-blue-logo-secondary text-2xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-2xl mr-2" />
                 <p className="text-blue-primary font-medium">
                   Updated list of medications, allergies and past surgeries
                 </p>

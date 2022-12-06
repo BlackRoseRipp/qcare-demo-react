@@ -249,7 +249,7 @@ const Services = () => {
             <div className="my-12 border-2 border-blue-primary rounded-xl p-4 bg-white grid lg:grid-cols-3 md:grid-cols-2 gap-4 w-3/4 mx-auto">
               {services.map((service) => (
                 <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                  <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                  <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                   <h5 className="text text-blue-secondary">{service}</h5>
                 </div>
               ))}
@@ -301,7 +301,7 @@ const Services = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {tests.map((test) => (
                     <div className="flex items-center justify-start hover:-translate-y-1 transition-all cursor-pointer">
-                      <BsCheck2Circle className="text-2xl text-blue-logo-secondary min-w-fit mr-2" />
+                      <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                       <h5 className="text-blue-secondary">{test}</h5>
                     </div>
                   ))}

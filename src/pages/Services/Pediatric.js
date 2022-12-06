@@ -94,23 +94,23 @@ const Pediatric = () => {
                 look at your child’s:
               </p>
               <div className="flex items-center lg:justify-start justify-center my-2 w-full">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Growth & Development
                 </p>
               </div>
               <div className="flex items-center lg:justify-start justify-center my-2 w-full">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Vision & Hearing
                 </p>
               </div>
               <div className="flex items-center lg:justify-start justify-center my-2 w-full">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Behavior</p>
               </div>
               <div className="flex items-center lg:justify-start justify-center my-2 w-full">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Immunization Status
                 </p>
@@ -147,31 +147,31 @@ const Pediatric = () => {
                 At Qcare, we can help children with the following:
               </p>
               <div className="flex items-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">X-Rays</p>
               </div>
               <div className="flex items-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Stitches</p>
               </div>
               <div className="flex items-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Rapid Strep
                 </p>
               </div>
               <div className="flex items-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Flu Tests</p>
               </div>
               <div className="flex items-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   COVID-19 Testing
                 </p>
               </div>
               <div className="flex items-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Mononucleosis testing
                 </p>
@@ -210,47 +210,47 @@ const Pediatric = () => {
             </p>
             <div className="border-2 rounded-xl border-blue-primary bg-white p-4 md:w-1/2 w-5/6 mx-auto mt-12 grid lg:grid-cols-2 gap-4">
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Fever</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Cough</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Sore Throat</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Ear Infection</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Nausea, vomiting, & diarrhea
                 </h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Allergies & Asthma</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Pink eye</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Minor cuts, scrapes, or burns
                 </h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Broken bones or sprains</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Foreign body removal</h5>
               </div>
             </div>

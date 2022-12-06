@@ -128,43 +128,43 @@ const Vaccines = () => {
                 At Qcare, we offer vaccines to protect against:
               </p>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Chickenpox</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   MMR (measles, mumps, rubella)
                 </h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Tdap (tetanus, diptheria, pertussis)
                 </h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Meningitis</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Flu</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">COVID-19</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Hepatitis A & B</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">HPV</h5>
               </div>
               <div className="flex items-center justify-start hover:-translate-y-1 transition-all w-fit cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Shingles</h5>
               </div>
             </div>

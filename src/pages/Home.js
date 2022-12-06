@@ -13,6 +13,7 @@ import {
 import { CiLocationOn } from "react-icons/ci";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { IoIosMedical } from "react-icons/io";
+import { LazyLoadingImage } from "react-lazy-load-image-component";
 import BlogSlider from "../components/BlogSlider/BlogSlider";
 import Data from "../components/Locations/Data";
 import StoreLocator from "../components/Locations/StoreLocator";
@@ -355,35 +356,35 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary " />
                   <p className="text-blue-primary ml-2 w-fit">
                     Quick, contactless sign in through our app or location
                     kiosks
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary " />
                   <p className="text-blue-primary ml-2 w-fit">
                     Location-based hours from the early morning to the late
                     evening and weekends too
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary " />
                   <p className="text-blue-primary ml-2 w-fit">
                     Board-certified physicians, nurse practitioners, physician
                     assistants and nurses
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary " />
                   <p className="text-blue-primary ml-2 w-fit">
                     Personalized, comprehensive care from a friendly provider
                     you know, thanks to our low staff turnover
                   </p>
                 </div>
                 <div className="flex items-center my-1">
-                  <BsCheck2Circle className="text-lg text-blue-logo-secondary min-w-fit" />
+                  <BsCheck2Circle className="text-lg text-blue-logo-secondary " />
                   <p className="text-blue-primary ml-2 w-fit">
                     Fast and reliable lab test results, usually within 24 hours
                   </p>

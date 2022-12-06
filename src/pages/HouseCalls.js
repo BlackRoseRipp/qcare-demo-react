@@ -40,23 +40,23 @@ const HouseCalls = () => {
           <div className="mt-12 border-2 rounded-xl bg-white border-blue-primary sm:px-16 px-8 py-8 w-fit mx-auto">
             <div className="flex flex-col items-start justify-center w-fit mx-auto">
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Easy scheduling</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Real time dispatch updates
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Follow up support on our Qcare app
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Doctor messaging on our app
                 </h5>
@@ -153,55 +153,55 @@ const HouseCalls = () => {
           <div className="mt-12 border-2 rounded-xl bg-white border-blue-primary sm:px-16 px-8 py-8 w-fit mx-auto">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Primary or routine care</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Urgent care</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Cuts, wounds, minor burns or rashes
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Ear, nose and throat</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Flu and cold symptoms</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Sinus infections</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Allergies and asthma</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Headaches</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Nausea and vomiting</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Fever</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Urinary tract infections
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   STI (sexually transmitted infections) testing
                 </h5>
@@ -222,31 +222,31 @@ const HouseCalls = () => {
             </p>
             <div className="flex flex-col items-start justify-center w-fit mx-auto mt-12">
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-red-primary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-red-primary mr-2" />
                 <h5 className="text-red-secondary font-medium text-lg">
                   Chest pain
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-red-primary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-red-primary mr-2" />
                 <h5 className="text-red-secondary font-medium text-lg">
                   Difficulty breathing
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-red-primary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-red-primary mr-2" />
                 <h5 className="text-red-secondary font-medium text-lg">
                   Uncontrolled bleeding
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-red-primary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-red-primary mr-2" />
                 <h5 className="text-red-secondary font-medium text-lg">
                   Medication overdose
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <IoIosMedical className="text-2xl text-red-primary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-red-primary mr-2" />
                 <h5 className="text-red-secondary font-medium text-lg">
                   A serious head injury
                 </h5>
@@ -292,31 +292,31 @@ const HouseCalls = () => {
             </p>
             <div className="flex flex-col items-start justify-center w-fit mx-auto lg:mx-0 lg:ml-2 mt-8 lg:mt-0">
               <div className="flex items-center my-2">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Convenient appointment times
                 </h5>
               </div>
               <div className="flex items-center my-2">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Unparalleled professionalism
                 </h5>
               </div>
               <div className="flex items-center my-2">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Knowledgeable staff</h5>
               </div>
               <div className="flex items-center my-2">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Patient, caring team</h5>
               </div>
               <div className="flex items-center my-2">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Rapid response</h5>
               </div>
               <div className="flex items-center my-2">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Reliable results</h5>
               </div>
             </div>
@@ -326,19 +326,19 @@ const HouseCalls = () => {
               </h4>
               <div className="flex flex-col items-start justify-center w-fit mx-auto lg:mx-0 lg:ml-2  mt-8">
                 <div className="flex items-center my-2">
-                  <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                  <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                   <h5 className="text-blue-secondary">
                     Aren’t able to leave home
                   </h5>
                 </div>
                 <div className="flex items-center my-2">
-                  <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                  <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                   <h5 className="text-blue-secondary">
                     Were recently released from the hospital
                   </h5>
                 </div>
                 <div className="flex items-center my-2">
-                  <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                  <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                   <h5 className="text-blue-secondary">
                     Have a chronic condition
                   </h5>

@@ -57,31 +57,31 @@ const Wellness = () => {
                 may catch your risk for developing illnesses like:
               </p>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Health history
                 </p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Medications
                 </p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Immunizations
                 </p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Blood pressure
                 </p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Weight</p>
               </div>
             </div>
@@ -112,21 +112,21 @@ const Wellness = () => {
                 may catch your risk for developing illnesses like:
               </p>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Diabetes</p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Heart disease
                 </p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Stroke</p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Cancer</p>
               </div>
             </div>

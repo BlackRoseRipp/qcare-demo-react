@@ -63,21 +63,21 @@ const Allergies = () => {
                 </p>
                 <div className="flex flex-col items-start justify- mt-4 w-fit mx-auto">
                   <div className="flex items-center my-2">
-                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
+                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2" />
                     <h5 className="text-blue-secondary text-lg">Sneezing</h5>
                   </div>
                   <div className="flex items-center my-2">
-                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
+                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2" />
                     <h5 className="text-blue-secondary text-lg">Coughing</h5>
                   </div>
                   <div className="flex items-center my-2">
-                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
+                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2" />
                     <h5 className="text-blue-secondary text-lg">
                       Itchy throat
                     </h5>
                   </div>
                   <div className="flex items-center my-2">
-                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
+                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2" />
                     <h5 className="text-blue-secondary text-lg">
                       Puffy, red, or watery eyes
                     </h5>
@@ -103,23 +103,23 @@ const Allergies = () => {
                 </p>
                 <div className="flex flex-col items-start justify- mt-4 w-fit mx-auto">
                   <div className="flex items-center my-2">
-                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
+                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2" />
                     <h5 className="text-blue-secondary text-lg">Wheezing</h5>
                   </div>
                   <div className="flex items-center my-2">
-                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
+                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2" />
                     <h5 className="text-blue-secondary text-lg">
                       Difficulty breathing
                     </h5>
                   </div>
                   <div className="flex items-center my-2">
-                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
+                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2" />
                     <h5 className="text-blue-secondary text-lg">
                       Chest tightness
                     </h5>
                   </div>
                   <div className="flex items-center my-2">
-                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2 min-w-fit" />
+                    <IoIosMedical className="text-3xl text-blue-logo-secondary mr-2" />
                     <h5 className="text-blue-secondary text-lg">
                       Excessive coughing
                     </h5>
@@ -209,25 +209,25 @@ const Allergies = () => {
                 Our providers may prescribe:
               </p>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Daily allergy pills
                 </p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Asthma inhalers
                 </p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Nebulizer treatments
                 </p>
               </div>
               <div className="flex item-center my-2">
-                <BsCheck2Circle className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <BsCheck2Circle className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Epi-pens</p>
               </div>
             </div>

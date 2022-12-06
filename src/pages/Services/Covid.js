@@ -44,27 +44,27 @@ const Covid = () => {
           <div className="mt-12 border-2 rounded-xl bg-white border-blue-primary sm:px-16 px-8 py-8 w-fit mx-auto">
             <div className="flex flex-col items-start justify-center w-fit mx-auto">
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   COVID-19 Rapid Antigen Test
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   COVID-19 Antibody Testing (IgG/IgM)
                 </h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">COVID-19 PCR Testing</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">Immune Booster shot</h5>
               </div>
               <div className="flex items-center my-2 hover:-translate-y-1 transition-all cursor-pointer">
-                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2 min-w-fit" />
+                <BsCheck2Circle className="text-2xl text-blue-logo-secondary mr-2" />
                 <h5 className="text-blue-secondary">
                   Monoclonal Antibody Treatment
                 </h5>
@@ -238,61 +238,61 @@ const Covid = () => {
             </p>
             <div className="flex flex-col items-start justify-center w-fit md:mx-0 mx-auto">
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Fever or chills
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Cough</p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Headache</p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Sore throat
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Shortness of breath
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Difficulty breathing
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">Fatigue</p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Muscle or body aches
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   New loss of taste or smell
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   New loss of taste or smell
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Nausea, vomiting, or diarrhea
                 </p>
@@ -313,31 +313,31 @@ const Covid = () => {
             </p>
             <div className="flex flex-col items-start justify-center w-fit md:mx-0 mx-auto">
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Difficulty breathing
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Persistent pain or pressure in the chest
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   New confusion
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Loss of consciousness
                 </p>
               </div>
               <div className="flex items-center md:justify-start justify-center my-2 w-full">
-                <IoIosMedical className="text-blue-logo-secondary text-xl min-w-fit mr-2" />
+                <IoIosMedical className="text-blue-logo-secondary text-xl mr-2" />
                 <p className="text-blue-logo-primary font-medium">
                   Pale, gray, or blue-colored skin, lips, or nail beds
                 </p>
