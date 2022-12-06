@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BiClinic } from "react-icons/bi";
 import {
   BsArrowDown,
@@ -13,11 +14,14 @@ import {
 import { CiLocationOn } from "react-icons/ci";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import { IoIosMedical } from "react-icons/io";
-import { LazyLoadingImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import BlogSlider from "../components/BlogSlider/BlogSlider";
 import Data from "../components/Locations/Data";
 import StoreLocator from "../components/Locations/StoreLocator";
 import useWindowSize from "../hooks/useWindowSize";
+import LabTechniciansImg from "../img/pexels-edward-jenner-4031321.jpg";
+import OfficeWorkImg from "../img/pexels-karolina-grabowska-5387256.jpg";
+import BrooklynWalkingImg from "../img/walk-by-nyc.jpg";
 
 export default function Home() {
   const size = useWindowSize();
@@ -27,7 +31,7 @@ export default function Home() {
       <main>
         <div className="banner bg-blue-primary">
           <div className="bg-[url(../public/img/doctor-with-stethoscope-hands-hospital-background-3.png)] bg-right bg-no-repeat bg-cover lg:bg-contain pb-16">
-            <div className="container mx-auto lg:bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] lg:bg-left bg-center bg-no-repeat bg-contain py-36">
+            <div className="container mx-auto lg:bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] lg:bg-left bg-center bg-no-repeat bg-contain py-4 lg:py-36">
               <div className="py-32 flex flex-col justify-center lg:w-1/2">
                 <h1 className="heading lg:text-white text-blue-primary text-6xl font-semibold lg:text-start text-center">
                   Quick care everywhere.
@@ -115,17 +119,23 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container mx-auto py-48">
+        <div className="container mx-auto py-24 lg:py-48">
           <div className="grid lg:grid-cols-2 gap-8">
             <div className="flex items-center justify-center">
-              <img
-                src="img/walk-by-nyc.jpg"
-                className="w-3/4 mx-auto rounded-xl"
-                alt="Brooklyn Man Walking"
-              />
+              <AnimationOnScroll
+                animateIn="animate__fadeInLeft"
+                animateOnce="true"
+              >
+                <div className="w-3/4 mx-auto rounded-xl overflow-hidden">
+                  <LazyLoadImage
+                    src={BrooklynWalkingImg}
+                    alt="Brooklyn Man Walking"
+                  />
+                </div>
+              </AnimationOnScroll>
             </div>
             <div className="flex flex-col justify-evenly items-start">
-              <h2 className="text-5xl font-medium text-blue-primary heading lg:mx-0 mx-auto lg:text-start text-center">
+              <h2 className="text-2xl lg:text-5xl font-medium text-blue-primary heading lg:px-0 lg:mx-0 px-4 mx-auto lg:text-start text-center">
                 Say hello when you walk by,
                 <br />
                 Stop by when you need us
@@ -156,7 +166,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <h2 className="mt-56 text-5xl text-blue-logo-primary font-medium heading text-center">
+          <h2 className="lg:mt-56 mt-36 text-3xl lg:text-5xl text-blue-logo-primary font-medium heading text-center">
             The doctor is in
           </h2>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:w-3/4 mx-auto mt-16">
@@ -232,14 +242,14 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="bg-blue-secondary/10 py-16">
-          <div className="relative py-24 overflow-hidden bg-[url(../public/img/patterns/Q-logo-pattern.svg)] bg-center bg-no-repeat bg-contain">
-            <h2 className="text-blue-primary heading text-5xl text-center font-semibold">
+        <div className="bg-blue-secondary/10 lg:py-16 py-8">
+          <div className="relative lg:py-24 py-12 overflow-hidden bg-[url(../public/img/patterns/Q-logo-pattern.svg)] bg-center bg-no-repeat bg-contain">
+            <h2 className="text-blue-primary heading text-3xl lg:text-5xl text-center font-semibold px-4 lg:px-0">
               Customizable healthcare
               <br /> when and where you need it most
             </h2>
-            <div className="flex sm:flex-row flex-col items-center justify-center mt-32 w-5/6 mx-auto">
-              <div className="flex flex-col items-center justify-start mx-4 w-2/5">
+            <div className="flex sm:flex-row flex-col items-center justify-center lg:mt-32 mt-16 w-5/6 mx-auto">
+              <div className="flex flex-col items-center justify-start mx-4 w-4/5 lg:w-2/5">
                 <BsClipboardCheck className="text-blue-logo-primary text-7xl" />
                 <h5 className="text-blue-primary text-2xl text-center font-medium mt-6">
                   Register Once with Qcare
@@ -249,7 +259,7 @@ export default function Home() {
                 <BsArrowRight className="text-blue-primary text-7xl hidden sm:block" />
                 <BsArrowDown className="text-blue-primary text-7xl sm:hidden block my-4" />
               </div>
-              <div className="flex flex-col items-center justify-start mx-4 w-2/5">
+              <div className="flex flex-col items-center justify-start mx-4 w-4/5 lg:w-2/5">
                 <CiLocationOn className="text-blue-logo-primary text-7xl" />
                 <h5 className="text-blue-primary text-2xl text-center font-medium mt-6">
                   Select your convenient point of service
@@ -259,14 +269,14 @@ export default function Home() {
                 <BsArrowRight className="text-blue-primary text-7xl hidden sm:block" />
                 <BsArrowDown className="text-blue-primary text-7xl sm:hidden block my-4" />
               </div>
-              <div className="flex flex-col items-center justify-start mx-4 w-2/5">
+              <div className="flex flex-col items-center justify-start mx-4 w-4/5 lg:w-2/5">
                 <FaHandHoldingHeart className="text-blue-logo-primary text-7xl" />
                 <h5 className="text-blue-primary text-2xl text-center font-medium mt-6">
                   Access Care
                 </h5>
               </div>
             </div>
-            <div className="rounded-xl bg-white border-2 border-blue-logo-primary px-8 py-6 mb-12 mt-32 w-fit mx-auto">
+            <div className="rounded-xl bg-white border-2 border-blue-logo-primary px-8 py-6 mb-12 mt-12 lg:mt-32 w-fit mx-auto">
               <h5 className="text-blue-logo-primary heading uppercase text-sm text-center font-medium">
                 Our Services
               </h5>
@@ -335,17 +345,23 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container lg:w-3/4 mx-auto py-32">
+        <div className="container lg:w-3/4 mx-auto lg:py-32 py-16">
           <div className="grid lg:grid-cols-2 gap-x-12 gap-y-24">
             <div className="flex items-center justify-center lg:order-1 order-2 lg:w-full w-1/2 mx-auto">
-              <img
-                src="img/pexels-edward-jenner-4031321.jpg"
-                className="w-full rounded-xl"
-                alt="Lab Technicians"
-              />
+              <AnimationOnScroll
+                animateIn="animate__fadeInLeft"
+                animateOnce="true"
+              >
+                <div className="w-full rounded-xl overflow-hidden">
+                  <LazyLoadImage
+                    src={LabTechniciansImg}
+                    alt="Lab Technicians"
+                  />
+                </div>
+              </AnimationOnScroll>
             </div>
             <div className="flex flex-col justify-evenly lg:order-2 order-1 items-center lg:items-start">
-              <h2 className="text-4xl text-blue-primary font-medium md:text-start text-center">
+              <h2 className="text-2xl lg:text-4xl lg:mb-0 mb-8 text-blue-primary font-medium md:text-start text-center">
                 Quick registration, Quick testing, Quick results
               </h2>
               <div className="flex flex-col justify-center ml-8">
@@ -417,41 +433,51 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-center order-4 lg:w-full w-1/2 mx-auto">
-              <img
-                src="img/pexels-karolina-grabowska-5387256.jpg"
-                className="w-full rounded-xl"
-                alt="Office Work"
-              />
+              <AnimationOnScroll
+                animateIn="animate__fadeInRight"
+                animateOnce="true"
+              >
+                <div className="w-full rounded-xl overflow-hidden">
+                  <LazyLoadImage src={OfficeWorkImg} alt="Office Work" />
+                </div>
+              </AnimationOnScroll>
             </div>
           </div>
         </div>
-        <div className="bg-blue-logo-primary/10 py-32">
+        <div className="bg-blue-logo-primary/10 py-16 lg:py-32">
           <div className="container mx-auto">
-            <h2 className="heading text-5xl text-blue-primary font-semibold text-center">
+            <h2 className="heading text-3xl lg:text-5xl text-blue-primary font-semibold text-center">
               Meeting New York patients wherever you are!
             </h2>
             <div className="mt-16">
-              <StoreLocator
-                locations={Data()}
-                src="https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F"
-              />
+              <AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+                <StoreLocator
+                  locations={Data()}
+                  src="https://www.google.com/maps/d/u/1/embed?mid=1xwRDy-mAHVhayzNjSXDYxrHLbUckrFM&ehbc=2E312F"
+                />
+              </AnimationOnScroll>
             </div>
           </div>
         </div>
-        <div className="container mx-auto py-32">
-          <div className="grid lg:grid-cols-2 gap-12">
+        <div className="container mx-auto py-16 lg:py-32">
+          <div className="grid lg:grid-cols-2 gap-x-12">
             <div className="flex flex-col justify-center items-start">
-              <h1 className="text-blue-primary heading text-5xl font-semibold md:text-start text-center">
+              <h1 className="text-blue-primary heading text-3xl lg:text-5xl font-semibold md:text-start text-center px-4 lg:px-0">
                 Stay on top of your health and wellness
               </h1>
-              <p className="text-blue-secondary font-medium mt-16 md:text-start text-center">
+              <p className="text-blue-secondary font-medium mt-16 md:text-start text-center px-4 lg:px-0">
                 Check out these wellness tips and the research that backs them
                 up to better understand how to optimize your health and
                 nutrition.
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <BlogSlider />
+              <AnimationOnScroll
+                animateIn="animate__fadeInRight"
+                animateOnce="true"
+              >
+                <BlogSlider />
+              </AnimationOnScroll>
             </div>
           </div>
         </div>
