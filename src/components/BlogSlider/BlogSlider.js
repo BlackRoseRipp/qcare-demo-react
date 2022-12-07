@@ -53,7 +53,7 @@ const BlogSlider = () => {
             >
               <a
                 href={"/blog/" + blog.id}
-                className="w-5/6 mx-auto h-[550px] flex flex-col rounded-xl shadow-md hover:shadow-xl overflow-hidden"
+                className="w-5/6 mx-auto h-[530px] flex flex-col rounded-xl shadow-md hover:shadow-xl overflow-hidden"
               >
                 <img src={blog.image} className="w-full" alt="blog_1" />
                 <div className="px-6 py-4">
