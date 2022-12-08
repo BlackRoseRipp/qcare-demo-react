@@ -30,7 +30,7 @@ export default function Home() {
     <Fragment>
       <main>
         <div className="banner bg-blue-primary">
-          <div className="bg-[url(../public/img/doctor-with-stethoscope-hands-hospital-background-3.png)] bg-right bg-no-repeat bg-cover lg:bg-contain pb-16">
+          <div className="lg:bg-[url(../public/img/doctor-with-stethoscope-hands-hospital-background-3.png)] bg-[url(../public/img/doctor-with-stethoscope-hands-hospital-background-mobile.png)] bg-right bg-no-repeat bg-cover lg:bg-contain pb-16">
             <div className="container mx-auto lg:bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] lg:bg-left bg-center bg-no-repeat bg-contain py-4 lg:py-36">
               <div className="py-32 flex flex-col justify-center lg:w-1/2">
                 <h1 className="heading lg:text-white text-blue-primary text-6xl font-semibold lg:text-start text-center">
