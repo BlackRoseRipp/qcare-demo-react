@@ -19,9 +19,9 @@ import BlogSlider from "../components/BlogSlider/BlogSlider";
 import Data from "../components/Locations/Data";
 import StoreLocator from "../components/Locations/StoreLocator";
 import useWindowSize from "../hooks/useWindowSize";
-import LabTechniciansImg from "../img/pexels-edward-jenner-4031321.jpg";
-import OfficeWorkImg from "../img/pexels-karolina-grabowska-5387256.jpg";
-import BrooklynWalkingImg from "../img/walk-by-nyc.jpg";
+import LabTechniciansImg from "../img/compressed-files/pexels-edward-jenner-4031321-min.jpg";
+import OfficeWorkImg from "../img/compressed-files/pexels-karolina-grabowska-5387256-min.jpg";
+import BrooklynWalkingImg from "../img/compressed-files/walk-by-nyc-min.jpg";
 
 export default function Home() {
   const size = useWindowSize();
@@ -30,7 +30,7 @@ export default function Home() {
     <Fragment>
       <main>
         <div className="banner bg-blue-primary">
-          <div className="lg:bg-[url(../public/img/doctor-with-stethoscope-hands-hospital-background-3.png)] bg-[url(../public/img/doctor-with-stethoscope-hands-hospital-background-mobile.png)] bg-right bg-no-repeat bg-cover lg:bg-contain pb-16">
+          <div className="lg:bg-[url(../public/img/compressed-files/doctor-with-stethoscope-hands-hospital-background-3-min.webp)] bg-[url(../public/img/compressed-files/doctor-with-stethoscope-hands-ho.jpg)] bg-right bg-no-repeat bg-cover lg:bg-contain pb-16">
             <div className="container mx-auto lg:bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] lg:bg-left bg-center bg-no-repeat bg-contain py-4 lg:py-36">
               <div className="py-32 flex flex-col justify-center lg:w-1/2">
                 <h1 className="heading lg:text-white text-blue-primary text-6xl font-semibold lg:text-start text-center">
