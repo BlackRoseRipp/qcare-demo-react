@@ -114,6 +114,10 @@ const Navbar = () => {
                         primary: "Vaccinations",
                       },
                       {
+                        to: "/injuries",
+                        primary: "Injuries",
+                      },
+                      {
                         to: "/nyc-urgent-care-services",
                         primary: "All Testing Services",
                       },
@@ -197,6 +201,10 @@ const Navbar = () => {
                       {
                         to: "/vaccines",
                         primary: "Vaccinations",
+                      },
+                      {
+                        to: "/injuries",
+                        primary: "Injuries",
                       },
                     ]}
                   />

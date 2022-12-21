@@ -18,7 +18,7 @@ const Pediatric = () => {
               </h3>
               <div className="mt-12 text-center w-full">
                 <a
-                  href="#"
+                  href="/locations"
                   className="btn-primary border-2 border-yellow-logo text-white font-medium uppercase hover:bg-yellow-logo hidden md:inline"
                 >
                   Schedule an Appointment for Your Child
