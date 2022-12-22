@@ -1,13 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply scroll-smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.underline-animation,
+.blog-content a {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-animation::after,
+.blog-content a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+}
+
+.underline-animation:hover::after,
+.blog-content a:hover::after {
+  transform: scaleX(1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.heading {
+  font-family: "Raleway", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.banner {
+  padding-top: 92px;
+}
+
+.btn-primary {
+  @apply py-3 px-6 rounded-full transition-all duration-300;
+}
+
+.carousel-indicators {
+  @apply rounded-full w-fit mx-auto p-2 absolute right-0 bottom-0 left-0 flex justify-center items-center mb-2;
+}
+
+.carousel-indicators [data-bs-target] {
+  @apply border-2;
+}
+
+.img-standard {
+  @apply w-5/6 mx-auto rounded-2xl;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  @apply w-max flex items-center justify-center p-0 text-center border-0;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  @apply opacity-90;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+  @apply outline-none no-underline;
+}
+
+.scrollbar::-webkit-scrollbar {
+  @apply w-2;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 3rem;
+  border: 2px solid white;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 0.4rem;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 0.4rem;
+}
+
+.collapse.show {
+  visibility: visible !important;
+}
+
+.blog-content p {
+  @apply text-blue-primary mb-4
+}
+
+.blog-content h2 {
+  @apply text-4xl font-semibold text-blue-logo-primary mb-4 mt-8
+}
+
+.blog-content h3 {
+  @apply text-2xl font-medium text-blue-secondary my-4
+}
+
+.blog-content ul {
+  @apply list-disc ml-8
+}
+
+.blog-content a {
+  @apply text-blue-logo-primary
+}
+
+.blog-content a:hover {
+  @apply text-blue-logo-secondary
+}
+
+.blog-content a::after {
+  @apply bg-blue-logo-secondary
+}
+
+.blog-content img {
+  @apply w-3/4 mx-auto
+}
+
+#houseCallAccordion .accordion-button:not(.collapsed) {
+  @apply text-blue-logo-secondary;
+}
+
+.form-input {
+  @apply mb-4 px-4 py-2 border border-transparent border-b-2 border-b-slate-400 transition-all;
+}
+
+.form-input:hover,
+.form-input:focus-within {
+  @apply border-slate-400;
+}
+
+.form-input:focus-within {
+  @apply outline-none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white;
+    color: black
+  }
+
+  input {
+    background: white;
+  }
+
+  textarea {
+    background: white;
+  }
 }

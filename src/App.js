@@ -1,14 +1,17 @@
-import './App.css';
-import React, { Fragment } from "react";
-import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from "react-router-dom";
-import SiteWrapper from "./components/SiteWrapper"
+import { Fragment } from "react";
+import { BrowserRouter } from "react-router-dom";
+import "tw-elements";
+import "./App.css";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
-    return (
-        <BrowserRouter>
-            <SiteWrapper />
-        </BrowserRouter>
-    )
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
 export default App;
