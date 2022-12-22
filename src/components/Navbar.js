@@ -56,8 +56,11 @@ const Navbar = () => {
           </button>
           <div
             className={classNames(
-              expanded ? "max-h-[605px] border-b" : "max-h-0",
-              "block lg:max-h-full w-full lg:w-auto transition-all duration-700 overflow-hidden lg:overflow-visible grow xl:mx-32 lg:border-0"
+              expanded ? "max-h-[740px] border-b" : "max-h-0",
+              size.height < 740
+                ? "overflow-y-scroll overflow-x-hidden"
+                : "overflow-hidden",
+              "block lg:max-h-full w-full lg:w-auto transition-all duration-700 lg:overflow-visible grow xl:mx-32 lg:border-0"
             )}
             id="navbar"
           >
@@ -116,7 +119,15 @@ const Navbar = () => {
                       {
                         to: "/injuries",
                         primary: "Injuries",
+                      } /* 
+                      {
+                        to: "/scrapes",
+                        primary: "Scrapes",
                       },
+                      {
+                        to: "/cold-&-flu",
+                        primary: "Cold & Flu",
+                      }, */,
                       {
                         to: "/nyc-urgent-care-services",
                         primary: "All Testing Services",
@@ -205,7 +216,15 @@ const Navbar = () => {
                       {
                         to: "/injuries",
                         primary: "Injuries",
+                      } /* 
+                      {
+                        to: "/scrapes",
+                        primary: "Scrapes",
                       },
+                      {
+                        to: "/cold-&-flu",
+                        primary: "Cold & Flu",
+                      }, */,
                     ]}
                   />
                 </li>

@@ -44,7 +44,12 @@ function NavButton(props) {
           aria-labelledby={"mobileHeader" + id}
           data-bs-parent="#mobileMenu"
         >
-          <div className="accordion-body flex flex-col py-4 px-5">
+          <div
+            className={classNames(
+              dropdownLinks.length > 6 ? "grid grid-cols-2" : "flex flex-col",
+              "accordion-body px-5"
+            )}
+          >
             {dropdownLinks.map((link) => {
               return (
                 <a
@@ -52,7 +57,7 @@ function NavButton(props) {
                     path === link.to
                       ? "text-red-secondary"
                       : "text-blue-primary",
-                    "p-2 transition-all text-lg font-medium"
+                    "p-2 transition-all font-medium"
                   )}
                   aria-current="page"
                   href={link.to}
@@ -91,7 +96,7 @@ function NavButton(props) {
         </a>
         <div
           className={
-            "block peer-hover:max-h-[300px] hover:max-h-[300px] mt-px max-h-0 w-max min-w-full bg-white drop-shadow-lg absolute rounded-b-lg z-50 transition-all duration-300 ease-linear overflow-hidden"
+            "block peer-hover:max-h-[380px] hover:max-h-[380px] mt-px max-h-0 w-max min-w-full bg-white drop-shadow-lg absolute rounded-b-lg z-50 transition-all duration-300 ease-linear overflow-hidden"
           }
         >
           <div className="flex flex-col p-2">
