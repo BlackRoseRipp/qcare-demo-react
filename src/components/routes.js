@@ -41,7 +41,7 @@ export const routes = () => {
     { path: "/covid-19", component: <Covid /> },
     { path: "/vaccines", component: <Vaccines /> },
     { path: "/injuries", component: <Injuries /> },
-    { path: "/scrapes", component: <Scrapes /> },
+    { path: "/scrapes-&-cuts", component: <Scrapes /> },
     { path: "/insurance", component: <Insurance /> },
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },
