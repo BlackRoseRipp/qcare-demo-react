@@ -119,11 +119,11 @@ const Navbar = () => {
                       {
                         to: "/injuries",
                         primary: "Injuries",
-                      } /* 
-                      {
-                        to: "/scrapes",
-                        primary: "Scrapes",
                       },
+                      {
+                        to: "/scrapes-&-cuts",
+                        primary: "Scrapes",
+                      } /* 
                       {
                         to: "/cold-&-flu",
                         primary: "Cold & Flu",
@@ -216,11 +216,11 @@ const Navbar = () => {
                       {
                         to: "/injuries",
                         primary: "Injuries",
-                      } /* 
-                      {
-                        to: "/scrapes",
-                        primary: "Scrapes",
                       },
+                      {
+                        to: "/scrapes-&-cuts",
+                        primary: "Scrapes",
+                      } /* 
                       {
                         to: "/cold-&-flu",
                         primary: "Cold & Flu",

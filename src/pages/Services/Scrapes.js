@@ -8,11 +8,11 @@ const Scrapes = () => {
       <div className="bg-[url(../public/img/compressed-files/pexels-rodnae-productions-652011.jpg)] bg-center bg-cover bg-no-repeat">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
-            <div className="container mx-auto py-56">
-              <h1 className="text-white heading font-semibold text-6xl text-center">
+            <div className="container mx-auto py-24 lg:py-56">
+              <h1 className="text-white heading font-semibold text-4xl lg:text-6xl text-center">
                 Sutures & Urgent Care
               </h1>
-              <h3 className="text-white text-2xl font-medium text-center mt-8">
+              <h3 className="text-white text-xl lg:text-2xl font-medium text-center mt-8">
                 Visit QCare mobile care units throughout New York City for all
                 your sutures, cuts, and scrapes needs.
               </h3>
@@ -30,7 +30,7 @@ const Scrapes = () => {
       </div>
       <div className="bg-blue-secondary/10">
         <div className="container mx-auto py-24">
-          <h4 className="text-blue-primary text-center font-medium text-2xl lg:w-2/3 w-5/6 mx-auto">
+          <h4 className="text-blue-primary text-center font-medium text-xl lg:text-2xl lg:w-2/3 w-5/6 mx-auto">
             By scheduling a visit at Qcare, we can determine if your cut or
             scrape will require sutures and provide the appropriate treatments
             to help you improve.
@@ -43,10 +43,10 @@ const Scrapes = () => {
         </div>
       </div>
       <div className="container mx-auto py-24">
-        <h2 className="text-4xl font-semibold text-center text-blue-primary">
+        <h2 className="text-2xl lg:text-4xl font-semibold text-center text-blue-primary">
           How Do You Care for Cuts and Scrapes?
         </h2>
-        <p className="text-blue-logo-primary text-xl text-center lg:w-2/3 w-5/6 mx-auto font-medium mt-8">
+        <p className="text-blue-logo-primary text-lg lg:text-xl text-center lg:w-2/3 w-5/6 mx-auto font-medium mt-8">
           There are different kinds of wounds, including: cuts, scrapes,
           scratches and punctured skin. The primary health risks of wounds are
           bleeding, infection and potential internal damage for deep wounds. Our
@@ -66,51 +66,53 @@ const Scrapes = () => {
               className="w-4/5 rounded-xl mx-auto"
             />
           </div>
-          <div className="flex flex-col justify-center items-start">
+          <div className="flex flex-col justify-center items-start lg:mx-0 mx-2">
             <div className="flex flex-col items-center lg:items-start justify-center">
-              <p className="text-lg text-blue-logo-primary text-center lg:text-start mb-4">
+              <p className="lg:text-lg text-blue-logo-primary text-center lg:text-start mb-4">
                 There are times you need to see a doctor for a cut or scrape.
                 Make an appointment at Qcare if:
               </p>
-              <div className="flex items-center justify-start w-fit my-1">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
-                <h5 className="text-blue-secondary text-lg">
-                  The cut bleeds a lot and won’t stop easily
-                </h5>
-              </div>
-              <div className="flex items-center justify-start w-fit my-1">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
-                <h5 className="text-blue-secondary text-lg">
-                  The wound is long, deep or wide
-                </h5>
-              </div>
-              <div className="flex items-center justify-start w-fit my-1">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
-                <h5 className="text-blue-secondary text-lg">
-                  Your cut or scrape is from a concerning bite
-                </h5>
-              </div>
-              <div className="flex items-center justify-start w-fit my-1">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
-                <h5 className="text-blue-secondary text-lg">
-                  You were cut or scraped by something rusty
-                </h5>
-              </div>
-              <div className="flex items-center justify-start w-fit my-1">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
-                <h5 className="text-blue-secondary text-lg">
-                  You thought a cut or scrape would heal on its own, but that’s
-                  not happening
-                </h5>
-              </div>
-              <div className="flex items-center justify-start w-fit my-1">
-                <IoIosMedical className="text-2xl text-blue-logo-secondary mr-2" />
-                <h5 className="text-blue-secondary text-lg">
-                  The cut is on your face, and you’re concerned about scarring
-                </h5>
+              <div className="flex flex-col justify-center items-start w-fit lg:mx-0 mx-auto">
+                <div className="flex items-center justify-start w-fit my-1">
+                  <IoIosMedical className="text-2xl text-blue-logo-secondary" />
+                  <h5 className="text-blue-secondary lg:text-lg ml-2 w-fit">
+                    The cut bleeds a lot and won’t stop easily
+                  </h5>
+                </div>
+                <div className="flex items-center justify-start w-fit my-1">
+                  <IoIosMedical className="text-2xl text-blue-logo-secondary" />
+                  <h5 className="text-blue-secondary lg:text-lg ml-2 w-fit">
+                    The wound is long, deep or wide
+                  </h5>
+                </div>
+                <div className="flex items-center justify-start w-fit my-1">
+                  <IoIosMedical className="text-2xl text-blue-logo-secondary" />
+                  <h5 className="text-blue-secondary lg:text-lg ml-2 w-fit">
+                    Your cut or scrape is from a concerning bite
+                  </h5>
+                </div>
+                <div className="flex items-center justify-start w-fit my-1">
+                  <IoIosMedical className="text-2xl text-blue-logo-secondary" />
+                  <h5 className="text-blue-secondary lg:text-lg ml-2 w-fit">
+                    You were cut or scraped by something rusty
+                  </h5>
+                </div>
+                <div className="flex items-center justify-start w-fit my-1">
+                  <IoIosMedical className="text-2xl text-blue-logo-secondary" />
+                  <h5 className="text-blue-secondary lg:text-lg ml-2 w-fit">
+                    You thought a cut or scrape would heal on its own, but
+                    that’s not happening
+                  </h5>
+                </div>
+                <div className="flex items-center justify-start w-fit my-1">
+                  <IoIosMedical className="text-2xl text-blue-logo-secondary" />
+                  <h5 className="text-blue-secondary lg:text-lg ml-2 w-fit">
+                    The cut is on your face, and you’re concerned about scarring
+                  </h5>
+                </div>
               </div>
             </div>
-            <p className="text-lg text-blue-logo-primary text-center lg:text-start mt-4">
+            <p className="lg:text-lg text-blue-logo-primary text-center lg:text-start mt-4">
               In these cases, you’ll need professional care to ensure the wound
               heals appropriately and doesn’t develop an infection.
             </p>
@@ -120,10 +122,10 @@ const Scrapes = () => {
       <div className="bg-blue-secondary/10 py-8">
         <div className="py-16 bg-[url(../public/img/patterns/Q-logo-pattern.svg)] bg-center bg-no-repeat bg-contain">
           <div className="container mx-auto">
-            <h2 className="text-blue-primary text-4xl font-semibold text-center">
+            <h2 className="text-blue-primary text-2xl lg:text-4xl font-semibold text-center">
               Why You Need Cut and Scrape Care
             </h2>
-            <p className="text-blue-logo-primary text-center text-xl font-medium mt-16 lg:w-2/3 w-5/6 mx-auto">
+            <p className="text-blue-logo-primary text-center text-lg lg:text-xl font-medium mt-16 lg:w-2/3 w-5/6 mx-auto">
               If you don’t treat a cut or scrape appropriately, you could
               develop an infection. Infections are bacterial and can result in
               serious illness and even death.
