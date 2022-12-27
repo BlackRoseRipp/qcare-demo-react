@@ -6,7 +6,7 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const Allergies = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pexels-cottonbro-6865169.jpg)] bg-center bg-no-repeat bg-cover">
+      <div className="bg-[url(../public/img/compressed-files/pexels-cottonbro-6865169.jpg)] bg-center bg-no-repeat bg-cover">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="container mx-auto py-56">
@@ -158,7 +158,7 @@ const Allergies = () => {
           </h2>
           <div className="flex items-center justify-center order-2">
             <img
-              src="/img/pexels-karolina-grabowska-7195083.jpg"
+              src="/img/compressed-files/pexels-karolina-grabowska-719508.jpg"
               className="w-4/5 mx-auto rounded-xl"
             />
           </div>
@@ -238,7 +238,7 @@ const Allergies = () => {
           </div>
           <div className="flex items-center justify-center order-5 lg:order-6">
             <img
-              src="/img/pexels-gustavo-fring-portrait.jpg"
+              src="/img/compressed-files/pexels-gustavo-fring-portrait.jpg"
               className="w-4/5 mx-auto rounded-xl"
             />
           </div>

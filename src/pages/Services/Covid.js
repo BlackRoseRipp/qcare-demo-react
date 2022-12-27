@@ -9,7 +9,7 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const Covid = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pexels-cdc-3993212.jpg)] bg-center bg-no-repeat bg-cover">
+      <div className="bg-[url(../public/img/compressed-files/pexels-cdc-3993212.jpg)] bg-center bg-no-repeat bg-cover">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="container mx-auto py-56">
@@ -221,7 +221,7 @@ const Covid = () => {
         <div className="grid lg:grid-cols-2 gap-x-8 gap-y-12 mt-24">
           <div className="flex items-center justify-center order-1">
             <img
-              src="/img/pexels-andrea-piacquadio-portrait.jpg"
+              src="/img/compressed-files/pexels-andrea-piacquadio-portrait.jpg"
               className="w-5/6 mx-auto rounded-xl"
             />
           </div>
@@ -346,7 +346,7 @@ const Covid = () => {
           </div>
           <div className="flex items-center justify-center order-3 lg:order-4">
             <img
-              src="/img/pexels-shvets-production-portrait.jpg"
+              src="/img/compressed-files/pexels-shvets-production-portrait.jpg"
               className="w-5/6 mx-auto rounded-xl"
             />
           </div>

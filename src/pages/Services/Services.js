@@ -75,7 +75,7 @@ const Services = () => {
   ];
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/young-male-psysician-with-patient-measuring-blood-pressure.jpg)] bg-center bg-cover bg-no-repeat">
+      <div className="bg-[url(../public/img/compressed-files/young-male-psysician-with-patient.jpg)] bg-center bg-cover bg-no-repeat">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="py-56 container mx-auto">
@@ -226,7 +226,7 @@ const Services = () => {
         <div className="grid lg:grid-cols-2 gap-8 mt-12">
           <div className="flex items-center justify-center">
             <img
-              src="/img/asian-young-caregiver-caring-her-elderly-patient-senior-daycare-handicap-patient-wheelchair-hospital-talking-friendly-nurse-looking-cheerful-nurse-wheeling-senior-patient.jpg"
+              src="/img/compressed-files/asian-young-caregiver-caring-her.jpg"
               className="w-3/4 mx-auto rounded-xl"
             />
           </div>

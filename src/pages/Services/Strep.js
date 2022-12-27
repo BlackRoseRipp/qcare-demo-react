@@ -5,7 +5,7 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const Strep = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pexels-pavel-danilyuk-6753158.jpg)] bg-top bg-cover bg-no-repeat">
+      <div className="bg-[url(../public/img/compressed-files/pexels-pavel-danilyuk-6753158.jpg)] bg-top bg-cover bg-no-repeat">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="container mx-auto py-24 lg:py-56">
@@ -61,7 +61,7 @@ const Strep = () => {
         <div className="grid lg:grid-cols-2 gap-8 mt-16">
           <div className="flex justify-center items-center">
             <img
-              src="/img/pexels-mart-production-7641242.jpg"
+              src="/img/compressed-files/pexels-mart-production-7641242.jpg"
               className="w-4/5 rounded-xl mx-auto"
             />
           </div>

@@ -7,7 +7,7 @@ import InsuranceSlider from "../components/InsuranceSlider/InsuranceSlider";
 const About = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/slide-one-hero.jpg)] bg-center bg-no-repeat bg-cover">
+      <div className="bg-[url(../public/img/compressed-files/slide-one-hero.jpg)] bg-center bg-no-repeat bg-cover">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="py-56 container mx-auto text-center">
@@ -85,7 +85,7 @@ const About = () => {
         </div>
       </div>
       <div className="py-24 container mx-auto">
-        <div className="rounded-xl overflow-hidden w-full py-80 bg-[url('../public/img/slide-two-hero.jpg')] bg-center bg-cover bg-no-repeat"></div>
+        <div className="rounded-xl overflow-hidden w-full py-80 bg-[url('../public/img/compressed-files/slide-two-hero.jpg')] bg-center bg-cover bg-no-repeat"></div>
         <div className="md:mt-[-4rem] rounded-xl w-5/6 mx-auto p-12 bg-white"></div>
         <div className="grid lg:grid-cols-3 gap-8 mt-1 w-5/6 mx-auto">
           <div className="flex items-center justify-center lg:border-r border-blue-logo-secondary">
@@ -94,7 +94,10 @@ const About = () => {
                 href="/team"
                 className="border-2 border-blue-logo-primary text-blue-logo-primary rounded-full overflow-hidden hover:scale-110 hover:border-red-secondary mb-4 w-1/2 lg:w-3/4"
               >
-                <img src="/img/lab-services-img.jpg" alt="meet_the_team" />
+                <img
+                  src="/img/compressed-files/lab-services-img.jpg"
+                  alt="meet_the_team"
+                />
               </a>
               <a
                 href="/team"

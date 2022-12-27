@@ -5,7 +5,7 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const Flu = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pexels-cottonbro-studio-4113974.jpg)] bg-center bg-cover bg-no-repeat">
+      <div className="bg-[url(../public/img/compressed-files/pexels-cottonbro-studio-4113974.jpg)] bg-center bg-cover bg-no-repeat">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="container mx-auto py-24 lg:py-56">
@@ -59,7 +59,7 @@ const Flu = () => {
         <div className="grid lg:grid-cols-2 gap-8 mt-16">
           <div className="flex justify-center items-center">
             <img
-              src="/img/pexels-gustavo-fring-3985219.jpg"
+              src="/img/compressed-files/pexels-gustavo-fring-3985219.jpg"
               className="w-4/5 rounded-xl mx-auto"
             />
           </div>

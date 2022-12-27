@@ -19,9 +19,9 @@ import BlogSlider from "../components/BlogSlider/BlogSlider";
 import Data from "../components/Locations/Data";
 import StoreLocator from "../components/Locations/StoreLocator";
 import useWindowSize from "../hooks/useWindowSize";
-import LabTechniciansImg from "../img/compressed-files/pexels-edward-jenner-4031321-min.jpg";
+/* import LabTechniciansImg from "../img/compressed-files/pexels-edward-jenner-4031321-min.jpg";
 import OfficeWorkImg from "../img/compressed-files/pexels-karolina-grabowska-5387256-min.jpg";
-import BrooklynWalkingImg from "../img/compressed-files/walk-by-nyc-min.jpg";
+import BrooklynWalkingImg from "../img/compressed-files/walk-by-nyc-min.jpg"; */
 
 export default function Home() {
   const size = useWindowSize();
@@ -30,15 +30,50 @@ export default function Home() {
     <Fragment>
       <main>
         <div className="banner bg-blue-primary">
-          <div className="lg:bg-[url(../public/img/compressed-files/doctor-with-stethoscope-hands-hospital-background-3-min.webp)] bg-[url(../public/img/compressed-files/doctor-with-stethoscope-hands-ho.jpg)] bg-right bg-no-repeat bg-cover lg:bg-contain pb-16">
-            <div className="container mx-auto lg:bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)] lg:bg-left bg-center bg-no-repeat bg-contain py-4 lg:py-36">
-              <div className="py-32 flex flex-col justify-center lg:w-1/2">
-                <h1 className="heading lg:text-white text-blue-primary text-6xl font-semibold lg:text-start text-center">
+          <div
+            className={
+              (size.width < 1123
+                ? "bg-[url(../public/img/compressed-files/doctor-with-stethoscope-hands-ho.jpg)] bg-cover"
+                : "bg-[url(../public/img/compressed-files/doctor-with-stethoscope-hands-hospital-background-3-min.webp)] bg-contain") +
+              " bg-right bg-no-repeat pb-16"
+            }
+          >
+            <div
+              className={
+                (size.width < 1123
+                  ? "bg-center"
+                  : "bg-left bg-[url(../public/img/patterns/Q-logo-pattern-home-banner.svg)]") +
+                " container mx-auto bg-no-repeat bg-contain py-4 lg:py-36"
+              }
+            >
+              <div
+                className={
+                  (size.width < 1123 ? "w-full" : "w-1/2") +
+                  " py-32 flex flex-col justify-center"
+                }
+              >
+                <h1
+                  className={
+                    (size.width < 1123
+                      ? "text-blue-primary text-center"
+                      : "text-white text-start") +
+                    " heading text-6xl font-semibold"
+                  }
+                >
                   Quick care everywhere.
                 </h1>
-                <div className="mt-8 lg:text-start text-center">
+                <div
+                  className={
+                    (size.width < 1123 ? "text-center" : "text-start") + " mt-8"
+                  }
+                >
                   <a
-                    className="btn-primary uppercase lg:text-white text-blue-primary lg:border-2 border-white lg:bg-transparent bg-yellow-logo hover:border-yellow-logo lg:hover:bg-yellow-logo font-medium md:mx-0"
+                    className={
+                      (size.width < 1123
+                        ? "text-blue-primary bg-yellow-logo"
+                        : "text-white border-2 bg-transparent hover:bg-yellow-logo") +
+                      " btn-primary uppercase border-white hover:border-yellow-logo font-medium md:mx-0"
+                    }
                     href="/locations"
                   >
                     Book an Appointment
@@ -127,8 +162,8 @@ export default function Home() {
                 animateOnce="true"
               >
                 <div className="w-3/4 mx-auto rounded-xl overflow-hidden">
-                  <LazyLoadImage
-                    src={BrooklynWalkingImg}
+                  <img
+                    src="../img/compressed-files/walk-by-nyc-min.jpg"
                     alt="Brooklyn Man Walking"
                   />
                 </div>
@@ -353,8 +388,8 @@ export default function Home() {
                 animateOnce="true"
               >
                 <div className="w-full rounded-xl overflow-hidden">
-                  <LazyLoadImage
-                    src={LabTechniciansImg}
+                  <img
+                    src="/img/compressed-files/pexels-edward-jenner-4031321-min.jpg"
                     alt="Lab Technicians"
                   />
                 </div>
@@ -438,7 +473,10 @@ export default function Home() {
                 animateOnce="true"
               >
                 <div className="w-full rounded-xl overflow-hidden">
-                  <LazyLoadImage src={OfficeWorkImg} alt="Office Work" />
+                  <img
+                    src="../img/compressed-files/pexels-karolina-grabowska-5387256-min.jpg"
+                    alt="Office Work"
+                  />
                 </div>
               </AnimationOnScroll>
             </div>

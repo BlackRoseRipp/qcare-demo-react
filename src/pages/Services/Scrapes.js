@@ -62,7 +62,7 @@ const Scrapes = () => {
         <div className="grid lg:grid-cols-2 gap-8 mt-16">
           <div className="flex justify-center items-center">
             <img
-              src="/img/active-young-man-holding-by-his-hurt-broken-leg-while-lying-autumn-forest-path-by-his-bicycle.jpg"
+              src="/img/compressed-files/active-young-man-holding-by-his.jpg"
               className="w-4/5 rounded-xl mx-auto"
             />
           </div>

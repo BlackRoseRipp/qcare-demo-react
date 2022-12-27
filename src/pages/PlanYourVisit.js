@@ -5,7 +5,7 @@ import InsuranceSlider from "../components/InsuranceSlider/InsuranceSlider";
 const PlanYourVisit = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pexels-shvets-production-7176317.jpg)] bg-top bg-no-repeat bg-cover">
+      <div className="bg-[url(../public/img/compressed-files/pexels-shvets-production-7176317.jpg)] bg-top bg-no-repeat bg-cover">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="py-56 container mx-auto">
@@ -38,7 +38,7 @@ const PlanYourVisit = () => {
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="flex items-center justify-center lg:border-r border-blue-logo-secondary">
             <img
-              src="/img/pexels-karolina-grabowska-5387256.jpg"
+              src="/img/compressed-files/pexels-karolina-grabowska-5387256-min.jpg"
               className="w-4/5 mx-auto rounded-xl"
               alt="documents-on-desk"
             />

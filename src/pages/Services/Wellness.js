@@ -5,7 +5,7 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const Wellness = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/wellness-hero.jpg)] bg-center bg-cover bg-no-repeat">
+      <div className="bg-[url(../public/img/compressed-files/wellness-hero.jpg)] bg-center bg-cover bg-no-repeat">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="container mx-auto py-56">
@@ -35,7 +35,7 @@ const Wellness = () => {
           </h2>
           <div className="flex items-center justify-center order-2">
             <img
-              src="/img/doctor-nurse-working-with-tablet-healthcare-system-cabinet-medical-team-medic-assistant-using-technology-examination-treatment-specialists-doctors-office.jpg"
+              src="/img/compressed-files/doctor-nurse-working-with-tablet.jpg"
               className="w-4/5 mx-auto rounded-xl"
             />
           </div>
@@ -138,7 +138,7 @@ const Wellness = () => {
           </div>
           <div className="flex items-center justify-center order-5 lg:order-6">
             <img
-              src="/img/patient-telling-doctor-about-symptoms-disease-portrait.jpg"
+              src="/img/compressed-files/patient-telling-doctor-about-sym.jpg"
               className="w-4/5 mx-auto rounded-xl"
             />
           </div>

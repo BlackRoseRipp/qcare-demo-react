@@ -6,7 +6,7 @@ import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 const Vaccines = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pexels-frank-merino-8488619.jpg)] bg-center bg-no-repeat bg-cover">
+      <div className="bg-[url(../public/img/compressed-files/pexels-frank-merino-8488619.jpg)] bg-center bg-no-repeat bg-cover">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="container mx-auto py-56">
@@ -64,7 +64,7 @@ const Vaccines = () => {
           </h2>
           <div className="flex items-center justify-center order-2">
             <img
-              src="/img/pexels-vlada-karpovich-portrait.jpg"
+              src="/img/compressed-files/pexels-cdc-3992931.jpg"
               className="w-4/5 mx-auto rounded-xl"
             />
           </div>
