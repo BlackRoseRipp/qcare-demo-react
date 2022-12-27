@@ -123,11 +123,15 @@ const Navbar = () => {
                       {
                         to: "/scrapes-&-cuts",
                         primary: "Scrapes",
-                      } /* 
+                      },
+                      {
+                        to: "/strep-throat",
+                        primary: "Strep Throat",
+                      },
                       {
                         to: "/cold-&-flu",
                         primary: "Cold & Flu",
-                      }, */,
+                      },
                       {
                         to: "/nyc-urgent-care-services",
                         primary: "All Testing Services",
@@ -220,11 +224,15 @@ const Navbar = () => {
                       {
                         to: "/scrapes-&-cuts",
                         primary: "Scrapes",
-                      } /* 
+                      },
+                      {
+                        to: "/strep-throat",
+                        primary: "Strep Throat",
+                      },
                       {
                         to: "/cold-&-flu",
                         primary: "Cold & Flu",
-                      }, */,
+                      },
                     ]}
                   />
                 </li>
