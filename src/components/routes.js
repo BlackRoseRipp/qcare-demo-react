@@ -25,6 +25,7 @@ const Privacy = React.lazy(() => import("../pages/Legal/Privacy"));
 const Accessibility = React.lazy(() => import("../pages/Legal/Accessibility"));
 const Terms = React.lazy(() => import("../pages/Legal/Terms"));
 const BlogDetail = React.lazy(() => import("../pages/Blog/BlogDetail"));
+const Blog = React.lazy(() => import("../pages/Blog/Blog"));
 
 export const routes = () => {
   const pages = [
@@ -50,6 +51,7 @@ export const routes = () => {
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },
     { path: "/accessibility", component: <Accessibility /> },
+    { path: "/blog", component: <Blog /> },
     { path: "/blog/:id", component: <BlogDetail /> },
     { path: "*", component: <PageNotFound /> },
   ];

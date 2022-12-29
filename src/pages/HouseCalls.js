@@ -4,6 +4,8 @@ import { CiMedicalCase, CiMedicalMask } from "react-icons/ci";
 import { FaUserNurse } from "react-icons/fa";
 import { IoIosMedical } from "react-icons/io";
 import InsuranceSlider from "../components/InsuranceSlider/InsuranceSlider";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const HouseCalls = () => {
   return (
@@ -279,10 +281,17 @@ const HouseCalls = () => {
         </p>
         <div className="grid lg:grid-cols-2 gap-8 mt-12">
           <div className="flex items-center justify-center">
-            <img
-              src="/img/compressed-files/pexels-pavel-danilyuk-6753277.jpg"
-              className="w-5/6 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-5/6 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-pavel-danilyuk-6753277.jpg"
+                  className="w-5/6 mx-auto rounded-xl"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col items-start justify-evenly">
             <p className="text-blue-secondary font-medium text-xl lg:text-start text-center">

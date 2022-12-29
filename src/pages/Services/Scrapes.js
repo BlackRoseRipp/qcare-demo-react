@@ -1,5 +1,7 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { IoIosMedical } from "react-icons/io";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const Scrapes = () => {
@@ -61,10 +63,17 @@ const Scrapes = () => {
         </p>
         <div className="grid lg:grid-cols-2 gap-8 mt-16">
           <div className="flex justify-center items-center">
-            <img
-              src="/img/compressed-files/active-young-man-holding-by-his.jpg"
-              className="w-4/5 rounded-xl mx-auto"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-4/5 rounded-xl mx-auto overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/active-young-man-holding-by-his.jpg"
+                  alt="fell-off-bike"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col justify-center items-start lg:mx-0 mx-2">
             <div className="flex flex-col items-center lg:items-start justify-center">

@@ -3,6 +3,8 @@ import { BsCheck2Circle } from "react-icons/bs";
 import { GiHealthNormal } from "react-icons/gi";
 import { IoIosMedical } from "react-icons/io";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Services = () => {
   const services = [
@@ -225,10 +227,17 @@ const Services = () => {
         </h2>
         <div className="grid lg:grid-cols-2 gap-8 mt-12">
           <div className="flex items-center justify-center">
-            <img
-              src="/img/compressed-files/asian-young-caregiver-caring-her.jpg"
-              className="w-3/4 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-3/4 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/asian-young-caregiver-caring-her.jpg"
+                  alt="caregiver"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col items-center lg:items-start justify-evenly">
             <div className="flex flex-col items-start justify-center">

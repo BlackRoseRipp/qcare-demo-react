@@ -82,6 +82,10 @@ const Navbar = () => {
                         primary: "Team",
                       },
                       {
+                        to: "/blog",
+                        primary: "Blog",
+                      },
+                      {
                         to: "/contact",
                         primary: "Contact Us",
                       },
@@ -180,6 +184,10 @@ const Navbar = () => {
                       {
                         to: "/team",
                         primary: "Meet the Team",
+                      },
+                      {
+                        to: "/blog",
+                        primary: "Blog",
                       },
                       {
                         to: "/contact",

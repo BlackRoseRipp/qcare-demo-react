@@ -1,5 +1,7 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { IoIosMedical } from "react-icons/io";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const Injuries = () => {
@@ -60,10 +62,17 @@ const Injuries = () => {
         </p>
         <div className="grid lg:grid-cols-2 gap-x-8 gap-y-16 lg:gap-y-32 mt-32 w-11/12 mx-auto">
           <div className="order-2 lg:order-1 flex justify-center lg:justify-start items-center">
-            <img
-              src="/img/compressed-files/pexels-ivan-samkov-4989186.jpg"
-              className="w-4/5 rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-4/5 rounded-xl overflow-hidden">
+                <img
+                  src="/img/compressed-files/pexels-ivan-samkov-4989186.jpg"
+                  alt="broken-bones"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="order-1 lg:order-2 flex flex-col justify-evenly lg:items-start items-center">
             <h3 className="text-blue-primary text-2xl lg:text-4xl text-center font-medium">
@@ -160,10 +169,17 @@ const Injuries = () => {
             </p>
           </div>
           <div className="order-4 flex justify-center lg:justify-end items-center">
-            <img
-              src="/img/compressed-files/pexels-andrea-piacquadio-3760275.jpg"
-              className="w-4/5 rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInRight"
+              animateOnce="true"
+            >
+              <div className="w-4/5 rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-andrea-piacquadio-3760275.jpg"
+                  alt="strained-muscle"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="order-5 lg:order-6 flex flex-col justify-evenly lg:items-start items-center">
             <h3 className="text-blue-primary text-2xl lg:text-4xl text-center font-medium">
@@ -207,10 +223,17 @@ const Injuries = () => {
             </div>
           </div>
           <div className="order-6 lg:order-5 flex justify-center lg:justify-start items-center">
-            <img
-              src="/img/compressed-files/pexels-towfiqu-barbhuiya-1246018.jpg"
-              className="w-4/5 rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-4/5 rounded-xl overflow-hidden">
+                <img
+                  src="/img/compressed-files/pexels-towfiqu-barbhuiya-1246018.jpg"
+                  alt="sprain"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
         </div>
         <div className="text-center mt-16">

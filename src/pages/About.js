@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BiClinic } from "react-icons/bi";
 import { BsCheck2Circle, BsHouseDoor, BsTruck } from "react-icons/bs";
 import { GiWalk } from "react-icons/gi";
@@ -85,45 +86,47 @@ const About = () => {
         </div>
       </div>
       <div className="py-24 container mx-auto">
-        <div className="rounded-xl overflow-hidden w-full py-80 bg-[url('../public/img/compressed-files/slide-two-hero.jpg')] bg-center bg-cover bg-no-repeat"></div>
-        <div className="md:mt-[-4rem] rounded-xl w-5/6 mx-auto p-12 bg-white"></div>
-        <div className="grid lg:grid-cols-3 gap-8 mt-1 w-5/6 mx-auto">
-          <div className="flex items-center justify-center lg:border-r border-blue-logo-secondary">
-            <div className="w-4/5 mx-auto flex flex-col items-center justify-center">
-              <a
-                href="/team"
-                className="border-2 border-blue-logo-primary text-blue-logo-primary rounded-full overflow-hidden hover:scale-110 hover:border-red-secondary mb-4 w-1/2 lg:w-3/4"
-              >
-                <img
-                  src="/img/compressed-files/lab-services-img.jpg"
-                  alt="meet_the_team"
-                />
-              </a>
-              <a
-                href="/team"
-                className="text-blue-logo-primary hover:text-red-secondary text-xl text-center font-medium"
-              >
-                Meet Our Team
-              </a>
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true">
+          <div className="rounded-xl overflow-hidden w-full py-80 bg-[url('../public/img/compressed-files/slide-two-hero.jpg')] bg-center bg-cover bg-no-repeat"></div>
+          <div className="md:mt-[-4rem] rounded-xl w-5/6 mx-auto p-12 bg-white z-50"></div>
+          <div className="grid lg:grid-cols-3 gap-8 mt-1 w-5/6 mx-auto">
+            <div className="flex items-center justify-center lg:border-r border-blue-logo-secondary">
+              <div className="w-4/5 mx-auto flex flex-col items-center justify-center">
+                <a
+                  href="/team"
+                  className="border-2 border-blue-logo-primary text-blue-logo-primary rounded-full overflow-hidden hover:scale-110 hover:border-red-secondary mb-4 w-1/2 lg:w-3/4"
+                >
+                  <img
+                    src="/img/compressed-files/lab-services-img.jpg"
+                    alt="meet_the_team"
+                  />
+                </a>
+                <a
+                  href="/team"
+                  className="text-blue-logo-primary hover:text-red-secondary text-xl text-center font-medium"
+                >
+                  Meet Our Team
+                </a>
+              </div>
+            </div>
+            <div className="lg:col-span-2 flex flex-col items-start justify-around w-4/5 mx-auto">
+              <h2 className="text-blue-primary heading text-3xl md:text-5xl font-medium text-center md:text-start">
+                Get to know your NYC neighborhood medical provider
+              </h2>
+              <p className="text-blue-secondary text-lg mt-8 text-center md:text-start">
+                We staff each mobile care unit with the same nurses, nurse
+                practitioners, physicians assistants and medical doctors each
+                day. Our goal is for you to get to know your neighborhood
+                medical provider for preventative care so that you can depend on
+                us every time, even for urgent care.
+                <br />
+                <br />
+                Get to know your local provider as you walk by every day. Stop
+                by when you need us.
+              </p>
             </div>
           </div>
-          <div className="lg:col-span-2 flex flex-col items-start justify-around w-4/5 mx-auto">
-            <h2 className="text-blue-primary heading text-3xl md:text-5xl font-medium text-center md:text-start">
-              Get to know your NYC neighborhood medical provider
-            </h2>
-            <p className="text-blue-secondary text-lg mt-8 text-center md:text-start">
-              We staff each mobile care unit with the same nurses, nurse
-              practitioners, physicians assistants and medical doctors each day.
-              Our goal is for you to get to know your neighborhood medical
-              provider for preventative care so that you can depend on us every
-              time, even for urgent care.
-              <br />
-              <br />
-              Get to know your local provider as you walk by every day. Stop by
-              when you need us.
-            </p>
-          </div>
-        </div>
+        </AnimationOnScroll>
       </div>
       <div className="bg-blue-secondary/10 py-24">
         <div className="container mx-auto">

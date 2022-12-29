@@ -1,6 +1,8 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BsCheck2Circle } from "react-icons/bs";
 import { IoIosMedical } from "react-icons/io";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const Vaccines = () => {
@@ -63,10 +65,17 @@ const Vaccines = () => {
             What is a vaccine and immunization appointment?
           </h2>
           <div className="flex items-center justify-center order-2">
-            <img
-              src="/img/compressed-files/pexels-cdc-3992931.jpg"
-              className="w-4/5 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-4/5 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-cdc-3992931.jpg"
+                  className="w-4/5 mx-auto rounded-xl"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col items-start justify-evenly order-3">
             <p className="text-blue-secondary text-center lg:text-start">

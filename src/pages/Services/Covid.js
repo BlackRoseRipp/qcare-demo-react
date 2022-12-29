@@ -1,9 +1,11 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BsCheck2Circle } from "react-icons/bs";
 import { GiVial } from "react-icons/gi";
 import { IoIosMedical } from "react-icons/io";
 import { MdCoronavirus } from "react-icons/md";
 import { SiSpeedtest } from "react-icons/si";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const Covid = () => {
@@ -220,10 +222,17 @@ const Covid = () => {
         </p>
         <div className="grid lg:grid-cols-2 gap-x-8 gap-y-12 mt-24">
           <div className="flex items-center justify-center order-1">
-            <img
-              src="/img/compressed-files/pexels-andrea-piacquadio-portrait.jpg"
-              className="w-5/6 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-5/6 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-andrea-piacquadio-portrait.jpg"
+                  className="sick-in-bed"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col items-start justify-center order-2">
             <p className="text-blue-logo-primary font-medium text-center lg:text-start mb-12 w-full">
@@ -345,10 +354,17 @@ const Covid = () => {
             </div>
           </div>
           <div className="flex items-center justify-center order-3 lg:order-4">
-            <img
-              src="/img/compressed-files/pexels-shvets-production-portrait.jpg"
-              className="w-5/6 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInRight"
+              animateOnce="true"
+            >
+              <div className="w-5/6 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-shvets-production-portrait.jpg"
+                  className="administering-test"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
         </div>
         <div className="text-center mt-12">

@@ -19,9 +19,9 @@ import BlogSlider from "../components/BlogSlider/BlogSlider";
 import Data from "../components/Locations/Data";
 import StoreLocator from "../components/Locations/StoreLocator";
 import useWindowSize from "../hooks/useWindowSize";
-/* import LabTechniciansImg from "../img/compressed-files/pexels-edward-jenner-4031321-min.jpg";
+import LabTechniciansImg from "../img/compressed-files/pexels-edward-jenner-4031321-min.jpg";
 import OfficeWorkImg from "../img/compressed-files/pexels-karolina-grabowska-5387256-min.jpg";
-import BrooklynWalkingImg from "../img/compressed-files/walk-by-nyc-min.jpg"; */
+import BrooklynWalkingImg from "../img/compressed-files/walk-by-nyc-min.jpg";
 
 export default function Home() {
   const size = useWindowSize();
@@ -162,8 +162,8 @@ export default function Home() {
                 animateOnce="true"
               >
                 <div className="w-3/4 mx-auto rounded-xl overflow-hidden">
-                  <img
-                    src="../img/compressed-files/walk-by-nyc-min.jpg"
+                  <LazyLoadImage
+                    src={BrooklynWalkingImg}
                     alt="Brooklyn Man Walking"
                   />
                 </div>
@@ -190,7 +190,7 @@ export default function Home() {
                 with years of experience handling medical emergencies throughout
                 the Metro New York area.
               </p>
-              <div className="xl:mt-0 mt-8 lg:text-start text-center w-full">
+              <div className="mt-8 lg:text-start text-center w-full">
                 <a
                   href="/locations"
                   className="btn-primary text-blue-primary border-blue-primary border-2 uppercase hover:bg-blue-logo-secondary hover:border-blue-logo-secondary hover:text-white"
@@ -388,8 +388,8 @@ export default function Home() {
                 animateOnce="true"
               >
                 <div className="w-full rounded-xl overflow-hidden">
-                  <img
-                    src="/img/compressed-files/pexels-edward-jenner-4031321-min.jpg"
+                  <LazyLoadImage
+                    src={LabTechniciansImg}
                     alt="Lab Technicians"
                   />
                 </div>
@@ -473,10 +473,7 @@ export default function Home() {
                 animateOnce="true"
               >
                 <div className="w-full rounded-xl overflow-hidden">
-                  <img
-                    src="../img/compressed-files/pexels-karolina-grabowska-5387256-min.jpg"
-                    alt="Office Work"
-                  />
+                  <LazyLoadImage src={OfficeWorkImg} alt="Office Work" />
                 </div>
               </AnimationOnScroll>
             </div>

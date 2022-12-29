@@ -1,6 +1,8 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BsCheck2Circle } from "react-icons/bs";
 import { IoIosMedical } from "react-icons/io";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const UrgentCare = () => {
@@ -70,10 +72,17 @@ const UrgentCare = () => {
         </p>
         <div className="grid lg:grid-cols-2 gap-8 mt-12">
           <div className="flex items-center justify-center order-1">
-            <img
-              src="/img/compressed-files/pexels-evg-kowalievska-1170979.jpg"
-              className="w-5/6 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-5/6 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-evg-kowalievska-1170979.jpg"
+                  alt="urgent-care-xray"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col items-start justify-center order-2">
             <p className="text-blue-logo-primary font-medium text-center lg:text-start mb-12">
@@ -148,10 +157,17 @@ const UrgentCare = () => {
             </div>
           </div>
           <div className="flex items-center justify-center order-3 lg:order-4">
-            <img
-              src="/img/compressed-files/pexels-yan-krukov-5794058.jpg"
-              className="w-5/6 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInRight"
+              animateOnce="true"
+            >
+              <div className="w-5/6 rounded-xl mx-auto overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-yan-krukov-5794058.jpg"
+                  alt="urgent-care-doctor"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
         </div>
         <div className="text-center mt-12">

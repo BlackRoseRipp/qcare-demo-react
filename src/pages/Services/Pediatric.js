@@ -1,6 +1,8 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BsCheck2Circle } from "react-icons/bs";
 import { IoIosMedical } from "react-icons/io";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const Pediatric = () => {
@@ -75,10 +77,17 @@ const Pediatric = () => {
             Well-child healthcare visits
           </h2>
           <div className="flex items-center justify-center order-2">
-            <img
-              src="/img/compressed-files/pexels-vlada-karpovich-portrait.jpg"
-              className="w-4/5 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-4/5 mx-auto rounded-xl overflow-hidden">
+                <img
+                  src="/img/compressed-files/pexels-vlada-karpovich-portrait.jpg"
+                  alt="pediatric-family"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col items-start justify-evenly order-3">
             <p className="text-blue-secondary text-center lg:text-start">
@@ -185,10 +194,17 @@ const Pediatric = () => {
             </p>
           </div>
           <div className="flex items-center justify-center order-5 lg:order-6">
-            <img
-              src="/img/compressed-files/pexels-adhitya-rizky-portrait.jpg"
-              className="w-4/5 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInRight"
+              animateOnce="true"
+            >
+              <div className="w-4/5 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-adhitya-rizky-portrait.jpg"
+                  alt="pediatric-family"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
         </div>
       </div>
