@@ -1,10 +1,10 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BsCheck2Circle } from "react-icons/bs";
 import { GiHealthNormal } from "react-icons/gi";
 import { IoIosMedical } from "react-icons/io";
-import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { AnimationOnScroll } from "react-animation-on-scroll";
+import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const Services = () => {
   const services = [
@@ -202,7 +202,7 @@ const Services = () => {
                 >
                   <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                   <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
-                    &nbsp;Cuts & Scrapes
+                    &nbsp;Cuts, Scrapes, & Sutures
                   </p>
                 </a>
               </div>

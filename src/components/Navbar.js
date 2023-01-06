@@ -126,7 +126,7 @@ const Navbar = () => {
                       },
                       {
                         to: "/scrapes-&-cuts",
-                        primary: "Scrapes",
+                        primary: "Sutures",
                       },
                       {
                         to: "/strep-throat",
@@ -135,6 +135,10 @@ const Navbar = () => {
                       {
                         to: "/cold-&-flu",
                         primary: "Cold & Flu",
+                      },
+                      {
+                        to: "/frostbite",
+                        primary: "Frostbite",
                       },
                       {
                         to: "/nyc-urgent-care-services",
@@ -231,7 +235,7 @@ const Navbar = () => {
                       },
                       {
                         to: "/scrapes-&-cuts",
-                        primary: "Scrapes",
+                        primary: "Sutures",
                       },
                       {
                         to: "/strep-throat",
@@ -240,6 +244,10 @@ const Navbar = () => {
                       {
                         to: "/cold-&-flu",
                         primary: "Cold & Flu",
+                      },
+                      {
+                        to: "/frostbite",
+                        primary: "Frostbite",
                       },
                     ]}
                   />
