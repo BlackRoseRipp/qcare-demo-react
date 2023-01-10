@@ -141,6 +141,10 @@ const Navbar = () => {
                         primary: "Frostbite",
                       },
                       {
+                        to: "/burn-care",
+                        primary: "Burn Care",
+                      },
+                      {
                         to: "/nyc-urgent-care-services",
                         primary: "All Testing Services",
                       },
@@ -248,6 +252,10 @@ const Navbar = () => {
                       {
                         to: "/frostbite",
                         primary: "Frostbite",
+                      },
+                      {
+                        to: "/burn-care",
+                        primary: "Burn Care",
                       },
                     ]}
                   />
