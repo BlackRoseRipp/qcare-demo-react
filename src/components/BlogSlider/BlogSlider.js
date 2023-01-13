@@ -1,6 +1,8 @@
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import Blogs from "../../store/blog-details.json";
 
+const sortedBlogs = Blogs.reverse();
+
 const BlogSlider = () => {
   return (
     <div
@@ -43,7 +45,7 @@ const BlogSlider = () => {
         </button>
       </div>
       <div class="carousel-inner relative w-full overflow-hidden">
-        {Blogs.map((blog, index) => {
+        {sortedBlogs.map((blog, index) => {
           return (
             <div
               className={
