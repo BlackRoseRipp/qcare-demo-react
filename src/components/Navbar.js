@@ -145,6 +145,14 @@ const Navbar = () => {
                         primary: "Burn Care",
                       },
                       {
+                        to: "/sti",
+                        primary: "STI's",
+                      },
+                      /* {
+                        to: "/skin-ailments",
+                        primary: "Skin Ailments",
+                      }, */
+                      {
                         to: "/nyc-urgent-care-services",
                         primary: "All Testing Services",
                       },
@@ -257,6 +265,14 @@ const Navbar = () => {
                         to: "/burn-care",
                         primary: "Burn Care",
                       },
+                      {
+                        to: "/sti",
+                        primary: "STI's",
+                      },
+                      /* {
+                        to: "/skin-ailments",
+                        primary: "Skin Ailments",
+                      }, */
                     ]}
                   />
                 </li>

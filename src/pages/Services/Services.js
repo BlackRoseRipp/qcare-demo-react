@@ -156,6 +156,24 @@ const Services = () => {
                     &nbsp;Cold & Flu
                   </p>
                 </a>
+                <a
+                  href="/frostbite"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Frostbite
+                  </p>
+                </a>
+                <a
+                  href="/cold-&-flu"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Sexually Transmittedly Infections
+                  </p>
+                </a>
               </div>
             </div>
             <div className="flex justify-center">
@@ -203,6 +221,15 @@ const Services = () => {
                   <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                   <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                     &nbsp;Cuts, Scrapes, & Sutures
+                  </p>
+                </a>
+                <a
+                  href="/burn-care"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Burn Care
                   </p>
                 </a>
               </div>

@@ -54,8 +54,8 @@ const Blog = () => {
         </div>
       </div>
       <div className="container py-24 mx-auto">
-        <div className="my-12 lg:columns-3 md:columns-2 gap-6">
-          {reversedBlogs.map((blog) => {
+        <div className="my-12 grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+          {Blogs.map((blog) => {
             return (
               <div className="group flex flex-col mx-4 lg:mx-0 rounded shadow-lg hover:shadow-xl bg-white transition-all overflow-hidden my-8">
                 <img src={blog.image} className="w-full" />
@@ -64,7 +64,7 @@ const Blog = () => {
                     {blog.title}
                   </h2>
                   <h4 className="text-blue-secondary py-4">{blog.subtitle}</h4>
-                  <div className="text-center mt-8">
+                  <div className="text-center my-8">
                     <a
                       href={"/blog/" + blog.id}
                       className="btn-primary text-blue-primary border-2 border-blue-primary font-medium hover:text-white hover:bg-blue-logo-secondary hover:border-blue-logo-secondary"
