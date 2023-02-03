@@ -54,7 +54,7 @@ export const routes = () => {
     { path: "/frostbite", component: <Frostbite /> },
     { path: "/burn-care", component: <Burns /> },
     { path: "/sti", component: <STI /> },
-    /* { path: "/skin-ailments", component: <Skin /> }, */
+    { path: "/skin-ailments", component: <Skin /> },
     { path: "/insurance", component: <Insurance /> },
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },
