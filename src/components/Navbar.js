@@ -82,6 +82,10 @@ const Navbar = () => {
                         primary: "Team",
                       },
                       {
+                        to: "/blog",
+                        primary: "Blog",
+                      },
+                      {
                         to: "/contact",
                         primary: "Contact Us",
                       },
@@ -122,7 +126,7 @@ const Navbar = () => {
                       },
                       {
                         to: "/scrapes-&-cuts",
-                        primary: "Scrapes",
+                        primary: "Sutures",
                       },
                       {
                         to: "/strep-throat",
@@ -131,6 +135,22 @@ const Navbar = () => {
                       {
                         to: "/cold-&-flu",
                         primary: "Cold & Flu",
+                      },
+                      {
+                        to: "/frostbite",
+                        primary: "Frostbite",
+                      },
+                      {
+                        to: "/burn-care",
+                        primary: "Burn Care",
+                      },
+                      {
+                        to: "/sti",
+                        primary: "STI's",
+                      },
+                      {
+                        to: "/skin-ailments",
+                        primary: "Skin Ailments",
                       },
                       {
                         to: "/nyc-urgent-care-services",
@@ -182,6 +202,10 @@ const Navbar = () => {
                         primary: "Meet the Team",
                       },
                       {
+                        to: "/blog",
+                        primary: "Blog",
+                      },
+                      {
                         to: "/contact",
                         primary: "Contact Us",
                       },
@@ -223,7 +247,7 @@ const Navbar = () => {
                       },
                       {
                         to: "/scrapes-&-cuts",
-                        primary: "Scrapes",
+                        primary: "Sutures",
                       },
                       {
                         to: "/strep-throat",
@@ -232,6 +256,22 @@ const Navbar = () => {
                       {
                         to: "/cold-&-flu",
                         primary: "Cold & Flu",
+                      },
+                      {
+                        to: "/frostbite",
+                        primary: "Frostbite",
+                      },
+                      {
+                        to: "/burn-care",
+                        primary: "Burn Care",
+                      },
+                      {
+                        to: "/sti",
+                        primary: "STI's",
+                      },
+                      {
+                        to: "/skin-ailments",
+                        primary: "Skin Ailments",
                       },
                     ]}
                   />

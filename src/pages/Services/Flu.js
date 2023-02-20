@@ -1,11 +1,13 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { IoIosMedical } from "react-icons/io";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const Flu = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pexels-cottonbro-studio-4113974.jpg)] bg-center bg-cover bg-no-repeat">
+      <div className="bg-[url(../public/img/compressed-files/pexels-cottonbro-studio-4113974.jpg)] bg-center bg-cover bg-no-repeat">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="container mx-auto py-24 lg:py-56">
@@ -58,10 +60,17 @@ const Flu = () => {
         </p>
         <div className="grid lg:grid-cols-2 gap-8 mt-16">
           <div className="flex justify-center items-center">
-            <img
-              src="/img/pexels-gustavo-fring-3985219.jpg"
-              className="w-4/5 rounded-xl mx-auto"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-4/5 rounded-xl mx-auto overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-gustavo-fring-3985219.jpg"
+                  alt="kid-with-fever"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col justify-center items-start lg:mx-0 mx-2">
             <div className="flex flex-col items-center lg:items-start justify-center">

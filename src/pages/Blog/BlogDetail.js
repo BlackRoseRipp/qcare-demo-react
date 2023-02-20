@@ -21,7 +21,11 @@ const BlogDetail = () => {
         </div>
       </div>
       <div className="bg-blue-secondary/10 py-24">
-        <img src={blog.image} className="lg:w-1/2 w-3/4 mx-auto rounded-xl" />
+        <img
+          src={blog.image}
+          className="lg:w-1/2 w-3/4 mx-auto rounded-xl"
+          alt={blog.imgAlt ? blog.imgAlt : "blog thumbnail"}
+        />
       </div>
       <div className="container mx-auto pt-24 pb-12 blog-content lg:w-1/2 px-2">
         {parse(blog.content)}

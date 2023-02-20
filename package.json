@@ -1,5 +1,6 @@
 {
   "name": "qcare-redesign-react",
+  "homepage": "https://qcare.com",
   "version": "1.0.0",
   "private": true,
   "browser": {

@@ -130,35 +130,35 @@ a {
 }
 
 .blog-content p {
-  @apply text-blue-primary mb-4
+  @apply text-blue-primary mb-4;
 }
 
 .blog-content h2 {
-  @apply text-4xl font-semibold text-blue-logo-primary mb-4 mt-8
+  @apply text-4xl font-semibold text-blue-logo-primary mb-4 mt-8;
 }
 
 .blog-content h3 {
-  @apply text-2xl font-medium text-blue-secondary my-4
+  @apply text-2xl font-medium text-blue-secondary my-4;
 }
 
 .blog-content ul {
-  @apply list-disc ml-8
+  @apply list-disc ml-8;
 }
 
-.blog-content a {
-  @apply text-blue-logo-primary
+.blog-content a:not(.btn-primary) {
+  @apply text-blue-logo-primary;
 }
 
-.blog-content a:hover {
-  @apply text-blue-logo-secondary
+.blog-content a:not(.btn-primary):hover {
+  @apply text-blue-logo-secondary;
 }
 
-.blog-content a::after {
-  @apply bg-blue-logo-secondary
+.blog-content a:not(.btn-primary)::after {
+  @apply bg-blue-logo-secondary;
 }
 
 .blog-content img {
-  @apply w-3/4 mx-auto
+  @apply w-3/4 mx-auto;
 }
 
 #houseCallAccordion .accordion-button:not(.collapsed) {
@@ -181,7 +181,7 @@ a {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: white;
-    color: black
+    color: black;
   }
 
   input {

@@ -4,11 +4,13 @@ import { CiMedicalCase, CiMedicalMask } from "react-icons/ci";
 import { FaUserNurse } from "react-icons/fa";
 import { IoIosMedical } from "react-icons/io";
 import InsuranceSlider from "../components/InsuranceSlider/InsuranceSlider";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const HouseCalls = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/asian-female-doctor-talking-senior-caucasian-patient-during-house-call.jpg)] bg-center bg-no-repeat bg-cover">
+      <div className="bg-[url(../public/img/compressed-files/asian-female-doctor-talking.jpg)] bg-center bg-no-repeat bg-cover">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="py-56 container mx-auto">
@@ -279,10 +281,17 @@ const HouseCalls = () => {
         </p>
         <div className="grid lg:grid-cols-2 gap-8 mt-12">
           <div className="flex items-center justify-center">
-            <img
-              src="/img/pexels-pavel-danilyuk-6753277.jpg"
-              className="w-5/6 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-5/6 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-pavel-danilyuk-6753277.jpg"
+                  className="w-5/6 mx-auto rounded-xl"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col items-start justify-evenly">
             <p className="text-blue-secondary font-medium text-xl lg:text-start text-center">

@@ -1,12 +1,14 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BsCheck2Circle } from "react-icons/bs";
 import { IoIosMedical } from "react-icons/io";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const Allergies = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pexels-cottonbro-6865169.jpg)] bg-center bg-no-repeat bg-cover">
+      <div className="bg-[url(../public/img/compressed-files/pexels-cottonbro-6865169.jpg)] bg-center bg-no-repeat bg-cover">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="container mx-auto py-56">
@@ -157,10 +159,17 @@ const Allergies = () => {
             Why you need allergy and asthma care
           </h2>
           <div className="flex items-center justify-center order-2">
-            <img
-              src="/img/pexels-karolina-grabowska-7195083.jpg"
-              className="w-4/5 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-4/5 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-karolina-grabowska-719508.jpg"
+                  alt="allergies"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col items-start justify-evenly order-3">
             <p className="text-blue-secondary">
@@ -237,10 +246,17 @@ const Allergies = () => {
             </p>
           </div>
           <div className="flex items-center justify-center order-5 lg:order-6">
-            <img
-              src="/img/pexels-gustavo-fring-portrait.jpg"
-              className="w-4/5 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInRight"
+              animateOnce="true"
+            >
+              <div className="w-4/5 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-gustavo-fring-portrait.jpg"
+                  alt="asthma"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
         </div>
       </div>

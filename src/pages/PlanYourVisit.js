@@ -1,11 +1,13 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BsCheck2Circle } from "react-icons/bs";
 import InsuranceSlider from "../components/InsuranceSlider/InsuranceSlider";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PlanYourVisit = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pexels-shvets-production-7176317.jpg)] bg-top bg-no-repeat bg-cover">
+      <div className="bg-[url(../public/img/compressed-files/pexels-shvets-production-7176317.jpg)] bg-top bg-no-repeat bg-cover">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="py-56 container mx-auto">
@@ -37,11 +39,17 @@ const PlanYourVisit = () => {
       <div className="container mx-auto py-24">
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="flex items-center justify-center lg:border-r border-blue-logo-secondary">
-            <img
-              src="/img/pexels-karolina-grabowska-5387256.jpg"
-              className="w-4/5 mx-auto rounded-xl"
-              alt="documents-on-desk"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-4/5 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-karolina-grabowska-5387256-min.jpg"
+                  alt="documents-on-desk"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col lg:items-start items-center justify-evenly">
             <h2 className="heading text-5xl text-blue-primary font-medium">

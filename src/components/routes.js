@@ -17,6 +17,10 @@ const Injuries = React.lazy(() => import("../pages/Services/Injuries"));
 const Scrapes = React.lazy(() => import("../pages/Services/Scrapes"));
 const Strep = React.lazy(() => import("../pages/Services/Strep"));
 const Flu = React.lazy(() => import("../pages/Services/Flu"));
+const Frostbite = React.lazy(() => import("../pages/Services/Frostbite"));
+const Burns = React.lazy(() => import("../pages/Services/Burns"));
+const STI = React.lazy(() => import("../pages/Services/STI"));
+const Skin = React.lazy(() => import("../pages/Services/Skin"));
 const PlanYourVisit = React.lazy(() => import("../pages/PlanYourVisit"));
 const Locations = React.lazy(() => import("../pages/Locations"));
 const HouseCalls = React.lazy(() => import("../pages/HouseCalls"));
@@ -25,6 +29,7 @@ const Privacy = React.lazy(() => import("../pages/Legal/Privacy"));
 const Accessibility = React.lazy(() => import("../pages/Legal/Accessibility"));
 const Terms = React.lazy(() => import("../pages/Legal/Terms"));
 const BlogDetail = React.lazy(() => import("../pages/Blog/BlogDetail"));
+const Blog = React.lazy(() => import("../pages/Blog/Blog"));
 
 export const routes = () => {
   const pages = [
@@ -46,10 +51,15 @@ export const routes = () => {
     { path: "/scrapes-&-cuts", component: <Scrapes /> },
     { path: "/strep-throat", component: <Strep /> },
     { path: "/cold-&-flu", component: <Flu /> },
+    { path: "/frostbite", component: <Frostbite /> },
+    { path: "/burn-care", component: <Burns /> },
+    { path: "/sti", component: <STI /> },
+    { path: "/skin-ailments", component: <Skin /> },
     { path: "/insurance", component: <Insurance /> },
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },
     { path: "/accessibility", component: <Accessibility /> },
+    { path: "/blog", component: <Blog /> },
     { path: "/blog/:id", component: <BlogDetail /> },
     { path: "*", component: <PageNotFound /> },
   ];

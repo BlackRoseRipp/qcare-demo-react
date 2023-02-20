@@ -1,12 +1,14 @@
 import { Fragment } from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import { BsCheck2Circle } from "react-icons/bs";
 import { IoIosMedical } from "react-icons/io";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
 
 const Pediatric = () => {
   return (
     <Fragment>
-      <div className="bg-[url(../public/img/pediatric-new-hero.jpg)] bg-center bg-cover bg-no-repeat">
+      <div className="bg-[url(../public/img/compressed-files/pediatric-new-hero.jpg)] bg-center bg-cover bg-no-repeat">
         <div className="bg-blue-primary/80 banner pb-24">
           <div className="bg-[url(../public/img/Q_outlined_letter.svg)] bg-center bg-no-repeat bg-contain">
             <div className="container mx-auto py-56">
@@ -75,10 +77,17 @@ const Pediatric = () => {
             Well-child healthcare visits
           </h2>
           <div className="flex items-center justify-center order-2">
-            <img
-              src="/img/pexels-vlada-karpovich-portrait.jpg"
-              className="w-4/5 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInLeft"
+              animateOnce="true"
+            >
+              <div className="w-4/5 mx-auto rounded-xl overflow-hidden">
+                <img
+                  src="/img/compressed-files/pexels-vlada-karpovich-portrait.jpg"
+                  alt="pediatric-family"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
           <div className="flex flex-col items-start justify-evenly order-3">
             <p className="text-blue-secondary text-center lg:text-start">
@@ -185,10 +194,17 @@ const Pediatric = () => {
             </p>
           </div>
           <div className="flex items-center justify-center order-5 lg:order-6">
-            <img
-              src="/img/pexels-adhitya-rizky-portrait.jpg"
-              className="w-4/5 mx-auto rounded-xl"
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeInRight"
+              animateOnce="true"
+            >
+              <div className="w-4/5 mx-auto rounded-xl overflow-hidden">
+                <LazyLoadImage
+                  src="/img/compressed-files/pexels-adhitya-rizky-portrait.jpg"
+                  alt="pediatric-family"
+                />
+              </div>
+            </AnimationOnScroll>
           </div>
         </div>
       </div>

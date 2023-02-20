@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /subdirectory
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+</IfModule>
+<FilesMatch ".(py|exe|php)$">
+ Order allow,deny
+ Allow from all
+</FilesMatch>
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^qcare\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.qcare\.com$
+RewriteRule ^/?$ "https\:\/\/qcare\.com\/" [R=301,L]
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 20.243.25.124
+deny from 40.117.225.65
+deny from 20.232.205.33
+deny from 188.213.5.197
