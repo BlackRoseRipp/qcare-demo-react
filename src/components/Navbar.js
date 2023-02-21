@@ -153,6 +153,14 @@ const Navbar = () => {
                         primary: "Skin Ailments",
                       },
                       {
+                        to: "/stomach-pains",
+                        primary: "Stomach Pains",
+                      },
+                      {
+                        to: "/ear-nose-&-throat",
+                        primary: "Ear, Nose & Throat",
+                      },
+                      {
                         to: "/nyc-urgent-care-services",
                         primary: "All Testing Services",
                       },
@@ -272,6 +280,14 @@ const Navbar = () => {
                       {
                         to: "/skin-ailments",
                         primary: "Skin Ailments",
+                      },
+                      {
+                        to: "/stomach-pains",
+                        primary: "Stomach Pains",
+                      },
+                      {
+                        to: "/ear-nose-&-throat",
+                        primary: "Ear, Nose & Throat",
                       },
                     ]}
                   />

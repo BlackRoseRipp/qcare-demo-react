@@ -21,6 +21,8 @@ const Frostbite = React.lazy(() => import("../pages/Services/Frostbite"));
 const Burns = React.lazy(() => import("../pages/Services/Burns"));
 const STI = React.lazy(() => import("../pages/Services/STI"));
 const Skin = React.lazy(() => import("../pages/Services/Skin"));
+const Stomach = React.lazy(() => import("../pages/Services/Stomach"));
+const Ears = React.lazy(() => import("../pages/Services/Ears"));
 const PlanYourVisit = React.lazy(() => import("../pages/PlanYourVisit"));
 const Locations = React.lazy(() => import("../pages/Locations"));
 const HouseCalls = React.lazy(() => import("../pages/HouseCalls"));
@@ -55,6 +57,8 @@ export const routes = () => {
     { path: "/burn-care", component: <Burns /> },
     { path: "/sti", component: <STI /> },
     { path: "/skin-ailments", component: <Skin /> },
+    { path: "/stomach-pains", component: <Stomach /> },
+    { path: "/ear-nose-&-throat", component: <Ears /> },
     { path: "/insurance", component: <Insurance /> },
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },

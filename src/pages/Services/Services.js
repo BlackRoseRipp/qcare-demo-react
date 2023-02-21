@@ -174,6 +174,15 @@ const Services = () => {
                     &nbsp;Sexually Transmittedly Infections
                   </p>
                 </a>
+                <a
+                  href="/stomach-pains"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Stomach Pains
+                  </p>
+                </a>
               </div>
             </div>
             <div className="flex justify-center">
@@ -239,6 +248,15 @@ const Services = () => {
                   <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                   <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                     &nbsp;Skin Ailments
+                  </p>
+                </a>
+                <a
+                  href="/ear-nose-&-throat"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Ear, Nose & Throat
                   </p>
                 </a>
               </div>

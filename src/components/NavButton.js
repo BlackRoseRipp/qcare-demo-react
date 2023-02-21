@@ -20,6 +20,8 @@ function NavButton(props) {
 
   const activeDropdownLink = dropdownLinks?.some((link) => link.to === path);
 
+  console.log(dropdownLinks?.length);
+
   return dropdownLinks ? (
     size.width < 1024 ? (
       <div className="accordion-item">
