@@ -156,8 +156,6 @@ const Services = () => {
                     &nbsp;Cold & Flu
                   </p>
                 </a>
-<<<<<<< HEAD
-=======
                 <a
                   href="/frostbite"
                   className="flex items-center justify-start w-full group my-2"
@@ -168,7 +166,7 @@ const Services = () => {
                   </p>
                 </a>
                 <a
-                  href="/cold-&-flu"
+                  href="/sti"
                   className="flex items-center justify-start w-full group my-2"
                 >
                   <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
@@ -176,7 +174,6 @@ const Services = () => {
                     &nbsp;Sexually Transmittedly Infections
                   </p>
                 </a>
->>>>>>> qcare-redesign-react
               </div>
             </div>
             <div className="flex justify-center">
@@ -223,9 +220,6 @@ const Services = () => {
                 >
                   <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                   <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
-<<<<<<< HEAD
-                    &nbsp;Cuts & Scrapes
-=======
                     &nbsp;Cuts, Scrapes, & Sutures
                   </p>
                 </a>
@@ -236,7 +230,15 @@ const Services = () => {
                   <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                   <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                     &nbsp;Burn Care
->>>>>>> qcare-redesign-react
+                  </p>
+                </a>
+                <a
+                  href="/skin-ailments"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Skin Ailments
                   </p>
                 </a>
               </div>
