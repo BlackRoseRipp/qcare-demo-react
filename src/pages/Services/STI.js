@@ -4,8 +4,12 @@ import { BsCheck2Circle } from "react-icons/bs";
 import { IoIosMedical } from "react-icons/io";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import InsuranceSlider from "../../components/InsuranceSlider/InsuranceSlider";
+import Blogs from "../../store/blog-details.json";
 
 const STI = () => {
+  const blog = Blogs.find(
+    (obj) => obj.id === "why-do-men-&-women-need-sti-checkups"
+  );
   return (
     <Fragment>
       <div className="bg-[url(../public/img/compressed-files/pexels-pixabay-248148.jpg)] bg-center bg-cover bg-no-repeat">
@@ -228,6 +232,39 @@ const STI = () => {
               href="/locations"
             >
               Book an Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="container mx-auto py-24">
+        <div className="grid lg:grid-cols-2 gap-x-12">
+          <div className="flex flex-col justify-center items-start">
+            <h1 className="text-blue-primary heading text-3xl lg:text-5xl font-semibold md:text-start text-center px-4 lg:px-0">
+              Learn More
+            </h1>
+            <p className="text-blue-secondary font-medium mt-16 md:text-start text-center px-4 lg:px-0">
+              Find out more by checking out our relevant articles on STI's and
+              STI care.
+            </p>
+          </div>
+          <div className="flex items-center justify-center">
+            <a
+              href={"/blog/" + blog.id}
+              className="w-5/6 mx-auto h-[580px] flex flex-col rounded-xl shadow-md hover:shadow-xl overflow-hidden"
+            >
+              <img
+                src={blog.image}
+                className="w-full"
+                alt={blog.imgAlt ? blog.imgAlt : "blog"}
+              />
+              <div className="px-6 py-4">
+                <h3 className="text-blue-primary text-lg font-medium mb-2 text-center md:text-start">
+                  {blog.title}
+                </h3>
+                <p className="text-blue-secondary text-sm text-justify md:text-start">
+                  {blog.subtitle}
+                </p>
+              </div>
             </a>
           </div>
         </div>
