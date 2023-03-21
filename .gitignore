@@ -12,6 +12,8 @@
 /build
 build.zip
 
+/src/store/temp.html
+
 # misc
 .DS_Store
 .env.local
