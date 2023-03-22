@@ -161,6 +161,10 @@ const Navbar = () => {
                         primary: "Ear, Nose & Throat",
                       },
                       {
+                        to: "/uti",
+                        primary: "UTI Care",
+                      },
+                      {
                         to: "/nyc-urgent-care-services",
                         primary: "All Testing Services",
                       },
@@ -288,6 +292,10 @@ const Navbar = () => {
                       {
                         to: "/ear-nose-&-throat",
                         primary: "Ear, Nose & Throat",
+                      },
+                      {
+                        to: "/uti",
+                        primary: "UTI Care",
                       },
                     ]}
                   />
