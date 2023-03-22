@@ -18,7 +18,7 @@ const UTI = () => {
               <h1 className="text-white heading font-semibold text-4xl lg:text-6xl text-center">
                 UTI Care at QCare
               </h1>
-              <h3 className="text-white text-xl lg:text-2xl font-medium text-center mt-8 mx-2 w-fit">
+              <h3 className="text-white text-xl lg:text-2xl font-medium text-center mt-8 px-2 mx-auto w-fit">
                 Visit QCare mobile care units throughout New York City for
                 urinary tract infection (UTI) care
               </h3>
@@ -109,8 +109,8 @@ const UTI = () => {
             >
               <div className="w-4/5 rounded-xl mx-auto overflow-hidden">
                 <LazyLoadImage
-                  src="/img/compressed-files/pexels-anna-nekrashevich-6475986.jpg"
-                  alt="couple-in-bed"
+                  src="/img/compressed-files/pexels-andrea-piacquadio-846080.jpg"
+                  alt="girl-enjoying-morning"
                 />
               </div>
             </AnimationOnScroll>
