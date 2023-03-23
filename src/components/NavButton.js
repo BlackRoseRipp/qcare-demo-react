@@ -48,7 +48,7 @@ function NavButton(props) {
         >
           <div
             className={classNames(
-              dropdownLinks.length > 6 ? "grid grid-cols-2" : "flex flex-col",
+              dropdownLinks.length > 6 ? "grid grid-cols-3" : "flex flex-col",
               "accordion-body px-5"
             )}
           >
@@ -104,7 +104,7 @@ function NavButton(props) {
           <div
             className={classNames(
               dropdownLinks.length > 6
-                ? "grid grid-cols-2"
+                ? "grid grid-cols-3"
                 : "flex flex-col p-2"
             )}
           >

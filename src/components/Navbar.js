@@ -165,6 +165,10 @@ const Navbar = () => {
                         primary: "UTI Care",
                       },
                       {
+                        to: "/respiratory-illness",
+                        primary: "Respiratory Illness",
+                      },
+                      {
                         to: "/nyc-urgent-care-services",
                         primary: "All Testing Services",
                       },
@@ -296,6 +300,10 @@ const Navbar = () => {
                       {
                         to: "/uti",
                         primary: "UTI Care",
+                      },
+                      {
+                        to: "/respiratory-illness",
+                        primary: "Respiratory Illness",
                       },
                     ]}
                   />

@@ -24,6 +24,7 @@ const Skin = React.lazy(() => import("../pages/Services/Skin"));
 const Stomach = React.lazy(() => import("../pages/Services/Stomach"));
 const Ears = React.lazy(() => import("../pages/Services/Ears"));
 const UTI = React.lazy(() => import("../pages/Services/UTI"));
+const Respiratory = React.lazy(() => import("../pages/Services/Respiratory"));
 const PlanYourVisit = React.lazy(() => import("../pages/PlanYourVisit"));
 const Locations = React.lazy(() => import("../pages/Locations"));
 const HouseCalls = React.lazy(() => import("../pages/HouseCalls"));
@@ -61,6 +62,7 @@ export const routes = () => {
     { path: "/stomach-pains", component: <Stomach /> },
     { path: "/ear-nose-&-throat", component: <Ears /> },
     { path: "/uti", component: <UTI /> },
+    { path: "/respiratory-illness", component: <Respiratory /> },
     { path: "/insurance", component: <Insurance /> },
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },

@@ -341,6 +341,60 @@ export default function Home() {
                       &nbsp;Allergies & Asthma
                     </p>
                   </a>
+                  <a
+                    href="/strep-throat"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Strep Throat
+                    </p>
+                  </a>
+                  <a
+                    href="/cold-&-flu"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Cold & Flu
+                    </p>
+                  </a>
+                  <a
+                    href="/frostbite"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Frostbite
+                    </p>
+                  </a>
+                  <a
+                    href="/sti"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Sexually Transmittedly Infections
+                    </p>
+                  </a>
+                  <a
+                    href="/stomach-pains"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Stomach Pains
+                    </p>
+                  </a>
+                  <a
+                    href="/uti"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;UTI Care
+                    </p>
+                  </a>
                 </div>
                 <div className="flex flex-col items-start md:ml-4">
                   <a
@@ -365,6 +419,60 @@ export default function Home() {
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                       &nbsp;Vaccinations
+                    </p>
+                  </a>
+                  <a
+                    href="/injuries"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Broken Bones, Strains & Sprains
+                    </p>
+                  </a>
+                  <a
+                    href="/scrapes-&-cuts"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Cuts, Scrapes, & Sutures
+                    </p>
+                  </a>
+                  <a
+                    href="/burn-care"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Burn Care
+                    </p>
+                  </a>
+                  <a
+                    href="/skin-ailments"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Skin Ailments
+                    </p>
+                  </a>
+                  <a
+                    href="/ear-nose-&-throat"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Ear, Nose & Throat
+                    </p>
+                  </a>
+                  <a
+                    href="/respiratory-illness"
+                    className="flex items-center justify-start w-full group my-2"
+                  >
+                    <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                    <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                      &nbsp;Respiratory Illnesses
                     </p>
                   </a>
                 </div>
