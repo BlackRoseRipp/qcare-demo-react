@@ -406,7 +406,7 @@ export default function Home() {
                       &nbsp;Wellness Care
                     </p>
                   </a>
-                  <a
+                  {/* <a
                     href="/pediatrics"
                     className="flex items-center group my-2"
                   >
@@ -414,7 +414,7 @@ export default function Home() {
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                       &nbsp;Pediatric Care
                     </p>
-                  </a>
+                  </a> */}
                   <a href="/vaccines" className="flex items-center group my-2">
                     <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
                     <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">

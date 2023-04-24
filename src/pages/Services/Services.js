@@ -205,7 +205,7 @@ const Services = () => {
                     &nbsp;Wellness Care
                   </p>
                 </a>
-                <a
+                {/* <a
                   href="/pediatrics"
                   className="flex items-center justify-start w-full group my-2"
                 >
@@ -213,7 +213,7 @@ const Services = () => {
                   <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
                     &nbsp;Pediatric Care
                   </p>
-                </a>
+                </a> */}
                 <a
                   href="/vaccines"
                   className="flex items-center justify-start w-full group my-2"
