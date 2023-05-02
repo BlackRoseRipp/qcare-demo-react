@@ -1,5 +1,5 @@
 import React, { Component, Suspense } from "react";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 const Home = React.lazy(() => import("../pages/Home"));
 const About = React.lazy(() => import("../pages/About"));
@@ -25,6 +25,7 @@ const Stomach = React.lazy(() => import("../pages/Services/Stomach"));
 const Ears = React.lazy(() => import("../pages/Services/Ears"));
 const UTI = React.lazy(() => import("../pages/Services/UTI"));
 const Respiratory = React.lazy(() => import("../pages/Services/Respiratory"));
+const Sinus = React.lazy(() => import("../pages/Services/Sinus"));
 const PlanYourVisit = React.lazy(() => import("../pages/PlanYourVisit"));
 const Locations = React.lazy(() => import("../pages/Locations"));
 const HouseCalls = React.lazy(() => import("../pages/HouseCalls"));
@@ -63,6 +64,7 @@ export const routes = () => {
     { path: "/ear-nose-&-throat", component: <Ears /> },
     { path: "/uti", component: <UTI /> },
     { path: "/respiratory-illness", component: <Respiratory /> },
+    { path: "/sinus", component: <Sinus /> },
     { path: "/insurance", component: <Insurance /> },
     { path: "/privacy", component: <Privacy /> },
     { path: "/terms-and-conditions", component: <Terms /> },

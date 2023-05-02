@@ -277,6 +277,15 @@ const Services = () => {
                     &nbsp;Respiratory Illnesses
                   </p>
                 </a>
+                <a
+                  href="/sinus"
+                  className="flex items-center justify-start w-full group my-2"
+                >
+                  <IoIosMedical className="text-blue-logo-secondary text-xl group-hover:text-red-secondary transition-all duration-300" />
+                  <p className="text-blue-primary font-medium group-hover:text-red-secondary transition-all duration-300">
+                    &nbsp;Sinus Infection
+                  </p>
+                </a>
               </div>
             </div>
           </div>
