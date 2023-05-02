@@ -173,6 +173,10 @@ const Navbar = () => {
                         primary: "Sinus Infection",
                       },
                       {
+                        to: "/pink-eye",
+                        primary: "Pink Eye",
+                      },
+                      {
                         to: "/nyc-urgent-care-services",
                         primary: "All Testing Services",
                       },
@@ -312,6 +316,10 @@ const Navbar = () => {
                       {
                         to: "/sinus",
                         primary: "Sinus Infection",
+                      },
+                      {
+                        to: "/pink-eye",
+                        primary: "Pink Eye",
                       },
                     ]}
                   />
