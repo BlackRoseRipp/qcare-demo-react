@@ -99,11 +99,11 @@ const Navbar = () => {
                       {
                         to: "/prevention",
                         primary: "Wellness Visits",
-                      },
+                      } /* 
                       {
                         to: "/pediatrics",
                         primary: "Pediatric Care",
-                      },
+                      }, */,
                       {
                         to: "/urgent-care",
                         primary: "Urgent Care",
@@ -244,11 +244,11 @@ const Navbar = () => {
                       {
                         to: "/prevention",
                         primary: "Wellness Visits",
-                      },
+                      } /* 
                       {
                         to: "/pediatrics",
                         primary: "Pediatric Care",
-                      },
+                      }, */,
                       {
                         to: "/urgent-care",
                         primary: "Urgent Care",

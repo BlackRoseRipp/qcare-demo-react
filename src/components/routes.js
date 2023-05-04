@@ -45,7 +45,7 @@ export const routes = () => {
     { path: "/team", component: <Team /> },
     { path: "/nyc-urgent-care-services", component: <Services /> },
     { path: "/prevention", component: <Wellness /> },
-    { path: "/pediatrics", component: <Pediatric /> },
+    /* { path: "/pediatrics", component: <Pediatric /> }, */
     { path: "/plan-your-visit", component: <PlanYourVisit /> },
     { path: "/locations", component: <Locations /> },
     { path: "/urgent-care", component: <UrgentCare /> },
