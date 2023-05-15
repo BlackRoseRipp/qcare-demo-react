@@ -178,9 +178,9 @@ const STI = () => {
               others.
               <br />
               <br />
-              If you suspect that they may have an STI should seek medical
-              attention promptly, and urgent care clinics provide a convenient
-              and effective option for STI care. Regular STI testing and early
+              If you suspect you may have an STI, seek medical attention
+              promptly. Qcare urgent care clinics provide a convenient and
+              effective option for STI care. Regular STI testing and early
               treatment can help prevent serious health problems and protect
               against the spread of infections.
             </p>
